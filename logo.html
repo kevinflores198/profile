@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animación de la letra K</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    .letter {
+      font-size: 150px;
+      font-weight: bold;
+      color: #FF5733; /* Rojo */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      transform: translateY(-50%);
+      font-size: 30px;
+      color: #3498db; /* Azul */
+      animation: moveArrow 2s forwards;
+    }
+
+    @keyframes moveArrow {
+      0% {
+        left: -50px;
+        opacity: 1;
+      }
+      100% {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="arrow">
+  <img src="files/Logo moderno de Kevin Flores.png" alt="Logo" width="150">
+
+    </div>
+    <div class="letter">
+  <img src="files/Logo moderno de Kevin Flores.png" alt="Logo" width="150">
+</div>
+
+  </div>
+</body>
+</html>
