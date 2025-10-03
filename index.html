@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Profile | Kevin Flores</title>
     <link rel="stylesheet" href="styles/stryle.css">
     <meta name="author" content="Kevin Nicolas Flores Gonzalez">
     <meta name="description" content="Hi This my profile,
@@ -19,20 +19,21 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="" alt="Logo nav">
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a id="nav-about" href="#profile"></a>
-                    <a id="nav-projects" href="#projects"></a>
-                    <a id="nav-studies" href="#studies"></a>
-                    <a id="nav-resume" href="#resume"></a>
-                    <a id="nav-references" href="#references"></a>
-                </li>
-            </ul>
+        <nav class="glass-navbar">
+            <div class="nav-content">
+                <a href="#profile" class="nav-logo">KF</a>
+                <ul class="nav-links">
+                    <li>
+                        <a id="nav-about" href="#profile"></a>
+                        <a id="nav-projects" href="#projects"></a>
+                        <a id="nav-studies" href="#studies"></a>
+                        <a id="nav-resume" href="#resume"></a>
+                        <a id="nav-references" href="#references"></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        
         <button id="theme-toggle" class="theme-toggle">🌙</button>
         <div class="burger"></div>
     </header>
@@ -49,7 +50,7 @@
                 <div class="about">
                     <p id="profile-about"></p>
                 </div>
-                <div class="button">
+                <div class="glass-btn">
                     <a href="" id="profile-contact"></a>
                 </div>
             </div>
@@ -202,7 +203,9 @@
                 <a id="footer-projects" href=""></a>
             </li>
         </ul>
-        <p id="footer-copy">&copy; <span id="currentyear"></span></p>
+        &copy; <span id="currentyear"></span>
+        <p id="footer-copy"></p>
+
     </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/content.js"></script>

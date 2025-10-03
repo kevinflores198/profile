@@ -1,6 +1,5 @@
 const today = new Date();
 currentyear.innerHTML = today.getFullYear();
-
 document.body.setAttribute("data-theme", "dark");
 
 const toggleBtn = document.getElementById("theme-toggle");
@@ -20,4 +19,13 @@ toggleBtn.addEventListener("click", () => {
   localStorage.setItem("theme", newTheme);
 
   toggleBtn.textContent = newTheme === "dark" ? "☀️" : "🌙";
+});
+
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".glass-navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
 });

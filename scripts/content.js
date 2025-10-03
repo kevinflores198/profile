@@ -103,7 +103,7 @@ const translations = {
     "footer-studies": "Studies",
     "footer-projects": "Projects",
 
-    "footer-copy": "© {year} Kevin Flores - SC, Brazil",
+    "footer-copy": "Kevin Flores - SC, Brazil",
 
   },
   pt: {
@@ -207,7 +207,7 @@ const translations = {
     "footer-studies": "Studies",
     "footer-projects": "Projects",
 
-    "footer-copy": "© {year} Kevin Flores - SC, Brazil",
+    "footer-copy": "Kevin Flores - SC, Brazil",
 
   },
   en: {
