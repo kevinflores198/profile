@@ -1,0 +1,23 @@
+:root {
+  --bg: #F9FAFB;
+  --text: #111827;
+  --primary: #1E40AF;
+  --secondary: #DC2626;
+  --hover: #9fa0a19a;
+}
+
+[data-theme="dark"] {
+  --bg: #0D1117;
+  --text: #E6EDF3;
+  --primary: #1E90FF;
+  --secondary: #FF3B30;
+  --hover: #0D1117;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Manrope', sans-serif;
+}

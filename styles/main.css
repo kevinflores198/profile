@@ -1,0 +1,104 @@
+@import url(root.css);
+
+main {
+    margin: 0;
+}
+
+#profile {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#profile .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--text);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    padding: 3rem 4rem;
+    max-width: 1100px;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#profile .photo img {
+    border-radius: 45%;
+    padding: 2rem;
+}
+
+#profile h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#profile h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+#profile .about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.glass-btn {
+    padding: 0.8rem 1.6rem;
+    border: 1px solid var(--hover);
+    border-radius: 60px;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.432),
+            rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--text);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 90px;
+    text-align: start;
+}
+
+.glass-btn a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* Hover */
+.glass-btn:hover {
+    background: var(--hover);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Active (cuando se hace click) */
+.glass-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}

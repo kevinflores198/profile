@@ -29,3 +29,25 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("scrolled");
   }
 });
+
+function toggleLanguageMenu() {
+  document.getElementById("lang-menu").classList.toggle("hidden");
+}
+
+function updateLangButton(langCode) {
+  document.getElementById("current-lang").innerText = langCode.toUpperCase();
+  document.getElementById("lang-menu").classList.add("hidden");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "en";
+  updateLangButton(savedLang.toUpperCase());
+});
+
+document.addEventListener("click", (e) => {
+  const menu = document.getElementById("lang-menu");
+  const btn = document.querySelector(".lang-btn");
+  if (!btn.contains(e.target)) {
+    menu.classList.add("hidden");
+  }
+});
