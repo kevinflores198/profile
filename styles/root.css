@@ -1,0 +1,83 @@
+:root {
+  --bg: antiquewhite;
+  --text: #111827;
+  --primary: #1E40AF;
+  --secondary: #DC2626;
+  --hover: #9fa0a19a;
+}
+
+[data-theme="dark"] {
+  --bg: #0D1117;
+  --text: #E6EDF3;
+  --primary: #1E90FF;
+  --secondary: #FF3B30;
+  --hover: #0f131a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Manrope', sans-serif;
+}
+
+
+.arrowUp {
+  position: fixed;
+  width: 40px;
+  right: -100px;
+  bottom: 20px;
+  transition: all 0.5s;
+}
+
+.arrowUp .fa-solid {
+  background-color: rgb(214, 36, 36);
+  color: var(--text);
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.328);
+  transition: all 0.5s;
+}
+
+.arrowUp .fa-solid:hover {
+  background-color: rgb(182, 25, 25);
+}
+
+.arrowUp .fa-solid:active {
+  background-color: rgb(249, 150, 150);
+}
+
+
+
+.contactMe {
+  position: fixed;
+  width: 40px;
+  right: -100px;
+  bottom: 20px;
+  transition: all 0.5s;
+}
+
+.contactMe .fa-brands {
+  background-color: #25D366;
+  color: black;
+  align-items: center;
+  padding: 10px;
+  border-radius: 100%;
+  box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.328);
+  transition: all 0.5s;
+  font-size: 40px;
+}
+
+.contactMe .fa-brands:hover {
+  background-color: #09f55f;
+}
+
+.contactMe .fa-brands:active {
+  background-color:#61ce89;
+}
+
+html {
+  scroll-behavior: smooth;
+}

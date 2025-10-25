@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Kevin Flores</title>
+    <link rel="stylesheet" href="styles/stryle.css">
+    <meta name="author" content="Kevin Nicolas Flores Gonzalez">
+    <meta name="description" content="Hi This my profile,
+     it is going to have some important information about 
+     me, it will show up my projects, studies and what its
+     going to be my objective with future clients.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+    <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="top">
+        <nav class="glass-navbar">
+            <div class="language-switch">
+                <button class="lang-btn" onclick="toggleLanguageMenu()">
+                    <i class="fa-solid fa-earth-americas"></i><span id="current-lang">EN</span>
+                </button>
+                <ul id="lang-menu" class="lang-menu hidden">
+                    <li onclick="setLanguage('en'); updateLangButton('EN')"><span class="fi fi-us"></span> English</li>
+                    <li onclick="setLanguage('es'); updateLangButton('ES')"><span class="fi fi-ar"></span> Español</li>
+                    <li onclick="setLanguage('pt'); updateLangButton('PT')"><span class="fi fi-br"></span> Português
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul class="nav-links">
+                    <li>
+                        <a id="nav-about" href="#top"></a>
+                        <a id="nav-projects" href="#projects"></a>
+                        <a id="nav-studies" href="#studies"></a>
+                        <a id="nav-resume" href="#resume"></a>
+                        <a id="nav-references" href="#references"></a>
+                    </li>
+                </ul>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" title="Switch theme">
+                🌙
+            </button>
+            <div class="burger"></div>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <video autoplay muted loop playsinline id="profile-bg-video">
+                <source src="files/hero-background.mp4" type="video/mp4">
+            </video>
+
+            <div class="content">
+                <div class="photo">
+                    <img src="files/profile-sin-fondo.png" alt="profile picture">
+                </div>
+                <div class="text-content">
+                    <div class="name">
+                        <h1 id="profile-name"></h1>
+                        <h1 id="typewriter"></h1>
+                    </div>
+                    <div class="about">
+                        <p id="profile-about"></p>
+                    </div>
+                    <div class="glass-btn">
+                        <a href="" id="profile-contact"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="">
+            <div class="content">
+                <h2 id="projects-title"></h2>
+                <div class="cards fade-in">
+                    <article class="card-project" id="card-cont1">
+                        <video autoplay muted loop class="card-video">
+                            <source src="files/brutton.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-content">
+                            <h3 id="project1-title"></h3>
+                            <p id="project1-exp">
+                            </p>
+                            <div class="button">
+                                <a class="glass-btn" id="project1-btn"></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-project" id="card-cont2">
+                        <video autoplay muted loop class="card-video">
+                            <source src="files/social-fashion.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-content">
+                            <h3 id="project2-title"></h3>
+                            <p id="project2-exp"></p>
+                            <div class="button">
+                                <a class="glass-btn" id="project2-btn"></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card-project" id="card-cont3">
+                        <video autoplay muted loop class="card-video">
+                            <source src="files/library.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-content">
+                            <h3 id="project3-title"></h3>
+                            <p id="project3-exp"></p>
+                            <div class="button">
+                                <a class="glass-btn" id="project3-btn"></a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+                <div id="cardModal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <h2>Brutton Construtec</h2>
+                            <p>Página de presentación de la empresa, donde se muestra quiénes son, sus proyectos de
+                                forma
+                                clara y profesional, junto con una invitación a contactarlos para trabajar juntos.</p>
+
+                                <img src="files/brutton.png" style="width: 100%; padding: 1rem;border-radius: 40px;" alt="">
+                            <div class="tech-carousel">
+                                <div class="tech-track">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Netlify</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Netlify</span>
+                                    <span>Visual Studio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ver-mais">
+                            <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                Visitar Projecto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Pedir presupuesto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Hablar en Whatsapp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardModal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>titulo del prrrojecto</h2>
+                        <div class="descriotion">
+                            <div class="tech-carousel">
+                                <div class="tech-track">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ver-mais">
+                            <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                Visitar Projecto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Pedir presupuesto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Contacto por Whatsapp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardModal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>titulo del prrrojecto</h2>
+                        <div class="descriotion">
+                            <div class="tech-carousel">
+                                <div class="tech-track">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ver-mais">
+                            <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                Visitar Projecto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Pedir presupuesto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Contacto por Whatsapp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-budget">
+                <h2 id="quote-title"></h2>
+                <div class="button">
+                    <a href="" class="glass-btn" id="quote-btn"></a>
+                </div>
+                <details>
+                    <summary id="quote-terms"></summary>
+                    <ul>
+                        <li id="quote-li1"></li>
+                        <li id="quote-li2"></li>
+                        <li id="quote-li3"></li>
+                        <li id="quote-li4"></li>
+                        <li id="quote-li5"></li>
+                    </ul>
+                </details>
+            </div>
+        </section>
+
+        <section id="studies">
+            <div class="content">
+                <div class="cards">
+                    <h2 id="studies-title"></h2>
+                    <article class="card-study">
+                        <h3 id="study1-title"></h3>
+                        <p id="study1-desc"></p>
+                        <div class="degrees">
+                            <h2 id="study1-degree1"></h2>
+                            <p id="study1-degree1-desc"></p>
+                        </div>
+                        <div class="degrees">
+                            <h2 id="study1-degree2"></h2>
+                            <p id="study1-degree2-desc"></p>
+                        </div>
+                    </article>
+                    <article class="card-study">
+                        <h3 id="study2-title"></h3>
+                        <p id="study2-desc"></p>
+                        <div class="degrees">
+                            <h2 id="study2-degree1"></h2>
+                            <p id="study2-degree1-desc"></p>
+                        </div>
+                        <div class="degrees">
+                            <h2 id="study2-degree2"></h2>
+                            <p id="study2-degree2-desc"></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <div class="content">
+                <h2 id="resume-title"></h2>
+                <ul>
+                    <li id="resume-li1"></li>
+                    <li id="resume-li2"></li>
+                    <li id="resume-li3"></li>
+                    <li id="resume-li4"></li>
+                </ul>
+                <h3 id="resume-cta"></h3>
+            </div>
+        </section>
+
+        <section id="references">
+            <div class="content">
+                <h2 id="references-title"></h2>
+                <p id="references-desc"></p>
+                <div class="comments">
+                    <article class="comment-card">
+                        <h4 id="comment1-name"></h4>
+                        <h5 id="comment1-biz"></h5>
+                        <p id="comment1-text"></p>
+                    </article>
+                    <article class="comment-card">
+                        <h4 id="comment2-name"></h4>
+                        <h5 id="comment2-biz"></h5>
+                        <p id="comment2-text"></p>
+                    </article>
+                    <article class="comment-card">
+                        <h4 id="comment3-name"></h4>
+                        <h5 id="comment3-biz"></h5>
+                        <p id="comment3-text"></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 id="contact-title"></h1>
+            <div class="contact-it">
+                <h2 id="contact-manager"></h2>
+                <div class="content">
+                    <a id="contact-manager-whatsapp" href="https://wa.me/554888645497"></a>
+                    <a id="contact-manager-email" href="mailto:Lourdesmarianamachuca@gmail.com"></a>
+                </div>
+            </div>
+            <div class="contact-it">
+                <h2 id="contact-dev"></h2>
+                <div class="content">
+                    <a id="contact-dev-whatsapp" href="https://wa.me/554888648031"></a>
+                    <a id="contact-dev-email" href="mailto:kevinfloresg1998@gmail.com"></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a id="footer-linkedin" href=""></a>
+                <a id="footer-github" href=""></a>
+                <a id="footer-instagram" href=""></a>
+                <a id="footer-facebook" href=""></a>
+            </li>
+            <li>
+                <a id="footer-terms" href=""></a>
+                <a id="footer-contact" href=""></a>
+                <a id="footer-studies" href=""></a>
+                <a id="footer-projects" href=""></a>
+            </li>
+        </ul>
+        &copy; <span id="currentyear"></span>
+        <p id="footer-copy"></p>
+    </footer>
+    <div class="arrowUp" id="arrowUp">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <div class="contactMe" id="contactMe">
+        <a target="_blank" href="https://wa.me/554888648031"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/content.js"></script>
+</body>
+
+</html>
