@@ -168,3 +168,12 @@ closeBtn.addEventListener("click", () => {
 });
 
 
+const toggle = document.getElementById('button-burger');
+const bodyy = document.querySelector('body');
+const menu_options = document.querySelector('#contentnav');
+
+toggle.addEventListener('click', function () {
+  toggle.classList.toggle('active');
+  bodyy.classList.toggle('active');
+  menu_options.classList.toggle('show');
+});

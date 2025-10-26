@@ -23,32 +23,36 @@
 <body>
     <header id="top">
         <nav class="glass-navbar">
-            <div class="language-switch">
-                <button class="lang-btn" onclick="toggleLanguageMenu()">
-                    <i class="fa-solid fa-earth-americas"></i><span id="current-lang">EN</span>
+            <div class="content" id="contentnav">
+                <div class="language-switch">
+                    <button class="lang-btn" onclick="toggleLanguageMenu()">
+                        <i class="fa-solid fa-earth-americas"></i><span id="current-lang">EN</span>
+                    </button>
+                    <ul id="lang-menu" class="lang-menu hidden">
+                        <li onclick="setLanguage('en'); updateLangButton('EN')"><span class="fi fi-us"></span> English
+                        </li>
+                        <li onclick="setLanguage('es'); updateLangButton('ES')"><span class="fi fi-ar"></span> Español
+                        </li>
+                        <li onclick="setLanguage('pt'); updateLangButton('PT')"><span class="fi fi-br"></span> Português
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li>
+                            <a id="nav-about" href="#top"></a>
+                            <a id="nav-projects" href="#projects"></a>
+                            <a id="nav-studies" href="#studies"></a>
+                            <a id="nav-resume" href="#resume"></a>
+                            <a id="nav-references" href="#references"></a>
+                        </li>
+                    </ul>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" title="Switch theme">
+                    🌙
                 </button>
-                <ul id="lang-menu" class="lang-menu hidden">
-                    <li onclick="setLanguage('en'); updateLangButton('EN')"><span class="fi fi-us"></span> English</li>
-                    <li onclick="setLanguage('es'); updateLangButton('ES')"><span class="fi fi-ar"></span> Español</li>
-                    <li onclick="setLanguage('pt'); updateLangButton('PT')"><span class="fi fi-br"></span> Português
-                    </li>
-                </ul>
             </div>
-            <div class="nav-content">
-                <ul class="nav-links">
-                    <li>
-                        <a id="nav-about" href="#top"></a>
-                        <a id="nav-projects" href="#projects"></a>
-                        <a id="nav-studies" href="#studies"></a>
-                        <a id="nav-resume" href="#resume"></a>
-                        <a id="nav-references" href="#references"></a>
-                    </li>
-                </ul>
-            </div>
-            <button id="theme-toggle" class="theme-toggle" title="Switch theme">
-                🌙
-            </button>
-            <div class="burger"></div>
+            <div class="burger" id="button-burger"><i class="fa-solid fa-bars"></i></div>
         </nav>
     </header>
     <main>
@@ -127,7 +131,7 @@
                                 forma
                                 clara y profesional, junto con una invitación a contactarlos para trabajar juntos.</p>
 
-                                <img src="files/brutton.png" style="width: 100%; padding: 1rem;border-radius: 40px;" alt="">
+                            <img src="files/brutton.png" style="width: 100%; padding: 1rem;border-radius: 40px;" alt="">
                             <div class="tech-carousel">
                                 <div class="tech-track">
                                     <span>HTML</span>
