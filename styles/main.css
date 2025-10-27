@@ -518,3 +518,103 @@ body.modal-open {
         transform: translateX(-50%);
     }
 }
+
+@media (max-width: 900px) {
+    #profile .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #profile img {
+        margin-top: 3rem;
+        width: 250px;
+        height: auto;
+        padding: 0 !important;
+    }
+
+    #profile #profile-name {
+        font-size: 1.8rem;
+    }
+
+    #profile h1 {
+        font-size: 2rem;
+    }
+
+    #profile .about #profile-about {
+        font-size: 1.2rem;
+        margin: 1rem;
+        font-style: italic;
+    }
+
+    #profile .glass-btn {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    #projects .card-project {
+        width: 90%;
+        height: 370px;
+    }
+
+    #projects .modal .content {
+        width: 90%;
+    }
+
+    #projects .modal p {
+        font-size: 20px;
+        padding-bottom: 1rem;
+    }
+
+    #projects .ver-mais {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    #projects .ver-mais .glass-btn {
+        margin: 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    #projects .ver-mais img {
+        padding: 0;
+    }
+
+    #projects .service-budget summary {
+        font-size: 15px;
+        text-align: center;
+        padding: 0;
+
+    }
+
+    #projects .service-budget ul {
+        overflow-y: auto;
+        scrollbar-width: thin;
+    }
+
+    #projects .service-budget ul::-webkit-scrollbar {
+        width: 8px;
+    }
+
+
+    #projects .service-budget ul::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+    }
+
+    #projects .service-budget ul::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    #projects .service-budget ul li {
+        font-size: 18px;
+    }   
+
+    #projects .tech-track {
+        animation: scroll 20s linear infinite;
+    }
+
+}
