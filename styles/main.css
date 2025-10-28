@@ -12,6 +12,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* margin: 0 auto;
+    border-radius:0  0 70px  70px ; 
+    width: 96%;
+    */
+
 }
 
 #profile-bg-video {
@@ -138,6 +143,8 @@ main {
     gap: 30px;
     margin-top: 40px;
     width: 100%;
+    margin-bottom: 2rem;
+
 }
 
 #projects .card-project {
@@ -257,7 +264,6 @@ main {
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     margin: 5% auto;
     padding: 30px;
-
     width: 80%;
     border-radius: 20px;
     overflow-y: auto;
@@ -270,7 +276,7 @@ main {
     transition: transform 0.5s ease, opacity 0.5s ease;
     position: relative;
     overflow: hidden;
-    max-height: 100vh;
+    max-height: 70%;
     overflow-y: auto;
     scrollbar-width: thin;
 }
@@ -392,6 +398,7 @@ body.modal-open {
     margin: 0 auto;
     margin-bottom: 100px;
     padding-top: 70px;
+    background-color: var(--hover);
 }
 
 .service-budget h2 {
@@ -455,7 +462,7 @@ body.modal-open {
 }
 
 .service-budget details[open] ul {
-    max-height: 500px;
+    max-height: 100%;
     opacity: 1;
     transform: translateY(0);
 }
@@ -476,6 +483,8 @@ body.modal-open {
 .service-budget details li {
     padding: 1rem;
     color: var(--text);
+    width: 90%;
+    margin: 0 auto;
     list-style: lower-roman;
 }
 
@@ -527,7 +536,7 @@ body.modal-open {
 
     #profile img {
         margin-top: 3rem;
-        width: 250px;
+        width: 350px;
         height: auto;
         padding: 0 !important;
     }
@@ -560,6 +569,10 @@ body.modal-open {
         width: 90%;
     }
 
+    #projects .modal h2 {
+        margin-bottom: 0;
+    }
+
     #projects .modal p {
         font-size: 20px;
         padding-bottom: 1rem;
@@ -575,7 +588,9 @@ body.modal-open {
 
     #projects .ver-mais .glass-btn {
         margin: 0;
-        width: 80%;
+        width: 50%;
+        padding: 1rem;
+        font-size: 14px;
         text-align: center;
     }
 
@@ -611,10 +626,79 @@ body.modal-open {
 
     #projects .service-budget ul li {
         font-size: 18px;
-    }   
-
-    #projects .tech-track {
-        animation: scroll 20s linear infinite;
     }
 
+    #projects .tech-track {
+        animation: scroll 5s linear infinite;
+    }
+
+    #projects .tech-carousel {
+        width: 70%;
+    }
+
+    #projects .tech-track span {
+        font-size: 14px;
+    }
+
+    #studies #studies-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #studies .cards {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #studies .cards h3 {
+        font-size: 25px;
+        margin: 10px 10px 0 0;
+        text-align: center;
+    }
+
+    #study1-desc,
+    #study2-desc {
+        text-align: center;
+    }
+
+    #studies .cards p {
+        font-style: italic;
+    }
+
+    #studies .byu {}
+
+    #studies .cards .l {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #studies .cards img {
+        width: 100px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #studies details {
+        font-size: 18px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: var(--primary);
+        border-radius: 30px;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+
+    #studies details summary {
+        padding: 1rem;
+        width: 100%;
+
+    }
+
+    #studies details img{
+        width: 100%;
+        height: auto;
+    }
 }
