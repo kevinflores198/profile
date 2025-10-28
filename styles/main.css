@@ -588,8 +588,8 @@ body.modal-open {
 
     #projects .ver-mais .glass-btn {
         margin: 0;
-        width: 50%;
-        padding: 1rem;
+        width: 40%;
+        padding: .7rem;
         font-size: 14px;
         text-align: center;
     }
@@ -643,6 +643,7 @@ body.modal-open {
     #studies #studies-title {
         font-size: 28px;
         text-align: center;
+        margin: 0;
     }
 
     #studies .cards {
@@ -652,7 +653,6 @@ body.modal-open {
 
     #studies .cards h3 {
         font-size: 25px;
-        margin: 10px 10px 0 0;
         text-align: center;
     }
 
@@ -665,40 +665,74 @@ body.modal-open {
         font-style: italic;
     }
 
-    #studies .byu {}
-
     #studies .cards .l {
         width: 100%;
         display: flex;
         justify-content: center;
     }
 
-    #studies .cards img {
-        width: 100px;
-        height: auto;
-        margin: 0 auto;
+    #studies .cards .logo {
+        width: 80px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #studies .cards .logo img {
+        margin: 0;
+        margin-top: 1rem;
     }
 
     #studies details {
         font-size: 18px;
         margin: 0 auto;
         text-align: center;
-        background-color: var(--primary);
         border-radius: 30px;
         height: auto;
-        width: 100%;
         overflow: hidden;
         transition: all 0.5s ease;
     }
 
+    #studies details:hover {
+        /* background-color: var(--primary); */
+        cursor: pointer;
+    }
+
     #studies details summary {
-        padding: 1rem;
-        width: 100%;
-
+        padding: .5rem;
     }
 
-    #studies details img{
-        width: 100%;
+    #studies .cards img {
+        width: 80%;
         height: auto;
+        border-radius: 15px;
+        margin: 16px;
     }
+
+    .byu {
+        background: linear-gradient(135deg,
+                var(--primary),
+                rgba(185, 40, 40, 0.623));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+    }
+
+    #study1-degree1,
+    #study1-degree2,
+    #study2-degree1,
+    #study2-degree2 {
+        font-size: 18px;
+        margin-left: .5rem;
+    }
+
+    #study1-degree1-desc,
+    #study1-degree2-desc,
+    #study2-degree1-desc,
+    #study2-degree2-desc {
+        font-size: 16px;
+        margin-left: 1rem;
+    }
+
 }
