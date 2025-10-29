@@ -663,6 +663,8 @@ body.modal-open {
 
     #studies .cards p {
         font-style: italic;
+        width: 90%;
+        margin: 0 auto;
     }
 
     #studies .cards .l {
@@ -677,6 +679,8 @@ body.modal-open {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: .5rem;
+
     }
 
     #studies .cards .logo img {
@@ -692,6 +696,12 @@ body.modal-open {
         height: auto;
         overflow: hidden;
         transition: all 0.5s ease;
+        margin: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #studies details:hover{
+        backdrop-filter: blur(10px);
     }
 
     #studies details:hover {
@@ -701,12 +711,13 @@ body.modal-open {
 
     #studies details summary {
         padding: .5rem;
+        cursor: pointer;
     }
 
     #studies .cards img {
         width: 80%;
         height: auto;
-        border-radius: 15px;
+        border-radius: 10px;
         margin: 16px;
     }
 
@@ -717,6 +728,18 @@ body.modal-open {
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border-radius: 20px;
+        padding: .2rem;
+    }
+
+    .egg {
+        background: linear-gradient(135deg,
+                var(--primary),
+                rgba(185, 40, 40, 0.623));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        margin-top:1rem;
+        padding: .5rem;
     }
 
     #study1-degree1,
