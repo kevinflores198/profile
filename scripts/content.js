@@ -82,13 +82,13 @@ const translations = {
     "comment3-text": "Excelente comunicación en todos los aspectos. Muy práctico de usar.",
 
     //contact
-    "contact-title": "¡Espero tu llamada o mensaje!",
+    "contact-title": "¡Espero tu mensaje!",
 
     "contact-manager": "Gerente de Proyecto",
     "contact-manager-whatsapp": "WhatsApp: +55 48 8864-5497",
     "contact-manager-email": "Correo: Lourdesmarianamachuca@gmail.com",
 
-    "contact-dev": "Kevin Flores - Programador Full Stack",
+    "contact-dev": "Programador Full Stack",
     "contact-dev-whatsapp": "WhatsApp: +55 48 8864-8031",
     "contact-dev-email": "Correo: kevinfloresg1998@gmail.com",
 
@@ -188,13 +188,13 @@ const translations = {
     "comment3-text": "Ótima comunicação em tudo. Muito prático de usar.",
 
     //contact
-    "contact-title": "Estou ansioso pela sua ligação ou mensagem!",
+    "contact-title": "Estou ansioso pelo seu  mensagem!",
 
     "contact-manager": "Gerente de Projeto",
     "contact-manager-whatsapp": "WhatsApp: +55 48 8864-5497",
     "contact-manager-email": "Email: Lourdesmarianamachuca@gmail.com",
 
-    "contact-dev": "Kevin Flores - Programador Full Stack",
+    "contact-dev": "Programador Full Stack",
     "contact-dev-whatsapp": "WhatsApp: +55 48 8864-8031",
     "contact-dev-email": "Email: kevinfloresg1998@gmail.com",
 
@@ -296,13 +296,13 @@ const translations = {
     "comment3-text": "Great communication on all stuffs. So practice to use.",
 
     //contact
-    "contact-title": "I look forward to your call or message!",
+    "contact-title": "I look forward to your message!",
 
     "contact-manager": "Project Manager",
     "contact-manager-whatsapp": "WhatsApp: +55 48 8864-5497",
     "contact-manager-email": "Email: Lourdesmarianamachuca@gmail.com",
 
-    "contact-dev": "Kevin Flores - Full Stack Programmer",
+    "contact-dev": "Full Stack Programmer",
     "contact-dev-whatsapp": "WhatsApp: +55 48 8864-8031",
     "contact-dev-email": "Email: kevinfloresg1998@gmail.com",
 

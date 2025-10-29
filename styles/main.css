@@ -407,7 +407,7 @@ body.modal-open {
 }
 
 .service-budget .button {
-    padding: 3rem;
+    padding-top: 3rem;
     padding-bottom: 5rem;
 }
 
@@ -644,6 +644,7 @@ body.modal-open {
         font-size: 28px;
         text-align: center;
         margin: 0;
+        padding-bottom: 1rem;
     }
 
     #studies .cards {
@@ -700,7 +701,7 @@ body.modal-open {
         margin-bottom: 1rem;
     }
 
-    #studies details:hover{
+    #studies details:hover {
         backdrop-filter: blur(10px);
     }
 
@@ -738,7 +739,7 @@ body.modal-open {
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border-radius: 20px;
-        margin-top:1rem;
+        margin-top: 1rem;
         padding: .5rem;
     }
 
@@ -758,4 +759,158 @@ body.modal-open {
         margin-left: 1rem;
     }
 
+    #resume {
+        background: linear-gradient(180deg,
+                var(--primary),
+                var(--bg));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 40px;
+        padding-top: 7rem;
+        margin-top: 2rem;
+    }
+
+    #resume h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #resume li {
+        padding-bottom: 16px;
+        list-style: circle;
+        padding-right: 1rem;
+    }
+
+    #resume h3 {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 22px;
+        padding-top: 4rem;
+    }
+
+    #references h2 {
+        font-size: 28px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 1rem;
+
+    }
+
+    #references p {
+        font-size: 14px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #references .comments {
+        padding: 1rem;
+    }
+
+    #references .comment-card {
+        background: linear-gradient(135deg,
+                var(--primary),
+                rgba(185, 40, 40, 0.623));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        margin-top: 1rem;
+        padding: .5rem;
+    }
+
+    #references .comment-card h4 {
+        font-size: 18px;
+        margin: 0;
+        padding: 1rem 0 0 0;
+    }
+
+    #references .comment-card h5 {
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: .5rem;
+        font-weight: 400;
+        font-style: italic;
+        margin-left: .2rem;
+    }
+
+    #references .comment-card p {
+        font-size: 14px;
+        margin-left: 1rem;
+        text-align: start;
+        padding: 0 0 1rem 0;
+
+    }
+
+    #contact .contact-it {
+        background: linear-gradient(135deg,
+                var(--primary),
+                rgba(185, 40, 40, 0.623));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: .5rem;
+        width: 90%;
+        margin: 0 auto 1rem;
+    }
+
+    #contact .contact-it img {
+        border-radius: 100%;
+        width: 40px;
+    }
+
+    #contact h1 {
+        text-align: center;
+    }
+
+    #contact h2 {
+        margin: 0 0 1rem 1rem;
+    }
+
+    #contact .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact .content a {
+        text-decoration: none;
+        color: var(--text);
+    }
+
+    #contact .content #contact-manager-email,
+    #contact .content #contact-dev-email {
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        background-color: var(--primary);
+    }
+
+    footer ul{
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    footer ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer ul li a{
+        text-decoration: none;
+        color: var(--text);
+        padding: 6px;
+    }
+
+    footer .r{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    footer .r p{
+        margin-left: 1rem;
+    }
 }
