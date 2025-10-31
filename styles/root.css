@@ -29,10 +29,16 @@ body {
   right: -100px;
   bottom: 20px;
   transition: all 0.5s;
+
 }
 
 .arrowUp .fa-solid {
-  background-color: rgb(214, 36, 36);
+  border: 1px solid var(--hover);
+  background: #1e40af8c;
+  backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(10px);
   color: var(--text);
   align-items: center;
   padding: 20px;
@@ -42,11 +48,11 @@ body {
 }
 
 .arrowUp .fa-solid:hover {
-  background-color: rgb(182, 25, 25);
+  background-color: #1E40AF;
 }
 
 .arrowUp .fa-solid:active {
-  background-color: rgb(249, 150, 150);
+  background-color: #4765c7;
 }
 
 
@@ -75,7 +81,7 @@ body {
 }
 
 .contactMe .fa-brands:active {
-  background-color:#61ce89;
+  background-color: #61ce89;
 }
 
 html {

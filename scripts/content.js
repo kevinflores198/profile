@@ -64,6 +64,7 @@ const translations = {
     "resume-li3": "Experiencia internacional con clientes de EE.UU., Brasil y otros países.",
     "resume-li4": "Comunicación profesional y confiable en cada etapa.",
     "resume-cta": "¡No dudes en contactarme!",
+    "resume-contact": "Contacto",
 
     //test
     "references-title": "Testimonios",
@@ -170,6 +171,8 @@ const translations = {
     "resume-li3": "Experiência internacional com clientes dos EUA, Brasil e outros países.",
     "resume-li4": "Comunicação profissional e confiável em todas as etapas.",
     "resume-cta": "Não hesite em entrar em contato!",
+    "resume-contact": "Contato",
+
 
     //test
     "references-title": "Depoimentos",
@@ -278,6 +281,8 @@ const translations = {
     "resume-li3": "International experience with clients from USA, Brazil, and beyond.",
     "resume-li4": "Professional and reliable communication at every stage.",
     "resume-cta": "Do not hesitate to contact me!",
+    "resume-contact": "Contact",
+
 
     //test
     "references-title": "Testimonials",

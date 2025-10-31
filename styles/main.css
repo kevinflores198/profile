@@ -12,10 +12,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 0 auto;
-    border-radius:0  0 70px  70px ; 
-    width: 96%;
-    */
+    margin: 0 auto;
+    border-radius: 0 0 30px 30px;
+
 
 }
 
@@ -76,8 +75,8 @@ main {
     border: 1px solid var(--hover);
     border-radius: 60px;
     background: linear-gradient(135deg,
-            rgb(255, 0, 0),
-            rgba(185, 40, 40, 0.623));
+            var(--primary),
+            var(--secondary));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: var(--text);
@@ -98,7 +97,6 @@ main {
 }
 
 .glass-btn:hover {
-    background: var(--secondary);
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
 }
@@ -203,7 +201,7 @@ main {
 #projects .card-project .card-content p {
     width: 80%;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-style: italic;
 }
 
@@ -365,8 +363,8 @@ body.modal-open {
 
 .ver-mais a {
     padding: 1.3rem 1.6rem;
-    border: 1px solid var(--hover);
     border-radius: 60px;
+    border: 1px solid var(--hover);
     background: linear-gradient(135deg,
             rgb(255, 0, 0),
             rgba(185, 40, 40, 0.623));
@@ -447,9 +445,7 @@ body.modal-open {
 }
 
 .service-budget details ul {
-    background: linear-gradient(135deg,
-            rgb(219, 2, 2),
-            rgba(185, 40, 40, 0.623));
+    background: var(--primary);
     backdrop-filter: blur(10px);
     border-radius: 30px;
     margin-top: 1rem;
@@ -697,16 +693,15 @@ body.modal-open {
         height: auto;
         overflow: hidden;
         transition: all 0.5s ease;
-        margin: 1rem;
-        margin-bottom: 1rem;
+        margin: .5rem;
+        margin-bottom: .5rem;
     }
 
     #studies details:hover {
+        background: linear-gradient(135deg,
+                var(--secondary),
+                var(--primary));
         backdrop-filter: blur(10px);
-    }
-
-    #studies details:hover {
-        /* background-color: var(--primary); */
         cursor: pointer;
     }
 
@@ -719,13 +714,13 @@ body.modal-open {
         width: 80%;
         height: auto;
         border-radius: 10px;
-        margin: 16px;
+        margin: 6px;
     }
 
     .byu {
         background: linear-gradient(135deg,
                 var(--primary),
-                rgba(185, 40, 40, 0.623));
+                var(--secondary));
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border-radius: 20px;
@@ -735,7 +730,7 @@ body.modal-open {
     .egg {
         background: linear-gradient(135deg,
                 var(--primary),
-                rgba(185, 40, 40, 0.623));
+                var(--secondary));
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border-radius: 20px;
@@ -881,36 +876,9 @@ body.modal-open {
         margin-bottom: 1rem;
     }
 
-    footer {
-        background-color: var(--primary);
+    #resume .glass-btn {
+        margin: 0 auto;
     }
 
-    footer ul{
-        margin-top: 1rem;
-        padding: 1rem;
-    }
 
-    footer ul li{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer ul li a{
-        text-decoration: none;
-        color: var(--text);
-        padding: 6px;
-    }
-
-    footer .r{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-    }
-
-    footer .r p{
-        margin-left: 1rem;
-    }
 }
