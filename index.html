@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -57,8 +57,12 @@
     </header>
     <main>
         <section id="profile">
-            <video autoplay muted loop playsinline id="profile-bg-video">
+            <video autoplay muted loop playsinline id="video-dark" class="bg-video">
                 <source src="files/hero-background.mp4" type="video/mp4">
+            </video>
+
+            <video autoplay muted loop playsinline id="video-light" class="bg-video hidden">
+                <source src="files/hero-background-light.mp4" type="video/mp4">
             </video>
 
             <div class="content">
@@ -232,7 +236,9 @@
             <div class="service-budget">
                 <h2 id="quote-title"></h2>
                 <div class="button">
-                    <a href="" class="glass-btn" id="quote-btn"></a>
+                    <a href="" class="glass-btn" id="quote-btn">
+                        <h2></h2>
+                    </a>
                 </div>
                 <details>
                     <summary id="quote-terms"></summary>
@@ -248,37 +254,44 @@
         </section>
         <section id="studies">
             <div class="content">
+                <h2 id="studies-title"></h2>
+
                 <div class="cards">
-                    <h2 id="studies-title"></h2>
-                    <article class="card-study byu">
+                    <article class="card-study">
                         <div class="l">
                             <a class="logo" target="_blank"
-                                href="https://www.byupathway.edu/bachelors-degree/software-development"><img
-                                    src="files/byu.png" alt="byu logo"></a>
+                                href="https://www.byupathway.edu/bachelors-degree/software-development">
+                                <img class="logo-img" src="files/byu.png" alt="byu logo">
+                            </a>
                         </div>
                         <h3 id="study1-title"></h3>
                         <p id="study1-desc"></p>
                         <div class="degrees">
                             <h2 id="study1-degree1"></h2>
                             <p id="study1-degree1-desc"></p>
+                            <details>
+                                <summary id="quote-terms">
+                                    Diploma
+                                </summary>
+                            </details>
                         </div>
                         <div class="degrees">
                             <h2 id="study1-degree2"></h2>
                             <p id="study1-degree2-desc"></p>
-
                         </div>
                         <details>
                             <summary id="quote-terms">
 
                                 Diploma
                             </summary>
-                            <img class="img" src="files/pathway-cert.png" alt="pathway">
+                            <img class="img-pathway" src="files/pathway-cert.png" alt="pathway">
                         </details>
                     </article>
-                    <article class="card-study egg">
+                    <article class="card-study">
                         <div class="l">
-                            <a class="logo" target="_blank" href="https://egg.live/es/home"><img src="files/egg.png"
-                                    alt="egg logo"></a>
+                            <a class="logo" target="_blank" href="https://egg.live/es/home">
+                                <img class="logo-img" src="files/egg.png" alt="egg logo">
+                            </a>
                         </div>
                         <h3 id="study2-title"></h3>
                         <p id="study2-desc"></p>
@@ -289,7 +302,7 @@
                                 <summary id="quote-terms">
                                     Diploma
                                 </summary>
-                                <img class="img" src="files/egg-cert.jpeg" alt="pathway">
+                                <img class="img-egg" src="files/egg-cert.jpeg" alt="pathway">
                             </details>
                         </div>
                         <div class="degrees">
@@ -310,10 +323,18 @@
             <div class="content">
                 <h2 id="resume-title"></h2>
                 <ul>
-                    <li id="resume-li1"></li>
-                    <li id="resume-li2"></li>
-                    <li id="resume-li3"></li>
-                    <li id="resume-li4"></li>
+                    <div><i class="fa-solid fa-brain"></i>
+                        <li id="resume-li1"></li>
+                    </div>
+                    <div><i class="fa-solid fa-language"></i>
+                        <li id="resume-li2"></li>
+                    </div>
+                    <div><i class="fa-solid fa-plane"></i>
+                        <li id="resume-li3"></li>
+                    </div>
+                    <div><i class="fa-solid fa-user-tie"></i>
+                        <li id="resume-li4"></li>
+                    </div>
                 </ul>
                 <h3 id="resume-cta"></h3>
             </div>
@@ -341,26 +362,44 @@
                         <h5 id="comment3-biz"></h5>
                         <p id="comment3-text"></p>
                     </article>
+                    <article class="comment-card">
+                        <h4 id="comment4-name"></h4>
+                        <h5 id="comment4-biz"></h5>
+                        <p id="comment4-text"></p>
+                    </article>
                 </div>
             </div>
         </section>
         <section id="contact">
             <h1 id="contact-title"></h1>
-            <div class="contact-it">
-                <img src="files/avatar-lu.jpg" alt="">
-                <h2 id="contact-manager"></h2>
-                <div class="content">
-                    <a id="contact-manager-whatsapp" href="https://wa.me/554888645497"></a>
-                    <br><a id="contact-manager-email" href="mailto:Lourdesmarianamachuca@gmail.com"></a>
+            <div class="content-contact-it">
+                <div class="contact-it">
+                    <img src="files/avatar-lu.jpg" alt="">
+                    <h2 id="contact-manager"></h2>
+                    <div class="content">
+                        <a id="contact-manager-whatsapp" href="https://wa.me/554888645497" target="_blank"
+                            class="whatsapp-button">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a id="contact-manager-email" href="mailto:Lourdesmarianamachuca@gmail.com" target="_blank"
+                            class="whatsapp-button">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-it">
-                <img src="files/img-profile.png" alt="">
-
-                <h2 id="contact-dev"></h2>
-                <div class="content">
-                    <a id="contact-dev-whatsapp" href="https://wa.me/554888648031"></a>
-                    <br><a id="contact-dev-email" href="mailto:kevinfloresg1998@gmail.com"></a>
+                <div class="contact-it">
+                    <img src="files/img-profile.png" alt="">
+                    <h2 id="contact-dev"></h2>
+                    <div class="content">
+                        <a id="contact-programmer-whatsapp" href="https://wa.me/554888648031" target="_blank"
+                            class="whatsapp-button">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a id="contact-programming-email" href="mailto:kevinfloresg1998@gmail.com" target="_blank"
+                            class="whatsapp-button">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

@@ -1,16 +1,16 @@
 :root {
   --bg: antiquewhite;
   --text: #111827;
-  --primary: #1E40AF;
-  --secondary: #DC2626;
+  --primary: #1e8fffce;
+  --secondary: #ff3a30ba;
   --hover: #9fa0a19a;
 }
 
 [data-theme="dark"] {
   --bg: #0D1117;
   --text: #E6EDF3;
-  --primary: #1E90FF;
-  --secondary: #FF3B30;
+  --primary: #1E40AF;
+  --secondary: #DC2626;
   --hover: #0f131a;
 }
 
@@ -21,7 +21,6 @@ body {
   color: var(--text);
   font-family: 'Manrope', sans-serif;
 }
-
 
 .arrowUp {
   position: fixed;
@@ -36,7 +35,7 @@ body {
   border: 1px solid var(--hover);
   background: #1e40af8c;
   backdrop-filter: blur(10px);
-    backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(10px);
   color: var(--text);

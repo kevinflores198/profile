@@ -1,713 +1,952 @@
 @import url(root.css);
 
-main {
-    margin: 0;
-}
-
-#profile {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    border-radius: 0 0 30px 30px;
-
-
-}
-
-#profile-bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
 #profile .content {
-    position: relative;
-    z-index: 2;
-    max-width: 1100px;
-    display: flex;
-    text-align: start;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-#profile .photo img {
-    border-radius: 50%;
-    padding: 2rem;
+#profile img {
+    margin-top: 3rem;
+    width: 350px;
+    height: auto;
+    padding: 0 !important;
 }
 
 #profile #profile-name {
-    color: antiquewhite;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
 }
 
 #profile h1 {
-    color: antiquewhite;
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 2rem;
 }
 
-#profile h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--secondary);
-}
-
-#profile .about p {
+#profile .about #profile-about {
     font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    color: antiquewhite;
-    margin-top: 0.5rem;
-}
-
-.glass-btn {
-    padding: 1.3rem 1.6rem;
-    border: 1px solid var(--hover);
-    border-radius: 60px;
-    background: linear-gradient(135deg,
-            var(--primary),
-            var(--secondary));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: var(--text);
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    width: 90px;
-    text-align: start;
-}
-
-.glass-btn a {
-    text-decoration: none;
-    color: antiquewhite;
-
-}
-
-.glass-btn:hover {
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-}
-
-.glass-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-}
-
-#projects,
-#studies,
-#resume,
-#references,
-#contact {
-    padding-top: 10rem;
-}
-
-.cards.fade-in {
-    opacity: 0;
-    transform: translateY(60px);
-    filter: blur(8px);
-    transition: opacity 1s ease, transform 1s ease, filter 1s ease;
-}
-
-.cards.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-}
-
-
-#projects #projects-title {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 600;
-}
-
-#projects .cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 40px;
-    width: 100%;
-    margin-bottom: 2rem;
-
-}
-
-#projects .card-project {
-    position: relative;
-    width: 500px;
-    height: 400px;
-    border-radius: 15px;
-    overflow: hidden;
-    cursor: pointer;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
-}
-
-#projects .card-project .card-content {
-    position: relative;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    text-align: center;
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border-radius: 10px;
-}
-
-.card-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-#projects .card-project #project1-title,
-#projects .card-project #project2-title,
-#projects .card-project #project3-title {
-    font-size: 1.8rem;
-    margin: 0;
-}
-
-#projects .card-project .card-content p {
-    width: 80%;
-    padding: 1rem;
-    font-size: 1rem;
+    margin: 1rem;
     font-style: italic;
 }
 
-#projects .card-project .card-content .glass-btn {
-    padding: 1rem;
+#profile .glass-btn {
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
-#card-cont1 {
-    background-image: url("files/profile-sin-fondo.png");
+#projects .card-project {
+    width: 90%;
+    height: 370px;
 }
 
-#card-cont2 {
-    background-image: url("files/profile-sin-fondo.png");
+#projects .modal .content {
+    width: 90%;
 }
 
-#card-cont3 {
-    background-image: url("files/profile-sin-fondo.png");
+#projects .modal h2 {
+    margin-bottom: 0;
 }
 
-#projects .card-project:hover {
-    transform: scale(1.05);
-
+#projects .modal p {
+    font-size: 20px;
+    padding-bottom: 1rem;
 }
 
-
-.gallery-card h2 {
-    color: var(--clear);
-
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    backdrop-filter: blur(15px) saturate(180%) brightness(0.8);
-    -webkit-backdrop-filter: blur(15px) saturate(180%) brightness(0.8);
-    background: rgba(15, 15, 15, 0.5);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    overflow: hidden;
-}
-
-.modal.active {
+#projects .ver-mais {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
     align-items: center;
-    opacity: 1;
 }
 
-.modal-content {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    margin: 5% auto;
-    padding: 30px;
-    width: 80%;
-    border-radius: 20px;
-    overflow-y: auto;
-    scrollbar-width: thin;
+#projects .ver-mais .glass-btn {
+    margin: 0;
+    width: 40%;
+    padding: .7rem;
+    font-size: 14px;
     text-align: center;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
-    color: var(--text);
-    transform: translateY(30px) scale(0.95);
-    opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    position: relative;
-    overflow: hidden;
-    max-height: 70%;
+}
+
+#projects .ver-mais img {
+    padding: 0;
+}
+
+#projects .service-budget summary {
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+
+}
+
+#projects .service-budget ul {
     overflow-y: auto;
     scrollbar-width: thin;
 }
 
-.modal-content::-webkit-scrollbar {
+#projects .service-budget ul::-webkit-scrollbar {
     width: 8px;
 }
 
 
-.modal-content::-webkit-scrollbar-thumb {
+#projects .service-budget ul::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 8px;
 }
 
-.modal-content::-webkit-scrollbar-thumb:hover {
+#projects .service-budget ul::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.5);
 }
 
-.modal-content h2 {
-    font-size: 32px;
+#projects .service-budget ul li {
+    font-size: 18px;
 }
 
-.modal-content .description {
-    max-width: 1100px;
-    margin: 0 auto;
+#projects .tech-track {
+    animation: scroll 5s linear infinite;
 }
 
-.modal-content p {
-    font-size: 25px;
-    margin: 0 auto;
+#projects .tech-carousel {
+    width: 70%;
 }
 
-body.modal-open {
-    overflow: hidden;
+#projects .tech-track span {
+    font-size: 14px;
 }
 
-.modal.active .modal-content {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
+#studies #studies-title {
     font-size: 28px;
-    color: var(--text);
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.close:hover {
-    transform: scale(1.2);
-}
-
-.modal-content::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2), transparent 70%);
-    animation: rotateShine 8s linear infinite;
-}
-
-@keyframes shine {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-body.modal-open {
-    overflow: hidden;
-    /* bloquea el scroll del fondo */
-}
-
-.ver-mais {
     text-align: center;
-    margin-top: 20px;
+    margin: 0;
+    padding-bottom: 1rem;
 }
 
-.ver-mais a {
-    padding: 1.3rem 1.6rem;
-    border-radius: 60px;
-    border: 1px solid var(--hover);
+#studies .cards {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#studies .cards h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#study1-desc,
+#study2-desc {
+    text-align: center;
+}
+
+#studies .cards p {
+    font-style: italic;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#studies .cards .l {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#studies .cards .logo {
+    width: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+
+}
+
+#studies .cards .logo img {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+#studies details {
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 30px;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    margin: .5rem;
+    margin-bottom: .5rem;
+}
+
+#studies details:hover {
     background: linear-gradient(135deg,
-            rgb(255, 0, 0),
+            var(--secondary),
+            var(--primary));
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+#studies details summary {
+    padding: .5rem;
+    cursor: pointer;
+}
+
+#studies .cards img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin: 6px;
+}
+
+.byu {
+    border-radius: 20px;
+    padding: .2rem;
+}
+
+.egg {
+    margin-top: 1rem;
+    padding: .5rem;
+}
+
+#study1-degree1,
+#study1-degree2,
+#study2-degree1,
+#study2-degree2 {
+    font-size: 18px;
+    margin-left: .5rem;
+}
+
+#study1-degree1-desc,
+#study1-degree2-desc,
+#study2-degree1-desc,
+#study2-degree2-desc {
+    font-size: 16px;
+    margin-left: 1rem;
+}
+
+#resume {
+    background: linear-gradient(180deg,
+            var(--primary),
+            var(--bg));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 40px;
+    padding-top: 7rem;
+    margin-top: 2rem;
+}
+
+#resume h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#resume li {
+    padding-bottom: 16px;
+    list-style: circle;
+    padding-right: 1rem;
+}
+
+#resume h3 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 22px;
+    padding-top: 4rem;
+}
+
+#references h2 {
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1rem;
+
+}
+
+#references p {
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#references .comments {
+    padding: 1rem;
+}
+
+#references .comment-card {
+    background: linear-gradient(135deg,
+            var(--primary),
             rgba(185, 40, 40, 0.623));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    color: var(--text);
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    width: 90px;
-    text-align: start;
-}
-
-.ver-mais a:hover {
-    background-color: var(--secondary);
-}
-
-.ver-mais .glass-btn {
-    margin: 2rem;
-    text-decoration: none;
-}
-
-.service-budget {
-    text-align: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    margin-bottom: 100px;
-    padding-top: 70px;
-    background-color: var(--hover);
-}
-
-.service-budget h2 {
-    font-size: 50px;
-    padding-top: 60px;
-}
-
-.service-budget .button {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-}
-
-.service-budget .button a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 1.9rem;
-}
-
-.service-budget details {
-    padding: 2rem;
-    text-align: left;
-    font-size: 1.5rem;
-    overflow: hidden;
-}
-
-.service-budget details summary {
-    letter-spacing: 4px;
-    cursor: pointer;
-    position: relative;
-    transition: color 0.3s ease;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    border-radius: 30px;
-    transform: scale(1);
-    transition: all 0.4s ease-in-out;
-}
-
-.service-budget summary::marker {
-    display: none;
-}
-
-.service-budget summary:hover {
-    backdrop-filter: blur(10px);
-    transform: scale(1.1);
-}
-
-.service-budget details ul {
-    background: var(--primary);
-    backdrop-filter: blur(10px);
-    border-radius: 30px;
+    border-radius: 20px;
     margin-top: 1rem;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.5s ease;
+    padding: .5rem;
+}
+
+#references .comment-card h4 {
+    font-size: 18px;
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+#references .comment-card h5 {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: .2rem;
+}
+
+#references .comment-card p {
+    font-size: 14px;
+    margin-left: 1rem;
+    text-align: start;
+    padding: 0 0 1rem 0;
 
 }
 
-.service-budget details[open] ul {
-    max-height: 100%;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@keyframes fadeSlideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-.service-budget details li {
-    padding: 1rem;
-    color: var(--text);
+#contact .contact-it {
+    background: linear-gradient(135deg,
+            var(--primary),
+            rgba(185, 40, 40, 0.623));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: .5rem;
     width: 90%;
-    margin: 0 auto;
-    list-style: lower-roman;
+    margin: 0 auto 1rem;
 }
 
-.tech-carousel {
-    width: 50%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    background: transparent;
-    padding: 20px 0;
+#contact .contact-it img {
+    border-radius: 100%;
+    width: 40px;
 }
 
-.tech-track {
+#contact h1 {
+    text-align: center;
+}
+
+#contact h2 {
+    margin: 0 0 1rem 1rem;
+}
+
+#contact .content {
     display: flex;
-    gap: 3rem;
-    animation: scroll 20s linear infinite;
+    flex-direction: column;
 }
 
-.tech-track span {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--primary);
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
-    white-space: nowrap;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+#contact .content a {
+    text-decoration: none;
+    color: var(--text);
 }
 
-.tech-track span:hover {
-    transform: scale(1.2);
-    color: var(--secondary);
+#contact .content #contact-manager-email,
+#contact .content #contact-dev-email {
+    margin-bottom: 1rem;
 }
 
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
+#resume .glass-btn {
+    margin: 0 auto;
 }
 
-@media (max-width: 900px) {
-    #profile .content {
-        flex-direction: column;
-        text-align: center;
+
+@media (min-width: 1100px) {
+    main {
+        margin: 0;
     }
 
-    #profile img {
-        margin-top: 3rem;
-        width: 350px;
-        height: auto;
-        padding: 0 !important;
-    }
-
-    #profile #profile-name {
-        font-size: 1.8rem;
-    }
-
-    #profile h1 {
-        font-size: 2rem;
-    }
-
-    #profile .about #profile-about {
-        font-size: 1.2rem;
-        margin: 1rem;
-        font-style: italic;
-    }
-
-    #profile .glass-btn {
-        margin: 0 auto;
-        margin-bottom: 1rem;
-    }
-
-    #projects .card-project {
-        width: 90%;
-        height: 370px;
-    }
-
-    #projects .modal .content {
-        width: 90%;
-    }
-
-    #projects .modal h2 {
-        margin-bottom: 0;
-    }
-
-    #projects .modal p {
-        font-size: 20px;
-        padding-bottom: 1rem;
-    }
-
-    #projects .ver-mais {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+    #profile {
+        position: relative;
         width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 0 0 30px 30px;
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        transition: opacity 1s ease;
+    }
+
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    #profile-bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    #profile .content {
+        position: relative;
+        z-index: 2;
+        max-width: 1100px;
+        display: flex;
+        text-align: start;
         align-items: center;
     }
 
-    #projects .ver-mais .glass-btn {
+    #profile .photo img {
+        border-radius: 50%;
+        padding: 2rem;
+    }
+
+    #profile #profile-name {
+        color: antiquewhite;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    #profile h1 {
+        color: antiquewhite;
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+
+    #profile h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+    }
+
+    #profile .about p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        color: antiquewhite;
+        margin-top: 0.5rem;
+    }
+
+    .glass-btn {
+        padding: 1.3rem 1.6rem;
+        border: 1px solid var(--hover);
+        border-radius: 60px;
+        background: linear-gradient(135deg,
+                var(--primary),
+                var(--secondary));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: var(--text);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 90px;
+        text-align: start;
+    }
+
+    .glass-btn a {
+        text-decoration: none;
+        color: antiquewhite;
+
+    }
+
+    .glass-btn:hover {
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+    }
+
+    .glass-btn:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    #projects,
+    #studies,
+    #resume,
+    #references,
+    #contact {
+        padding-top: 10rem;
+    }
+
+    .cards.fade-in {
+        opacity: 0;
+        transform: translateY(60px);
+        filter: blur(8px);
+        transition: opacity 1s ease, transform 1s ease, filter 1s ease;
+    }
+
+    .cards.fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+
+    #projects #projects-title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    #projects .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 40px;
+        width: 100%;
+        margin-bottom: 2rem;
+
+    }
+
+    #projects .card-project {
+        position: relative;
+        width: 500px;
+        height: 400px;
+        border-radius: 15px;
+        overflow: hidden;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s ease;
+    }
+
+    #projects .card-project .card-content {
+        position: relative;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.55);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    .card-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    #projects .card-project #project1-title,
+    #projects .card-project #project2-title,
+    #projects .card-project #project3-title {
+        font-size: 1.8rem;
         margin: 0;
-        width: 40%;
-        padding: .7rem;
-        font-size: 14px;
+    }
+
+    #projects .card-project .card-content p {
+        width: 80%;
+        padding: 1rem;
+        font-size: 1rem;
+        font-style: italic;
+    }
+
+    #projects .card-project .card-content .glass-btn {
+        padding: 1rem;
+    }
+
+    #card-cont1 {
+        background-image: url("files/profile-sin-fondo.png");
+    }
+
+    #card-cont2 {
+        background-image: url("files/profile-sin-fondo.png");
+    }
+
+    #card-cont3 {
+        background-image: url("files/profile-sin-fondo.png");
+    }
+
+    #projects .card-project:hover {
+        transform: scale(1.05);
+
+    }
+
+
+    .gallery-card h2 {
+        color: var(--clear);
+
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(15px) saturate(180%) brightness(0.8);
+        -webkit-backdrop-filter: blur(15px) saturate(180%) brightness(0.8);
+        background: rgba(15, 15, 15, 0.5);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        overflow: hidden;
+    }
+
+    .modal.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+    }
+
+    .modal-content {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        margin: 5% auto;
+        padding: 30px;
+        width: 80%;
+        border-radius: 20px;
+        overflow-y: auto;
+        scrollbar-width: thin;
         text-align: center;
-    }
-
-    #projects .ver-mais img {
-        padding: 0;
-    }
-
-    #projects .service-budget summary {
-        font-size: 15px;
-        text-align: center;
-        padding: 0;
-
-    }
-
-    #projects .service-budget ul {
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+        color: var(--text);
+        transform: translateY(30px) scale(0.95);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        position: relative;
+        overflow: hidden;
+        max-height: 70%;
         overflow-y: auto;
         scrollbar-width: thin;
     }
 
-    #projects .service-budget ul::-webkit-scrollbar {
+    .modal-content::-webkit-scrollbar {
         width: 8px;
     }
 
 
-    #projects .service-budget ul::-webkit-scrollbar-thumb {
+    .modal-content::-webkit-scrollbar-thumb {
         background: rgba(255, 255, 255, 0.3);
         border-radius: 8px;
     }
 
-    #projects .service-budget ul::-webkit-scrollbar-thumb:hover {
+    .modal-content::-webkit-scrollbar-thumb:hover {
         background: rgba(255, 255, 255, 0.5);
     }
 
-    #projects .service-budget ul li {
-        font-size: 18px;
+    .modal-content h2 {
+        font-size: 32px;
     }
 
-    #projects .tech-track {
-        animation: scroll 5s linear infinite;
-    }
-
-    #projects .tech-carousel {
-        width: 70%;
-    }
-
-    #projects .tech-track span {
-        font-size: 14px;
-    }
-
-    #studies #studies-title {
-        font-size: 28px;
-        text-align: center;
-        margin: 0;
-        padding-bottom: 1rem;
-    }
-
-    #studies .cards {
-        width: 90%;
+    .modal-content .description {
+        max-width: 1100px;
         margin: 0 auto;
     }
 
-    #studies .cards h3 {
+    .modal-content p {
         font-size: 25px;
-        text-align: center;
-    }
-
-    #study1-desc,
-    #study2-desc {
-        text-align: center;
-    }
-
-    #studies .cards p {
-        font-style: italic;
-        width: 90%;
         margin: 0 auto;
     }
 
-    #studies .cards .l {
+    body.modal-open {
+        overflow: hidden;
+    }
+
+    .modal.active .modal-content {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 28px;
+        color: var(--text);
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .close:hover {
+        transform: scale(1.2);
+    }
+
+    .modal-content::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2), transparent 70%);
+        animation: rotateShine 8s linear infinite;
+    }
+
+    @keyframes shine {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    body.modal-open {
+        overflow: hidden;
+        /* bloquea el scroll del fondo */
+    }
+
+    .ver-mais {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .ver-mais a {
+        padding: 1.3rem 1.6rem;
+        border-radius: 60px;
+        border: 1px solid var(--hover);
+        background: linear-gradient(135deg,
+                rgb(255, 0, 0),
+                rgba(185, 40, 40, 0.623));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: var(--text);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 90px;
+        text-align: start;
+    }
+
+    .ver-mais a:hover {
+        background-color: var(--secondary);
+    }
+
+    .ver-mais .glass-btn {
+        margin: 2rem;
+        text-decoration: none;
+    }
+
+    .service-budget {
+        text-align: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        padding-top: 70px;
+    }
+
+    .service-budget h2 {
+        font-size: 50px;
+        padding-top: 60px;
+    }
+
+    .service-budget .button {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        transform: scale(1);
+        transition: all 0.4s ease-in-out;
+    }
+
+    .service-budget .button:hover {
+        backdrop-filter: blur(10px);
+        transform: scale(1.1);
+    }
+
+    .service-budget .button a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 1.9rem;
+    }
+
+    .service-budget details {
+        padding: 2rem;
+        text-align: left;
+        font-size: 1.5rem;
+        overflow: hidden;
+    }
+
+    .service-budget details summary {
+        letter-spacing: 4px;
+        cursor: pointer;
+        position: relative;
+        transition: color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        padding: 1rem !important;
+        border-radius: 30px;
+        transform: scale(1);
+        transition: all 0.4s ease-in-out;
+        width: 450px;
+        margin: 0 auto;
+        font-size: 1.2rem !important;
+        border: 1px solid var(--hover);
+        background: linear-gradient(135deg,
+                var(--primary),
+                var(--secondary));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+
+    }
+
+    .service-budget summary::marker {
+        display: none;
+    }
+
+    .service-budget summary:hover {
+        backdrop-filter: blur(10px);
+        transform: scale(1.1);
+    }
+
+    .service-budget details ul {
+        background: var(--primary);
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+        margin-top: 1rem;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.5s ease;
+
+    }
+
+    .service-budget details[open] ul {
+        max-height: 100%;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    @keyframes fadeSlideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .service-budget details li {
+        padding: 1rem;
+        color: var(--text);
+        width: 90%;
+        margin: 0 auto;
+        list-style: lower-roman;
+    }
+
+    .tech-carousel {
+        width: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        background: transparent;
+        padding: 20px 0;
+    }
+
+    .tech-track {
+        display: flex;
+        gap: 3rem;
+        animation: scroll 20s linear infinite;
+    }
+
+    .tech-track span {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--primary);
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+        white-space: nowrap;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .tech-track span:hover {
+        transform: scale(1.2);
+        color: var(--secondary);
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    #studies .content #studies-title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    #studies .content .cards {
+        display: flex;
+        max-width: 1200px;
+        margin-bottom: 2rem;
+        align-items: stretch;
+    }
+
+    #studies .content .cards .card-study {
+        margin: 0 1rem;
         width: 100%;
         display: flex;
-        justify-content: center;
-    }
-
-    #studies .cards .logo {
-        width: 80px;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: .5rem;
-
-    }
-
-    #studies .cards .logo img {
-        margin: 0;
-        margin-top: 1rem;
-    }
-
-    #studies details {
-        font-size: 18px;
-        margin: 0 auto;
-        text-align: center;
-        border-radius: 30px;
-        height: auto;
-        overflow: hidden;
-        transition: all 0.5s ease;
-        margin: .5rem;
-        margin-bottom: .5rem;
-    }
-
-    #studies details:hover {
+        flex-direction: column;
+        justify-content: space-around;
         background: linear-gradient(135deg,
-                var(--secondary),
-                var(--primary));
+                var(--primary),
+                var(--secondary));
         backdrop-filter: blur(10px);
-        cursor: pointer;
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 1rem;
+        align-items: stretch;
+        height: auto;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.375);
+
     }
 
-    #studies details summary {
-        padding: .5rem;
-        cursor: pointer;
+    #studies .content .cards .card-study:hover {
+        transform: scale(1.05);
+
     }
 
     #studies .cards img {
@@ -717,168 +956,168 @@ body.modal-open {
         margin: 6px;
     }
 
-    .byu {
-        background: linear-gradient(135deg,
-                var(--primary),
-                var(--secondary));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: .2rem;
+    #studies .cards .logo-img {
+        height: 30px;
+        width: auto;
     }
 
-    .egg {
-        background: linear-gradient(135deg,
-                var(--primary),
-                var(--secondary));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 20px;
+    #studies .cards .logo img {
+        margin: 0;
         margin-top: 1rem;
-        padding: .5rem;
     }
 
-    #study1-degree1,
-    #study1-degree2,
-    #study2-degree1,
-    #study2-degree2 {
-        font-size: 18px;
-        margin-left: .5rem;
+    #studies .content .cards .logo {
+        margin: 0;
     }
 
-    #study1-degree1-desc,
-    #study1-degree2-desc,
-    #study2-degree1-desc,
-    #study2-degree2-desc {
-        font-size: 16px;
-        margin-left: 1rem;
+    #studies img {
+        width: 100%;
     }
 
     #resume {
-        background: linear-gradient(180deg,
-                var(--primary),
-                var(--bg));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 40px;
-        padding-top: 7rem;
-        margin-top: 2rem;
-    }
-
-    #resume h2 {
-        text-align: center;
-        margin-bottom: 0;
-    }
-
-    #resume li {
-        padding-bottom: 16px;
-        list-style: circle;
-        padding-right: 1rem;
-    }
-
-    #resume h3 {
-        text-align: center;
-        margin-top: 1rem;
-        font-size: 22px;
-        padding-top: 4rem;
-    }
-
-    #references h2 {
-        font-size: 28px;
-        text-align: center;
-        margin: 0;
-        padding-bottom: 1rem;
-
-    }
-
-    #references p {
-        font-size: 14px;
-        text-align: center;
-        width: 90%;
         margin: 0 auto;
+        max-width: 1180px;
     }
 
-    #references .comments {
+    #resume #resume-title {
+        font-size: 2rem;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    #resume #resume-title:hover {
+        transform: scale(1.05);
+    }
+
+    #resume ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    #resume ul div {
+        transition: transform 0.3s ease;
         padding: 1rem;
+        width: auto;
     }
 
-    #references .comment-card {
+    #resume ul div:hover {
+        transform: scale(1.01);
+        border-radius: 60px;
+        border: 1px solid var(--hover);
         background: linear-gradient(135deg,
                 var(--primary),
-                rgba(185, 40, 40, 0.623));
+                var(--secondary));
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border-radius: 20px;
-        margin-top: 1rem;
+    }
+
+    #resume ul div i {
+        font-size: 35px;
         padding: .5rem;
-    }
-
-    #references .comment-card h4 {
-        font-size: 18px;
-        margin: 0;
-        padding: 1rem 0 0 0;
-    }
-
-    #references .comment-card h5 {
-        font-size: 16px;
-        margin: 0;
-        margin-bottom: .5rem;
-        font-weight: 400;
-        font-style: italic;
-        margin-left: .2rem;
-    }
-
-    #references .comment-card p {
-        font-size: 14px;
-        margin-left: 1rem;
-        text-align: start;
-        padding: 0 0 1rem 0;
-
-    }
-
-    #contact .contact-it {
-        background: linear-gradient(135deg,
-                var(--primary),
-                rgba(185, 40, 40, 0.623));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: .5rem;
-        width: 90%;
-        margin: 0 auto 1rem;
-    }
-
-    #contact .contact-it img {
-        border-radius: 100%;
-        width: 40px;
-    }
-
-    #contact h1 {
-        text-align: center;
-    }
-
-    #contact h2 {
-        margin: 0 0 1rem 1rem;
-    }
-
-    #contact .content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #contact .content a {
-        text-decoration: none;
-        color: var(--text);
-    }
-
-    #contact .content #contact-manager-email,
-    #contact .content #contact-dev-email {
+        margin-left: .5rem;
         margin-bottom: 1rem;
     }
 
-    #resume .glass-btn {
+    #resume ul div li {
+        list-style: none;
+        font-size: 16px;
+    }
+
+    #references #references-title {
+        font-size: 2rem;
+    }
+
+    #references #references-desc {
+        font-size: 16px;
+    }
+
+    #references .comments {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding-top: 1rem;
+    }
+
+    #references .comments .comment-card p,
+    #references .comments .comment-card h4,
+    #references .comments .comment-card h5 {
+        margin-bottom: 10px;
+        width: 90%;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    #references .comments .comment-card {
+        padding: 1.5rem;
+        margin: 0;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+    #references .comments .comment-card:hover {
+        transform: scale(1.03);
+    }
+
+    #contact {
+        width: 1100px;
         margin: 0 auto;
     }
 
+    #contact .content-contact-it {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
+    #contact .content-contact-it .contact-it {
+        width: 500px;
+        padding: 1rem;
+        background: linear-gradient(180deg,
+                var(--bg),
+                var(--bg));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    #contact .content-contact-it .contact-it h2 {
+        margin-left: 2rem;
+    }
+
+    #contact .content-contact-it .contact-it .content {
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contact .content-contact-it .contact-it .content .whatsapp-button {
+        align-items: center;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+        width: auto;
+    }
+
+    .whatsapp-button:hover {
+        transform: scale(1.03);
+    }
+
+    .whatsapp-button i {
+        background: linear-gradient(135deg,
+                var(--secondary),
+                var(--primary));
+        padding: .5rem;
+        font-size: 26px;
+        border-radius: 100%;
+        margin-left: 1rem;
+    }
 }

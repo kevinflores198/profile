@@ -70,9 +70,9 @@ const translations = {
     "references-title": "Testimonios",
     "references-desc": "Aquí hay algunos testimonios de clientes que compartieron su experiencia trabajando conmigo:",
 
-    "comment1-name": "John Smith",
-    "comment1-biz": "Startup Tecnológica",
-    "comment1-text": "Kevin es profesional, rápido y entrega un trabajo excelente. ¡Muy recomendado!",
+    "comment1-name": "Everton, Socio administrador",
+    "comment1-biz": "Pagina Landing",
+    "comment1-text": "queremos expresar nuestro sincero agradecimiento por el excelente trabajo que realizaste en el desarrollo del sitio web de la empresa. El resultado final superó nuestras expectativas, reflejando profesionalismo, dedicación y calidad en cada detalle del servicio prestado. Estamos muy satisfechos de contar con tu colaboración. Brutton valora a los socios que demuestran compromiso y competencia, como tú lo hiciste, y estamos plenamente convencidos de que esta relación será duradera y productiva. Reiteramos nuestro agradecimiento y reafirmamos que estamos contentos de mantener esta alianza, seguros de que aún tendremos muchos proyectos por delante. Un gran abrazo,Everton, Socio administrador. Brutton Construtec.",
 
     "comment2-name": "Maria Lopez",
     "comment2-biz": "Negocio de Comercio Electrónico",
@@ -82,16 +82,16 @@ const translations = {
     "comment3-biz": "Plataforma de Blog",
     "comment3-text": "Excelente comunicación en todos los aspectos. Muy práctico de usar.",
 
+    "comment4-name": "Roger Johnson",
+    "comment4-biz": "Plataforma de Blog",
+    "comment4-text": "Excelente comunicación en todos los aspectos. Muy práctico de usar.",
+
     //contact
     "contact-title": "¡Espero tu mensaje!",
 
     "contact-manager": "Gerente de Proyecto",
-    "contact-manager-whatsapp": "WhatsApp: +55 48 8864-5497",
-    "contact-manager-email": "Correo: Lourdesmarianamachuca@gmail.com",
 
     "contact-dev": "Programador Full Stack",
-    "contact-dev-whatsapp": "WhatsApp: +55 48 8864-8031",
-    "contact-dev-email": "Correo: kevinfloresg1998@gmail.com",
 
     //footer
     "footer-linkedin": "LinkedIn",
@@ -178,9 +178,9 @@ const translations = {
     "references-title": "Depoimentos",
     "references-desc": "Aqui estão alguns depoimentos de clientes que compartilharam sua experiência trabalhando comigo:",
 
-    "comment1-name": "John Smith",
-    "comment1-biz": "Startup de Tecnologia",
-    "comment1-text": "Kevin é profissional, rápido e entrega um trabalho excelente. Altamente recomendado!",
+    "comment1-name": "Everton, Sócio administrador",
+    "comment1-biz": "Landing Site, Brutton Construtec",
+    "comment1-text": "Gostaria de expressar nossa sincera gratidão pelo excelente trabalho que você realizou no desenvolvimento do site da empresa. O resultado final superou nossas expectativas, refletindo profissionalismo, dedicação e qualidade em cada detalhe do serviço prestado. Estamos muito satisfeitos em contar com a sua colaboração. A Brutton valoriza parceiros que demonstram comprometimento e competência, como você demonstrou, e temos plena convicção de que essa relação será duradoura e produtiva. Reiteramos nossos agradecimentos e reforçamos que estamos contentes em manter essa parceria, certos de que ainda teremos muitos projetos pela frente. Um grande abraço, Everton, Sócio administrador. Brutton Construtec.",
 
     "comment2-name": "Maria Lopez",
     "comment2-biz": "Negócio de E-commerce",
@@ -190,16 +190,16 @@ const translations = {
     "comment3-biz": "Plataforma de Blog",
     "comment3-text": "Ótima comunicação em tudo. Muito prático de usar.",
 
+    "comment4-name": "Roger Johnson",
+    "comment4-biz": "Plataforma de Blog",
+    "comment4-text": "Ótima comunicação em tudo. Muito prático de usar.",
+
     //contact
     "contact-title": "Estou ansioso pelo seu  mensagem!",
 
     "contact-manager": "Gerente de Projeto",
-    "contact-manager-whatsapp": "WhatsApp: +55 48 8864-5497",
-    "contact-manager-email": "Email: Lourdesmarianamachuca@gmail.com",
 
     "contact-dev": "Programador Full Stack",
-    "contact-dev-whatsapp": "WhatsApp: +55 48 8864-8031",
-    "contact-dev-email": "Email: kevinfloresg1998@gmail.com",
 
     //footer
     "footer-linkedin": "LinkedIn",
@@ -288,9 +288,9 @@ const translations = {
     "references-title": "Testimonials",
     "references-desc": "Here are some testimonials from clients who shared their experience working with me:",
 
-    "comment1-name": "John Smith",
-    "comment1-biz": "Tech Startup",
-    "comment1-text": "Kevin is professional, fast and delivers excellent work. Highly recommended!",
+    "comment1-name": "Everton, Managing Partner",
+    "comment1-biz": "Landing Page, Brutton Construtec",
+    "comment1-text": "We would like to express our sincere gratitude for the excellent work you did in developing the company’s website. The final result exceeded our expectations, reflecting professionalism, dedication, and quality in every detail of the service provided. We are very pleased to have your collaboration. Brutton values partners who demonstrate commitment and competence, as you have, and we are fully confident that this relationship will be long-lasting and productive. We reiterate our thanks and emphasize that we are happy to maintain this partnership, certain that we still have many projects ahead. Warm regards, Everton, Managing Partner, Brutton Construtec.",
 
     "comment2-name": "Maria Lopez",
     "comment2-biz": "E-commerce Business",
@@ -300,16 +300,16 @@ const translations = {
     "comment3-biz": "Blog Platform",
     "comment3-text": "Great communication on all stuffs. So practice to use.",
 
+    "comment4-name": "Roger Johnson",
+    "comment4-biz": "Blog Platform",
+    "comment4-text": "Great communication on all stuffs. So practice to use.",
+
     //contact
     "contact-title": "I look forward to your message!",
 
     "contact-manager": "Project Manager",
-    "contact-manager-whatsapp": "WhatsApp: +55 48 8864-5497",
-    "contact-manager-email": "Email: Lourdesmarianamachuca@gmail.com",
 
     "contact-dev": "Full Stack Programmer",
-    "contact-dev-whatsapp": "WhatsApp: +55 48 8864-8031",
-    "contact-dev-email": "Email: kevinfloresg1998@gmail.com",
 
     //footer
     "footer-linkedin": "LinkedIn",
