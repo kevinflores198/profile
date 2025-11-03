@@ -11,7 +11,7 @@
   --text: #E6EDF3;
   --primary: #1E40AF;
   --secondary: #DC2626;
-  --hover: #0f131a;
+  --hover: #131822;
 }
 
 body {
@@ -33,7 +33,11 @@ body {
 
 .arrowUp .fa-solid {
   border: 1px solid var(--hover);
-  background: #1e40af8c;
+  background: linear-gradient(135deg,
+      var(--primary),
+      var(--secondary));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -86,3 +90,4 @@ body {
 html {
   scroll-behavior: smooth;
 }
+

@@ -1,9 +1,46 @@
 @import url(root.css);
 
 #profile .content {
-    flex-direction: column;
     text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
 }
+
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: opacity 1s ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#profile-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
 
 #profile img {
     margin-top: 3rem;
@@ -224,7 +261,7 @@
             var(--bg));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 40px;
+    border-radius: 70px;
     padding-top: 7rem;
     margin-top: 2rem;
 }
@@ -245,6 +282,14 @@
     margin-top: 1rem;
     font-size: 22px;
     padding-top: 4rem;
+}
+
+#references {
+    background: linear-gradient(180deg,
+            var(--bg),
+            var(--hover));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 #references h2 {
@@ -293,11 +338,20 @@
 }
 
 #references .comment-card p {
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 1rem;
     text-align: start;
     padding: 0 0 1rem 0;
 
+}
+
+#contact {
+    background: linear-gradient(180deg,
+            var(--hover),
+            var(--bg));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
 }
 
 #contact .contact-it {
@@ -323,6 +377,12 @@
 
 #contact h2 {
     margin: 0 0 1rem 1rem;
+}
+
+#contact p {
+    width: 90%;
+    margin-left: 2rem;
+
 }
 
 #contact .content {
@@ -359,7 +419,6 @@
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        border-radius: 0 0 30px 30px;
 
     }
 
@@ -367,36 +426,6 @@
         scroll-behavior: smooth;
     }
 
-    .bg-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        transition: opacity 1s ease;
-    }
-
-    .hidden {
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .visible {
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    #profile-bg-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 0;
-    }
 
     #profile .content {
         position: relative;
@@ -405,11 +434,13 @@
         display: flex;
         text-align: start;
         align-items: center;
+        flex-direction: row;
     }
 
     #profile .photo img {
         border-radius: 50%;
         padding: 2rem;
+        width: 450px;
     }
 
     #profile #profile-name {
@@ -440,6 +471,7 @@
         margin-top: 0.5rem;
     }
 
+
     .glass-btn {
         padding: 1.3rem 1.6rem;
         border: 1px solid var(--hover);
@@ -457,7 +489,8 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         width: 90px;
-        text-align: start;
+        text-align: center;
+        margin: 0 1rem !important;
     }
 
     .glass-btn a {
@@ -911,6 +944,11 @@
         }
     }
 
+    #studies {
+        margin-bottom: 4rem;
+    }
+
+
     #studies .content #studies-title {
         text-align: center;
         font-size: 32px;
@@ -976,13 +1014,16 @@
 
     #resume {
         margin: 0 auto;
-        max-width: 1180px;
     }
 
     #resume #resume-title {
         font-size: 2rem;
         transition: transform 0.3s ease;
         cursor: pointer;
+    }
+
+    #resume .glass-btn {
+        margin: 0 auto !important;
     }
 
     #resume #resume-title:hover {
@@ -1000,6 +1041,11 @@
         padding: 0;
     }
 
+    #resume .content {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
     #resume ul div {
         transition: transform 0.3s ease;
         padding: 1rem;
@@ -1008,7 +1054,7 @@
 
     #resume ul div:hover {
         transform: scale(1.01);
-        border-radius: 60px;
+        border-radius: 40px;
         border: 1px solid var(--hover);
         background: linear-gradient(135deg,
                 var(--primary),
@@ -1067,14 +1113,15 @@
     }
 
     #contact {
-        width: 1100px;
         margin: 0 auto;
     }
 
     #contact .content-contact-it {
+        margin: 0 auto;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1100px;
+        margin-bottom: 4rem;
     }
 
     #contact .content-contact-it .contact-it {

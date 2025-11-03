@@ -93,6 +93,11 @@ const translations = {
 
     "contact-dev": "Programador Full Stack",
 
+    "contact-description": "Profesional enfocado en la gestión eficiente de proyectos digitales. Coordina equipos, supervisa entregas y garantiza que cada etapa se cumpla con calidad y puntualidad. Tu aliado estratégico para transformar ideas en resultados concretos.",
+
+    "contact-description-2": "Desarrollador versátil con experiencia en front-end y back-end. Crea soluciones modernas, responsivas y seguras, adaptadas a las necesidades de cada cliente. Comprometido con la innovación y la excelencia técnica.",
+
+
     //footer
     "footer-linkedin": "LinkedIn",
     "footer-github": "GitHub",
@@ -200,6 +205,10 @@ const translations = {
     "contact-manager": "Gerente de Projeto",
 
     "contact-dev": "Programador Full Stack",
+
+    "contact-description": "Profissional focado na gestão eficiente de projetos digitais. Coordena equipes, supervisiona entregas e garante que cada etapa seja cumprida com qualidade e pontualidade. Seu parceiro estratégico para transformar ideias em resultados concretos.",
+
+    "contact-description-2": "Desenvolvedor versátil com experiência em front-end e back-end. Cria soluções modernas, responsivas e seguras, adaptadas às necessidades de cada cliente. Comprometido com a inovação e excelência técnica.",
 
     //footer
     "footer-linkedin": "LinkedIn",
@@ -310,6 +319,10 @@ const translations = {
     "contact-manager": "Project Manager",
 
     "contact-dev": "Full Stack Programmer",
+    
+    "contact-description": "A results-driven professional specialized in managing digital projects. Coordinates teams, oversees deliverables, and ensures every stage is completed with quality and precision. Your strategic partner to turn ideas into real outcomes.",
+
+    "contact-description-2": "Versatile developer with experience in both front-end and back-end. Builds modern, responsive, and secure solutions tailored to each client’s needs. Committed to innovation and technical excellence.",
 
     //footer
     "footer-linkedin": "LinkedIn",
