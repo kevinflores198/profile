@@ -3,7 +3,7 @@
   --text: #111827;
   --primary: #1e8fffce;
   --secondary: #ff3a30ba;
-  --hover: #9fa0a19a;
+  --hover: #9fa0a1a4;
 }
 
 [data-theme="dark"] {
@@ -11,7 +11,7 @@
   --text: #E6EDF3;
   --primary: #1E40AF;
   --secondary: #DC2626;
-  --hover: #131822;
+  --hover: #1c2331;
 }
 
 body {
