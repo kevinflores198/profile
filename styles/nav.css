@@ -177,7 +177,7 @@ nav {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 940px) {
 
   header {
     width: 100%;
