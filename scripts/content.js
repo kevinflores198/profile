@@ -12,7 +12,7 @@ const translations = {
     // profile section
     "profile-name": "Kevin Flores",
     "profile-role": "Desarrollador Full Stack",
-    "profile-about": "Soy un apasionado desarrollador web enfocado en crear sitios modernos y responsivos. Siempre aprendiendo, mejorando y colaborando para entregar los mejores resultados a mis clientes.",
+    "profile-about": "Con más de 3 años de experiencia creando sitios modernos, responsivos y orientados a resultados. Transformo ideas en soluciones digitales funcionales y atractivas, combinando diseño, código limpio y buenas prácticas. Me mantengo en constante aprendizaje, colaboro de forma proactiva y me comprometo con cada proyecto para ofrecer siempre lo mejor a mis clientes.",
     "profile-contact": "Contacto",
     // projects section
     "projects-title": "Proyectos",
@@ -20,6 +20,10 @@ const translations = {
     "project1-title": "Brutton Construtec",
     "project1-exp": "Página de presentación de la empresa, donde se muestra quiénes son, sus proyectos de forma clara y profesional, junto con una invitación a contactarlos para trabajar juntos.",
     "project1-btn": "Ver proyecto",
+    // project modal
+    "modal-p1": "Página de presentación empresarial diseñada para mostrar de forma clara y profesional quiénes somos, qué hacemos y cómo trabajamos. Aquí encontrarás una selección de nuestros proyectos más destacados, reflejando nuestro compromiso con la calidad, la innovación y la satisfacción del cliente. Te invitamos a ponerte en contacto con nosotros para construir juntos soluciones digitales que generen impacto.",
+    "modal-p2": "",
+    "modal-p3": "",
 
     // project 2
     "project2-title": "Social Fashion",
@@ -33,7 +37,7 @@ const translations = {
     //terms
     "quote-title": "¿Querés una página como esta?",
     "quote-btn": "Pedir presupuesto",
-    "quote-terms": "🔽 Términos y Condiciones 🔽",
+    "quote-terms": "Términos y Condiciones",
     "quote-li1": "El precio depende de los requisitos del proyecto, el nivel de dedicación y el tiempo que demande. Cada proyecto es único y, por lo tanto, necesita una atención y un trabajo diferente.",
     "quote-li2": "El tiempo estimado de entrega es de hasta 15 días hábiles después de recibir todos los materiales necesarios para el proyecto.",
     "quote-li3": "Una semana después de recibir los materiales, se programará una reunión de seguimiento para revisar el avance y confirmar que todo esté alineado con las expectativas del cliente.",
@@ -124,7 +128,7 @@ const translations = {
     // main
     "profile-name": "Kevin Flores",
     "profile-role": "Desenvolvedor Full Stack",
-    "profile-about": "Sou um desenvolvedor web apaixonado, focado em criar sites modernos e responsivos. Sempre aprendendo, melhorando e colaborando para entregar os melhores resultados aos meus clientes.",
+    "profile-about": "Mais de 3 anos de experiência na criação de sites modernos, responsivos e focados em resultados. Transformo ideias em soluções digitais funcionais e atrativas, unindo design, código limpo e boas práticas. Estou sempre aprendendo, colaborando de forma proativa e comprometido em entregar o melhor em cada projeto.",
     "profile-contact": "Contato",
     // projects section
     "projects-title": "Proyectos",
@@ -142,10 +146,14 @@ const translations = {
     "project3-title": "Biblioteca",
     "project3-exp": "Aplicativo de biblioteca que gerencia livros em um banco de dados MySQL. Permite visualizar, excluir e editar registros, com login integrado para diferentes usuários. Desenvolvido com Spring Boot, Java e MySQL.",
     "project3-btn": "Ver projeto",
+    // project modal
+    "modal-p1": "Página de apresentação empresarial desenvolvida para mostrar de forma clara e profissional quem somos, o que fazemos e como trabalhamos. Aqui você encontra uma seleção dos nossos projetos mais relevantes, refletindo nosso compromisso com qualidade, inovação e satisfação do cliente. Convidamos você a entrar em contato e construir conosco soluções digitais de alto impacto.",
+    "modal-p2": "",
+    "modal-p3": "",
 
     "quote-title": "Quer um site assim?",
     "quote-btn": "Solicitar orçamento",
-    "quote-terms": "🔽 Termos e Condições 🔽",
+    "quote-terms": "Termos e Condições",
     "quote-li1": "O preço depende dos requisitos do projeto, do nível de dedicação e do tempo envolvido. Cada projeto é único e, portanto, exige uma atenção e um esforço diferentes.",
     "quote-li2": "O prazo estimado de entrega é de até 15 dias úteis após o recebimento de todos os materiais necessários para o projeto.",
     "quote-li3": "Uma semana após o recebimento dos materiais, será agendada uma reunião de acompanhamento para revisar o andamento e confirmar que tudo está de acordo com as expectativas do cliente.",
@@ -237,7 +245,7 @@ const translations = {
     // main
     "profile-name": "Kevin Flores",
     "profile-role": "Full Stack Developer",
-    "profile-about": "I'm a passionate web developer focused on building modern, responsive websites. Always learning, improving and collaborating to deliver the best results for my clients.",
+    "profile-about": "Over 3 years of experience building modern, responsive, and results-driven websites. I turn ideas into functional and visually appealing digital solutions, combining design, clean code, and best practices. Constantly learning, collaborating proactively, and fully committed to delivering the best outcomes for every client.",
     "profile-contact": "Contact",
 
     // projects
@@ -256,10 +264,14 @@ const translations = {
     "project3-title": "Library",
     "project3-exp": "Library application that manages books in a MySQL database. It allows viewing, deleting, and editing records, with integrated login for multiple users. Built with Spring Boot, Java, and MySQL.",
     "project3-btn": "View project",
+    // project modal
+    "modal-p1": "A professional company profile page crafted to clearly showcase who we are, what we do, and how we work. Explore a selection of our featured projects, highlighting our commitment to quality, innovation, and client satisfaction. We invite you to get in touch and collaborate with us to build impactful digital solutions together.",
+    "modal-p2": "",
+    "modal-p3": "",
 
     "quote-title": "Want a website like this?",
     "quote-btn": "Get a quote",
-    "quote-terms": "🔽 Terms and Conditions 🔽",
+    "quote-terms": "Terms and Conditions",
     "quote-li1": "The price depends on the project's requirements, level of dedication, and time involved. Every project is unique and therefore requires a different amount of work and attention.",
     "quote-li2": "Estimated delivery time: up to 15 business days after receiving all the necessary materials for the project.",
     "quote-li3": "One week after receiving the materials, a follow-up meeting will be scheduled to review the progress and confirm alignment with the client’s expectations.",
@@ -319,7 +331,7 @@ const translations = {
     "contact-manager": "Project Manager",
 
     "contact-dev": "Full Stack Programmer",
-    
+
     "contact-description": "A results-driven professional specialized in managing digital projects. Coordinates teams, oversees deliverables, and ensures every stage is completed with quality and precision. Your strategic partner to turn ideas into real outcomes.",
 
     "contact-description-2": "Versatile developer with experience in both front-end and back-end. Builds modern, responsive, and secure solutions tailored to each client’s needs. Committed to innovation and technical excellence.",

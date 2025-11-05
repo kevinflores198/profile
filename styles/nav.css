@@ -13,9 +13,11 @@ header {
   width: 90%;
   max-width: 1100px;
   padding: 0.8rem 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: linear-gradient(135deg,
+      var(--primary),
+      var(--secondary));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 40px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   z-index: 999;
@@ -68,6 +70,9 @@ header {
 }
 
 .scrolled {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -99,10 +104,12 @@ header {
   padding: 6px 12px;
   font-size: 14px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
   gap: 6px;
   transition: all 0.3s ease;
+}
+
+.lang-btn span{
+  margin-left: .5rem;
 }
 
 .lang-menu {
@@ -255,8 +262,8 @@ nav {
   .nav-content li a {
     font-size: 1.2rem;
     text-shadow:
-      0 0 10px rgba(0, 0, 0, 0.241),
-      0 0 4px rgba(0, 0, 0, 0.7);
+      0 0 10px rgba(0, 0, 0, 0.141),
+      0 0 4px rgba(0, 0, 0, 0.391);
     -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.7);
   }
 
@@ -270,20 +277,20 @@ nav {
   .language-switch {
     grid-column: 2 /3;
     grid-row: 5 /6;
-    width: 90px;
 
   }
 
-  
-  .language-switch .lang-btn{
-margin-left: 15px;
 
+  .language-switch .lang-btn {
+    width: 100%;
+    text-align: center;
   }
 
   .theme-toggle {
     grid-column: 2 /3;
     grid-row: 4 /5;
-    width: 140px;
+    width: 100%;
+
 
   }
 
