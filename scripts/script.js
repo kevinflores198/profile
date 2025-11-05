@@ -1,11 +1,21 @@
-const today = new Date();
-currentyear.innerHTML = today.getFullYear();
+// open and close navbar on mobile size
+const toggle = document.getElementById('button-burger');
+const bodyy = document.querySelector('body');
+const menu_options = document.querySelector('#contentnav');
+
+toggle.addEventListener('click', function () {
+  toggle.classList.toggle('active');
+  bodyy.classList.toggle('active');
+  menu_options.classList.toggle('show');
+});
+
+// Button to switch theme on navbar.
 document.body.setAttribute("data-theme", "dark");
 
 const toggleBtn = document.getElementById("theme-toggle");
 const body = document.body;
 
-// Guardar preferencia del usuario en localStorage
+//// saves user prefecences in localStorage for theme.
 if (localStorage.getItem("theme")) {
   body.setAttribute("data-theme", localStorage.getItem("theme"));
   toggleBtn.textContent = localStorage.getItem("theme") === "dark" ? "☀️" : "🌙";
@@ -21,6 +31,7 @@ toggleBtn.addEventListener("click", () => {
   toggleBtn.textContent = newTheme === "dark" ? "☀️" : "🌙";
 });
 
+// switches navbar color when scrolled
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".glass-navbar");
   if (window.scrollY > 50) {
@@ -30,7 +41,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-//video switch
+//switches video on #profile when theme is switched.
 const themeToggle = document.getElementById('theme-toggle');
 const videoDark = document.getElementById('video-dark');
 const videoLight = document.getElementById('video-light');
@@ -62,20 +73,19 @@ themeToggle.addEventListener('click', () => {
   applySavedTheme();
 });
 
+
+// switches language when use button lang.
 function toggleLanguageMenu() {
   document.getElementById("lang-menu").classList.toggle("hidden");
 }
-
 function updateLangButton(langCode) {
   document.getElementById("current-lang").innerText = langCode.toUpperCase();
   document.getElementById("lang-menu").classList.add("hidden");
 }
-
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("lang") || "en";
   updateLangButton(savedLang.toUpperCase());
 });
-
 document.addEventListener("click", (e) => {
   const menu = document.getElementById("lang-menu");
   const btn = document.querySelector(".lang-btn");
@@ -84,6 +94,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// top up botton to be back on top
 window.addEventListener("scroll", () => {
   const scroll = document.documentElement.scrollTop;
   if (scroll > 100) {
@@ -93,6 +104,7 @@ window.addEventListener("scroll", () => {
   }
 })
 
+// whatsapp button fixed and showed when scroll is used
 window.addEventListener("scroll", () => {
   const scroll = document.documentElement.scrollTop;
   if (scroll > 100) {
@@ -102,7 +114,18 @@ window.addEventListener("scroll", () => {
   }
 })
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  // appears when 30% of block is visible.
+  threshold: 0.3
+});
 
+// Type effect on #profile for web developer.
 const text = "Web Developer";
 const element = document.getElementById("typewriter");
 let index = 0;
@@ -110,18 +133,16 @@ let index = 0;
 function typeLoop() {
   element.textContent = text.slice(0, index);
   index++;
-
   if (index > text.length) {
     index = 1;
     setTimeout(typeLoop, 1000);
     return;
   }
-
   setTimeout(typeLoop, 300);
 }
-
 typeLoop();
 
+// relate card with modal.
 function modalSetup(openId, modalId) {
   const openBtn = document.getElementById(openId);
   const modal = document.getElementById(modalId);
@@ -133,34 +154,15 @@ function modalSetup(openId, modalId) {
     if (e.target === modal) modal.style.display = "none";
   });
 }
-
-window.addEventListener("scroll", () => {
-  const scroll = document.documentElement.scrollTop;
-  if (scroll > 100) {
-    arrowUp.style.right = 20 + "px";
-  } else {
-    arrowUp.style.right = -100 + "px";
-  }
-})
-
 modalSetup("card-cont1", "cardModal1");
 modalSetup("card-cont2", "cardModal2");
 modalSetup("card-cont3", "cardModal3");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, {
-  threshold: 0.3 // aparece cuando el 30% del bloque es visible
-});
 
 const fadeSection = document.querySelector('.cards.fade-in');
 if (fadeSection) observer.observe(fadeSection);
 
-// Abrir modal
+// open modal
 document.querySelectorAll('.card-project').forEach((card, index) => {
   card.addEventListener('click', () => {
     const modal = document.getElementById(`cardModal${index + 1}`);
@@ -168,44 +170,23 @@ document.querySelectorAll('.card-project').forEach((card, index) => {
   });
 });
 
-// Cerrar modal al hacer clic en la “X” o fuera del contenido
+// close modal when open x or outside of modal.
 document.querySelectorAll('.modal').forEach(modal => {
   modal.addEventListener('click', (e) => {
     if (e.target.classList.contains('modal') || e.target.classList.contains('close')) {
       modal.classList.remove('active');
-      // Espera a que termine la transición antes de ocultarlo
+      // wait to finish transaction to hiden it
       setTimeout(() => modal.style.display = 'none', 500);
     }
   });
 });
 
-// Cuando abrís el modal
+// when open modal
 document.body.classList.add('modal-open');
 
-// Cuando lo cerrás
+// when close modal
 document.body.classList.remove('modal-open');
 
-const modal = document.getElementById("cardModal1");
-const openBtn = document.getElementById("project1-btn");
-const closeBtn = modal.querySelector(".close");
-
-openBtn.addEventListener("click", () => {
-  modal.style.display = "flex";
-  document.body.classList.add("modal-open");
-});
-
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-  document.body.classList.remove("modal-open");
-});
-
-
-const toggle = document.getElementById('button-burger');
-const bodyy = document.querySelector('body');
-const menu_options = document.querySelector('#contentnav');
-
-toggle.addEventListener('click', function () {
-  toggle.classList.toggle('active');
-  bodyy.classList.toggle('active');
-  menu_options.classList.toggle('show');
-});
+// today year on footer
+const today = new Date();
+currentyear.innerHTML = today.getFullYear();
