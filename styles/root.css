@@ -4,6 +4,7 @@
   --primary: #1e8fffce;
   --secondary: #ff3a30ba;
   --hover: #9fa0a1a4;
+
 }
 
 [data-theme="dark"] {
@@ -12,6 +13,7 @@
   --primary: #1E40AF;
   --secondary: #DC2626;
   --hover: #1c2331;
+
 }
 
 body {
@@ -90,4 +92,3 @@ body {
 html {
   scroll-behavior: smooth;
 }
-

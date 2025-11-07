@@ -69,6 +69,9 @@
 
 }
 
+#profile .glass-btn{
+    width: 150px;
+}
 
 .glass-btn {
     padding: 1.3rem 1.6rem;
@@ -86,7 +89,7 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     letter-spacing: 1px;
-    width: 90px;
+    width:  auto;
     text-align: center;
     margin: 0 auto !important;
 }
@@ -353,7 +356,7 @@ body.modal-open {
     margin-top: 20px;
 }
 
-.ver-mais a {
+.ver-mais button {
     padding: 1.3rem 1.6rem;
     border-radius: 60px;
     border: 1px solid var(--hover);
@@ -369,11 +372,11 @@ body.modal-open {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     letter-spacing: 1px;
-    width: 90px;
+    width: 80%;
     text-align: start;
 }
 
-.ver-mais a:hover {
+.ver-mais button:hover {
     background-color: var(--secondary);
 }
 
@@ -734,6 +737,7 @@ body.modal-open {
 
 #resume .glass-btn {
     margin: 0 auto !important;
+    width: 150px;
 }
 
 #resume #resume-title:hover {
@@ -749,6 +753,7 @@ body.modal-open {
     justify-content: center;
     align-items: center;
     padding: 0;
+    cursor: pointer;
 }
 
 #resume .content {
