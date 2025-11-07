@@ -155,7 +155,7 @@
 
 #projects .card-project .card-content p {
     width: 80%;
-    padding: 1rem;
+    margin: 0 auto;
     font-size: 1rem;
     font-style: italic;
 }

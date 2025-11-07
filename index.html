@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile | Kevin Flores</title>
-    <link rel="stylesheet" href="styles/stryle.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="theme-color" content="#000000">
     <meta name="author" content="Kevin Nicolas Flores Gonzalez">
     <meta name="description" content="Hi This my profile,
      it is going to have some important information about 
      me, it will show up my projects, studies and what its
      going to be my objective with future clients.">
+    <meta property="og:title" content="Kevin Flores | Developer">
+    <meta property="og:description"
+        content="Portfolio de Kevin Flores: desarrollador web full stack. HTML, CSS, JavaScript, Java y más.">
+    <meta property="og:image" content="https://kevinflores198.github.io/profile//files/profile-sin-fondo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kevinflores198.github.io/profile/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:ital,wght@0,300;1,300&display=swap"
@@ -22,7 +29,7 @@
 
 <body>
     <header id="top">
-        <nav class="glass-navbar">
+        <nav class="glass-navbar" aria-label="Main Navigation">
             <div class="content" id="contentnav">
                 <div class="language-switch">
                     <button class="lang-btn" onclick="toggleLanguageMenu()">
@@ -39,16 +46,15 @@
                 </div>
                 <div class="nav-content">
                     <ul class="nav-links">
-                        <li>
-                            <a id="nav-about" href="#top"></a>
-                            <a id="nav-projects" href="#projects"></a>
-                            <a id="nav-studies" href="#studies"></a>
-                            <a id="nav-resume" href="#resume"></a>
-                            <a id="nav-references" href="#references"></a>
-                        </li>
+                        <li><a id="nav-about" href="#top"></a></li>
+                        <li><a id="nav-projects" href="#projects"></a></li>
+                        <li><a id="nav-studies" href="#studies"></a></li>
+                        <li><a id="nav-resume" href="#resume"></a></li>
+                        <li><a id="nav-references" href="#references"></a></li>
                     </ul>
                 </div>
-                <button id="theme-toggle" class="theme-toggle" title="Switch theme">
+                <button id="theme-toggle" class="theme-toggle" title="Switch theme" aria-label="Change theme"
+                    aria-pressed="false">
                     🌙
                 </button>
             </div>
@@ -57,11 +63,12 @@
     </header>
     <main>
         <section id="profile">
-            <video autoplay muted loop playsinline id="video-dark" class="bg-video">
+            <video autoplay muted loop playsinline id="video-dark" class="bg-video" aria-hidden="true" alt="video hero">
                 <source src="files/hero-background.mp4" type="video/mp4">
             </video>
 
-            <video autoplay muted loop playsinline id="video-light" class="bg-video hidden">
+            <video autoplay muted loop playsinline id="video-light" class="bg-video hidden" aria-hidden="true"
+                alt="video hero">
                 <source src="files/hero-background-light.mp4" type="video/mp4">
             </video>
 
@@ -88,39 +95,43 @@
             <div class="content">
                 <h2 id="projects-title"></h2>
                 <div class="cards fade-in">
-                    <article class="card-project" id="card-cont1">
-                        <img src="files/button.jpg" class="card-video">
+                    <figure class="card-project" id="card-cont1">
+                        <img src="files/button.jpg" class="card-video" loading="lazy">
                         <div class="card-content">
-                            <h3 id="project1-title"></h3>
-                            <p id="project1-exp">
-                            </p>
+                            <figcaption>
+                                <h3 id="project1-title"></h3>
+                                <p id="project1-exp">
+                                </p>
+                            </figcaption>
                             <div class="button">
                                 <a class="glass-btn" id="project1-btn"></a>
                             </div>
                         </div>
-                    </article>
-                    <article class="card-project" id="card-cont2">
-                        <img src="files/social.jpg" class="card-video">
-
+                    </figure>
+                    <figure class="card-project" id="card-cont2">
+                        <img src="files/social.jpg" class="card-video" loading="lazy">
                         <div class="card-content">
-                            <h3 id="project2-title"></h3>
-                            <p id="project2-exp"></p>
+                            <figcaption>
+                                <h3 id="project2-title"></h3>
+                                <p id="project2-exp"></p>
+                            </figcaption>
                             <div class="button">
                                 <a class="glass-btn" id="project2-btn"></a>
                             </div>
                         </div>
-                    </article>
-                    <article class="card-project" id="card-cont3">
-                        <img src="files/library.jpg" class="card-video">
-
+                    </figure>
+                    <figure class="card-project" id="card-cont3">
+                        <img src="files/library.jpg" class="card-video" loading="lazy">
                         <div class="card-content">
-                            <h3 id="project3-title"></h3>
-                            <p id="project3-exp"></p>
+                            <figcaption>
+                                <h3 id="project3-title"></h3>
+                                <p id="project3-exp"></p>
+                            </figcaption>
                             <div class="button">
                                 <a class="glass-btn" id="project3-btn"></a>
                             </div>
                         </div>
-                    </article>
+                    </figure>
 
                 </div>
                 <div id="cardModal1" class="modal">
@@ -144,9 +155,12 @@
                             </div>
                             <p id="modal-p1"></p>
 
-                            <img src="files/brutton.png" style="width: 100%;border-radius: 40px;" alt="">
-                            <img src="files/brutton2.png" style="width: 100%;border-radius: 40px;" alt="">
-                            <img src="files/brutton3.png" style="width: 100%;border-radius: 40px;" alt="">
+                            <img src="files/brutton.png" style="width: 100%;border-radius: 40px;"
+                                alt="brutton image site">
+                            <img src="files/brutton2.png" style="width: 100%;border-radius: 40px;"
+                                alt="brutton image site">
+                            <img src="files/brutton3.png" style="width: 100%;border-radius: 40px;"
+                                alt="brutton image site">
                         </div>
                     </div>
                     <div class="ver-mais">
@@ -271,7 +285,7 @@
                             <h2 id="study1-degree1"></h2>
                             <p id="study1-degree1-desc"></p>
                             <details>
-                                <summary id="quote-terms">
+                                <summary>
                                     Diploma
                                 </summary>
                             </details>
@@ -281,7 +295,7 @@
                             <p id="study1-degree2-desc"></p>
                         </div>
                         <details>
-                            <summary id="quote-terms">
+                            <summary>
 
                                 Diploma
                             </summary>
@@ -300,7 +314,7 @@
                             <h2 id="study2-degree1"></h2>
                             <p id="study2-degree1-desc"></p>
                             <details>
-                                <summary id="quote-terms">
+                                <summary>
                                     Diploma
                                 </summary>
                                 <img class="img-egg" src="files/egg-cert.jpeg" alt="pathway">
@@ -310,7 +324,7 @@
                             <h2 id="study2-degree2"></h2>
                             <p id="study2-degree2-desc"></p>
                             <details>
-                                <summary id="quote-terms">
+                                <summary>
                                     Diploma
                                 </summary>
                                 <img class="img" src="files/egg-cert-pseudo.png" alt="pathway">
@@ -375,7 +389,7 @@
             <h1 id="contact-title"></h1>
             <div class="content-contact-it">
                 <div class="contact-it">
-                    <img src="files/avatar-lu.jpg" alt="">
+                    <img src="files/avatar-lu.jpg" alt="manager photo">
                     <h2 id="contact-manager"></h2>
                     <p id="contact-description"></p>
 
@@ -391,7 +405,7 @@
                     </div>
                 </div>
                 <div class="contact-it">
-                    <img src="files/img-profile.png" alt="">
+                    <img src="files/img-profile.png" alt="programmer photo">
                     <h2 id="contact-dev"></h2>
                     <p id="contact-description-2"></p>
 
@@ -411,25 +425,23 @@
         </section>
     </main>
     <footer>
-        <ul>
-            <li>
-                <a target="_blank" id="footer-linkedin" href="https://www.linkedin.com/in/kevinfloresg/"></a>
-                <a target="_blank" id="footer-github" href="https://github.com/kevinflores198"></a>
-                <a target="_blank" id="footer-instagram" href="https://www.instagram.com/kevo198_/"></a>
-                <a target="_blank" id="footer-facebook" href="https://www.facebook.com/kevinflores198"></a>
-            </li>
-            <li>
-                <a id="footer-terms" href="#projects"></a>
-                <a id="footer-contact" target="_blank" href="https://wa.me/554888648031"></a>
-                <a id="footer-studies" href="#studies"></a>
-                <a id="footer-projects" href="projects"></a>
-            </li>
-        </ul>
-        <div class="r">
-            &copy; <span id="currentyear"></span>
-            <p id="footer-copy"></p>
-        </div>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a target="_blank" id="footer-linkedin" href="https://www.linkedin.com/in/kevinfloresg/"></a></li>
+                <li><a target="_blank" id="footer-github" href="https://github.com/kevinflores198"></a></li>
+                <li><a target="_blank" id="footer-instagram" href="https://www.instagram.com/kevo198_/"></a></li>
+                <li><a target="_blank" id="footer-facebook" href="https://www.facebook.com/kevinflores198"></a></li>
+            </ul>
+            <ul>
+                <li><a id="footer-terms" href="#projects"></a></li>
+                <li><a id="footer-contact" target="_blank" href="https://wa.me/554888648031"></a></li>
+                <li><a id="footer-studies" href="#studies"></a></li>
+                <li><a id="footer-projects" href="#projects"></a></li>
+            </ul>
+        </nav>
+        <p>&copy; <span id="currentyear"></span> <span id="footer-copy"></span></p>
     </footer>
+
     <div class="arrowUp" id="arrowUp">
         <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
