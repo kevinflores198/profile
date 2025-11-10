@@ -168,7 +168,7 @@ if (fadeSection) observer.observe(fadeSection);
 document.querySelectorAll('.card-project').forEach((card, index) => {
   card.addEventListener('click', () => {
     const modal = document.getElementById(`cardModal${index + 1}`);
-    document.body.style.overflow = 'hidden';
+    
     modal.classList.add('active');
   });
 });
