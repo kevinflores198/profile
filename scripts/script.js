@@ -9,6 +9,8 @@ toggle.addEventListener('click', function () {
   menu_options.classList.toggle('show');
 });
 
+
+
 // Button to switch theme on navbar.
 document.body.setAttribute("data-theme", "dark");
 
@@ -166,6 +168,7 @@ if (fadeSection) observer.observe(fadeSection);
 document.querySelectorAll('.card-project').forEach((card, index) => {
   card.addEventListener('click', () => {
     const modal = document.getElementById(`cardModal${index + 1}`);
+    document.body.style.overflow = 'hidden';
     modal.classList.add('active');
   });
 });

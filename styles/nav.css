@@ -1,7 +1,37 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
+
+.nav2 {
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav2 .nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: .3rem;
+  margin: 0;
+  gap: 2rem;
+  margin-top: .2rem;
+
+}
+
+.nav2 .nav-links a {
+  padding: 0.5rem 1rem;
+}
+
+.nav2 .nav-links a:hover {
+  color: var(--secondary);
+  background-color: var(--hover);
+}
+
 
 .glass-navbar {
   position: fixed;
@@ -22,6 +52,7 @@ header {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   z-index: 999;
   transition: background 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 25px;
 }
 
 #contentnav {
@@ -76,6 +107,7 @@ header {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 0;
 }
 
 .language-switch,
@@ -192,6 +224,12 @@ nav {
     width: 100%;
   }
 
+  .nav2 .nav-links {
+    flex-direction: row !important;
+    
+  }
+
+
   .glass-navbar {
     transform: none;
     left: 50%;
@@ -247,13 +285,14 @@ nav {
     grid-column: 2 /3;
     grid-row: 1 /4;
     justify-self: center;
-    
+
   }
 
   .nav-links {
     padding: 0;
     flex-direction: column;
   }
+
   .nav-content li {
     display: flex;
     flex-direction: row;

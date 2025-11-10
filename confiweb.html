@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confiweb</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="theme-color" content="#000000">
+    <meta name="author" content="Kevin Nicolas Flores Gonzalez">
+    <meta name="description" content="Hi This my profile,
+     it is going to have some important information about 
+     me, it will show up my projects, studies and what its
+     going to be my objective with future clients.">
+    <meta property="og:title" content="Kevin Flores | Developer">
+    <meta property="og:description"
+        content="Portfolio de Kevin Flores: desarrollador web full stack. HTML, CSS, JavaScript, Java y más.">
+    <meta property="og:image" content="https://kevinflores198.github.io/profile//files/img-profile.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kevinflores198.github.io/profile/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+    <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="top">
+        <nav class="nav2">
+            <ul class="nav-links">
+                <li><a href="index.html">Perfil</a></li>
+                <li><a href="portfolio.html">Portafolio</a></li>
+                <li><a href="confiweb.html">Confiweb</a></li>
+            </ul>
+        </nav>
+        <nav class="glass-navbar" aria-label="Main Navigation">
+            <div class="content" id="contentnav">
+                <div class="language-switch">
+                    <button class="lang-btn" onclick="toggleLanguageMenu()">
+                        <i class="fa-solid fa-earth-americas"></i><span id="current-lang">EN</span>
+                    </button>
+                    <ul id="lang-menu" class="lang-menu hidden">
+                        <li onclick="setLanguage('en'); updateLangButton('EN')"><span class="fi fi-us"></span> English
+                        </li>
+                        <li onclick="setLanguage('es'); updateLangButton('ES')"><span class="fi fi-ar"></span> Español
+                        </li>
+                        <li onclick="setLanguage('pt'); updateLangButton('PT')"><span class="fi fi-br"></span> Português
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a id="nav-about" href="#top"></a></li>
+                        <li><a id="nav-projects" href="#projects"></a></li>
+                        <li><a id="nav-studies" href="#studies"></a></li>
+                        <li><a id="nav-resume" href="#resume"></a></li>
+                        <li><a id="nav-references" href="#references"></a></li>
+                    </ul>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" title="Switch theme" aria-label="Change theme"
+                    aria-pressed="false">
+                    🌙
+                </button>
+            </div>
+            <div class="burger" id="button-burger"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="empresa-hero">
+            <div class="content">
+                <h1>Kevin Flores Web Studio</h1>
+                <p>Ayudamos a tu empresa a crecer con tecnología moderna, diseño funcional y presencia digital efectiva.
+                </p>
+                <a href="https://wa.me/554888648031" class="glass-btn">Solicitar presupuesto</a>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Servicios</h2>
+            <div class="cards">
+                <article class="service-card"><i class="fa-solid fa-code"></i>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios rápidos, responsivos y personalizados.</p>
+                </article>
+                <article class="service-card"><i class="fa-solid fa-bullhorn"></i>
+                    <h3>Marketing Digital</h3>
+                    <p>Campañas efectivas y optimización SEO.</p>
+                </article>
+                <article class="service-card"><i class="fa-solid fa-palette"></i>
+                    <h3>Diseño & Branding</h3>
+                    <p>Identidad visual profesional para tu marca.</p>
+                </article>
+                <article class="service-card"><i class="fa-solid fa-database"></i>
+                    <h3>Automatización</h3>
+                    <p>Integración con CRM y herramientas empresariales.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="cases">
+            <h2>Casos de éxito</h2>
+            <div class="cards">
+                <!-- Reutilizá tus cards de proyectos -->
+            </div>
+        </section>
+
+        <section id="cta">
+            <h2>Impulsá tu marca hoy</h2>
+            <a href="https://wa.me/554888648031" class="glass-btn">Pedir presupuesto</a>
+        </section>
+    </main>
+
+    </main>
+    <footer>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a target="_blank" id="footer-linkedin" href="https://www.linkedin.com/in/kevinfloresg/"></a></li>
+                <li><a target="_blank" id="footer-github" href="https://github.com/kevinflores198"></a></li>
+                <li><a target="_blank" id="footer-instagram" href="https://www.instagram.com/kevo198_/"></a></li>
+                <li><a target="_blank" id="footer-facebook" href="https://www.facebook.com/kevinflores198"></a></li>
+            </ul>
+            <nav class="nav2">
+                <ul class="nav-links">
+                    <li><a href="index.html">Perfil</a></li>
+                    <li><a href="portfolio.html">Portafolio</a></li>
+                    <li><a href="confiweb.html">Confiweb</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li><a id="footer-terms" href="#projects"></a></li>
+                <li><a id="footer-contact" target="_blank" href="https://wa.me/554888648031"></a></li>
+                <li><a id="footer-studies" href="#studies"></a></li>
+                <li><a id="footer-projects" href="#projects"></a></li>
+            </ul>
+        </nav>
+        <p>&copy; <span id="currentyear"></span> <span id="footer-copy"></span></p>
+    </footer>
+
+    <div class="arrowUp" id="arrowUp">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <div class="contactMe" id="contactMe">
+        <a target="_blank" href="https://wa.me/554888648031"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/content.js"></script>
+</body>
+
+</html>
