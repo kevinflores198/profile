@@ -1,0 +1,36 @@
+@import url(root.css);
+
+/* Portfolio specific styles */
+
+#portfolio-languages .service-budget {
+    margin: 0 auto;
+    
+}
+
+#portfolio-languages .languages-icons {
+    display: flex;
+    gap: 15px;
+    animation: scroll 20s linear infinite;
+}
+
+#portfolio-languages .languages-track {
+    display: flex;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    padding: 20px 0;
+    width: 50%;
+}
+
+#portfolio-languages span {
+    font-size: 5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+padding: 2rem;
+}
+
+#portfolio-languages span:hover {
+    transform: scale(1.2);
+}
