@@ -40,7 +40,7 @@
     position: relative;
     background: transparent;
     padding: 20px 0;
-    width:100%;
+    width: 100%;
 }
 
 #portfolio-languages span {
@@ -54,7 +54,30 @@
     transform: scale(1.2);
 }
 
-#cardModal1 .fa-brands{
+#cardModal1 .fa-brands,
+#cardModal2 .fa-brands,
+#cardModal3 .fa-brands,
+#cardModal1 .fa-solid,
+#cardModal2 .fa-solid,
+#cardModal3 .fa-solid {
     font-size: 40px;
     padding: 0 1rem 0 1rem;
+}
+
+#cardModal1 .description h3,
+#cardModal2 .description h3,
+#cardModal3 .description h3 {
+    margin-bottom: 0.5rem;
+}
+
+#cardModal1 .description p,
+#cardModal2 .description p,
+#cardModal3 .description p {
+    font-size: 1rem !important;
+}
+
+footer .nav2 .nav-links {
+    flex-direction: column !important;
+    gap: 10px !important;
+
 }

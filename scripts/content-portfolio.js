@@ -21,6 +21,7 @@ const translations = {
     "project1-exp": "Página de presentación de la empresa, donde se muestra quiénes son, sus proyectos de forma clara y profesional, junto con una invitación a contactarlos para trabajar juntos.",
     "project1-btn": "Ver proyecto",
     // project modal
+    //modal 1
     "modal-title": "Landing page para empresa de construcción. Responsiva, moderna y optimizada.",
     "modal-p1": "Landing page para empresa de construcción. Responsiva, moderna y optimizada.",
     "modal-title-1": "Tecnologias utilizadas",
@@ -29,6 +30,24 @@ const translations = {
     "modal-p3": "Estructura, diseño, UI, desarrollo front-end, optimización SEO y despliegue.",
     "modal-title-3": "Qué aprendí",
     "modal-p4": "Mejores prácticas de desarrollo web front-end, diseño responsivo y optimización SEO, contacto con clientes.",
+    //modal 2
+    "modal2-title": "Red social para diseñadores de moda. Login seguro y perfiles múltiples.",
+    "modal2-p1": "Red social para diseñadores de moda. Login seguro y perfiles múltiples.",
+    "modal2-title-1": "Tecnologias utilizadas",
+    "modal2-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
+    "modal2-title-2": "Lo que hice",
+    "modal2-p3": "Estructura, diseño, UI, desarrollo front-end y back-end, base de datos y despliegue.",
+    "modal2-title-3": "Qué aprendí",
+    "modal2-p4": "Desarrollo full stack con Java y Spring Boot, gestión de bases de datos MySQL, autenticación segura y manejo de perfiles múltiples.",
+    //modal 3
+    "modal3-title": "Aplicación de biblioteca con gestión de libros y usuarios. Login integrado.",
+    "modal3-p1": "Aplicación de biblioteca con gestión de libros y usuarios. Login integrado.",
+    "modal3-title-1": "Tecnologias utilizadas",
+    "modal3-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
+    "modal3-title-2": "Lo que hice",
+    "modal3-p3": "Estructura, diseño, UI, desarrollo front-end y back-end, base de datos y despliegue.",
+    "modal3-title-3": "Qué aprendí",
+    "modal3-p4": "Desarrollo full stack con Java y Spring Boot, gestión de bases de datos MySQL, autenticación segura y manejo de múltiples usuarios.",
 
     // project 2
     "project2-title": "Social Fashion",
@@ -79,9 +98,9 @@ const translations = {
     "comment1-biz": "Pagina Landing",
     "comment1-text": "queremos expresar nuestro sincero agradecimiento por el excelente trabajo que realizaste en el desarrollo del sitio web de la empresa. El resultado final superó nuestras expectativas, reflejando profesionalismo, dedicación y calidad en cada detalle del servicio prestado. Estamos muy satisfechos de contar con tu colaboración. Brutton valora a los socios que demuestran compromiso y competencia, como tú lo hiciste, y estamos plenamente convencidos de que esta relación será duradera y productiva. Reiteramos nuestro agradecimiento y reafirmamos que estamos contentos de mantener esta alianza, seguros de que aún tendremos muchos proyectos por delante. Un gran abrazo,Everton, Socio administrador. Brutton Construtec.",
 
-    "comment2-name": "Maria Lopez",
-    "comment2-biz": "Negocio de Comercio Electrónico",
-    "comment2-text": "Gran comunicación y sitio web de alta calidad. Volveré a trabajar con él.",
+    "comment2-name": "Lourdes Machuca",
+    "comment2-biz": "Compañera de trabajo en BYU y socia en proyectos freelance",
+    "comment2-text": "Excelente comunicación y sitio de alta calidad. Volvi a trabajar con el para otros proyectos juntos.",
 
     "comment3-name": "Roger Johnson",
     "comment3-biz": "Plataforma de Blog",
@@ -148,9 +167,33 @@ const translations = {
     "project3-exp": "Aplicativo de biblioteca que gerencia livros em um banco de dados MySQL. Permite visualizar, excluir e editar registros, com login integrado para diferentes usuários. Desenvolvido com Spring Boot, Java e MySQL.",
     "project3-btn": "Ver projeto",
     // project modal
-    "modal-p1": "Página de apresentação empresarial desenvolvida para mostrar de forma clara e profissional quem somos, o que fazemos e como trabalhamos. Aqui você encontra uma seleção dos nossos projetos mais relevantes, refletindo nosso compromisso com qualidade, inovação e satisfação do cliente. Convidamos você a entrar em contato e construir conosco soluções digitais de alto impacto.",
-    "modal-p2": "",
-    "modal-p3": "",
+    //modal 1
+    "modal-title": "Landing page para empresa de construção. Responsiva, moderna e otimizada.",
+    "modal-p1": "Landing page para empresa de construção. Responsiva, moderna e otimizada.",
+    "modal-title-1": "Tecnologias utilizadas",
+    "modal-p2": "HTML, CSS, JavaScript.",
+    "modal-title-2": "O que eu fiz",
+    "modal-p3": "Estrutura, design, UI, desenvolvimento front-end, otimização SEO e deploy.",
+    "modal-title-3": "O que eu aprendi",
+    "modal-p4": "Melhores práticas de desenvolvimento web front-end, design responsivo e otimização SEO, contato com clientes.",
+    //modal 2
+    "modal2-title": "Rede social para estilistas de moda. Login seguro e múltiplos perfis.",
+    "modal2-p1": "Rede social para estilistas de moda. Login seguro e múltiplos perfis.",
+    "modal2-title-1": "Tecnologias utilizadas",
+    "modal2-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
+    "modal2-title-2": "O que eu fiz",
+    "modal2-p3": "Estrutura, design, UI, desenvolvimento front-end e back-end, banco de dados e deploy.",
+    "modal2-title-3": "O que eu aprendi",
+    "modal2-p4": "Desenvolvimento full stack com Java e Spring Boot, gerenciamento de banco de dados MySQL, autenticação segura e manipulação de múltiplos perfis.",
+    //modal 3
+    "modal3-title": "Aplicativo de biblioteca com gerenciamento de livros e usuários. Login integrado.",
+    "modal3-p1": "Aplicativo de biblioteca com gerenciamento de livros e usuários. Login integrado.",
+    "modal3-title-1": "Tecnologias utilizadas",
+    "modal3-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
+    "modal3-title-2": "O que eu fiz",
+    "modal3-p3": "Estrutura, design, UI, desenvolvimento front-end e back-end, banco de dados e deploy.",
+    "modal3-title-3": "O que eu aprendi",
+    "modal3-p4": "Desenvolvimento full stack com Java e Spring Boot, gerenciamento de banco de dados MySQL, autenticação segura e manipulação de múltiplos usuários.",
 
     "quote-title": "Quer um site assim?",
     "quote-btn": "Solicitar orçamento",
@@ -196,9 +239,9 @@ const translations = {
     "comment1-biz": "Landing Site, Brutton Construtec",
     "comment1-text": "Gostaria de expressar nossa sincera gratidão pelo excelente trabalho que você realizou no desenvolvimento do site da empresa. O resultado final superou nossas expectativas, refletindo profissionalismo, dedicação e qualidade em cada detalhe do serviço prestado. Estamos muito satisfeitos em contar com a sua colaboração. A Brutton valoriza parceiros que demonstram comprometimento e competência, como você demonstrou, e temos plena convicção de que essa relação será duradoura e produtiva. Reiteramos nossos agradecimentos e reforçamos que estamos contentes em manter essa parceria, certos de que ainda teremos muitos projetos pela frente. Um grande abraço, Everton, Sócio administrador. Brutton Construtec.",
 
-    "comment2-name": "Maria Lopez",
-    "comment2-biz": "Negócio de E-commerce",
-    "comment2-text": "Ótima comunicação e site de alta qualidade. Trabalharia com ele novamente.",
+    "comment2-name": "Lourdes Machuca",
+    "comment2-biz": "Colega de trabalho na BYU e sócia em projetos freelance",
+    "comment2-text": "Ótima comunicação e site de alta qualidade. Trabalhei novamente com ele em outros projetos juntos.",
 
     "comment3-name": "Roger Johnson",
     "comment3-biz": "Plataforma de Blog",
@@ -266,10 +309,36 @@ const translations = {
     "project3-exp": "Library application that manages books in a MySQL database. It allows viewing, deleting, and editing records, with integrated login for multiple users. Built with Spring Boot, Java, and MySQL.",
     "project3-btn": "View project",
     // project modal
-    "modal-p1": "A professional company profile page crafted to clearly showcase who we are, what we do, and how we work. Explore a selection of our featured projects, highlighting our commitment to quality, innovation, and client satisfaction. We invite you to get in touch and collaborate with us to build impactful digital solutions together.",
-    "modal-p2": "",
-    "modal-p3": "",
-
+    //modal 1
+    "modal-title": "Landing page for construction company. Responsive, modern, and optimized.",
+    "modal-p1": "Landing page for construction company. Responsive, modern, and optimized.",
+    "modal-title-1": "Technologies used",
+    "modal-p2": "HTML, CSS, JavaScript.",
+    "modal-title-2": "What I did",
+    "modal-p3": "Structure, design, UI, front-end development, SEO optimization, and deployment.",
+    "modal-title-3": "What I learned",
+    "modal-p4": "Best practices in front-end web development, responsive design, SEO optimization, and client communication.",
+    //modal 2
+    "modal2-title": "Social network for fashion designers. Secure login and multiple profiles.",
+    "modal2-p1": "Social network for fashion designers. Secure login and multiple profiles.",
+    "modal2-title-1": "Technologies used",
+    "modal2-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
+    "modal2-title-2": "What I did",
+    "modal2-p3": "Structure, design, UI, front-end and back-end development, database, and deployment.",
+    "modal2-title-3": "What I learned",
+    "modal2-p4": "Full stack development with Java and Spring Boot, MySQL database management, secure authentication, and handling multiple profiles.",
+    //modal 3
+    "modal3-title": "Library application with book and user management. Integrated login.",
+    "modal3-p1": "Library application with book and user management. Integrated login.",
+    "modal3-title-1": "Technologies used",
+    "modal3-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
+    "modal3-title-2": "What I did",
+    "modal3-p3": "Structure, design, UI, front-end and back-end development, database, and deployment.",
+    "modal3-title-3": "What I learned",
+    "modal3-p4": "Full stack development with Java and Spring Boot, MySQL database management, secure authentication, and handling multiple users.",
+    
+    
+    //terms
     "quote-title": "Want a website like this?",
     "quote-btn": "Get a quote",
     "quote-terms": "Terms and Conditions",
@@ -314,9 +383,9 @@ const translations = {
     "comment1-biz": "Landing Page, Brutton Construtec",
     "comment1-text": "We would like to express our sincere gratitude for the excellent work you did in developing the company’s website. The final result exceeded our expectations, reflecting professionalism, dedication, and quality in every detail of the service provided. We are very pleased to have your collaboration. Brutton values partners who demonstrate commitment and competence, as you have, and we are fully confident that this relationship will be long-lasting and productive. We reiterate our thanks and emphasize that we are happy to maintain this partnership, certain that we still have many projects ahead. Warm regards, Everton, Managing Partner, Brutton Construtec.",
 
-    "comment2-name": "Maria Lopez",
-    "comment2-biz": "E-commerce Business",
-    "comment2-text": "Great communication and high-quality website. Will work with him again.",
+    "comment2-name": "Lourdes Machuca",
+    "comment2-biz": "Colleague at BYU and partner in freelance projects",
+    "comment2-text": "Excellent communication and high-quality site. I worked with him again on other projects together.",
 
     "comment3-name": "Roger Johnson",
     "comment3-biz": "Blog Platform",
