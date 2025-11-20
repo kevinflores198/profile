@@ -67,7 +67,6 @@
     margin: 1rem;
     font-style: italic;
     color: antiquewhite;
-
 }
 
 #profile .glass-btn {
@@ -600,8 +599,8 @@ body.modal-open {
 .tech-track span {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--primary);
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    color: var(--text);
+    text-shadow: 0 0 10px rgba(11, 11, 11, 0.3);
     white-space: nowrap;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -609,7 +608,7 @@ body.modal-open {
 
 .tech-track span:hover {
     transform: scale(1.2);
-    color: var(--secondary);
+    color: var(--bg);
 }
 
 @keyframes scroll {

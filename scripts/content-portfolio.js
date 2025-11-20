@@ -10,9 +10,9 @@ const translations = {
     "about-text": "Soy un desarrollador web apasionado por crear sitios modernos y funcionales.",
     // main
     // profile section
-    "profile-name": "Kevin Flores",
+    "profile-name-portfolio": "Hola, soy Kevin Flores",
     "profile-role": "Desarrollador Full Stack",
-    "profile-about": "Con más de 3 años de experiencia creando sitios modernos, responsivos y orientados a resultados. Transformo ideas en soluciones digitales funcionales y atractivas, combinando diseño, código limpio y buenas prácticas. Me mantengo en constante aprendizaje, colaboro de forma proactiva y me comprometo con cada proyecto para ofrecer siempre lo mejor a mis clientes.",
+    "profile-about-portfolio": "Desarrollador web enfocado en crear sitios modernos y responsivos para empresas. Actualmente aplicando mis habilidades en proyectos reales con clientes, mientras estudio desarrollo de software.",
     "profile-contact": "Contacto",
     // projects section
     "projects-title": "Proyectos",
@@ -21,9 +21,14 @@ const translations = {
     "project1-exp": "Página de presentación de la empresa, donde se muestra quiénes son, sus proyectos de forma clara y profesional, junto con una invitación a contactarlos para trabajar juntos.",
     "project1-btn": "Ver proyecto",
     // project modal
-    "modal-p1": "Página de presentación empresarial diseñada para mostrar de forma clara y profesional quiénes somos, qué hacemos y cómo trabajamos. Aquí encontrarás una selección de nuestros proyectos más destacados, reflejando nuestro compromiso con la calidad, la innovación y la satisfacción del cliente. Te invitamos a ponerte en contacto con nosotros para construir juntos soluciones digitales que generen impacto.",
-    "modal-p2": "",
-    "modal-p3": "",
+    "modal-title": "Landing page para empresa de construcción. Responsiva, moderna y optimizada.",
+    "modal-p1": "Landing page para empresa de construcción. Responsiva, moderna y optimizada.",
+    "modal-title-1": "Tecnologias utilizadas",
+    "modal-p2": "HTML, CSS, JavaScript.",
+    "modal-title-2": "Lo que hice",
+    "modal-p3": "Estructura, diseño, UI, desarrollo front-end, optimización SEO y despliegue.",
+    "modal-title-3": "Qué aprendí",
+    "modal-p4": "Mejores prácticas de desarrollo web front-end, diseño responsivo y optimización SEO, contacto con clientes.",
 
     // project 2
     "project2-title": "Social Fashion",
@@ -124,7 +129,7 @@ const translations = {
     // main
     "profile-name": "Kevin Flores",
     "profile-role": "Desenvolvedor Full Stack",
-    "profile-about": "Mais de 3 anos de experiência na criação de sites modernos, responsivos e focados em resultados. Transformo ideias em soluções digitais funcionais e atrativas, unindo design, código limpo e boas práticas. Estou sempre aprendendo, colaborando de forma proativa e comprometido em entregar o melhor em cada projeto.",
+    "profile-about": "Desenvolvedor web focado na criação de sites modernos e responsivos para empresas. Atualmente aplicando minhas habilidades em projetos reais com clientes, enquanto estudo desenvolvimento de software.",
     "profile-contact": "Contato",
     // projects section
     "projects-title": "Proyectos",
@@ -241,7 +246,7 @@ const translations = {
     // main
     "profile-name": "Kevin Flores",
     "profile-role": "Full Stack Developer",
-    "profile-about": "Over 3 years of experience building modern, responsive, and results-driven websites. I turn ideas into functional and visually appealing digital solutions, combining design, clean code, and best practices. Constantly learning, collaborating proactively, and fully committed to delivering the best outcomes for every client.",
+    "profile-about": "Web Developer creating modern and responsive websites for businesses. Applyng my skills through real client projects, while studying Software Development.",
     "profile-contact": "Contact",
 
     // projects

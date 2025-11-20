@@ -2,9 +2,28 @@
 
 /* Portfolio specific styles */
 
+#profile img {
+    margin-top: 5rem;
+    width: 350px;
+    height: auto;
+    padding: 0 !important;
+    border-radius: 50%;
+
+}
+
+#profile #profile-name-portfolio {
+    font-size: 1.8rem;
+    color: antiquewhite;
+}
+
+#profile h1 {
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
 #portfolio-languages .service-budget {
     margin: 0 auto;
-    
+
 }
 
 #portfolio-languages .languages-icons {
@@ -21,16 +40,21 @@
     position: relative;
     background: transparent;
     padding: 20px 0;
-    width: 50%;
+    width:100%;
 }
 
 #portfolio-languages span {
-    font-size: 5rem;
+    font-size: 3rem;
     transition: transform 0.3s ease;
     cursor: pointer;
-padding: 2rem;
+    padding: 2rem;
 }
 
 #portfolio-languages span:hover {
     transform: scale(1.2);
+}
+
+#cardModal1 .fa-brands{
+    font-size: 40px;
+    padding: 0 1rem 0 1rem;
 }
