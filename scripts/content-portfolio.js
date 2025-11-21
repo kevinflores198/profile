@@ -7,13 +7,15 @@ const translations = {
     "nav-resume": "¿Por qué yo?",
     "nav-references": "Testimonios",
     "projects-title": "Proyectos",
-    "about-text": "Soy un desarrollador web apasionado por crear sitios modernos y funcionales.",
+
     // main
     // profile section
     "profile-name-portfolio": "Hola, soy Kevin Flores",
-    "profile-role": "Desarrollador Full Stack",
     "profile-about-portfolio": "Desarrollador web enfocado en crear sitios modernos y responsivos para empresas. Actualmente aplicando mis habilidades en proyectos reales con clientes, mientras estudio desarrollo de software.",
     "profile-contact": "Contacto",
+    // about me section
+    "about-me-title": "Sobre mí",
+    "about-me-desc": "Comencé a estudiar programación en 2022 y descubrí una pasión por crear sitios modernos y funcionales. Hoy combino mis habilidades técnicas con mi experiencia en servicio al cliente para entregar soluciones claras, limpias y profesionales. Me enfoco en aprender continuamente y en ofrecer una excelente comunicación en cada proyecto..",
     // projects section
     "projects-title": "Proyectos",
     // project 1
@@ -30,24 +32,27 @@ const translations = {
     "modal-p3": "Estructura, diseño, UI, desarrollo front-end, optimización SEO y despliegue.",
     "modal-title-3": "Qué aprendí",
     "modal-p4": "Mejores prácticas de desarrollo web front-end, diseño responsivo y optimización SEO, contacto con clientes.",
-    //modal 2
-    "modal2-title": "Red social para diseñadores de moda. Login seguro y perfiles múltiples.",
-    "modal2-p1": "Red social para diseñadores de moda. Login seguro y perfiles múltiples.",
-    "modal2-title-1": "Tecnologias utilizadas",
-    "modal2-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
+    // modal 2
+    "modal2-title": "Red social para diseñadores de moda con login seguro y perfiles múltiples.",
+    "modal2-p1": "Plataforma tipo red social para diseñadores de moda, con sistema de autenticación seguro y perfiles personalizados.",
+    "modal2-title-1": "Tecnologías utilizadas",
+    "modal2-p2": "Java, Spring Boot, MySQL, HTML, CSS y JavaScript.",
     "modal2-title-2": "Lo que hice",
-    "modal2-p3": "Estructura, diseño, UI, desarrollo front-end y back-end, base de datos y despliegue.",
+    "modal2-p3": "Diseño de la arquitectura, UI, desarrollo front-end y back-end, conexión con base de datos y despliegue.",
     "modal2-title-3": "Qué aprendí",
-    "modal2-p4": "Desarrollo full stack con Java y Spring Boot, gestión de bases de datos MySQL, autenticación segura y manejo de perfiles múltiples.",
-    //modal 3
-    "modal3-title": "Aplicación de biblioteca con gestión de libros y usuarios. Login integrado.",
-    "modal3-p1": "Aplicación de biblioteca con gestión de libros y usuarios. Login integrado.",
-    "modal3-title-1": "Tecnologias utilizadas",
-    "modal3-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
+    "modal2-p4": "Desarrollo full stack con Java y Spring Boot, manejo de autenticación, CRUD completo, MySQL y lógica de perfiles múltiples.",
+    "modal2-title-4": "Estado: En actualización",
+    "modal2-p5": "Este proyecto fue desarrollado en una versión anterior de Spring Boot y varias dependencias quedaron obsoletas. Actualmente lo estoy actualizando para que sea totalmente compatible con las versiones modernas. El código completo está disponible en GitHub.",
+    // modal 3
+    "modal3-title": "Aplicación de biblioteca con gestión de libros, usuarios y login integrado.",
+    "modal3-title-1": "Tecnologías utilizadas",
+    "modal3-p2": "Java, Spring Boot, MySQL, HTML, CSS y JavaScript.",
     "modal3-title-2": "Lo que hice",
-    "modal3-p3": "Estructura, diseño, UI, desarrollo front-end y back-end, base de datos y despliegue.",
+    "modal3-p3": "Arquitectura del proyecto, UI, desarrollo front-end y back-end, integración con MySQL y despliegue.",
     "modal3-title-3": "Qué aprendí",
-    "modal3-p4": "Desarrollo full stack con Java y Spring Boot, gestión de bases de datos MySQL, autenticación segura y manejo de múltiples usuarios.",
+    "modal3-p4": "Desarrollo full stack con Java y Spring Boot, consultas SQL, gestión de múltiples usuarios y autenticación con control de acceso.",
+    "modal3-title-4": "Estado: En actualización",
+    "modal3-p5": "Este proyecto necesita ajustes de dependencias y actualización del sistema de login para versiones más modernas de Spring Boot. El código completo está disponible en GitHub mientras preparo la versión deployada.",
 
     // project 2
     "project2-title": "Social Fashion",
@@ -63,7 +68,7 @@ const translations = {
     "quote-title-known": "Usando estas tecnologías:",
     "quote-title-learning": "Aprendiendo estas tecnologías:",
     "quote-btn": "Contactarme",
- 
+
     //studies
     "studies-title": "Educación",
 
@@ -83,7 +88,7 @@ const translations = {
 
     //resume
     "resume-title": "¿Por qué trabajar conmigo?",
-    "resume-li1": "Programador con más de 3 años de experiencia.",
+    "resume-li1": "3+ años aprendiendo y construyendo proyectos de desarrollo web.",
     "resume-li2": "Fluido en español, portugués e inglés.",
     "resume-li3": "Experiencia internacional con clientes de EE.UU., Brasil y otros países.",
     "resume-li4": "Comunicación profesional y confiable en cada etapa.",
@@ -113,13 +118,11 @@ const translations = {
     //contact
     "contact-title": "¡Espero tu mensaje!",
 
-    "contact-manager": "Gerente de Proyecto",
+    "contact-dev": "Desarrollador Full Stack",
+    "contact-description-2": "Desarrollador full stack en crecimiento, con experiencia en proyectos reales para clientes. Trabajo en front-end y back-end construyendo sitios modernos, responsivos y bien estructurados. Busco siempre mejorar mis procesos y adoptar buenas prácticas de desarrollo.",
 
-    "contact-dev": "Programador Full Stack",
-
-    "contact-description": "Profesional enfocado en la gestión eficiente de proyectos digitales. Coordina equipos, supervisa entregas y garantiza que cada etapa se cumpla con calidad y puntualidad. Tu aliado estratégico para transformar ideas en resultados concretos.",
-
-    "contact-description-2": "Desarrollador versátil con experiencia en front-end y back-end. Crea soluciones modernas, responsivas y seguras, adaptadas a las necesidades de cada cliente. Comprometido con la innovación y la excelencia técnica.",
+    "contact-manager": "Project Assistant",
+    "contact-description": "Apoyo en la organización y coordinación de proyectos web. Ayudo con la comunicación con clientes, el seguimiento de tareas y la gestión básica del proyecto para asegurar que cada entrega se realice con claridad y puntualidad.",
 
 
     //footer
@@ -146,10 +149,14 @@ const translations = {
     "projects-title": "Projetos",
     "about-text": "Sou um desenvolvedor web apaixonado por criar sites modernos e funcionais.",
     // main
-    "profile-name": "Kevin Flores",
-    "profile-role": "Desenvolvedor Full Stack",
-    "profile-about": "Desenvolvedor web focado na criação de sites modernos e responsivos para empresas. Atualmente aplicando minhas habilidades em projetos reais com clientes, enquanto estudo desenvolvimento de software.",
+    // profile section
+    "profile-name-portfolio": "Olá, eu sou Kevin Flores",
+    "profile-about-portfolio": "Desenvolvedor web focado em criar sites modernos e responsivos para empresas. Atualmente aplicando minhas habilidades em projetos reais com clientes, enquanto estudo desenvolvimento de software.",
     "profile-contact": "Contato",
+    // about me section
+    "about-me-title": "Sobre mim",
+    "about-me-desc": "Comecei a estudar programação em 2022 e descobri uma paixão por criar sites modernos e funcionais. Hoje combino minhas habilidades técnicas com minha experiência em atendimento ao cliente para entregar soluções claras, limpas e profissionais. Foco em aprender continuamente e oferecer excelente comunicação em cada projeto.",
+
     // projects section
     "projects-title": "Proyectos",
     // project 1
@@ -177,14 +184,16 @@ const translations = {
     "modal-title-3": "O que eu aprendi",
     "modal-p4": "Melhores práticas de desenvolvimento web front-end, design responsivo e otimização SEO, contato com clientes.",
     //modal 2
-    "modal2-title": "Rede social para estilistas de moda. Login seguro e múltiplos perfis.",
-    "modal2-p1": "Rede social para estilistas de moda. Login seguro e múltiplos perfis.",
+    "modal2-title": "Rede social para estilistas de moda com login seguro e múltiplos perfis.",
+    "modal2-p1": "Rede social para estilistas de moda com login seguro e múltiplos perfis.",
     "modal2-title-1": "Tecnologias utilizadas",
     "modal2-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
     "modal2-title-2": "O que eu fiz",
     "modal2-p3": "Estrutura, design, UI, desenvolvimento front-end e back-end, banco de dados e deploy.",
     "modal2-title-3": "O que eu aprendi",
     "modal2-p4": "Desenvolvimento full stack com Java e Spring Boot, gerenciamento de banco de dados MySQL, autenticação segura e manipulação de múltiplos perfis.",
+    "modal2-title-4": "Status: Em atualização",
+    "modal2-p5": "Este projeto foi desenvolvido em uma versão anterior do Spring Boot e várias dependências ficaram obsoletas. Atualmente estou atualizando para garantir total compatibilidade com as versões modernas. O código completo está disponível no GitHub.",
     //modal 3
     "modal3-title": "Aplicativo de biblioteca com gerenciamento de livros e usuários. Login integrado.",
     "modal3-p1": "Aplicativo de biblioteca com gerenciamento de livros e usuários. Login integrado.",
@@ -194,7 +203,9 @@ const translations = {
     "modal3-p3": "Estrutura, design, UI, desenvolvimento front-end e back-end, banco de dados e deploy.",
     "modal3-title-3": "O que eu aprendi",
     "modal3-p4": "Desenvolvimento full stack com Java e Spring Boot, gerenciamento de banco de dados MySQL, autenticação segura e manipulação de múltiplos usuários.",
-
+    "modal3-title-4": "Status: Em atualização",
+    "modal3-p5": "Projeto full stack com Java + Spring Boot + MySQL que necessita de ajuste de dependências e atualização do sistema de login. O código completo pode ser visto no GitHub enquanto preparo a versão deployada.",
+    //terms
     "quote-title": "Quer um site assim?",
     "quote-btn": "Solicitar orçamento",
     "quote-terms": "Termos e Condições",
@@ -223,7 +234,7 @@ const translations = {
 
     //resume
     "resume-title": "Por que trabalhar comigo?",
-    "resume-li1": "Programador com mais de 3 anos de experiência.",
+    "resume-li1": "3+ anos aprendendo e construindo projetos de desenvolvimento web.",
     "resume-li2": "Fluente em espanhol, português e inglês.",
     "resume-li3": "Experiência internacional com clientes dos EUA, Brasil e outros países.",
     "resume-li4": "Comunicação profissional e confiável em todas as etapas.",
@@ -254,13 +265,10 @@ const translations = {
     //contact
     "contact-title": "Estou ansioso pelo seu  mensagem!",
 
-    "contact-manager": "Gerente de Projeto",
-
     "contact-dev": "Programador Full Stack",
-
-    "contact-description": "Profissional focado na gestão eficiente de projetos digitais. Coordena equipes, supervisiona entregas e garante que cada etapa seja cumprida com qualidade e pontualidade. Seu parceiro estratégico para transformar ideias em resultados concretos.",
-
-    "contact-description-2": "Desenvolvedor versátil com experiência em front-end e back-end. Cria soluções modernas, responsivas e seguras, adaptadas às necessidades de cada cliente. Comprometido com a inovação e excelência técnica.",
+    "contact-description-2": "Desenvolvedor full stack em crescimento, com experiência em projetos reais para clientes. Trabalho em front-end e back-end construindo sites modernos, responsivos e bem estruturados. Busco sempre melhorar meus processos e adotar boas práticas de desenvolvimento.",
+    "contact-manager": "Assistente de Projetos",
+    "contact-description": "Apoio na organização e coordenação de projetos web. Auxilio na comunicação com clientes, acompanhamento de tarefas e gestão básica do projeto para garantir que cada entrega seja realizada com clareza e pontualidade.",
 
     //footer
     "footer-linkedin": "LinkedIn",
@@ -287,10 +295,13 @@ const translations = {
     "about-text": "I am a web developer passionate about building modern and functional websites.",
 
     // main
-    "profile-name": "Kevin Flores",
-    "profile-role": "Full Stack Developer",
-    "profile-about": "Web Developer creating modern and responsive websites for businesses. Applyng my skills through real client projects, while studying Software Development.",
+    // profile section
+    "profile-name-portfolio": "Hello, I'm Kevin Flores",
+    "profile-about-portfolio": "Web developer focused on creating modern and responsive websites for businesses. Currently applying my skills in real projects with clients while studying software development.",
     "profile-contact": "Contact",
+    // about me section
+    "about-me-title": "About Me",
+    "about-me-desc": "I started studying programming in 2022 and discovered a passion for creating modern and functional websites. Today, I combine my technical skills with my customer service experience to deliver clear, clean, and professional solutions. I focus on continuous learning and providing excellent communication in every project.",
 
     // projects
     "projects-title": "Projects",
@@ -319,25 +330,27 @@ const translations = {
     "modal-title-3": "What I learned",
     "modal-p4": "Best practices in front-end web development, responsive design, SEO optimization, and client communication.",
     //modal 2
-    "modal2-title": "Social network for fashion designers. Secure login and multiple profiles.",
-    "modal2-p1": "Social network for fashion designers. Secure login and multiple profiles.",
+    "modal2-title": "Social network for fashion designers with secure login and multiple profiles.",
+    "modal2-p1": "Social network for fashion designers with secure login and multiple profiles.",
     "modal2-title-1": "Technologies used",
     "modal2-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
     "modal2-title-2": "What I did",
-    "modal2-p3": "Structure, design, UI, front-end and back-end development, database, and deployment.",
+    "modal2-p3": "Structure, design, UI, front-end and back-end development, database connection, and deployment.",
     "modal2-title-3": "What I learned",
     "modal2-p4": "Full stack development with Java and Spring Boot, MySQL database management, secure authentication, and handling multiple profiles.",
+    "modal2-title-4": "Status: Under update",
+    "modal2-p5": "This project was developed in an older version of Spring Boot and several dependencies have become outdated. I am currently updating it to ensure full compatibility with modern versions. The complete code is available on GitHub.",
     //modal 3
     "modal3-title": "Library application with book and user management. Integrated login.",
     "modal3-p1": "Library application with book and user management. Integrated login.",
     "modal3-title-1": "Technologies used",
     "modal3-p2": "Java, Spring Boot, MySQL, HTML, CSS, JavaScript.",
     "modal3-title-2": "What I did",
-    "modal3-p3": "Structure, design, UI, front-end and back-end development, database, and deployment.",
+    "modal3-p3": "Structure, design, UI, front-end and back-end development, database integration, and deployment.",
     "modal3-title-3": "What I learned",
     "modal3-p4": "Full stack development with Java and Spring Boot, MySQL database management, secure authentication, and handling multiple users.",
-    
-    
+    "modal3-title-4": "Status: Under update",
+    "modal3-p5": "Full stack project with Java + Spring Boot + MySQL that needs dependency adjustments and login system update. The complete code can be seen on GitHub while I prepare the deployed version.",
     //terms
     "quote-title": "Want a website like this?",
     "quote-btn": "Get a quote",
@@ -367,7 +380,7 @@ const translations = {
 
     //resume
     "resume-title": "Why work with me?",
-    "resume-li1": "Programmer with 3+ years of experience.",
+    "resume-li1": "3+ years learning and building web development projects.",
     "resume-li2": "Fluent in Spanish, Portuguese, and English.",
     "resume-li3": "International experience with clients from USA, Brazil, and beyond.",
     "resume-li4": "Professional and reliable communication at every stage.",
@@ -398,13 +411,10 @@ const translations = {
     //contact
     "contact-title": "I look forward to your message!",
 
-    "contact-manager": "Project Manager",
-
     "contact-dev": "Full Stack Programmer",
-
-    "contact-description": "A results-driven professional specialized in managing digital projects. Coordinates teams, oversees deliverables, and ensures every stage is completed with quality and precision. Your strategic partner to turn ideas into real outcomes.",
-
-    "contact-description-2": "Versatile developer with experience in both front-end and back-end. Builds modern, responsive, and secure solutions tailored to each client’s needs. Committed to innovation and technical excellence.",
+    "contact-description-2": "Growing full stack developer with experience in real projects for clients. I work on front-end and back-end building modern, responsive, and well-structured websites. I always seek to improve my processes and adopt good development practices.",
+    "contact-manager": "Project Assistant",
+    "contact-description": "Support in organizing and coordinating web projects. Assist with client communication, task tracking, and basic project management to ensure each delivery is made clearly and on time.",
 
     //footer
     "footer-linkedin": "LinkedIn",

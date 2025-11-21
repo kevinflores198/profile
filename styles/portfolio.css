@@ -61,7 +61,19 @@
 #cardModal2 .fa-solid,
 #cardModal3 .fa-solid {
     font-size: 40px;
-    padding: 0 1rem 0 1rem;
+    padding: 0 .6rem 0 .6rem;
+    color: var(--text);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#cardModel1 .fa-brands:hover,
+#cardModal2 .fa-brands:hover,
+#cardModal3 .fa-brands:hover,
+#cardModal1 .fa-solid:hover,
+#cardModal2 .fa-solid:hover,
+#cardModal3 .fa-solid:hover {
+    transform: scale(1.2);
 }
 
 #cardModal1 .description h3,
@@ -75,6 +87,35 @@
 #cardModal3 .description p {
     font-size: 1rem !important;
 }
+
+#about-me {
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg,
+            var(--primary),
+            var(--secondary));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--text);
+    border-radius: 50px 0 0 50px;
+}
+
+#about-me .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text);
+    padding: 0 1rem;
+}
+
+#about-me #about-me-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: antiquewhite;
+    text-align: center;
+}
+
 
 footer .nav2 .nav-links {
     flex-direction: column !important;

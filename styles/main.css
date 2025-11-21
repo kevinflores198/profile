@@ -114,7 +114,8 @@
 #studies,
 #resume,
 #references,
-#contact {
+#contact,
+#about-me {
     padding-top: 10rem;
 }
 
@@ -875,7 +876,6 @@ body.modal-open {
 }
 
 #contact .content-contact-it .contact-it .content {
-    margin-left: 2rem;
     display: flex;
     flex-direction: row;
 }
