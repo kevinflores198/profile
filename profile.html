@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Kevin Flores</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="theme-color" content="#000000">
+    <meta name="author" content="Kevin Nicolas Flores Gonzalez">
+    <meta name="description" content="Hi This my profile,
+     it is going to have some important information about 
+     me, it will show up my projects, studies and what its
+     going to be my objective with future clients.">
+    <meta property="og:title" content="Kevin Flores | Developer">
+    <meta property="og:description"
+        content="Portfolio de Kevin Flores: desarrollador web full stack. HTML, CSS, JavaScript, Java y más.">
+    <meta property="og:image" content="https://kevinflores198.github.io/profile//files/img-profile.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kevinflores198.github.io/profile/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+    <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="top">
+        <nav class="nav2">
+            <ul class="nav-links">
+                <li><a id="nav-link-1" href="portfolio.html"></a></li>
+                <li><a id="nav-link-2" href="profile.html"></a></li>
+                <li><a id="nav-link-3" href="confiweb.html"></a></li>
+            </ul>
+        </nav>
+        <nav class="glass-navbar" aria-label="Main Navigation">
+            <div class="content" id="contentnav">
+                <div class="language-switch">
+                    <button class="lang-btn" onclick="toggleLanguageMenu()">
+                        <i class="fa-solid fa-earth-americas"></i><span id="current-lang">EN</span>
+                    </button>
+                    <ul id="lang-menu" class="lang-menu hidden">
+                        <li onclick="setLanguage('en'); updateLangButton('EN')"><span class="fi fi-us"></span> English
+                        </li>
+                        <li onclick="setLanguage('es'); updateLangButton('ES')"><span class="fi fi-ar"></span> Español
+                        </li>
+                        <li onclick="setLanguage('pt'); updateLangButton('PT')"><span class="fi fi-br"></span> Português
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a id="nav-about" href="#top"></a></li>
+                        <li><a id="nav-projects" href="#projects"></a></li>
+                        <li><a id="nav-studies" href="#studies"></a></li>
+                        <li><a id="nav-resume" href="#resume"></a></li>
+                        <li><a id="nav-references" href="#references"></a></li>
+                    </ul>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" title="Switch theme" aria-label="Change theme"
+                    aria-pressed="false">
+                    🌙
+                </button>
+            </div>
+            <div class="burger" id="button-burger"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <video autoplay muted loop playsinline id="video-dark" class="bg-video" aria-hidden="true" alt="video hero">
+                <source src="files/hero-background-profile.mp4" type="video/mp4">
+            </video>
+
+            <video autoplay muted loop playsinline id="video-light" class="bg-video hidden" aria-hidden="true"
+                alt="video hero">
+                <source src="files/hero-background-light-profile.mp4" type="video/mp4">
+            </video>
+
+            <div class="content">
+                <div class="photo">
+                    <img src="files/profile-no-back.png" alt="profile picture">
+                </div>
+                <div class="text-content">
+                    <div class="name">
+                        <h1 id="profile-name"></h1>
+                        <h1 id="typewriter"></h1>
+                    </div>
+                    <div class="about">
+                        <p id="profile-about"></p>
+                    </div>
+                    <div class="glass-btn">
+                        <a href="" id="profile-contact"></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="">
+            <div class="content">
+                <h2 id="projects-title"></h2>
+                <div class="cards fade-in">
+                    <figure class="card-project" id="card-cont1">
+                        <img src="files/button.jpg" class="card-video" loading="lazy">
+                        <div class="card-content">
+                            <figcaption>
+                                <h3 id="project1-title"></h3>
+                                <p id="project1-exp">
+                                </p>
+                            </figcaption>
+                            <div class="button">
+                                <a class="glass-btn" id="project1-btn"></a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="card-project" id="card-cont2">
+                        <img src="files/social.jpg" class="card-video" loading="lazy">
+                        <div class="card-content">
+                            <figcaption>
+                                <h3 id="project2-title"></h3>
+                                <p id="project2-exp"></p>
+                            </figcaption>
+                            <div class="button">
+                                <a class="glass-btn" id="project2-btn"></a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="card-project" id="card-cont3">
+                        <img src="files/library.jpg" class="card-video" loading="lazy">
+                        <div class="card-content">
+                            <figcaption>
+                                <h3 id="project3-title"></h3>
+                                <p id="project3-exp"></p>
+                            </figcaption>
+                            <div class="button">
+                                <a class="glass-btn" id="project3-btn"></a>
+                            </div>
+                        </div>
+                    </figure>
+
+                </div>
+                <div id="cardModal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <h2>Brutton Construtec</h2>
+                            <div class="tech-carousel">
+                                <div class="tech-track">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Netlify</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Netlify</span>
+                                    <span>Visual Studio</span>
+                                </div>
+                            </div>
+                            <p id="modal-p1"></p>
+
+                            <img src="files/brutton.png" style="width: 100%;border-radius: 40px;"
+                                alt="brutton image site">
+                            <img src="files/brutton2.png" style="width: 100%;border-radius: 40px;"
+                                alt="brutton image site">
+                            <img src="files/brutton3.png" style="width: 100%;border-radius: 40px;"
+                                alt="brutton image site">
+                        </div>
+                        <div class="ver-mais">
+                            <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                Visitar Projecto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Pedir presupuesto
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="cardModal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>titulo del projecto</h2>
+                        <h1>In progress...</h1>
+
+                        <div class="descriotion">
+                            <div class="tech-carousel">
+                                <div class="tech-track">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                </div>
+                            </div>
+                            <p id="modal-p2"></p>
+                        </div>
+                    </div>
+                    <div class="ver-mais">
+                        <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                            Visitar Projecto
+                        </a>
+                        <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                            Pedir presupuesto
+                        </a>
+                    </div>
+                </div>
+                <div id="cardModal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>titulo del projecto</h2>
+                        <h1>In progress...</h1>
+
+                        <div class="descriotion">
+                            <div class="tech-carousel">
+                                <div class="tech-track">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                </div>
+                            </div>
+                            <p id="modal-p3"></p>
+
+                        </div>
+
+                    </div>
+                    <div class="ver-mais">
+                        <div class="container">
+                            <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                Visitar Projecto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Pedir presupuesto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="service-budget">
+                <h2 id="quote-title"></h2>
+                <div class="button">
+                    <button target="_blank" class="glass-btn" id="quote-btn">
+                        <a href="https://wa.me/554888648031"></a>
+                    </button>
+                </div>
+                <details>
+                    <summary id="quote-terms"></summary>
+                    <ul>
+                        <li id="quote-li1"></li>
+                        <li id="quote-li2"></li>
+                        <li id="quote-li3"></li>
+                        <li id="quote-li4"></li>
+                        <li id="quote-li5"></li>
+                    </ul>
+                </details>
+            </div>
+        </section>
+        <section id="studies">
+            <div class="content">
+                <h2 id="studies-title"></h2>
+
+                <div class="cards">
+                    <article class="card-study">
+                        <div class="l">
+                            <a class="logo" target="_blank"
+                                href="https://www.byupathway.edu/bachelors-degree/software-development">
+                                <img class="logo-img" src="files/byu.png" alt="byu logo">
+                            </a>
+                        </div>
+                        <h3 id="study1-title"></h3>
+                        <p id="study1-desc"></p>
+                        <div class="degrees">
+                            <h2 id="study1-degree1"></h2>
+                            <p id="study1-degree1-desc"></p>
+                            <details>
+                                <summary>
+                                    Diploma
+                                </summary>
+                            </details>
+                        </div>
+                        <div class="degrees">
+                            <h2 id="study1-degree2"></h2>
+                            <p id="study1-degree2-desc"></p>
+                        </div>
+                        <details>
+                            <summary>
+
+                                Diploma
+                            </summary>
+                            <img class="img-pathway" src="files/pathway-cert.png" alt="pathway">
+                        </details>
+                    </article>
+                    <article class="card-study">
+                        <div class="l">
+                            <a class="logo" target="_blank" href="https://egg.live/es/home">
+                                <img class="logo-img" src="files/egg.png" alt="egg logo">
+                            </a>
+                        </div>
+                        <h3 id="study2-title"></h3>
+                        <p id="study2-desc"></p>
+                        <div class="degrees">
+                            <h2 id="study2-degree1"></h2>
+                            <p id="study2-degree1-desc"></p>
+                            <details>
+                                <summary>
+                                    Diploma
+                                </summary>
+                                <img class="img-egg" src="files/egg-cert.jpeg" alt="pathway">
+                            </details>
+                        </div>
+                        <div class="degrees">
+                            <h2 id="study2-degree2"></h2>
+                            <p id="study2-degree2-desc"></p>
+                            <details>
+                                <summary>
+                                    Diploma
+                                </summary>
+                                <img class="img" src="files/egg-cert-pseudo.png" alt="pathway">
+                            </details>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="resume">
+            <div class="content">
+                <h2 id="resume-title"></h2>
+                <ul>
+                    <div><i class="fa-solid fa-brain"></i>
+                        <li id="resume-li1"></li>
+                    </div>
+                    <div><i class="fa-solid fa-language"></i>
+                        <li id="resume-li2"></li>
+                    </div>
+                    <div><i class="fa-solid fa-plane"></i>
+                        <li id="resume-li3"></li>
+                    </div>
+                    <div><i class="fa-solid fa-user-tie"></i>
+                        <li id="resume-li4"></li>
+                    </div>
+                </ul>
+                <h3 id="resume-cta"></h3>
+            </div>
+            <div class="glass-btn">
+                <a href="" id="resume-contact"></a>
+            </div>
+        </section>
+        <section id="references">
+            <div class="content">
+                <h2 id="references-title"></h2>
+                <p id="references-desc"></p>
+                <div class="comments">
+                    <article class="comment-card">
+                        <h4 id="comment1-name"></h4>
+                        <h5 id="comment1-biz"></h5>
+                        <p id="comment1-text"></p>
+                    </article>
+                    <article class="comment-card">
+                        <h4 id="comment2-name"></h4>
+                        <h5 id="comment2-biz"></h5>
+                        In progress...
+                        In progress...
+                        In progress...
+                        In progress...
+
+                        <p id="comment2-text"></p>
+                    </article>
+                    <article class="comment-card">
+                        <h4 id="comment3-name"></h4>
+                        <h5 id="comment3-biz"></h5>
+                        In progress...
+                        In progress...
+                        In progress...
+                        In progress...
+
+                        <p id="comment3-text"></p>
+
+                    </article>
+                    <article class="comment-card">
+                        <h4 id="comment4-name"></h4>
+                        <h5 id="comment4-biz"></h5>
+                        In progress...
+                        In progress...
+                        In progress...
+                        In progress...
+
+                        <p id="comment4-text"></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 id="contact-title"></h1>
+            <div class="content-contact-it">
+                <div class="contact-it">
+                    <img src="files/avatar-lu.jpg" alt="manager photo">
+                    <h2 id="contact-manager"></h2>
+                    <p id="contact-description"></p>
+
+                    <div class="content">
+                        <a id="contact-manager-whatsapp" href="https://wa.me/554888645497" target="_blank"
+                            class="whatsapp-button">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a id="contact-manager-email" href="mailto:Lourdesmarianamachuca@gmail.com" target="_blank"
+                            class="whatsapp-button">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-it">
+                    <img src="files/img-profile.png" alt="programmer photo">
+                    <h2 id="contact-dev"></h2>
+                    <p id="contact-description-2"></p>
+
+
+                    <div class="content">
+                        <a id="contact-programmer-whatsapp" href="https://wa.me/554888648031" target="_blank"
+                            class="whatsapp-button">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a id="contact-programming-email" href="mailto:kevinfloresg1998@gmail.com" target="_blank"
+                            class="whatsapp-button">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a target="_blank" id="footer-linkedin" href="https://www.linkedin.com/in/kevinfloresg/"></a></li>
+                <li><a target="_blank" id="footer-github" href="https://github.com/kevinflores198"></a></li>
+                <li><a target="_blank" id="footer-instagram" href="https://www.instagram.com/kevo198_/"></a></li>
+                <li><a target="_blank" id="footer-facebook" href="https://www.facebook.com/kevinflores198"></a></li>
+            </ul>
+            <ul>
+                <li><a href="portfolio.html">Perfil</a></li>
+                <li><a href="">Portafolio</a></li>
+                <li><a href="">Confiweb</a></li>
+            </ul>
+            <ul>
+                <li><a id="footer-terms" href="#projects"></a></li>
+                <li><a id="footer-contact" target="_blank" href="https://wa.me/554888648031"></a></li>
+                <li><a id="footer-studies" href="#studies"></a></li>
+                <li><a id="footer-projects" href="#projects"></a></li>
+            </ul>
+
+        </nav>
+        <p>&copy; <span id="currentyear"></span> <span id="footer-copy"></span></p>
+    </footer>
+
+    <div class="arrowUp" id="arrowUp">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <div class="contactMe" id="contactMe">
+        <a target="_blank" href="https://wa.me/554888648031"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/content.js"></script>
+</body>
+
+</html>

@@ -7,6 +7,10 @@ const translations = {
     "nav-resume": "¿Por qué yo?",
     "nav-references": "Testimonios",
     "projects-title": "Proyectos",
+    "nav-link-1": "Portfolio",
+    "nav-link-2": "Perfil",
+    "nav-link-3": "Confiweb",
+  
 
     // main
     // profile section
@@ -147,7 +151,10 @@ const translations = {
     "nav-resume": "Por que eu?",
     "nav-references": "Depoimentos",
     "projects-title": "Projetos",
-    "about-text": "Sou um desenvolvedor web apaixonado por criar sites modernos e funcionais.",
+    "nav-link-1": "Portfólio",
+    "nav-link-2": "Perfil",
+    "nav-link-3": "Confiweb",
+
     // main
     // profile section
     "profile-name-portfolio": "Olá, eu sou Kevin Flores",
@@ -292,8 +299,10 @@ const translations = {
     "nav-resume": "Why Me",
     "nav-references": "Testimonials",
     "projects-title": "Projects",
-    "about-text": "I am a web developer passionate about building modern and functional websites.",
-
+    "nav-link-1": "Portfolio",
+    "nav-link-2": "Profile",
+    "nav-link-3": "Confiweb",
+    
     // main
     // profile section
     "profile-name-portfolio": "Hello, I'm Kevin Flores",

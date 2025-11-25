@@ -31,9 +31,9 @@
     <header id="top">
         <nav class="nav2">
             <ul class="nav-links">
-                <li><a href="index.html">Perfil</a></li>
-                <li><a href="portfolio.html">Portafolio</a></li>
-                <li><a href="confiweb.html">Confiweb</a></li>
+                <li><a id="nav-link-1" href="portfolio.html"></a></li>
+                <li><a id="nav-link-2" href="profile.html"></a></li>
+                <li><a id="nav-link-3" href="confiweb.html"></a></li>
             </ul>
         </nav>
         <nav class="glass-navbar" aria-label="Main Navigation">
@@ -68,10 +68,19 @@
             <div class="burger" id="button-burger"><i class="fa-solid fa-bars"></i></div>
         </nav>
     </header>
-    <main>
+    <main id="profile">
+        <video autoplay muted loop playsinline id="video-dark" class="bg-video" aria-hidden="true" alt="video hero">
+            <source src="files/hero-background-profile.mp4" type="video/mp4">
+        </video>
+
+        <video autoplay muted loop playsinline id="video-light" class="bg-video hidden" aria-hidden="true"
+            alt="video hero">
+            <source src="files/hero-background-light-profile.mp4" type="video/mp4">
+        </video>
+
         <section id="hero" class="empresa-hero">
             <div class="content">
-                <h1>Kevin Flores Web Studio</h1>
+                <h1>ConfiWeb Studio</h1>
                 <p>Ayudamos a tu empresa a crecer con tecnología moderna, diseño funcional y presencia digital efectiva.
                 </p>
                 <a href="https://wa.me/554888648031" class="glass-btn">Solicitar presupuesto</a>
@@ -124,8 +133,8 @@
             </ul>
             <nav class="nav2">
                 <ul class="nav-links">
-                    <li><a href="index.html">Perfil</a></li>
-                    <li><a href="portfolio.html">Portafolio</a></li>
+                    <li><a href="portfolio.html">Perfil</a></li>
+                    <li><a href="profile.html">Portafolio</a></li>
                     <li><a href="confiweb.html">Confiweb</a></li>
                 </ul>
             </nav>
