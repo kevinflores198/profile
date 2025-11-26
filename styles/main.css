@@ -723,6 +723,7 @@ body.modal-open {
 
 #resume {
     margin: 0 auto;
+    margin-bottom: 4rem;
     background: linear-gradient(180deg,
             var(--primary),
             var(--bg));

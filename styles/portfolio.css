@@ -103,7 +103,7 @@ margin-top: 16rem;
 
 #about-me .fa-circle-user {
     font-size: 2rem;
-    color: antiquewhite;
+    color: var(--text);
     display: block;
     text-align: right;
     padding: 0 1rem;

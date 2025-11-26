@@ -1,8 +1,8 @@
 :root {
   --bg: antiquewhite;
   --text: #111827;
-  --primary: #1e8fffce;
-  --secondary: #ff3a30ba;
+  --primary: #1e8fffd5;
+  --secondary: #ff3a30;
   --hover: #9fa0a1a4;
 
 }
@@ -10,9 +10,9 @@
 [data-theme="dark"] {
   --bg: #0D1117;
   --text: #E6EDF3;
-  --primary: #1e40afe9;
+  --primary: #294ab8e9;
   --secondary: #dc2626ea;
-  --hover: #1c2331;
+  --hover: #202838;
 
 }
 
