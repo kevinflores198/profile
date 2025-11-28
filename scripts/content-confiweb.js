@@ -1,16 +1,15 @@
 const translations = {
   es: {
     // nav
-    "nav-about": "Sobre mí",
-    "nav-projects": "Proyectos",
-    "nav-studies": "Educación",
-    "nav-resume": "¿Por qué yo?",
-    "nav-references": "Testimonios",
-    "projects-title": "Proyectos",
+    "nav-about-bs": "Sobre nosotros",
+    "nav-projects-bs": "Servicios",
+    "nav-cases-bs": "Casos de éxito",
+    "nav-cta-bs": "Contactanos",
+
     "nav-link-1": "Portfolio",
     "nav-link-2": "Perfil",
     "nav-link-3": "Confiweb",
-  
+
 
     // main
     // profile section
@@ -145,11 +144,11 @@ const translations = {
   },
   pt: {
     // nav
-    "nav-about": "Sobre mim",
-    "nav-projects": "Projetos",
-    "nav-studies": "Educação",
-    "nav-resume": "Por que eu?",
-    "nav-references": "Depoimentos",
+    "nav-about-bs": "Sobre nós",
+    "nav-projects-bs": "Serviços",
+    "nav-cases-bs": "Casos de sucesso",
+    "nav-cta-bs": "Contate-nos",
+
     "projects-title": "Projetos",
     "nav-link-1": "Portfólio",
     "nav-link-2": "Perfil",
@@ -293,16 +292,15 @@ const translations = {
   },
   en: {
     // nav
-    "nav-about": "About Me",
-    "nav-projects": "Projects",
-    "nav-studies": "Education",
-    "nav-resume": "Why Me",
-    "nav-references": "Testimonials",
+    "nav-about-bs": "About us",
+    "nav-projects-bs": "Services",
+    "nav-cases-bs": "Success Stories",
+    "nav-cta-bs": "Contact us",
     "projects-title": "Projects",
     "nav-link-1": "Portfolio",
     "nav-link-2": "Profile",
     "nav-link-3": "Confiweb",
-    
+
     // main
     // profile section
     "profile-name-portfolio": "Hello, I'm Kevin Flores",

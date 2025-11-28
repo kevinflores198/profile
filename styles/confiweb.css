@@ -1,7 +1,7 @@
 @import url(root.css);
 
 #profile {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 #profile .content h1 {
@@ -32,4 +32,8 @@
 #cta,
 #footer {
     padding-top: 10rem;
+}
+
+.nav-links li a {
+    color: antiquewhite;
 }
