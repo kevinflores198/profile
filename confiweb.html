@@ -30,13 +30,13 @@
 
 <body>
     <header id="top">
-        <nav class="nav2">
+        <!-- <nav class="nav2">
             <ul class="nav-links">
                 <li><a id="nav-link-1" href="portfolio.html"></a></li>
                 <li><a id="nav-link-2" href="profile.html"></a></li>
                 <li><a id="nav-link-3" href="confiweb.html"></a></li>
             </ul>
-        </nav>
+        </nav> -->
         <nav class="glass-navbar" aria-label="Main Navigation">
             <div class="content" id="contentnav">
                 <div class="language-switch">
@@ -69,40 +69,36 @@
         </nav>
     </header>
     <main>
-        <video autoplay muted loop playsinline id="video-dark" class="bg-video" aria-hidden="true" alt="video hero">
-            <source src="files/hero-background-confiweb.mp4" type="video/mp4">
+        <video autoplay muted playsinline id="video-dark" class="bg-video" aria-hidden="true" alt="video hero">
+            <source src="files/hero-background-confiweb (2).mp4" type="video/mp4">
         </video>
 
-        <video autoplay muted loop playsinline id="video-light" class="bg-video hidden" aria-hidden="true"
-            alt="video hero">
-            <source src="files/hero-background-confiweb.mp4" type="video/mp4">
+        <video autoplay muted playsinline id="video-light" class="bg-video hidden" aria-hidden="true" alt="video hero">
+            <source src="files/hero-background-confiweb (2).mp4" type="video/mp4">
         </video>
 
         <section id="profile" class="empresa-hero">
             <div class="content">
-                <h1>ConfiWeb</h1> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <p>Ayudamos a tu empresa a crecer con tecnología moderna, diseño funcional y presencia digital efectiva.
-                </p>
-                <a href="https://wa.me/554888648031" class="glass-btn">Solicitar presupuesto</a>
+
             </div>
         </section>
 
         <section id="services">
             <h2>Servicios</h2>
             <div class="cards">
-                <article class="service-card"><i class="fa-solid fa-code"></i>
+                <article class="service-card card1"><i class="fa-solid fa-code"></i>
                     <h3>Desarrollo Web</h3>
                     <p>Sitios rápidos, responsivos y personalizados.</p>
                 </article>
-                <article class="service-card"><i class="fa-solid fa-bullhorn"></i>
+                <article class="service-card card2"><i class="fa-solid fa-bullhorn"></i>
                     <h3>Marketing Digital</h3>
                     <p>Campañas efectivas y optimización SEO.</p>
                 </article>
-                <article class="service-card"><i class="fa-solid fa-palette"></i>
+                <article class="service-card card3"><i class="fa-solid fa-palette"></i>
                     <h3>Diseño & Branding</h3>
                     <p>Identidad visual profesional para tu marca.</p>
                 </article>
-                <article class="service-card"><i class="fa-solid fa-database"></i>
+                <article class="service-card card4"><i class="fa-solid fa-database"></i>
                     <h3>Automatización</h3>
                     <p>Integración con CRM y herramientas empresariales.</p>
                 </article>
@@ -111,9 +107,196 @@
 
         <section id="cases">
             <h2>Casos de éxito</h2>
-            <div class="cards">
-                <!-- Reutilizá tus cards de proyectos -->
-            </div>
+        </section>
+        <section id="projects" class="">
+            <div class="content">
+                <h2 id="projects-title"></h2>
+                <div class="cards fade-in">
+                    <figure class="card-project" id="card-cont1">
+                        <img src="/files/button.jpg" class="card-video" loading="lazy">
+                        <div class="card-content">
+                            <figcaption>
+                                <h3 id="project1-title"></h3>
+                                <p id="project1-exp">
+                                </p>
+                            </figcaption>
+                            <div class="button">
+                                <a class="glass-btn" id="project1-btn"></a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="card-project" id="card-cont2">
+                        <img src="/files/social.jpg" class="card-video" loading="lazy">
+                        <div class="card-content">
+                            <figcaption>
+                                <h3 id="project2-title"></h3>
+                                <p id="project2-exp"></p>
+                            </figcaption>
+                            <div class="button">
+                                <a class="glass-btn" id="project2-btn"></a>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="card-project" id="card-cont3">
+                        <img src="/files/library.jpg" class="card-video" loading="lazy">
+                        <div class="card-content">
+                            <figcaption>
+                                <h3 id="project3-title"></h3>
+                                <p id="project3-exp"></p>
+                            </figcaption>
+                            <div class="button">
+                                <a class="glass-btn" id="project3-btn"></a>
+                            </div>
+                        </div>
+                    </figure>
+
+                </div>
+                <div id="cardModal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <h2>Brutton Construtec</h2>
+                            <div class="tech-carousel">
+                                <div class="tech-track">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Netlify</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Netlify</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Netlify</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Netlify</span>
+                                    <span>Visual Studio</span>
+                                </div>
+                            </div>
+                            <h3 id="modal-title"></h3>
+                            <h3 id="modal-title-1"></h3>
+                            <span class="fa-brands fa-square-js"></span>
+                            <span class="fa-brands fa-html5"></span>
+                            <span class="fa-brands fa-css"></span>
+                            <h3 id="modal-title-2"></h3>
+                            <p id="modal-p3"></p>
+                            <h3 id="modal-title-3"></h3>
+                            <p id="modal-p4"></p>
+                        </div>
+                        <div class="ver-mais">
+                            <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                Visitar Projecto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Pedir presupuesto
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="cardModal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <h2>Social Fashion</h2>
+                            <div class="tech-carousel">
+                                <div class="tech-track">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                </div>
+                            </div>
+                            <h3 id="modal2-title"></h3>
+                            <h3 id="modal2-title-1"></h3>
+                            <span class="fa-brands fa-square-js"></span>
+                            <span class="fa-solid fa-database"></span>
+                            <span class="fa-brands fa-java"></span>
+                            <span class="fa-brands fa-html5"></span>
+                            <span class="fa-brands fa-css"></span>
+                            <h3 id="modal2-title-2"></h3>
+                            <p id="modal2-p3"></p>
+                            <h3 id="modal2-title-3"></h3>
+                            <p id="modal2-p4"></p>
+                            <h3 id="modal2-title-4"></h3>
+                            <p id="modal2-p5"></p>
+                        </div>
+                        <div class="ver-mais">
+                            <a href="https://github.com/kevinflores198/proyectoFinalr" target="_blank"
+                                class="glass-btn">
+                                Visitar Projecto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Pedir presupuesto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardModal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="description">
+                            <h2>Biblioteca App</h2>
+                            <div class="tech-carousel">
+                                <div class="tech-track">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>NetBeans</span>
+                                    <span>Visual Studio</span>
+                                </div>
+                            </div>
+                            <h3 id="modal3-title"></h3>
+                            <h3 id="modal3-title-1"></h3>
+                            <span class="fa-brands fa-square-js"></span>
+                            <span class="fa-solid fa-database"></span>
+                            <span class="fa-brands fa-java"></span>
+                            <span class="fa-brands fa-html5"></span>
+                            <span class="fa-brands fa-css"></span>
+                            <h3 id="modal3-title-2"></h3>
+                            <p id="modal3-p3"></p>
+                            <h3 id="modal3-title-3"></h3>
+                            <p id="modal3-p4"></p>
+                            <h3 id="modal3-title-4"></h3>
+                            <p id="modal3-p4"></p>
+                            <p id="modal3-p5"></p>
+                        </div>
+                        <div class="ver-mais">
+                            <a href="https://github.com/kevinflores198/Biblioteca" target="_blank" class="glass-btn">
+                                Visitar Projecto
+                            </a>
+                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
+                                Pedir presupuesto
+                            </a>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <section id="cta">
