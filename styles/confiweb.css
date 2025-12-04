@@ -60,8 +60,16 @@
 
 .service-card i {
     font-size: 2rem;
-    color: var(--primary-confiweb);
+    color: antiquewhite;
     margin-bottom: 1rem;
+    background: linear-gradient(135deg,
+            var(--primary-confiweb),
+            var(--secondary-confiweb));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 #cta {
