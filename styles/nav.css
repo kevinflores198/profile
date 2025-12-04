@@ -221,6 +221,10 @@ nav {
   display: none;
 }
 
+.navbar-confiweb{
+  margin-top: 0;
+}
+
 @media (max-width: 1030px) {
 
   header {
