@@ -62,11 +62,24 @@
 
 }
 
-#profile .about #profile-about {
+#profile .about #profile-about,
+#profile .about #profile-about-portfolio {
     font-size: 1.2rem;
     margin: 1rem;
     font-style: italic;
     color: antiquewhite;
+}
+
+#about-me #about-me-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#about-me #about-me-desc {
+    font-size: 1.2rem;
+    text-align: end;
+    padding: 1rem;
+    margin-left: 1rem;
 }
 
 #profile .glass-btn {
@@ -256,7 +269,7 @@
 }
 
 .modal.active {
-    display: flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
     opacity: 1;
@@ -939,6 +952,17 @@ body.modal-open {
 
     .glass-btn {
         margin: 0 1rem !important;
+    }
+
+    #about-me .fa-solid {
+        font-size: 4rem;
+    }
+
+    #about-me #about-me-desc {
+        font-size: 1.3rem;
+        text-align: end;
+        padding: 1rem;
+        margin-left: 3rem;
     }
 
 

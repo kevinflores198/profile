@@ -19,7 +19,7 @@ const translations = {
     "profile-contact": "Contacto",
     // about me section
     "about-me-title": "Sobre mí",
-    "about-me-desc": "Comencé a estudiar programación en 2022 y descubrí una pasión por crear sitios modernos y funcionales. Hoy combino mis habilidades técnicas con mi experiencia en servicio al cliente para entregar soluciones claras, limpias y profesionales. Me enfoco en aprender continuamente y en ofrecer una excelente comunicación en cada proyecto..",
+    "about-me-desc": "Comencé a estudiar programación en 2022 y descubrí una pasión por crear sitios modernos y funcionales. Hoy combino mis habilidades técnicas con mi experiencia en servicio al cliente para entregar soluciones claras, limpias y profesionales. Me enfoco en aprender continuamente y en ofrecer una excelente comunicación en cada proyecto.",
     // projects section
     "projects-title": "Proyectos",
     // project 1
