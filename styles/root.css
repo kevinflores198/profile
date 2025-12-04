@@ -4,7 +4,8 @@
   --primary: #1e8fffd5;
   --secondary: #ff3a30;
   --hover: #9fa0a1a4;
-
+  --primary-confiweb: #e7791a;
+  --secondary-confiweb: #20577e;
 }
 
 [data-theme="dark"] {
@@ -13,7 +14,8 @@
   --primary: #294ab8e9;
   --secondary: #dc2626ea;
   --hover: #202838;
-
+  --primary-confiweb: #e67919d1;
+  --secondary-confiweb: #20577ec8;
 }
 
 body {

@@ -221,8 +221,13 @@ nav {
   display: none;
 }
 
-.navbar-confiweb{
+.navbar-confiweb {
   margin-top: 0;
+  background: linear-gradient(135deg,
+      var(--primary-confiweb),
+      var(--secondary-confiweb)) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 @media (max-width: 1030px) {
