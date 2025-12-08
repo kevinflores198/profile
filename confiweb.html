@@ -7,6 +7,7 @@
     <title>Confiweb</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/confiweb.css">
+    <link rel="icon" href="files/logo-no-back.png" type="image/x-icon">
     <meta name="theme-color" content="#000000">
     <meta name="author" content="Kevin Nicolas Flores Gonzalez">
     <meta name="description" content="Confiweb es un estudio de diseño y desarrollo 
@@ -17,7 +18,7 @@
     <meta property="og:title" content="Confiweb design & development">
     <meta property="og:description"
         content="Portfolio de Kevin Flores: desarrollador web full stack. HTML, CSS, JavaScript, Java y más.">
-    <meta property="og:image" content="https://kevinflores198.github.io/profile//files/og-confiweb.png">
+    <meta property="og:image" content="https://kevinflores198.github.io/profile//files/logo-og-confiweb.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kevinflores198.github.io/profile/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +28,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
     <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+
+
 </head>
 
 <body>
@@ -71,11 +77,11 @@
     </header>
     <main>
         <video autoplay muted playsinline id="video-dark" class="bg-video" aria-hidden="true" alt="video hero">
-            <source src="files/hero-background-confiweb (2).mp4" type="video/mp4">
+            <source src="files/hero-background-confiweb.mp4" type="video/mp4">
         </video>
 
         <video autoplay muted playsinline id="video-light" class="bg-video hidden" aria-hidden="true" alt="video hero">
-            <source src="files/hero-background-confiweb (2).mp4" type="video/mp4">
+            <source src="files/hero-background-confiweb.mp4" type="video/mp4">
         </video>
 
         <section id="profile" class="empresa-hero">
@@ -119,7 +125,7 @@
                 <h2 id="projects-title"></h2>
                 <div class="cards fade-in">
                     <figure class="card-project" id="card-cont1">
-                        <img src="/files/button.jpg" class="card-video" loading="lazy">
+                        <img src="/files/brutton.jpg" class="card-video" loading="lazy">
                         <div class="card-content">
                             <figcaption>
                                 <h3 id="project1-title"></h3>
@@ -132,7 +138,7 @@
                         </div>
                     </figure>
                     <figure class="card-project" id="card-cont2">
-                        <img src="/files/social.jpg" class="card-video" loading="lazy">
+                        <img src="/files/project-socialfashion.jpg" class="card-video" loading="lazy">
                         <div class="card-content">
                             <figcaption>
                                 <h3 id="project2-title"></h3>
@@ -144,7 +150,7 @@
                         </div>
                     </figure>
                     <figure class="card-project" id="card-cont3">
-                        <img src="/files/library.jpg" class="card-video" loading="lazy">
+                        <img src="/files/project-library.jpg" class="card-video" loading="lazy">
                         <div class="card-content">
                             <figcaption>
                                 <h3 id="project3-title"></h3>
@@ -305,12 +311,364 @@
                 </div>
         </section>
 
+        <section id="cases">
+            <div class="block"></div>
+            <h2>Planes</h2>
+            <p>Elige un plan y hablamos para poder saber que podemos hacer por tu negocio!</p>
+        </section>
+
+
+        <section
+            class="prices flex items-center justify-center p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
+
+            <div class="prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
+                <h5 class="mb-4 text-xl font-medium text-body">Plan Essencial</h5>
+                <div class="flex items-baseline text-heading">
+                    <span class="text-5xl font-extrabold tracking-tight">$700</span>
+                    <span class="ms-2 font-medium text-body"></span>
+                </div>
+                <ul role="list" class="space-y-4 my-6">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Página Landing Page (1 sección principal).</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Diseño responsivo profesional.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">SEO básico (para aparecer en Google).</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Botón de contacto (WhatsApp + Email).</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">1 revisión de cambios.</span>
+                    </li>
+                    <li class="flex items-center line-through decoration-body">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Integración con redes sociales.</span>
+                    </li>
+                    <li class="flex items-center line-through decoration-body">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Páginas de servicios individuales.</span>
+                    </li>
+                </ul>
+                <p>Entrega: 3–5 días.</p>
+                <button type="button"
+                    class="btn w-full text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Choose
+                    plan</button>
+
+            </div>
+
+            <div class="prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
+                <h5 class="mb-4 text-xl font-medium text-body">Plan Profissional</h5>
+                <div class="flex items-baseline text-heading">
+                    <span class="text-5xl font-extrabold tracking-tight">$1200</span>
+                    <span class="ms-2 font-medium text-body"></span>
+                </div>
+                <ul role="list" class="space-y-4 my-6">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Sitio web 3 a 5 páginas (Home, Servicios, Sobre Nosotros, Contacto,
+                            etc.).</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Diseño premium + Animaciones suaves.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">SEO optimizado para Google.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Integración con redes sociales.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Formulario de contacto profesional.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">2 revisiones de cambios.</span>
+                    </li>
+                    <li class="flex items-center line-through decoration-body">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Integraciones empresariales (CRM, Email, Formularios).</span>
+                    </li>
+                    <li class="flex items-center line-through decoration-body">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Páginas de servicios individuales.</span>
+                    </li>
+                    <p>Ideal para generar confianza, vender más y mostrar servicios de forma profesional.</p>
+                    <p>Entrega: 7–10 días.</p>
+                </ul>
+                <button type="button"
+                    class="btn w-full text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Choose
+                    plan</button>
+            </div>
+
+            <div class="prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
+                <h5 class="mb-4 text-xl font-medium text-body">Plan Corporrativo</h5>
+                <div class="flex items-baseline text-heading">
+                    <span class="text-5xl font-extrabold tracking-tight">$1800</span>
+                    <span class="ms-2 font-medium text-body"></span>
+                </div>
+                <ul role="list" class="space-y-4 my-6">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Sitio completo 5+ páginas con diseño avanzado.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Identidad visual completa (colores, tipografías, estilo).</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Optimización total para velocidad + SEO avanzado.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Páginas de servicios individuales.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Integraciones empresariales (CRM, Email, Formularios).</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Optimización total para velocidad + SEO avanzado.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">3 revisiones de cambios.</span>
+                    </li>
+                    <p>Perfecto para empresas que buscan presencia sólida y resultados a largo plazo.</p>
+                    <p>Entrega: 10–15 días.</p>
+
+                </ul>
+                <button type="button"
+                    class="btn w-full text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Choose
+                    plan</button>
+            </div>
+        </section>
+
+        <section id="cases">
+            <div class="block"></div>
+            <h2>Planes de Mantenimiento</h2>
+            <p class="">Mantene tu pagina optimizada y actualizada con todo lo que este pasando en el mercado por un
+                precio
+                sumamente accesible, recomendado para tener tu pagina al dia por ofertas especiales como black
+                friday, navidad, etc.</p>
+        </section>
+
+        <section id="maintenance-plans"
+            class="flex items-center justify-center p-6 bg-neutral-primary-soft border border-default rounded-base shadow-xs">
+            <div
+                class="maintenance-plans-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
+                <h5 class="mb-4 text-xl font-medium text-body">Mantenimiento Mensual</h5>
+                <div class="flex items-baseline text-heading">
+                    <span class="text-4xl font-extrabold tracking-tight">R$ 80–200</span>
+                    <span class="ms-2 font-medium text-body">/mes</span>
+                </div>
+
+                <ul role="list" class="space-y-4 my-6">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Actualización del contenido (texto e imágenes).</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Correcciones y optimización visual.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Mejoras de rendimiento y seguridad.</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">SEO básico (Google).</span>
+                    </li>
+                </ul>
+
+                <p>Ideal para negocios activos que publican novedades.</p>
+
+                <button class="btn w-full text-white bg-brand hover:bg-brand-strong border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs 
+        font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+                    Contratar plan
+                </button>
+            </div>
+
+            <div
+                class="maintenance-plans-card max-w-sm p-6 bg-neutral-primary-soft/70 backdrop-blur-md border-default rounded-base shadow-xs">
+                <h5 class="mb-4 text-xl font-medium text-body">Mantenimiento Bimestral</h5>
+                <div class="flex items-baseline text-heading">
+                    <span class="text-4xl font-extrabold tracking-tight">R$ 120–300</span>
+                    <span class="ms-2 font-medium text-body">/cada 2 meses</span>
+                </div>
+
+                <ul role="list" class="space-y-4 my-6">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Actualización general del sitio.</span>
+                    </li>
+
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Optimización de velocidad.</span>
+                    </li>
+
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Revisión de SEO + ajustes.</span>
+                    </li>
+
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <span class="text-body">Correcciones visuales.</span>
+                    </li>
+                </ul>
+
+                <p>Perfecto para negocios con pocas actualizaciones.</p>
+
+                <button class="btn w-full text-white bg-brand hover:bg-brand-strong border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs 
+                        font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+                    Elegir plan
+                </button>
+            </div>
+        </section>
+
+
+
         <section id="cta">
             <div class="block"></div>
 
             <h2>Cientes en hambito nacional</h2>
             <p>Atendemos clientes de todo el mundo, comenzando con clientes locales de Brazil como en:</p>
-            <a href="https://wa.me/554888648031" class="glass-btn">Pedir presupuesto</a>
             <ul>
                 <li><a href="">Santa Catarina, SC</a></li>
                 <li><a href="">Sao Paulo, SP</a></li>
@@ -329,7 +687,6 @@
 
             <h2>Cientes en hambito internacional</h2>
             <p>Y tambien clientes de todo el mundo por ejemplo:</p>
-            <a href="https://wa.me/554888648031" class="glass-btn">Pedir presupuesto</a>
             <ul>
                 <li><a href="">Argentina</a></li>
                 <li><a href="">Chile</a></li>
@@ -390,6 +747,14 @@
     </div>
     <script src="scripts/script.js"></script>
     <script src="scripts/content-confiweb.js"></script>
+    <script>
+        tailwind.config = {
+            plugins: [daisyui],
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 </body>
 
 </html>

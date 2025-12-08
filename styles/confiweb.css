@@ -58,6 +58,7 @@
     margin: 0 auto 1rem auto;
     border-radius: 5px;
 }
+
 /* 
 .block2 {
     width: 100%;
@@ -98,6 +99,62 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+#maintenance-plans {
+    margin-top: 2rem;
+    text-align: center;
+    border: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prices {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)) !important;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#maintence-plans {
+    border: transparent;
+}
+
+.maintenance-plans-card,
+.prices-card {
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.maintenance-plans-card:hover,
+.prices-card:hover {
+    background: linear-gradient(135deg,
+            var(--primary-confiweb),
+            var(--secondary-confiweb));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: antiquewhite;
+}
+
+.prices-card .btn,
+.maintenance-plans-card .btn {
+    background: linear-gradient(135deg,
+            var(--primary-confiweb),
+            var(--secondary-confiweb));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    width: auto;
+    margin-top: 1rem;
+    padding: .7rem 1rem;
+}
+
+.prices li {
+    border: transparent;
+}
+
 #cta {
     text-align: center;
 
@@ -110,7 +167,6 @@
 #cta a {
     display: inline-block;
     padding: 1rem 2rem;
-    background: var(--primary-confiweb);
     color: #fff;
     border-radius: 50px;
     text-decoration: none;

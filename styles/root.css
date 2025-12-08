@@ -18,6 +18,11 @@
   --secondary-confiweb: #20577ec8;
 }
 
+*{  
+  box-sizing: border-box;
+  border: none;
+}
+
 body {
   margin: 0;
   padding: 0;
