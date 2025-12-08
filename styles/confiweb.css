@@ -13,7 +13,7 @@
 }
 
 .nav-links li a {
-    color: antiquewhite;
+    color: var(--text);
 }
 
 .scrolled {
