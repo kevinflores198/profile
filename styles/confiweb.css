@@ -10,6 +10,7 @@
 #cta,
 #footer {
     padding-top: 10rem;
+    background-color: var(--card-bg);
 }
 
 .nav-links li a {
@@ -36,13 +37,40 @@
 
 #services h2,
 #cases h2,
-#cta h2 {
+#cta h2,
+#maintenance-plans h2,
+#prices h2 {
     text-align: center;
     color: var(--text);
     font-size: 2rem;
 }
 
-#services p {
+.cards-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    min-width: 300px;
+    justify-content: center;
+}
+
+.cards-menu .button .glass-btn,
+#cta .glass-btn {
+    background: linear-gradient(135deg,
+            var(--primary-confiweb),
+            var(--secondary-confiweb)) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 30px;
+    color: #fff !important;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services p,
+#cases p {
     text-align: center;
     color: var(--text);
     font-size: 1.2rem;
@@ -68,6 +96,20 @@
     background-color: #091933;
     clip-path: polygon(0 0, 100% 48%, 0 100%);
 } */
+
+#cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+#cta a {
+    color: var(--text) !important;
+    padding: 1rem;
+
+}
 
 #services .cards {
     display: grid;
@@ -135,7 +177,7 @@
     -webkit-backdrop-filter: blur(10px);
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    color: antiquewhite;
+    color: var(--text);
 }
 
 .prices-card .btn,
