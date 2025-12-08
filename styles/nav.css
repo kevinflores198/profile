@@ -135,7 +135,7 @@ header .nav2 .nav-links a:hover {
 
 .lang-btn {
   background: none;
-  color: var(--text);
+  color: antiquewhite;
   border-radius: 8px;
   border: none;
   padding: 6px 12px;
@@ -223,11 +223,18 @@ nav {
 
 .navbar-confiweb {
   margin-top: 0;
-  background: linear-gradient(135deg,
-      var(--primary-confiweb),
-      var(--secondary-confiweb)) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: none !important;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+.navbar-confiweb a{
+  text-decoration: underline;
+
+}
+.navbar-confiweb a:hover {
+  color: antiquewhite !important;
+  color: var(--secondary-confiweb);
+  background-color: var(--hover);
 }
 
 @media (max-width: 1030px) {
@@ -239,6 +246,15 @@ nav {
   header .nav2 .nav-links {
     flex-direction: row !important;
 
+  }
+
+  .navbar-confiweb {
+    margin-top: 0;
+    background: linear-gradient(135deg,
+        var(--primary-confiweb),
+        var(--secondary-confiweb)) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
 
