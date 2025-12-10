@@ -88,8 +88,14 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cards-menu .button .glass-btn:hover,
-#cta .glass-btn:hover,
+.glass-btn {
+    background: linear-gradient(135deg,
+            var(--primary-confiweb),
+            var(--secondary-confiweb)) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 #about .title {
     text-align: center;
     color: var(--text);
@@ -128,7 +134,39 @@
     width: 80%;
 }
 
+#projects #static-modal .modal-back,
+#projects #static-modal2 .modal-back,
+#projects #static-modal3 .modal-back {
+    background: var(--bg) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
 
+    color: var(--text);
+    margin-top: 7rem;
+}
+
+#projects #static-modal3 h3,
+#projects #static-modal2 h3,
+#projects #static-modal h3 {
+    font-size: 1.7rem !important;
+    font-weight: bold !important;
+}
+
+#projects #static-modal3 h4,
+#projects #static-modal2 h4,
+#projects #static-modal h4 {
+    font-size: 1.3rem !important;
+}
+
+#projects #static-modal3 .fa-brands,
+#projects #static-modal2 .fa-brands,
+#projects #static-modal .fa-brands,
+#projects #static-modal3 .fa-solid,
+#projects #static-modal2 .fa-solid {
+    font-size: 4rem !important;
+    margin-right: 1rem;
+    color: var(--text);
+}
 
 #cta {
     display: flex;
@@ -139,9 +177,13 @@
 }
 
 #cta a {
-    color: var(--text) !important;
+    color: antiquewhite !important;
     padding: 1rem;
 
+}
+
+#cta .bottons {
+    color: antiquewhite !important;
 }
 
 #services .cards {
@@ -211,6 +253,8 @@
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     color: var(--text);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .prices-card .btn,
@@ -224,17 +268,28 @@
     width: auto;
     margin-top: 1rem;
     padding: .7rem 1rem;
+    transform: translateY(0);
+}
+
+.mantenance-content p {
+    max-width: 1010px !important;
+    width: 80% !important;
 }
 
 .prices li {
     border: transparent;
 }
 
+.prices-card {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 #cta-cities {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: start;
     text-align: center;
     gap: 4rem;
@@ -242,11 +297,11 @@
 }
 
 #cta-cities .cta-section {
-    max-width: 300px;
+    max-width: 500px;
 }
 
 #cta-cities h2 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: var(--text);
     margin-bottom: 1rem;
 }
@@ -270,7 +325,7 @@
 }
 
 #cta-cities ul li:hover a {
-    color: var(--secondary-confiweb);
+    color: var(--primary-confiweb);
     text-align: center;
 
 
@@ -290,7 +345,7 @@
 #cta a {
     display: inline-block;
     padding: 1rem 2rem;
-    color: #fff;
+    color: var(--text) !important;
     border-radius: 50px;
     text-decoration: none;
     transition: background 0.3s ease;
@@ -309,9 +364,16 @@ footer {
 }
 
 footer a,
-footer li{
-padding: 0;
-} 
+footer li {
+    padding: 0;
+}
+
+footer .icons {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .arrow-confiweb {
     background: linear-gradient(135deg,
@@ -319,4 +381,37 @@ padding: 0;
             var(--secondary-confiweb)) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+}
+
+@media (min-width: 1030px) {
+    #about .title {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-size: 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #about .parr {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding-top: 3rem;
+        font-size: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #services .cards {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    footer img {
+        width: auto;
+        height: 850px;
+    }
+
+    footer .text-heading {
+        font-size: 2rem;
+    }
 }

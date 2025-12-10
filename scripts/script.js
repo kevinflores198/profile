@@ -156,12 +156,12 @@ function modalSetup(openId, modalId) {
     if (e.target === modal) modal.style.display = "none";
   });
 }
-modalSetup("card-cont1", "cardModal1");
-modalSetup("card-cont2", "cardModal2");
-modalSetup("card-cont3", "cardModal3");
+setupModal("#card-cont1, #card-cont1 button", "#cardModal1");
+setupModal("#card-cont2, #card-cont2 button", "#cardModal2");
+setupModal("#card-cont3, #card-cont3 button", "#cardModal3");
 
 
-const fadeSection = document.querySelector('.cards.fade-in');
+const fadeSection = document.querySelector('.cards-menu.fade-in');
 if (fadeSection) observer.observe(fadeSection);
 
 // open modal

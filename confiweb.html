@@ -104,7 +104,13 @@
                                 border border-transparent transition-all duration-300 
                                 bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb]
                                 hover:text-white group">
-                    <span class="relative z-10">Contactanos</span>
+                    <span class="relative z-10">
+                        <a href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
+                            target="_blank">
+                            Contactanos
+                        </a>
+                    </span>
+
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
                             group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
                 </button>
@@ -150,9 +156,13 @@
                                 <p id="project1-exp">
                                 </p>
                             </figcaption>
-                            <div class="button">
-                                <a class="glass-btn" id="project1-btn"></a>
-                            </div>
+                            <button data-modal-target="static-modal" data-modal-toggle="static-modal" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+                                border border-transparent transition-all duration-300 
+                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
+                                hover:text-white group"><span id="project1-btn" class="relative z-10"></span>
+                                <span class="absolute inset-0 rounded-lg bg-neutral-900 
+                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
+                            </button>
                         </div>
                     </figure>
                     <figure class="card-project" id="card-cont2">
@@ -162,9 +172,13 @@
                                 <h3 id="project2-title"></h3>
                                 <p id="project2-exp"></p>
                             </figcaption>
-                            <div class="button">
-                                <a class="glass-btn" id="project2-btn"></a>
-                            </div>
+                            <button data-modal-target="static-modal2" data-modal-toggle="static-modal2" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+                                border border-transparent transition-all duration-300 
+                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
+                                hover:text-white group"><span id="project2-btn" class="relative z-10"></span>
+                                <span class="absolute inset-0 rounded-lg bg-neutral-900 
+                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
+                            </button>
                         </div>
                     </figure>
                     <figure class="card-project" id="card-cont3">
@@ -174,167 +188,263 @@
                                 <h3 id="project3-title"></h3>
                                 <p id="project3-exp"></p>
                             </figcaption>
-                            <div class="button">
-                                <a class="glass-btn" id="project3-btn"></a>
-                            </div>
+                            <button data-modal-target="static-modal3" data-modal-toggle="static-modal3" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+                                border border-transparent transition-all duration-300 
+                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
+                                hover:text-white group"><span id="project3-btn" class="relative z-10"></span>
+                                <span class="absolute inset-0 rounded-lg bg-neutral-900 
+                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
+                            </button>
                         </div>
                     </figure>
+                </div>
+                <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+                    class="hidden fixed  inset-0 z-50 flex justify-center items-center w-full h-full overflow-y-auto">
+                    <div class="modal-back relative p-4 w-full max-w-2xl">
+                        <div class=" relative border-default rounded-base shadow-sm p-4 md:p-6">
+                            <!-- Header -->
+                            <div class="flex items-center justify-between  border-default pb-4 md:pb-5">
+                                <h3 class="text-lg font-medium text-heading">
+                                    Brutton Construtec
+                                </h3>
+                                <button data-modal-hide="static-modal" type="button"
+                                    class="text-body hover:bg-neutral-tertiary rounded-base text-sm w-9 h-9 inline-flex justify-center items-center">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18 18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- Body -->
+                            <div class="py-4 md:py-6 space-y-4 text-body">
+                                <div class="description">
+                                    <div class="tech-carousel">
+                                        <div class="tech-track">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 id="modal-title"></h4>
+                                <h5 id="modal-title-1"></h5>
+                                <span class="fa-brands fa-square-js"></span>
+                                <span class="fa-brands fa-html5"></span>
+                                <span class="fa-brands fa-css"></span>
+                                <h3 id="modal-title-2"></h3>
+                                <p id="modal-p3"></p>
+                                <h3 id="modal-title-3"></h3>
+                                <p id="modal-p4"></p>
+                            </div>
 
-                </div>
-                <div id="cardModal1" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <div class="description">
-                            <h2>Brutton Construtec</h2>
-                            <div class="tech-carousel">
-                                <div class="tech-track">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Netlify</span>
-                                    <span>Visual Studio</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Netlify</span>
-                                    <span>Visual Studio</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Netlify</span>
-                                    <span>Visual Studio</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Netlify</span>
-                                    <span>Visual Studio</span>
-                                </div>
+                            <!-- Footer -->
+                            <div class="flex justify-between space-x-4 border-t border-default pt-4">
+                                <button data-modal-hide="static-modal"
+                                    class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
+                                    <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                        Visitar
+                                    </a>
+                                </button>
+                                <button data-modal-hide="static-modal"
+                                    class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
+                                    <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+                                        target="_blank" class="glass-btn">
+                                        Presupuesto
+                                    </a>
+                                </button>
                             </div>
-                            <h3 id="modal-title"></h3>
-                            <h3 id="modal-title-1"></h3>
-                            <span class="fa-brands fa-square-js"></span>
-                            <span class="fa-brands fa-html5"></span>
-                            <span class="fa-brands fa-css"></span>
-                            <h3 id="modal-title-2"></h3>
-                            <p id="modal-p3"></p>
-                            <h3 id="modal-title-3"></h3>
-                            <p id="modal-p4"></p>
-                        </div>
-                        <div class="ver-mais">
-                            <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
-                                Visitar Projecto
-                            </a>
-                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
-                                Pedir presupuesto
-                            </a>
-                        </div>
-                    </div>
 
-                </div>
-                <div id="cardModal2" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <div class="description">
-                            <h2>Social Fashion</h2>
-                            <div class="tech-carousel">
-                                <div class="tech-track">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Spring Boot</span>
-                                    <span>MySQL</span>
-                                    <span>NetBeans</span>
-                                    <span>Visual Studio</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Spring Boot</span>
-                                    <span>MySQL</span>
-                                    <span>NetBeans</span>
-                                    <span>Visual Studio</span>
-                                </div>
-                            </div>
-                            <h3 id="modal2-title"></h3>
-                            <h3 id="modal2-title-1"></h3>
-                            <span class="fa-brands fa-square-js"></span>
-                            <span class="fa-solid fa-database"></span>
-                            <span class="fa-brands fa-java"></span>
-                            <span class="fa-brands fa-html5"></span>
-                            <span class="fa-brands fa-css"></span>
-                            <h3 id="modal2-title-2"></h3>
-                            <p id="modal2-p3"></p>
-                            <h3 id="modal2-title-3"></h3>
-                            <p id="modal2-p4"></p>
-                            <h3 id="modal2-title-4"></h3>
-                            <p id="modal2-p5"></p>
-                        </div>
-                        <div class="ver-mais">
-                            <a href="https://github.com/kevinflores198/proyectoFinalr" target="_blank"
-                                class="glass-btn">
-                                Visitar Projecto
-                            </a>
-                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
-                                Pedir presupuesto
-                            </a>
                         </div>
                     </div>
                 </div>
-                <div id="cardModal3" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <div class="description">
-                            <h2>Biblioteca App</h2>
-                            <div class="tech-carousel">
-                                <div class="tech-track">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Spring Boot</span>
-                                    <span>MySQL</span>
-                                    <span>NetBeans</span>
-                                    <span>Visual Studio</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Spring Boot</span>
-                                    <span>MySQL</span>
-                                    <span>NetBeans</span>
-                                    <span>Visual Studio</span>
-                                </div>
+                <div id="static-modal2" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+                    class="hidden fixed  inset-0 z-50 flex justify-center items-center w-full h-full overflow-y-auto">
+                    <div class="modal-back relative p-4 w-full max-w-2xl">
+                        <div class=" relative border-default rounded-base shadow-sm p-4 md:p-6">
+                            <!-- Header -->
+                            <div class="flex items-center justify-between  border-default pb-4 md:pb-5">
+                                <h3 class="text-lg font-medium text-heading">
+                                    Social Fashion
+                                </h3>
+                                <button data-modal-hide="static-modal2" type="button"
+                                    class="text-body hover:bg-neutral-tertiary rounded-base text-sm w-9 h-9 inline-flex justify-center items-center">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18 18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
                             </div>
-                            <h3 id="modal3-title"></h3>
-                            <h3 id="modal3-title-1"></h3>
-                            <span class="fa-brands fa-square-js"></span>
-                            <span class="fa-solid fa-database"></span>
-                            <span class="fa-brands fa-java"></span>
-                            <span class="fa-brands fa-html5"></span>
-                            <span class="fa-brands fa-css"></span>
-                            <h3 id="modal3-title-2"></h3>
-                            <p id="modal3-p3"></p>
-                            <h3 id="modal3-title-3"></h3>
-                            <p id="modal3-p4"></p>
-                            <h3 id="modal3-title-4"></h3>
-                            <p id="modal3-p4"></p>
-                            <p id="modal3-p5"></p>
-                        </div>
-                        <div class="ver-mais">
-                            <a href="https://github.com/kevinflores198/Biblioteca" target="_blank" class="glass-btn">
-                                Visitar Projecto
-                            </a>
-                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
-                                Pedir presupuesto
-                            </a>
+                            <!-- Body -->
+                            <div class="py-4 md:py-6 space-y-4 text-body">
+                                <div class="description">
+                                    <div class="tech-carousel">
+                                        <div class="tech-track">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 id="modal2-title"></h4>
+                                <h5 id="modal2-title-1"></h5>
+                                <span class="fa-brands fa-square-js"></span>
+                                <span class="fa-solid fa-database"></span>
+                                <span class="fa-brands fa-java"></span>
+                                <span class="fa-brands fa-html5"></span>
+                                <span class="fa-brands fa-css"></span>
+                                <h3 id="modal2-title-2"></h3>
+                                <p id="modal2-p3"></p>
+                                <h3 id="modal2-title-3"></h3>
+                                <p id="modal2-p4"></p>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="flex justify-between space-x-4 border-t border-default pt-4">
+                                <button data-modal-hide="static-modal"
+                                    class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
+                                    <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                        Visitar
+                                    </a>
+                                </button>
+                                <button data-modal-hide="static-modal"
+                                    class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
+                                    <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+                                        target="_blank" class="glass-btn">
+                                        Presupuesto
+                                    </a>
+
+                                </button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+                <div id="static-modal3" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+                    class="hidden fixed  inset-0 z-50 flex justify-center items-center w-full h-full overflow-y-auto">
+                    <div class="modal-back relative p-4 w-full max-w-2xl">
+                        <div class=" relative border-default rounded-base shadow-sm p-4 md:p-6">
+                            <!-- Header -->
+                            <div class="flex items-center justify-between  border-default pb-4 md:pb-5">
+                                <h3 class="text-lg font-medium text-heading">
+                                    Library
+                                </h3>
+                                <button data-modal-hide="static-modal3" type="button"
+                                    class="text-body hover:bg-neutral-tertiary rounded-base text-sm w-9 h-9 inline-flex justify-center items-center">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18 18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- Body -->
+                            <div class="py-4 md:py-6 space-y-4 text-body">
+                                <div class="description">
+                                    <div class="tech-carousel">
+                                        <div class="tech-track">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Netlify</span>
+                                            <span>Visual Studio</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 id="modal3-title"></h4>
+                                <h5 id="modal3-title-1"></h5>
+                                <span class="fa-brands fa-square-js"></span>
+                                <span class="fa-solid fa-database"></span>
+                                <span class="fa-brands fa-java"></span>
+                                <span class="fa-brands fa-html5"></span>
+                                <span class="fa-brands fa-css"></span>
+                                <h3 id="modal3-title-2"></h3>
+                                <p id="modal3-p3"></p>
+                                <h3 id="modal3-title-3"></h3>
+                                <p id="modal3-p4"></p>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="flex justify-between space-x-4 border-t border-default pt-4">
+                                <button data-modal-hide="static-modal"
+                                    class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
+                                    <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                        Visitar
+                                    </a>
+                                </button>
+
+                                <button data-modal-hide="static-modal"
+                                    class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
+                                    <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+                                        target="_blank" class="glass-btn">
+                                        Presupuesto
+                                    </a>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="cases">
+
+        <section id="cases" class="prices-cases">
             <div class="block"></div>
             <h2>Planes</h2>
             <p>Elige un plan y hablamos para poder saber que podemos hacer por tu negocio!</p>
         </section>
-        <section
-            class="prices flex items-center justify-center p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
+        <section class="prices 
+        flex items-baseline justify-center p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
 
             <div class="prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
                 <h5 class="mb-4 text-xl font-medium text-body">Plan Essencial</h5>
@@ -401,9 +511,22 @@
                     </li>
                 </ul>
                 <p>Entrega: 3–5 días.</p>
-                <button type="button"
-                    class="btn w-full text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Choose
-                    plan</button>
+                <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+    border border-transparent transition-all duration-300 
+    bg-gradient-to-r from-[#eca76b] to-[#5aade8]
+    hover:text-white group">
+
+                    <a target="_blank"
+                        href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Me%20interessei%20no%20plano%20de%20R%24700.%20Poderia%20me%20passar%20um%20or%C3%A7amento%3F"
+                        class="relative z-10  w-full text-center">
+                        Contratar plano
+                    </a>
+
+                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
+        group-hover:opacity-0 opacity-100 transition-opacity duration-300">
+                    </span>
+                </button>
+
 
             </div>
 
@@ -482,9 +605,21 @@
                     <p>Ideal para generar confianza, vender más y mostrar servicios de forma profesional.</p>
                     <p>Entrega: 7–10 días.</p>
                 </ul>
-                <button type="button"
-                    class="btn w-full text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Choose
-                    plan</button>
+                <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+    border border-transparent transition-all duration-300 
+    bg-gradient-to-r from-[#eca76b] to-[#5aade8]
+    hover:text-white group">
+
+                    <a target="_blank"
+                        href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostei%20do%20plano%20de%20R%24%201200.%20Pode%20me%20enviar%20um%20or%C3%A7amento%3F"
+                        class="relative z-10 w-full text-center">
+                        Contratar plano
+                    </a>
+
+                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
+        group-hover:opacity-0 opacity-100 transition-opacity duration-300">
+                    </span>
+                </button>
             </div>
 
             <div class="prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
@@ -554,12 +689,24 @@
                     <p>Entrega: 10–15 días.</p>
 
                 </ul>
-                <button type="button"
-                    class="btn w-full text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Choose
-                    plan</button>
+                <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+    border border-transparent transition-all duration-300 
+    bg-gradient-to-r from-[#eca76b] to-[#5aade8]
+    hover:text-white group">
+
+                    <a target="_blank"
+                        href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Quero%20saber%20mais%20sobre%20o%20plano%20de%20R%24%201800.%20Pode%20me%20ajudar%3F"
+                        class="relative z-10 w-full text-center">
+                        Contratar plano
+                    </a>
+
+                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
+        group-hover:opacity-0 opacity-100 transition-opacity duration-300">
+                    </span>
+                </button>
             </div>
         </section>
-        <section id="cases">
+        <section id="cases" class="mantenance-content">
             <div class="block"></div>
             <h2>Planes de Mantenimiento</h2>
             <p class="">Mantene tu pagina optimizada y actualizada con todo lo que este pasando en el mercado por un
@@ -584,7 +731,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Actualización del contenido (texto e imágenes).</span>
+                        <span class="text-body">Actualización (texto e imágenes).</span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -614,13 +761,20 @@
 
                 <p>Ideal para negocios activos que publican novedades.</p>
 
-                <button class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                                hover:text-white group">
-                    <span class="relative z-10">Contratar plan</span>
+                <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+    border border-transparent transition-all duration-300 
+    bg-gradient-to-r from-[#eca76b] to-[#5aade8]
+    hover:text-white group">
+
+                    <a target="_blank"
+                        href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostaria%20de%20fazer%20um%20site%20e%20tamb%C3%A9m%20contratar%20a%20manuten%C3%A7%C3%A3o%20mensal.%20Como%20funciona%3F"
+                        class="relative z-10 w-full text-center">
+                        Contratar plano
+                    </a>
+
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
+        group-hover:opacity-0 opacity-100 transition-opacity duration-300">
+                    </span>
                 </button>
             </div>
 
@@ -672,23 +826,42 @@
 
                 <p>Perfecto para negocios con pocas actualizaciones.</p>
 
-                <button class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+                <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
                                 border border-transparent transition-all duration-300 
                                 bg-gradient-to-r from-[#eca76b] to-[#5aade8]
                                 hover:text-white group">
-                    <span class="relative z-10">Contratar plan</span>
+
+                    <a target="_blank"
+                        href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostaria%20de%20fazer%20um%20site%20e%20contratar%20a%20manuten%C3%A7%C3%A3o%20a%20cada%20dois%20meses.%20Como%20funciona%3F"
+                        class="relative z-10 w-full text-center">
+                        Contratar plano
+                    </a>
+
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
+                                group-hover:opacity-0 opacity-100 transition-opacity duration-300">
+                    </span>
                 </button>
 
             </div>
-        </section>
         </section>
         <section id="cta">
             <div class="block"></div>
             <h2>Impulsá tu marca hoy</h2>
             <p>Si queres que tu empresa cresca con una vista mas profesional, hablemos de eso!</p>
-            <a href="https://wa.me/554888648031" class="glass-btn">Pedir presupuesto</a>
+            <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+                            border border-transparent transition-all duration-300 
+                            bg-gradient-to-r from-[#eca76b] to-[#5aade8]
+                            hover:text-white group">
+                <a target="_blank"
+                    href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+                    class="bottons relative z-10 w-full text-center">
+                    Contratar plano
+                </a>
+                <span class="absolute inset-0 rounded-lg bg-neutral-900 
+                            group-hover:opacity-0 opacity-100 transition-opacity duration-300">
+                </span>
+            </button>
+
         </section>
         <section id="cta-cities">
             <div class="cta-section">
@@ -790,7 +963,7 @@
                 <span class="text-sm text-body sm:text-center">© 2025 <a target="_blank" href="confiweb.html"
                         class="hover:underline">Confiweb™</a>. All Rights Reserved.
                 </span>
-                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                <div class="icons flex mt-4 sm:justify-center sm:mt-0">
                     <a target="_blank" href="https://www.facebook.com/kevinflores198"
                         class="text-body hover:text-heading">
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -831,6 +1004,7 @@
     </div>
     <script src="scripts/script.js"></script>
     <script src="scripts/content-confiweb.js"></script>
+
     <script>
         tailwind.config = {
             plugins: [daisyui],
@@ -838,6 +1012,9 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+
+
 </body>
 
 </html>
