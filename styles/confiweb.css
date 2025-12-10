@@ -26,6 +26,15 @@
     margin: 0;
 }
 
+.block {
+    width: 100px;
+    height: 6px;
+    background: linear-gradient(135deg,
+            var(--primary-confiweb),
+            var(--secondary-confiweb));
+    margin: 0 auto 1rem auto;
+    border-radius: 5px;
+}
 
 .glass-navbar {
     transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -79,16 +88,18 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.cards-menu .button .glass-btn:hover,
+#cta .glass-btn:hover,
 #about .title {
     text-align: center;
     color: var(--text);
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: .1rem;
     margin-left: 4rem;
     margin-right: 4rem;
 }
 
-#about .parr{
+#about .parr {
     text-align: center;
     color: var(--text);
     font-size: 1.2rem;
@@ -97,9 +108,10 @@
     margin-right: 4rem;
 }
 
-#about .but{
+#about .but {
     cursor: pointer;
     padding: 1rem 2rem;
+    background-color: var(--bg) !important;
 }
 
 #about .button-class {
@@ -112,18 +124,10 @@
     text-align: center;
     color: var(--text);
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin: 1rem auto;
+    width: 80%;
 }
 
-.block {
-    width: 100px;
-    height: 6px;
-    background: linear-gradient(135deg,
-            var(--primary-confiweb),
-            var(--secondary-confiweb));
-    margin: 0 auto 1rem auto;
-    border-radius: 5px;
-}
 
 
 #cta {
@@ -293,12 +297,21 @@
 }
 
 footer {
-    background: var(--primary-confiweb);
+    background: linear-gradient(135deg,
+            var(--primary-confiweb),
+            var(--secondary-confiweb)) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: var(--footer-text);
     text-align: center;
     padding: 2rem 0;
     margin-top: 5rem;
 }
+
+footer a,
+footer li{
+padding: 0;
+} 
 
 .arrow-confiweb {
     background: linear-gradient(135deg,
