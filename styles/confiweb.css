@@ -136,7 +136,8 @@
 
 #projects #static-modal .modal-back,
 #projects #static-modal2 .modal-back,
-#projects #static-modal3 .modal-back {
+#projects #static-modal3 .modal-back,
+#projects #static-modal4 .modal-back {
     background: var(--bg) !important;
     backdrop-filter: blur(10px);
     border-radius: 30px;
@@ -147,14 +148,16 @@
 
 #projects #static-modal3 h3,
 #projects #static-modal2 h3,
-#projects #static-modal h3 {
+#projects #static-modal h3,
+#projects #static-modal4 h3 {
     font-size: 1.7rem !important;
     font-weight: bold !important;
 }
 
 #projects #static-modal3 h4,
 #projects #static-modal2 h4,
-#projects #static-modal h4 {
+#projects #static-modal h4,
+#projects #static-modal4 h4 {
     font-size: 1.3rem !important;
 }
 
@@ -162,7 +165,10 @@
 #projects #static-modal2 .fa-brands,
 #projects #static-modal .fa-brands,
 #projects #static-modal3 .fa-solid,
-#projects #static-modal2 .fa-solid {
+#projects #static-modal2 .fa-solid,
+#projects #static-modal .fa-solid,
+#projects #static-modal4 .fa-brands,
+#projects #static-modal4 .fa-solid {
     font-size: 4rem !important;
     margin-right: 1rem;
     color: var(--text);

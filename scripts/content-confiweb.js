@@ -25,6 +25,21 @@ const translations = {
     "project1-title": "Brutton Construtec",
     "project1-exp": "Página de presentación de la empresa, donde se muestra quiénes son, sus proyectos de forma clara y profesional, junto con una invitación a contactarlos para trabajar juntos.",
     "project1-btn": "Ver proyecto",
+    // project 2
+    "project2-title": "Social Fashion",
+    "project2-exp": "Una página dedicada a diseñadores de moda, donde pueden publicar sus creaciones. Todo se almacena en una base de datos MySQL, con sistema de login seguro que permite el acceso a distintos perfiles. Desarrollado con Spring Boot, Java y MySQL.",
+    "project2-btn": "Ver proyecto",
+
+    // project 3
+    "project3-title": "Biblioteca",
+    "project3-exp": "Aplicación de biblioteca que gestiona libros en una base de datos MySQL. Permite visualizar, eliminar y modificar registros, con login integrado para múltiples usuarios. Desarrollado con Spring Boot, Java y MySQL.",
+    "project3-btn": "Ver proyecto",
+
+    // project 4
+    "project4-title": "Lazo",
+    "project4-exp": "Landing page para un emprendedor que buscaba una forma de venta más personalizada, con cada botón dirigiendo al cliente a chatear por WhatsApp directamente con el vendedor. El proyecto fue diseñado primero en Figma, donde definí la paleta de colores y la tipografía, y luego implementado con HTML, CSS, JavaScript y Tailwind, replicando fielmente el diseño y logrando un sitio responsivo y optimizado.",
+    "project4-btn": "Ver proyecto",
+
     // project modal
     //modal 1
     "modal-title": "Landing page para empresa de construcción. Responsiva, moderna y optimizada.",
@@ -57,15 +72,17 @@ const translations = {
     "modal3-title-4": "Estado: En actualización",
     "modal3-p5": "Este proyecto necesita ajustes de dependencias y actualización del sistema de login para versiones más modernas de Spring Boot. El código completo está disponible en GitHub mientras preparo la versión deployada.",
 
-    // project 2
-    "project2-title": "Social Fashion",
-    "project2-exp": "Una página dedicada a diseñadores de moda, donde pueden publicar sus creaciones. Todo se almacena en una base de datos MySQL, con sistema de login seguro que permite el acceso a distintos perfiles. Desarrollado con Spring Boot, Java y MySQL.",
-    "project2-btn": "Ver proyecto",
+    // modal 4
+    "modal4-title": "Landing page que presenta productos de un emprendedor, con botones que dirigen a WhatsApp para una atención personalizada.",
+    "modal4-p1": "Landing page diseñada para emprendedor, con botones que conectan directamente a WhatsApp para facilitar la atención al cliente.",
+    "modal4-title-1": "Tecnologías utilizadas",
+    "modal4-p2": "Figma (diseño UI, paleta de colores y tipografía), HTML, CSS, JavaScript y Tailwind.",
+    "modal4-title-2": "Lo que hice",
+    "modal4-p3": "Diseño visual completo en Figma, incluyendo paleta de colores y tipografía personalizada. Luego desarrollé la estructura y el front-end en Visual Studio, replicando fielmente el diseño original. También realicé la optimización y el despliegue.",
+    "modal4-title-3": "Qué aprendí",
+    "modal4-p4": "Integración fluida entre diseño y desarrollo, mejores prácticas en front-end, diseño responsivo, optimización de carga y experiencia de contacto directo con clientes reales.",
 
-    // project 3
-    "project3-title": "Biblioteca",
-    "project3-exp": "Aplicación de biblioteca que gestiona libros en una base de datos MySQL. Permite visualizar, eliminar y modificar registros, con login integrado para múltiples usuarios. Desarrollado con Spring Boot, Java y MySQL.",
-    "project3-btn": "Ver proyecto",
+
     //terms
     "quote-title": "Conocimiento tecnico",
     "quote-title-known": "Usando estas tecnologías:",
@@ -179,6 +196,12 @@ const translations = {
     "project3-title": "Biblioteca",
     "project3-exp": "Aplicativo de biblioteca que gerencia livros em um banco de dados MySQL. Permite visualizar, excluir e editar registros, com login integrado para diferentes usuários. Desenvolvido com Spring Boot, Java e MySQL.",
     "project3-btn": "Ver projeto",
+
+    // project 4
+    "project4-title": "Lazo",
+    "project4-exp": "Landing page para um empreendedor que buscava uma abordagem de vendas mais personalizada, com cada botão direcionando o cliente para conversar via WhatsApp diretamente com o vendedor. O projeto foi inicialmente desenhado no Figma, onde defini a paleta de cores e a tipografia, e depois implementado com HTML, CSS, JavaScript e Tailwind, reproduzindo fielmente o design e entregando um site responsivo e otimizado.",
+    "project4-btn": "Ver projeto",
+
     // project modal
     //modal 1
     "modal-title": "Landing page para empresa de construção. Responsiva, moderna e otimizada.",
@@ -211,6 +234,19 @@ const translations = {
     "modal3-p4": "Desenvolvimento full stack com Java e Spring Boot, gerenciamento de banco de dados MySQL, autenticação segura e manipulação de múltiplos usuários.",
     "modal3-title-4": "Status: Em atualização",
     "modal3-p5": "Projeto full stack com Java + Spring Boot + MySQL que necessita de ajuste de dependências e atualização do sistema de login. O código completo pode ser visto no GitHub enquanto preparo a versão deployada.",
+    //modal 4
+    // modal 4
+    "modal4-title": "Landing page que apresenta os produtos de um empreendedor, com botões que direcionam para o WhatsApp para atendimento personalizado.",
+    "modal4-p1": "Landing page para empreendedor com botões que conectam diretamente ao WhatsApp para facilitar o contato com clientes.",
+    "modal4-title-1": "Tecnologias utilizadas",
+    "modal4-p2": "Figma (design UI, paleta de cores e tipografia), HTML, CSS, JavaScript e Tailwind.",
+    "modal4-title-2": "O que eu fiz",
+    "modal4-p3": "Criação completa do design visual no Figma, incluindo paleta de cores e tipografia personalizada. Depois desenvolvi a estrutura e o front-end no Visual Studio, replicando fielmente o design original. Também realizei otimização e deploy.",
+    "modal4-title-3": "O que aprendi",
+    "modal4-p4": "Integração fluida entre design e desenvolvimento, boas práticas de front-end, design responsivo, otimização de desempenho e contato direto com clientes reais.",
+
+
+
     //terms
     "quote-title": "Quer um site assim?",
     "quote-btn": "Solicitar orçamento",
@@ -326,6 +362,11 @@ const translations = {
     "project3-title": "Library",
     "project3-exp": "Library application that manages books in a MySQL database. It allows viewing, deleting, and editing records, with integrated login for multiple users. Built with Spring Boot, Java, and MySQL.",
     "project3-btn": "View project",
+    // project 4
+    "project4-title": "Lazo",
+    "project4-exp": "Landing page for an entrepreneur who wanted a more personalized sales approach, with each button directing the client to chat via WhatsApp directly with the seller. The project was first designed in Figma, where I defined the color palette and typography, and then implemented using HTML, CSS, JavaScript, and Tailwind to faithfully reproduce the design and deliver a responsive, optimized website.",
+    "project4-btn": "View project",
+
     // project modal
     //modal 1
     "modal-title": "Landing page for construction company. Responsive, modern, and optimized.",
@@ -358,6 +399,17 @@ const translations = {
     "modal3-p4": "Full stack development with Java and Spring Boot, MySQL database management, secure authentication, and handling multiple users.",
     "modal3-title-4": "Status: Under update",
     "modal3-p5": "Full stack project with Java + Spring Boot + MySQL that needs dependency adjustments and login system update. The complete code can be seen on GitHub while I prepare the deployed version.",
+    //modal 4
+    // modal 4
+    "modal4-title": "Landing page showcasing a small business owner's products, with buttons that link to WhatsApp for personalized customer service.",
+    "modal4-p1": "Landing page for a small business owner, with direct WhatsApp buttons for customer contact.",
+    "modal4-title-1": "Technologies used",
+    "modal4-p2": "Figma (UI design, color palette and typography), HTML, CSS, JavaScript and Tailwind.",
+    "modal4-title-2": "What I did",
+    "modal4-p3": "Complete visual design in Figma, including custom color palette and typography. Then I developed the structure and front-end in Visual Studio, faithfully replicating the original design. I also handled optimization and deployment.",
+    "modal4-title-3": "What I learned",
+    "modal4-p4": "Smooth integration between design and development, front-end best practices, responsive design, performance optimization, and real client communication.",
+
     //terms
     "quote-title": "Want a website like this?",
     "quote-btn": "Get a quote",
