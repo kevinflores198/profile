@@ -589,6 +589,7 @@ footer .icons {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: row;
         text-align: center;
         gap: 1rem;
         background-color: var(--primary-confiweb);
@@ -660,6 +661,7 @@ footer .icons {
         margin-top: 4rem;
     }
 
+    
 }
 
 

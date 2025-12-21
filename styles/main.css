@@ -1,7 +1,7 @@
 @import url(root.css);
 
 #profile {
-    min-height: 100vh;
+    height: 100vh;
     z-index: 2;
 }
 
