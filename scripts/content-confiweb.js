@@ -37,7 +37,7 @@ const translations = {
 
     // project 4
     "project4-title": "Lazo",
-    "project4-exp": "Landing page para un emprendedor que buscaba una forma de venta más personalizada, con cada botón dirigiendo al cliente a chatear por WhatsApp directamente con el vendedor. El proyecto fue diseñado primero en Figma, donde definí la paleta de colores y la tipografía, y luego implementado con HTML, CSS, JavaScript y Tailwind, replicando fielmente el diseño y logrando un sitio responsivo y optimizado.",
+    "project4-exp": "Landing page para un emprendedor con una forma de venta más personalizada, cada botón dirige al cliente a chatear por WhatsApp con el vendedor. Primero diseñado en Figma, definí la paleta de colores y la tipografía, y luego con HTML, CSS, JavaScript y Tailwind, replicando fielmente el diseño.",
     "project4-btn": "Ver proyecto",
 
     // project modal
@@ -199,7 +199,7 @@ const translations = {
 
     // project 4
     "project4-title": "Lazo",
-    "project4-exp": "Landing page para um empreendedor que buscava uma abordagem de vendas mais personalizada, com cada botão direcionando o cliente para conversar via WhatsApp diretamente com o vendedor. O projeto foi inicialmente desenhado no Figma, onde defini a paleta de cores e a tipografia, e depois implementado com HTML, CSS, JavaScript e Tailwind, reproduzindo fielmente o design e entregando um site responsivo e otimizado.",
+    "project4-exp": "Landing page para um empreendedor que queria uma abordagem de vendas mais personalizada, com cada botão direcionando o cliente para conversar via WhatsApp diretamente com o vendedor. O projeto foi primeiro desenhado no Figma, onde defini a paleta de cores e a tipografia, e depois implementei usando HTML, CSS, JavaScript e Tailwind para reproduzir fielmente o design e entregar um site responsivo e otimizado.",
     "project4-btn": "Ver projeto",
 
     // project modal
@@ -364,7 +364,7 @@ const translations = {
     "project3-btn": "View project",
     // project 4
     "project4-title": "Lazo",
-    "project4-exp": "Landing page for an entrepreneur who wanted a more personalized sales approach, with each button directing the client to chat via WhatsApp directly with the seller. The project was first designed in Figma, where I defined the color palette and typography, and then implemented using HTML, CSS, JavaScript, and Tailwind to faithfully reproduce the design and deliver a responsive, optimized website.",
+    "project4-exp": "Landing page for an entrepreneur seeking a more personalized sales approach, with each button directing the customer to chat via WhatsApp directly with the seller. The project was first designed in Figma, where I defined the color palette and typography, and then implemented using HTML, CSS, JavaScript, and Tailwind to faithfully replicate the design and deliver a responsive and optimized site.",
     "project4-btn": "View project",
 
     // project modal

@@ -144,52 +144,15 @@ function typeLoop() {
 }
 typeLoop();
 
-// relate card with modal.
-function modalSetup(openId, modalId) {
-  const openBtn = document.getElementById(openId);
-  const modal = document.getElementById(modalId);
-  const closeBtn = modal.querySelector(".close");
-
-  openBtn.addEventListener("click", () => modal.style.display = "block");
-  closeBtn.addEventListener("click", () => modal.style.display = "none");
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) modal.style.display = "none";
-  });
-}
-setupModal("#card-cont1, #card-cont1 button", "#cardModal1");
-setupModal("#card-cont2, #card-cont2 button", "#cardModal2");
-setupModal("#card-cont3, #card-cont3 button", "#cardModal3");
-
-
-const fadeSection = document.querySelector('.cards-menu.fade-in');
-if (fadeSection) observer.observe(fadeSection);
-
-// open modal
-document.querySelectorAll('.card-project').forEach((card, index) => {
-  card.addEventListener('click', () => {
-    const modal = document.getElementById(`cardModal${index + 1}`);
-    
-    modal.classList.add('active');
-  });
-});
-
-// close modal when open x or outside of modal.
-document.querySelectorAll('.modal').forEach(modal => {
-  modal.addEventListener('click', (e) => {
-    if (e.target.classList.contains('modal') || e.target.classList.contains('close')) {
-      modal.classList.remove('active');
-      // wait to finish transaction to hiden it
-      setTimeout(() => modal.style.display = 'none', 500);
-    }
-  });
-});
-
-// when open modal
-document.body.classList.add('modal-open');
-
-// when close modal
-document.body.classList.remove('modal-open');
 
 // today year on footer
 const today = new Date();
 currentyear.innerHTML = today.getFullYear();
+
+new simpleParallax(document.querySelectorAll('.image'));
+
+gsap.from(".box", {
+  scrollTrigger: ".box",
+  y: 100,
+  opacity: 0
+});

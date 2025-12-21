@@ -45,7 +45,7 @@ header .nav2 .nav-links a:hover {
   transform: translateX(-50%);
   width: 90%;
   max-width: 1100px;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1rem;
   background: linear-gradient(135deg,
       var(--primary),
       var(--secondary));
@@ -95,7 +95,7 @@ header .nav2 .nav-links a:hover {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .nav-links a:hover {

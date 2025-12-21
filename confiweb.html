@@ -30,6 +30,7 @@
     <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 
@@ -37,7 +38,9 @@
 
 <body>
     <header id="top">
-        <!-- <nav class="nav2">
+        <!-- 
+        to go to portfolio
+        <nav class="nav2">
             <ul class="nav-links">
                 <li><a id="nav-link-1" href="index.html"></a></li>
                 <li><a id="nav-link-2" href="profile.html"></a></li>
@@ -64,7 +67,7 @@
                         <li><a id="nav-about-bs" href="#top"></a></li>
                         <li><a id="nav-about-bs" href="index.html">Portfolio</a></li>
                         <li><a id="nav-projects-bs" href="#services"></a></li>
-                        <li><a id="nav-cases-bs" href="#cases"></a></li>
+                        <li><a id="nav-cases-bs" href="#cases1"></a></li>
                         <li><a id="nav-cta-bs" href="#cta"></a></li>
                     </ul>
                 </div>
@@ -77,36 +80,25 @@
         </nav>
     </header>
     <main>
-        <video autoplay muted playsinline id="video-dark" class="bg-video" aria-hidden="true" alt="video hero">
+        <video autoplay muted loop playsinline id="video-dark" class="bg-video" aria-hidden="true" alt="video hero">
             <source src="files/hero-background-confiweb.mp4" type="video/mp4">
         </video>
-        <video autoplay muted playsinline id="video-light" class="bg-video hidden" aria-hidden="true" alt="video hero">
+        <video autoplay muted loop playsinline id="video-light" class="bg-video hidden" aria-hidden="true"
+            alt="video hero">
             <source src="files/hero-background-light-confiweb.mp4" type="video/mp4">
         </video>
         <section id="profile" class="empresa-hero">
-            <div class="content">
-            </div>
-        </section>
-        <section id="about">
-            <div class="block"></div>
-            <h1 class="title mb-4 text-3xl font-bold md:text-5xl lg:text-6xl">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#eca76b] to-[#5aade8]">
-                    Confiweb Studio
-                </span>
-                brinda una variedad amplia de diseños para tu web
-            </h1>
-            <p class="parr text-lg font-normal text-body lg:text-xl">
-                Contactanos para poder recibir más información.
-            </p>
-            <div class="button-class">
-                <button class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+            <div class="hero-content">
+                <h1 data-aos="zoom-in">Creamos landing pages que convierten</h1>
+                <p data-aos="zoom-in">Diseñadas para celular y enfocadas en resultados.</p>
+                <button data-aos="zoom-in" class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
                                 border border-transparent transition-all duration-300 
                                 bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb]
                                 hover:text-white group">
                     <span class="relative z-10">
                         <a href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
                             target="_blank">
-                            Contactanos
+                            Hablar por WhatsApp
                         </a>
                     </span>
 
@@ -115,30 +107,185 @@
                 </button>
             </div>
         </section>
+        <section id="about">
+            <div class="block"></div>
+            <h2 class="title mb-4 text-3xl font-bold md:text-5xl lg:text-6xl">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#eca76b] to-[#5aade8]">
+                    Confiweb Studio
+                </span>
+                crea landing pages que convierten visitas en clientes
+            </h2>
+
+            <p class="parr text-lg font-normal text-body lg:text-xl">
+                Diseño + desarrollo enfocado en resultados.
+            </p>
+
+            <div class="button-class">
+                <button class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+                                border border-transparent transition-all duration-300 
+                                bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb]
+                                hover:text-white group">
+                    <span class="relative z-10">
+                        <a href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
+                            target="_blank">
+                            Ver planes
+                        </a>
+                    </span>
+                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
+                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
+                </button>
+            </div>
+
+            <div data-aos="zoom-in" class="me bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb] relative w-5/6 p-6 border border-default rounded-base shadow-xs
+                md:max-w-800 lg:w-4/6 mx-auto mt-12 mb-16">
+                <button id="dropdownButton" data-dropdown-toggle="dropdown"
+                    class="absolute top-2 end-2 text-body hover:text-heading bg-neutral-primary-soft box-border border border-transparent hover:bg-neutral-tertiary focus:ring-4 focus:ring-neutral-tertiary rounded-base p-1.5 focus:outline-none"
+                    type="button">
+                    <span class="sr-only">Open dropdown</span>
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="3"
+                            d="M6 12h.01m6 0h.01m5.99 0h.01" />
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdown" class="z-10 border border-default-medium rounded-base shadow-lg w-36 hidden">
+                    <ul class="hover:[--primary-confiweb] bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb] rounded-lg  p-2 text-sm text-body font-medium"
+                        aria-labelledby="dropdownButton">
+                        <li>
+                            <a href="#cases1"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded-md">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#cases2"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded-md">Planes
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="index.html"
+                                class="inline-flex items-center w-full p-2 text-fg-danger hover:bg-neutral-tertiary-medium rounded-md">Perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col md:flex-row items-center">
+                    <img class="mb-6 rounded-full" src="files/avatar-kev.png" alt="Kevin image" />
+                    <div>
+                        <h3 class="mb-0.5 text-xl font-semibold tracking-tight text-heading">Hola, Soy Kevin!</h3>
+                        <p class="text-sm text-body">Desarrollador web enfocado en landing pages que convierten.
+                            Trabajo con negocios reales priorizando claridad, velocidad y resultados.</p>
+                        <a class="textt"><i class="fa-regular fa-calendar"></i>Proyectos reales</a>
+                        <br>
+                        <a class="textt"><i class="fa-solid fa-address-book"></i>Contacto directo conmigo</a>
+                        <div class="flex mt-4 md:mt-6 gap-4">
+                            <button class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+                                border border-transparent transition-all duration-300 
+                                bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb]
+                                hover:text-white group">
+                                <span class="relative z-10">
+                                    <a href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
+                                        target="_blank">
+                                        Contactame
+                                    </a>
+                                </span>
+                                <span class="absolute inset-0 rounded-lg bg-neutral-900 
+                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
         <section id="services">
             <div class="block"></div>
             <h2>Servicios</h2>
             <p>Ofrecemos una lista de servicios que van a ayudar a crecer tu emprendimiento o empresa.</p>
             <div class="cards">
-                <article class="service-card card1"><i class="fa-solid fa-code"></i>
-                    <h3>Desarrollo Web</h3>
-                    <p>Sitios rápidos, responsivos y personalizados.</p>
+                <article data-aos="fade-up" class="service-card card1"><i class="fa-solid fa-code"></i>
+                    <h2>Landing Pages</h2>
+                    <p>Páginas pensadas para convertir visitas en clientes.</p>
                 </article>
-                <article class="service-card card2"><i class="fa-solid fa-bullhorn"></i>
-                    <h3>Marketing Digital</h3>
-                    <p>Campañas efectivas y optimización SEO.</p>
+                <article data-aos="fade-up" class="service-card card2"><i class="fa-solid fa-mobile"></i>
+                    <h2>Optimización Mobile</h2>
+                    <p>Diseños rápidos y perfectos para celular (donde entra el 80% de tus clientes).</p>
                 </article>
-                <article class="service-card card3"><i class="fa-solid fa-palette"></i>
-                    <h3>Diseño & Branding</h3>
-                    <p>Identidad visual profesional para tu marca.</p>
+                <article data-aos="fade-up" class="service-card card3"><i class="fa-solid fa-palette"></i>
+                    <h2>Diseño & Branding</h2>
+                    <p>Diseño profesional que genera confianza desde el primer segundo.</p>
                 </article>
-                <article class="service-card card4"><i class="fa-solid fa-database"></i>
-                    <h3>Automatización</h3>
-                    <p>Integración con CRM y herramientas empresariales.</p>
+                <article data-aos="fade-up" class="service-card card4"><i class="fa-solid fa-database"></i>
+                    <h2>Automatización</h2>
+                    <p>Formularios, WhatsApp, emails y reservas conectadas automáticamente.</p>
                 </article>
             </div>
         </section>
-        <section id="cases">
+        <section id="benefits" class="benefits">
+            <div class="benefits-overlay"></div>
+            <div class="block"></div>
+            <div class="benefits-content">
+                <h2>¿Por qué una landing page funciona?</h2>
+                <p class="benefits-lead">
+                    Tres razones simples
+                </p>
+                <div class="benefits-grid">
+                    <div class="benefit" data-aos="fade-up">
+                        <img src="/files/solution.webp" alt="Solución">
+                        <div class="benefit-container">
+                            <i class="fa-solid fa-bullseye left"></i>
+                            <h3 class="left">Un solo objetivo</h3>
+                            <p class="left">
+                                Una landing guía al usuario
+                                a una acción clara: escribirte,
+                                agendar o comprar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefit benefit-medium" data-aos="fade-up">
+                        <div class="benefit-container">
+                            <i class="fa-solid fa-mobile-screen medium"></i>
+                            <h3 class="medium">Pensada para celular</h3>
+                            <p class="medium">
+                                La mayoría entra desde el teléfono.
+                                Si no carga rápido, se va.
+                            </p>
+                        </div>
+                        <img src="/files/solution-2.webp" alt="Mobile">
+                    </div>
+
+                    <div class="benefit" data-aos="fade-up">
+                        <img src="/files/solution-3.webp" alt="Solución">
+                        <div class="benefit-container">
+                            <i class="fa-solid fa-check left"></i>
+                            <h3 class="left">Claridad y confianza</h3>
+                            <p class="left">
+                                Mensaje claro, diseño profesional
+                                y menos dudas para el cliente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="button-class cta-button">
+                <h3>¿Quieres una landing así para tu negocio?</h3>
+                <button data-aos="zoom-in" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+                            border border-transparent transition-all duration-300 
+                            bg-gradient-to-r from-[#eca76b] to-[#5aade8]
+                            hover:text-white group">
+                    <a target="_blank"
+                        href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+                        class="bottons relative z-10 w-full text-center">
+                        Hablar por Whatsapp
+                    </a>
+                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
+                            group-hover:opacity-0 opacity-100 transition-opacity duration-300">
+                    </span>
+                </button>
+            </div>
+        </section>
+        <section id="cases1">
             <div class="block"></div>
             <h2>Casos de éxito</h2>
             <p>Algunos clientes de Confiweb que hemos tenido este año</p>
@@ -146,8 +293,9 @@
         <section id="projects" class="">
             <div class="content">
                 <div class="cards-menu fade-in">
-                    <figure class="card-project" id="card-cont1">
-                        <img src="/files/project-brutton.jpg" class="card-video" loading="lazy">
+                    <figure class="card-project" id="card-cont1" data-aos="flip-right" data-aos-duration="1200"
+                        data-aos-easing="ease-in-out">
+                        <img src="/files/project-brutton.webp" class="card-video" loading="lazy" alt="brutton">
                         <div class="card-content">
                             <figcaption>
                                 <h3 id="project1-title"></h3>
@@ -163,8 +311,9 @@
                             </button>
                         </div>
                     </figure>
-                    <figure class="card-project" id="card-cont4">
-                        <img src="/files/project-lazo.jpg" class="card-video" loading="lazy">
+                    <figure class="card-project" id="card-cont4" data-aos="flip-right" data-aos-duration="1200"
+                        data-aos-easing="ease-in-out">
+                        <img src="/files/project-lazo.webp" class="card-video" loading="lazy" alt="lazo">
                         <div class="card-content">
                             <figcaption>
                                 <h3 id="project4-title"></h3>
@@ -179,8 +328,9 @@
                             </button>
                         </div>
                     </figure>
-                    <figure class="card-project" id="card-cont2">
-                        <img src="/files/project-socialfashion.jpg" class="card-video" loading="lazy">
+                    <figure class="card-project" id="card-cont2" data-aos="flip-right" data-aos-duration="1200"
+                        data-aos-easing="ease-in-out">
+                        <img src="/files/project-socialfashion.webp" class="card-video" loading="lazy">
                         <div class="card-content">
                             <figcaption>
                                 <h3 id="project2-title"></h3>
@@ -195,8 +345,8 @@
                             </button>
                         </div>
                     </figure>
-                    <!-- <figure class="card-project" id="card-cont3">
-                        <img src="/files/project-library.jpg" class="card-video" loading="lazy">
+                    <!-- <figure class="card-project" id="card-cont3" data-aos="flip-right">
+                        <img src="/files/project-library.jpg" class="card-video" loading="lazy" alt="library">
                         <div class="card-content">
                             <figcaption>
                                 <h3 id="project3-title"></h3>
@@ -282,7 +432,7 @@
                                     class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
                                     <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                                         target="_blank" class="glass-btn">
-                                        Presupuesto
+                                        Planes
                                     </a>
                                 </button>
                             </div>
@@ -361,7 +511,7 @@
                                     class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
                                     <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                                         target="_blank" class="glass-btn">
-                                        Presupuesto
+                                        Planes
                                     </a>
 
                                 </button>
@@ -442,7 +592,7 @@
                                     class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
                                     <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                                         target="_blank" class="glass-btn">
-                                        Presupuesto
+                                        Planes
                                     </a>
                                 </button>
                             </div>
@@ -513,7 +663,7 @@
                             </div>
 
                             <!-- Footer -->
-                            <div class="flex justify-between space-x-4 border-t border-default pt-4">
+                            <div class="flex justify-center space-x-4 border-t border-default pt-4">
                                 <button data-modal-hide="static-modal"
                                     class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
                                     <a href="https://kevinflores198.github.io/lazo/" target="_blank" class="glass-btn">
@@ -533,7 +683,7 @@
                                     class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
                                     <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                                         target="_blank" class="glass-btn">
-                                        Presupuesto
+                                        Planes
                                     </a>
                                 </button>
                             </div>
@@ -543,62 +693,17 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="benefits" class="mantenance-content">
-            <div class="block"></div>
-            <h2>PORQUE NECESITAS UNA LANDING PAGE?</h2>
-            <h3>“La mayoría de la gente entra desde el celular →<br>
-                si tu página no está optimizada, se van →<br>
-                una landing soluciona eso.”</h3>
-            <p class="">
-                Mantene tu pagina optimizada y actualizada con todo lo que este pasando en el mercado por un
-                precio
-                sumamente accesible, recomendado para tener tu pagina al dia por ofertas especiales como black
-                friday, navidad, etc.
-            </p>
-
-            <div class="cards">
-                <article class="service-card card1"><i class="fa-solid fa-code"></i>
-                    <h3>Desarrollo Web</h3>
-                    <p>El promedio de tasa de conversión en una landing page es de 6.6%.</p>
-                </article>
-                <article class="service-card card2"><i class="fa-solid fa-bullhorn"></i>
-                    <h3>Marketing Digital</h3>
-                    <p>86% de las landing pages más efectivas están optimizadas para móviles. Y asi es como lo hacemos.
-                    </p>
-                </article>
-                <article class="service-card card3"><i class="fa-solid fa-palette"></i>
-                    <h3>Diseño & Branding</h3>
-                    <p>Incluir video en la landing puede aumentar la conversión hasta un 86% según estudios recientes.
-                    </p>
-                </article>
-                <article class="service-card card4"><i class="fa-solid fa-database"></i>
-                    <h3>Automatización</h3>
-                    <p>Si usás un único CTA (botón principal), las conversiones mejoran porque no distraés al usuario
-                        con múltiples opciones.</p>
-                </article>
-                <article class="service-card card4"><i class="fa-solid fa-database"></i>
-                    <h3>Automatización</h3>
-                    <p>Si abordás los miedos del cliente (como “¿qué pasará con mis datos?”), podés aumentar las
-                        conversiones hasta un 80%.</p>
-                </article>
-                <article class="service-card card4"><i class="fa-solid fa-database"></i>
-                    <h3>Automatización</h3>
-                    <p>Tener varias landing pages para diferentes tipos de audiencia puede aumentar muchísimo la
-                        generación de leads. Por ejemplo, empresas con entre 10 y 15 landing pages tienen un 55% más de
-                        clientes potenciales según Hostinger.</p>
-                </article>
-            </div>
-        </section> -->
         <section id="reasons"></section>
-        <section id="cases" class="prices-cases">
+        <section id="cases2" class="prices-cases">
             <div class="block"></div>
             <h2>Planes</h2>
             <p>Elige un plan y hablamos para poder saber que podemos hacer por tu negocio!</p>
         </section>
-        <section class="prices 
+        <section id="prices" class="prices 
         flex items-baseline justify-center p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
 
-            <div class="prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
+            <div data-aos="flip-right"
+                class="cursor-pointer prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
                 <h5 class="mb-4 text-xl font-medium text-body">Plan Essencial</h5>
                 <div class="flex items-baseline text-heading">
                     <span class="text-5xl font-extrabold tracking-tight">$---</span>
@@ -671,7 +776,7 @@
                     <a target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Me%20interessei%20no%20plano%20de%20R%24700.%20Poderia%20me%20passar%20um%20or%C3%A7amento%3F"
                         class="relative z-10  w-full text-center">
-                        Contratar plano
+                        Ver planes
                     </a>
 
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
@@ -682,7 +787,8 @@
 
             </div>
 
-            <div class="prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
+            <div data-aos="flip-right"
+                class="cursor-pointer prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
                 <h5 class="mb-4 text-xl font-medium text-body">Plan Profissional</h5>
                 <div class="flex items-baseline text-heading">
                     <span class="text-5xl font-extrabold tracking-tight">$---</span>
@@ -765,7 +871,7 @@
                     <a target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostei%20do%20plano%20de%20R%24%201200.%20Pode%20me%20enviar%20um%20or%C3%A7amento%3F"
                         class="relative z-10 w-full text-center">
-                        Contratar plano
+                        Ver planes
                     </a>
 
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
@@ -774,7 +880,8 @@
                 </button>
             </div>
 
-            <div class="prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
+            <div data-aos="flip-right"
+                class="cursor-pointer prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
                 <h5 class="mb-4 text-xl font-medium text-body">Plan Corporrativo</h5>
                 <div class="flex items-baseline text-heading">
                     <span class="text-5xl font-extrabold tracking-tight">$---</span>
@@ -849,7 +956,7 @@
                     <a target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Quero%20saber%20mais%20sobre%20o%20plano%20de%20R%24%201800.%20Pode%20me%20ajudar%3F"
                         class="relative z-10 w-full text-center">
-                        Contratar plano
+                        Ver planes
                     </a>
 
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
@@ -857,8 +964,11 @@
                     </span>
                 </button>
             </div>
+            <p class="mt-4 text-sm text-gray-500 text-center">
+                Los precios pueden variar según el país y las necesidades de cada proyecto.
+            </p>
         </section>
-        <section id="cases" class="mantenance-content">
+        <section id="cases3" class="mantenance-content">
             <div class="block"></div>
             <h2>Planes de Mantenimiento</h2>
             <p class="">Mantene tu pagina optimizada y actualizada con todo lo que este pasando en el mercado por un
@@ -867,8 +977,8 @@
                 friday, navidad, etc.</p>
         </section>
         <section id="maintenance-plans"
-            class="flex items-center justify-center p-6 bg-neutral-primary-soft border border-default rounded-base shadow-xs">
-            <div
+            class="flex cursor-pointer items-center justify-center p-6 bg-neutral-primary-soft border border-default rounded-base shadow-xs">
+            <div data-aos="flip-right"
                 class="maintenance-plans-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
                 <h5 class="mb-4 text-xl font-medium text-body">Mantenimiento Mensual</h5>
                 <div class="flex items-baseline text-heading">
@@ -921,7 +1031,7 @@
                     <a target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostaria%20de%20fazer%20um%20site%20e%20tamb%C3%A9m%20contratar%20a%20manuten%C3%A7%C3%A3o%20mensal.%20Como%20funciona%3F"
                         class="relative z-10 w-full text-center">
-                        Contratar plano
+                        Ver planes
                     </a>
 
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
@@ -930,8 +1040,8 @@
                 </button>
             </div>
 
-            <div
-                class="maintenance-plans-card max-w-sm p-6 bg-neutral-primary-soft/70 backdrop-blur-md border-default rounded-base shadow-xs">
+            <div data-aos="flip-right"
+                class="cursor-pointer maintenance-plans-card max-w-sm p-6 bg-neutral-primary-soft/70 backdrop-blur-md border-default rounded-base shadow-xs">
                 <h5 class="mb-4 text-xl font-medium text-body">Mantenimiento Bimestral</h5>
                 <div class="flex items-baseline text-heading">
                     <span class="text-4xl font-extrabold tracking-tight">$---</span>
@@ -986,7 +1096,7 @@
                     <a target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostaria%20de%20fazer%20um%20site%20e%20contratar%20a%20manuten%C3%A7%C3%A3o%20a%20cada%20dois%20meses.%20Como%20funciona%3F"
                         class="relative z-10 w-full text-center">
-                        Contratar plano
+                        Ver planes
                     </a>
 
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
@@ -995,19 +1105,23 @@
                 </button>
 
             </div>
+            <p class="mt-4 text-sm text-gray-500 text-center">
+                Los precios pueden variar según el país y las necesidades de cada proyecto.
+            </p>
+
         </section>
-        <section id="cta">
+        <section id="cta" class="parallax">
             <div class="block"></div>
             <h2>Impulsá tu marca hoy</h2>
             <p>Si queres que tu empresa cresca con una vista mas profesional, hablemos de eso!</p>
-            <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
+            <button data-aos="zoom-in" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
                             border border-transparent transition-all duration-300 
                             bg-gradient-to-r from-[#eca76b] to-[#5aade8]
                             hover:text-white group">
                 <a target="_blank"
                     href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                     class="bottons relative z-10 w-full text-center">
-                    Contratar plano
+                    Ver planes
                 </a>
                 <span class="absolute inset-0 rounded-lg bg-neutral-900 
                             group-hover:opacity-0 opacity-100 transition-opacity duration-300">
@@ -1024,16 +1138,11 @@
                     <li><a href="">Santa Catarina, SC</a></li>
                     <li><a href="">Sao Paulo, SP</a></li>
                     <li><a href="">Rio de Janeiro, RJ</a></li>
-                    <li><a href="">Minas Gerais, MG</a></li>
                     <li><a href="">Bahia, BA</a></li>
                     <li><a href="">Parana, PR</a></li>
                     <li><a href="">Rio Grande do Sul, RS</a></li>
                     <li><a href="">Pernambuco, PE</a></li>
                     <li><a href="">Ceara, CE</a></li>
-                    <li><a href="">Para, PA</a></li>
-                    <li><a href="">Mato Grosso, MT</a></li>
-                    <li><a href="">Goias, GO</a></li>
-                    <li><a href="">Distrito Federal, DF</a></li>
                 </ul>
             </div>
             <div class="cta-section">
@@ -1046,9 +1155,7 @@
                     <li><a href="">Mexico</a></li>
                     <li><a href="">Peru</a></li>
                     <li><a href="">Uruguay</a></li>
-                    <li><a href="">Spain</a></li>
                     <li><a href="">United States</a></li>
-                    <li><a href="">Canada</a></li>
                     <li><a href="">Portugal</a></li>
                 </ul>
             </div>
@@ -1059,7 +1166,7 @@
             <div class="md:flex md:justify-evenly">
                 <div class="mb-6 md:mb-0">
                     <a href="confiweb.html" class="logo-title flex items-center">
-                        <img src="files/logo-no-back.png" class="h-7 me-3" alt="FlowBite Logo" />
+                        <img src="files/logo-no-back.png" class="h-7 me-3" alt="FlowBite Logo"/>
                         <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">Confiweb</span>
                     </a>
                 </div>
@@ -1165,6 +1272,22 @@
     <script src="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-out-cubic',
+            offset: 120
+        });
+
+        new simpleParallax(document.querySelectorAll('.parallax'), {
+            scale: 1.2,
+            delay: 0.4
+        });
+
+
+    </script>
 
 
 </body>
