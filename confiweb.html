@@ -38,15 +38,6 @@
 
 <body>
     <header id="top">
-        <!-- 
-        to go to portfolio
-        <nav class="nav2">
-            <ul class="nav-links">
-                <li><a id="nav-link-1" href="index.html"></a></li>
-                <li><a id="nav-link-2" href="profile.html"></a></li>
-                <li><a id="nav-link-3" href="confiweb.html"></a></li>
-            </ul>
-        </nav> -->
         <nav class="glass-navbar navbar-confiweb" aria-label="Main Navigation">
             <div class="content" id="contentnav">
                 <div class="language-switch">
@@ -89,16 +80,16 @@
         </video>
         <section id="profile" class="empresa-hero">
             <div class="hero-content">
-                <h1 data-aos="zoom-in">Creamos landing pages que convierten</h1>
-                <p data-aos="zoom-in">Diseñadas para celular y enfocadas en resultados.</p>
+                <h1 id="hero-title" data-aos="zoom-in"></h1>
+                <p id="hero-parr" data-aos="zoom-in"></p>
                 <button data-aos="zoom-in" class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
                                 border border-transparent transition-all duration-300 
                                 bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb]
                                 hover:text-white group">
                     <span class="relative z-10">
-                        <a href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
+                        <a id="hero-btn"
+                            href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
                             target="_blank">
-                            Hablar por WhatsApp
                         </a>
                     </span>
 
@@ -113,12 +104,9 @@
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#eca76b] to-[#5aade8]">
                     Confiweb Studio
                 </span>
-                crea landing pages que convierten visitas en clientes
+                <a id="about-title" href=""></a>
             </h2>
-
-            <p class="parr text-lg font-normal text-body lg:text-xl">
-                Diseño + desarrollo enfocado en resultados.
-            </p>
+            <p id="about-parr" class="parr text-lg font-normal text-body lg:text-xl"></p>
 
             <div class="button-class">
                 <button class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
@@ -126,13 +114,13 @@
                                 bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb]
                                 hover:text-white group">
                     <span class="relative z-10">
-                        <a href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
+                        <a id="about-btn"
+                            href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
                             target="_blank">
-                            Ver planes
                         </a>
                     </span>
-                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
+                    <span
+                        class="absolute inset-0 rounded-lg bg-neutral-900 group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
                 </button>
             </div>
 
@@ -153,38 +141,38 @@
                     <ul class="hover:[--primary-confiweb] bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb] rounded-lg  p-2 text-sm text-body font-medium"
                         aria-labelledby="dropdownButton">
                         <li>
-                            <a href="#cases1"
-                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded-md">Proyectos</a>
+                            <a id="drop-1" href="#cases1"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded-md"></a>
                         </li>
                         <li>
-                            <a href="#cases2"
-                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded-md">Planes
+                            <a id="drop-2" href="#cases2"
+                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded-md">
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="index.html"
-                                class="inline-flex items-center w-full p-2 text-fg-danger hover:bg-neutral-tertiary-medium rounded-md">Perfil</a>
+                            <a id="drop-3" target="_blank" href="index.html"
+                                class="inline-flex items-center w-full p-2 text-fg-danger hover:bg-neutral-tertiary-medium rounded-md"></a>
                         </li>
                     </ul>
                 </div>
                 <div class="flex flex-col md:flex-row items-center">
                     <img class="mb-6 rounded-full" src="files/avatar-kev.png" alt="Kevin image" />
                     <div>
-                        <h3 class="mb-0.5 text-xl font-semibold tracking-tight text-heading">Hola, Soy Kevin!</h3>
-                        <p class="text-sm text-body">Desarrollador web enfocado en landing pages que convierten.
-                            Trabajo con negocios reales priorizando claridad, velocidad y resultados.</p>
-                        <a class="textt"><i class="fa-regular fa-calendar"></i>Proyectos reales</a>
+                        <h3 id="card-name" class="mb-0.5 text-xl font-semibold tracking-tight text-heading"></h3>
+                        <p id="card-parr" class="text-sm text-body">
+                        </p>
+                        <a id="carr-desc-1" class="textt"><i class="fa-regular fa-calendar"></i></a>
                         <br>
-                        <a class="textt"><i class="fa-solid fa-address-book"></i>Contacto directo conmigo</a>
+                        <a id="carr-desc-2" class="textt"><i class="fa-solid fa-address-book"></i></a>
                         <div class="flex mt-4 md:mt-6 gap-4">
                             <button class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
                                 border border-transparent transition-all duration-300 
                                 bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb]
                                 hover:text-white group">
                                 <span class="relative z-10">
-                                    <a href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
+                                    <a id="card-btn"
+                                        href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
                                         target="_blank">
-                                        Contactame
                                     </a>
                                 </span>
                                 <span class="absolute inset-0 rounded-lg bg-neutral-900 
@@ -199,24 +187,24 @@
         </section>
         <section id="services">
             <div class="block"></div>
-            <h2>Servicios</h2>
-            <p>Ofrecemos una lista de servicios que van a ayudar a crecer tu emprendimiento o empresa.</p>
+            <h2 id="service-title"></h2>
+            <p id="service-parr"></p>
             <div class="cards">
                 <article data-aos="fade-up" class="service-card card1"><i class="fa-solid fa-code"></i>
-                    <h2>Landing Pages</h2>
-                    <p>Páginas pensadas para convertir visitas en clientes.</p>
+                    <h2 id="service-card-title"></h2>
+                    <p id="service-card-parr"></p>
                 </article>
                 <article data-aos="fade-up" class="service-card card2"><i class="fa-solid fa-mobile"></i>
-                    <h2>Optimización Mobile</h2>
-                    <p>Diseños rápidos y perfectos para celular (donde entra el 80% de tus clientes).</p>
+                    <h2 id="service-card-title-2"></h2>
+                    <p id="service-card-parr-2"></p>
                 </article>
                 <article data-aos="fade-up" class="service-card card3"><i class="fa-solid fa-palette"></i>
-                    <h2>Diseño & Branding</h2>
-                    <p>Diseño profesional que genera confianza desde el primer segundo.</p>
+                    <h2 id="service-card-title-3"></h2>
+                    <p id="service-card-parr-3"></p>
                 </article>
                 <article data-aos="fade-up" class="service-card card4"><i class="fa-solid fa-database"></i>
-                    <h2>Automatización</h2>
-                    <p>Formularios, WhatsApp, emails y reservas conectadas automáticamente.</p>
+                    <h2 id="service-card-title-4"></h2>
+                    <p id="service-card-parr-4"></p>
                 </article>
             </div>
         </section>
@@ -224,32 +212,23 @@
             <div class="benefits-overlay"></div>
             <div class="block"></div>
             <div class="benefits-content">
-                <h2>¿Por qué una landing page funciona?</h2>
-                <p class="benefits-lead">
-                    Tres razones simples
-                </p>
+                <h2 id="benefits-title"></h2>
+                <p id="benefits-parr" class="benefits-lead"></p>
                 <div class="benefits-grid">
                     <div class="benefit" data-aos="fade-up">
                         <img src="/files/solution.webp" alt="Solución">
                         <div class="benefit-container">
                             <i class="fa-solid fa-bullseye left"></i>
-                            <h3 class="left">Un solo objetivo</h3>
-                            <p class="left">
-                                Una landing guía al usuario
-                                a una acción clara: escribirte,
-                                agendar o comprar.
-                            </p>
+                            <h3 id="benefit-card-title" class="left"></h3>
+                            <p id="benefit-card-parr" class="left"></p>
                         </div>
                     </div>
 
                     <div class="benefit benefit-medium" data-aos="fade-up">
                         <div class="benefit-container">
                             <i class="fa-solid fa-mobile-screen medium"></i>
-                            <h3 class="medium">Pensada para celular</h3>
-                            <p class="medium">
-                                La mayoría entra desde el teléfono.
-                                Si no carga rápido, se va.
-                            </p>
+                            <h3 id="benefit-card-title-2" class="medium"></h3>
+                            <p id="benefit-card-parr-2" class="medium"></p>
                         </div>
                         <img src="/files/solution-2.webp" alt="Mobile">
                     </div>
@@ -258,26 +237,23 @@
                         <img src="/files/solution-3.webp" alt="Solución">
                         <div class="benefit-container">
                             <i class="fa-solid fa-check left"></i>
-                            <h3 class="left">Claridad y confianza</h3>
-                            <p class="left">
-                                Mensaje claro, diseño profesional
-                                y menos dudas para el cliente.
-                            </p>
+                            <h3 id="benefit-card-title-3" class="left"></h3>
+                            <p id="benefit-card-parr-3" class="left"></p>
                         </div>
                     </div>
                 </div>
 
             </div>
             <div class="button-class cta-button">
-                <h3>¿Quieres una landing así para tu negocio?</h3>
+                <h3 id="benefit-cta-title"></h3>
                 <button data-aos="zoom-in" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
                             border border-transparent transition-all duration-300 
                             bg-gradient-to-r from-[#eca76b] to-[#5aade8]
                             hover:text-white group">
-                    <a target="_blank"
+                    <a id="benefit-cta-btn" target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                         class="bottons relative z-10 w-full text-center">
-                        Hablar por Whatsapp
+                        
                     </a>
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
                             group-hover:opacity-0 opacity-100 transition-opacity duration-300">
@@ -287,8 +263,8 @@
         </section>
         <section id="cases1">
             <div class="block"></div>
-            <h2>Casos de éxito</h2>
-            <p>Algunos clientes de Confiweb que hemos tenido este año</p>
+            <h2 id="cases1-title">Casos de éxito</h2>
+            <p id="cases1-parr">Algunos clientes de Confiweb que hemos tenido este año</p>
         </section>
         <section id="projects" class="">
             <div class="content">
@@ -424,15 +400,14 @@
                             <div class="flex justify-between space-x-4 border-t border-default pt-4">
                                 <button data-modal-hide="static-modal"
                                     class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
-                                        Visitar
+                                    <a id="modal-btn1" href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                        
                                     </a>
                                 </button>
                                 <button data-modal-hide="static-modal"
                                     class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+                                    <a id="modal-btn1-2" href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                                         target="_blank" class="glass-btn">
-                                        Planes
                                     </a>
                                 </button>
                             </div>
@@ -498,22 +473,18 @@
                                 <h3 id="modal2-title-3"></h3>
                                 <p id="modal2-p4"></p>
                             </div>
-
                             <!-- Footer -->
                             <div class="flex justify-between space-x-4 border-t border-default pt-4">
                                 <button data-modal-hide="static-modal"
                                     class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
-                                        Visitar
+                                    <a id="modal-btn2" href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
                                     </a>
                                 </button>
                                 <button data-modal-hide="static-modal"
                                     class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+                                    <a id="modal-btn2-2" href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                                         target="_blank" class="glass-btn">
-                                        Planes
                                     </a>
-
                                 </button>
                             </div>
 
@@ -583,16 +554,16 @@
                             <div class="flex justify-between space-x-4 border-t border-default pt-4">
                                 <button data-modal-hide="static-modal"
                                     class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
-                                        Visitar
+                                    <a id="modal-btn3" href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
+                                        
                                     </a>
                                 </button>
 
                                 <button data-modal-hide="static-modal"
                                     class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+                                    <a id="modal-btn3-2" href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                                         target="_blank" class="glass-btn">
-                                        Planes
+                                        
                                     </a>
                                 </button>
                             </div>
@@ -666,24 +637,21 @@
                             <div class="flex justify-center space-x-4 border-t border-default pt-4">
                                 <button data-modal-hide="static-modal"
                                     class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a href="https://kevinflores198.github.io/lazo/" target="_blank" class="glass-btn">
-                                        Visitar
+                                    <a id="modal-btn4" href="https://kevinflores198.github.io/lazo/" target="_blank" class="glass-btn">
                                     </a>
                                 </button>
 
                                 <button data-modal-hide="static-modal"
                                     class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a href="https://www.figma.com/proto/Z1SXYdKY0vu3IaAizFbbxT/Lazo?node-id=2721-33&p=f&t=5AtRMkM9lnjwvDoH-0&scaling=min-zoom&content-scaling=fixed&page-id=2704%3A9"
+                                    <a id="modal-btn4-2" href="https://www.figma.com/proto/Z1SXYdKY0vu3IaAizFbbxT/Lazo?node-id=2721-33&p=f&t=5AtRMkM9lnjwvDoH-0&scaling=min-zoom&content-scaling=fixed&page-id=2704%3A9"
                                         target="_blank" class="glass-btn">
-                                        Figma
                                     </a>
                                 </button>
 
                                 <button data-modal-hide="static-modal"
                                     class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
+                                    <a id="modal-btn4-3" href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                                         target="_blank" class="glass-btn">
-                                        Planes
                                     </a>
                                 </button>
                             </div>
@@ -696,14 +664,15 @@
         <section id="reasons"></section>
         <section id="cases2" class="prices-cases">
             <div class="block"></div>
-            <h2>Planes</h2>
-            <p>Elige un plan y hablamos para poder saber que podemos hacer por tu negocio!</p>
+            <h2 id="cases-2-title"></h2>
+            <p id="cases-2-p"></p>
         </section>
-        <section id="prices" class="prices 
+        <section id="prices"
+            class="prices 
                      flex items-baseline justify-center p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
             <div data-aos="flip-right"
                 class="cursor-pointer prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
-                <h5 class="mb-4 text-xl font-medium text-body">Plan Essencial</h5>
+                <h5 id="prices-title" class="mb-4 text-xl font-medium text-body"></h5>
                 <div class="flex items-baseline text-heading">
                     <span class="text-5xl font-extrabold tracking-tight">$---</span>
                     <span class="ms-2 font-medium text-body"></span>
@@ -715,7 +684,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Página Landing Page (1 sección principal).</span>
+                        <span id="prices-tip-1" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -723,7 +692,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Diseño responsivo profesional.</span>
+                        <span id="prices-tip-2" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -731,7 +700,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">SEO básico (para aparecer en Google).</span>
+                        <span id="prices-tip-3" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -739,7 +708,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Botón de contacto (WhatsApp + Email).</span>
+                        <span id="prices-tip-4" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -747,7 +716,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">1 revisión de cambios.</span>
+                        <span id="prices-tip-5" class="text-body"></span>
                     </li>
                     <li class="flex items-center line-through decoration-body">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -755,7 +724,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Integración con redes sociales.</span>
+                        <span id="prices-tip-6" class="text-body"></span>
                     </li>
                     <li class="flex items-center line-through decoration-body">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -763,21 +732,20 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Páginas de servicios individuales.</span>
+                        <span id="prices-tip-7" class="text-body"></span>
                     </li>
                 </ul>
-                <p>Entrega: 3–5 días.</p>
+
+                <p id="prices-delivery"></p>
+
                 <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
                     border border-transparent transition-all duration-300 
                     bg-gradient-to-r from-[#eca76b] to-[#5aade8]
                     hover:text-white group">
-
-                    <a target="_blank"
+                    <a id="prices-btn" target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Me%20interessei%20no%20plano%20de%20R%24700.%20Poderia%20me%20passar%20um%20or%C3%A7amento%3F"
                         class="relative z-10  w-full text-center">
-                        Ver planes
                     </a>
-
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
                                 group-hover:opacity-0 opacity-100 transition-opacity duration-300">
                     </span>
@@ -785,10 +753,9 @@
 
 
             </div>
-
             <div data-aos="flip-right"
                 class="cursor-pointer prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
-                <h5 class="mb-4 text-xl font-medium text-body">Plan Profissional</h5>
+                <h5 id="prices-title-2" class="mb-4 text-xl font-medium text-body"></h5>
                 <div class="flex items-baseline text-heading">
                     <span class="text-5xl font-extrabold tracking-tight">$---</span>
                     <span class="ms-2 font-medium text-body"></span>
@@ -800,8 +767,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Sitio web 3 a 5 páginas (Home, Servicios, Sobre Nosotros, Contacto,
-                            etc.).</span>
+                        <span id="prices-tip-2-1" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -809,7 +775,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Diseño premium + Animaciones suaves.</span>
+                        <span id="prices-tip-2-2" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -817,7 +783,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">SEO optimizado para Google.</span>
+                        <span id="prices-tip-2-3" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -825,7 +791,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Integración con redes sociales.</span>
+                        <span id="prices-tip-2-4" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -833,7 +799,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Formulario de contacto profesional.</span>
+                        <span id="prices-tip-2-5" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -841,7 +807,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">2 revisiones de cambios.</span>
+                        <span id="prices-tip-2-6" class="text-body"></span>
                     </li>
                     <li class="flex items-center line-through decoration-body">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -849,7 +815,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Integraciones empresariales (CRM, Email, Formularios).</span>
+                        <span id="prices-tip-2-7" class="text-body"></span>
                     </li>
                     <li class="flex items-center line-through decoration-body">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -857,20 +823,20 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Páginas de servicios individuales.</span>
+                        <span id="prices-tip-2-8" class="text-body"></span>
                     </li>
-                    <p>Ideal para generar confianza, vender más y mostrar servicios de forma profesional.</p>
-                    <p>Entrega: 7–10 días.</p>
+                    <p id="prices-description-2"></p>
+                    <p id="prices-delivery-2"></p>
                 </ul>
                 <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
                                 border border-transparent transition-all duration-300 
                                 bg-gradient-to-r from-[#eca76b] to-[#5aade8]
                                 hover:text-white group">
 
-                    <a target="_blank"
+                    <a id="prices-btn-2" target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostei%20do%20plano%20de%20R%24%201200.%20Pode%20me%20enviar%20um%20or%C3%A7amento%3F"
                         class="relative z-10 w-full text-center">
-                        Ver planes
+                        
                     </a>
 
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
@@ -878,10 +844,9 @@
                     </span>
                 </button>
             </div>
-
             <div data-aos="flip-right"
                 class="cursor-pointer prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
-                <h5 class="mb-4 text-xl font-medium text-body">Plan Corporrativo</h5>
+                <h5 id="prices-title-3" class="mb-4 text-xl font-medium text-body"></h5>
                 <div class="flex items-baseline text-heading">
                     <span class="text-5xl font-extrabold tracking-tight">$---</span>
                     <span class="ms-2 font-medium text-body"></span>
@@ -893,7 +858,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Sitio completo 5+ páginas con diseño avanzado.</span>
+                        <span id="prices-tip-3-1" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -901,7 +866,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Identidad visual completa (colores, tipografías, estilo).</span>
+                        <span id="prices-tip-3-2" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -909,7 +874,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Optimización total para velocidad + SEO avanzado.</span>
+                        <span id="prices-tip-3-3" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -917,7 +882,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Páginas de servicios individuales.</span>
+                        <span id="prices-tip-3-4" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -925,7 +890,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Integraciones empresariales (CRM, Email, Formularios).</span>
+                        <span id="prices-tip-3-5" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -933,7 +898,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Optimización total para velocidad + SEO avanzado.</span>
+                        <span id="prices-tip-3-6" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -941,10 +906,10 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">3 revisiones de cambios.</span>
+                        <span id="prices-tip-3-7"  class="text-body"></span>
                     </li>
-                    <p>Perfecto para empresas que buscan presencia sólida y resultados a largo plazo.</p>
-                    <p>Entrega: 10–15 días.</p>
+                    <p id="prices-description-3"></p>
+                    <p id="prices-delivery-3"></p>
 
                 </ul>
                 <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
@@ -952,10 +917,10 @@
                                  bg-gradient-to-r from-[#eca76b] to-[#5aade8]
                                  hover:text-white group">
 
-                    <a target="_blank"
+                    <a id="prices-btn-3" target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Quero%20saber%20mais%20sobre%20o%20plano%20de%20R%24%201800.%20Pode%20me%20ajudar%3F"
                         class="relative z-10 w-full text-center">
-                        Ver planes
+                        
                     </a>
 
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
@@ -963,28 +928,22 @@
                     </span>
                 </button>
             </div>
-            <p class="w-full mt-4 text-sm text-gray-500 text-center">
-                Los precios pueden variar según el país y las necesidades de cada proyecto.
-            </p>
+            <p id="prices-clear" class="w-full mt-4 text-sm text-gray-500 text-center"></p>
         </section>
         <section id="cases3" class="mantenance-content">
             <div class="block"></div>
-            <h2>Planes de Mantenimiento</h2>
-            <p class="">Mantene tu pagina optimizada y actualizada con todo lo que este pasando en el mercado por un
-                precio
-                sumamente accesible, recomendado para tener tu pagina al dia por ofertas especiales como black
-                friday, navidad, etc.</p>
+            <h2 id="cases-3-title"></h2>
+            <p id="cases-3-parr" class=""></p>
         </section>
         <section id="maintenance-plans"
             class="flex cursor-pointer items-center justify-center p-6 bg-neutral-primary-soft border border-default rounded-base shadow-xs">
             <div data-aos="flip-right"
                 class="maintenance-plans-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
-                <h5 class="mb-4 text-xl font-medium text-body">Mantenimiento Mensual</h5>
+                <h5 id="maintenance-title-2" class="mb-4 text-xl font-medium text-body"></h5>
                 <div class="flex items-baseline text-heading">
                     <span class="text-4xl font-extrabold tracking-tight">$---</span>
-                    <span class="ms-2 font-medium text-body">/mes</span>
+                    <span id="month" class="ms-2 font-medium text-body"></span>
                 </div>
-
                 <ul role="list" class="space-y-4 my-6">
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -992,7 +951,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Actualización (texto e imágenes).</span>
+                        <span id="maintenance-tip-1" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -1000,7 +959,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Correcciones y optimización visual.</span>
+                        <span id="maintenance-tip-2" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -1008,7 +967,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Mejoras de rendimiento y seguridad.</span>
+                        <span id="maintenance-tip-3" class="text-body"></span>
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
@@ -1016,35 +975,30 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">SEO básico (Google).</span>
+                        <span id="maintenance-tip-4" class="text-body"></span>
                     </li>
                 </ul>
-
-                <p>Ideal para negocios activos que publican novedades.</p>
-
+                <p id="maintenance-text"></p>
                 <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-    border border-transparent transition-all duration-300 
-    bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-    hover:text-white group">
-
-                    <a target="_blank"
+                                border border-transparent transition-all duration-300 
+                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
+                                hover:text-white group">
+                    <a id="maintenance-btn" target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostaria%20de%20fazer%20um%20site%20e%20tamb%C3%A9m%20contratar%20a%20manuten%C3%A7%C3%A3o%20mensal.%20Como%20funciona%3F"
                         class="relative z-10 w-full text-center">
-                        Ver planes
                     </a>
-
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
-        group-hover:opacity-0 opacity-100 transition-opacity duration-300">
+                                group-hover:opacity-0 opacity-100 transition-opacity duration-300">
                     </span>
                 </button>
             </div>
 
             <div data-aos="flip-right"
                 class="cursor-pointer maintenance-plans-card max-w-sm p-6 bg-neutral-primary-soft/70 backdrop-blur-md border-default rounded-base shadow-xs">
-                <h5 class="mb-4 text-xl font-medium text-body">Mantenimiento Bimestral</h5>
+                <h5 id="maintenance-title" class="mb-4 text-xl font-medium text-body"></h5>
                 <div class="flex items-baseline text-heading">
                     <span class="text-4xl font-extrabold tracking-tight">$---</span>
-                    <span class="ms-2 font-medium text-body">/cada 2 meses</span>
+                    <span class="ms-2 font-medium text-body"></span>
                 </div>
 
                 <ul role="list" class="space-y-4 my-6">
@@ -1054,7 +1008,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Actualización general del sitio.</span>
+                        <span id="maintenance-tip-2-1" class="text-body">.</span>
                     </li>
 
                     <li class="flex items-center">
@@ -1063,7 +1017,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Optimización de velocidad.</span>
+                        <span id="maintenance-tip-2-2" class="text-body"></span>
                     </li>
 
                     <li class="flex items-center">
@@ -1072,7 +1026,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Revisión de SEO + ajustes.</span>
+                        <span id="maintenance-tip-2-3" class="text-body"></span>
                     </li>
 
                     <li class="flex items-center">
@@ -1081,46 +1035,36 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        <span class="text-body">Correcciones visuales.</span>
+                        <span id="maintenance-tip-2-4" class="text-body"></span>
                     </li>
                 </ul>
-
-                <p>Perfecto para negocios con pocas actualizaciones.</p>
-
+                <p id="maintenance-text-2"></p>
                 <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
                                 border border-transparent transition-all duration-300 
                                 bg-gradient-to-r from-[#eca76b] to-[#5aade8]
                                 hover:text-white group">
-
-                    <a target="_blank"
+                    <a id="maintenance-btn-2" target="_blank"
                         href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostaria%20de%20fazer%20um%20site%20e%20contratar%20a%20manuten%C3%A7%C3%A3o%20a%20cada%20dois%20meses.%20Como%20funciona%3F"
                         class="relative z-10 w-full text-center">
-                        Ver planes
                     </a>
-
                     <span class="absolute inset-0 rounded-lg bg-neutral-900 
                                 group-hover:opacity-0 opacity-100 transition-opacity duration-300">
                     </span>
                 </button>
-
             </div>
-            <p class="w-full mt-4 text-sm text-gray-500 text-center">
-                Los precios pueden variar según el país y las necesidades de cada proyecto.
-            </p>
-
+            <p class="w-full mt-4 text-sm text-gray-500 text-center"></p>
         </section>
         <section id="cta" class="parallax">
             <div class="block"></div>
-            <h2>Impulsá tu marca hoy</h2>
-            <p>Si queres que tu empresa cresca con una vista mas profesional, hablemos de eso!</p>
+            <h2 id="cta-title"></h2>
+            <p id="cta-p"></p>
             <button data-aos="zoom-in" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
                             border border-transparent transition-all duration-300 
                             bg-gradient-to-r from-[#eca76b] to-[#5aade8]
                             hover:text-white group">
-                <a target="_blank"
+                <a id="cta-btn" target="_blank"
                     href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
                     class="bottons relative z-10 w-full text-center">
-                    Ver planes
                 </a>
                 <span class="absolute inset-0 rounded-lg bg-neutral-900 
                             group-hover:opacity-0 opacity-100 transition-opacity duration-300">
@@ -1131,31 +1075,31 @@
         <section id="cta-cities">
             <div class="cta-section">
 
-                <h2>Cientes nacionales</h2>
-                <p>Atendemos clientes de todo el mundo, comenzando con clientes locales de Brazil como en:</p>
+                <h2 id="cta-cities-title"></h2>
+                <p id="cta-cities-p"></p>
                 <ul>
-                    <li><a href="">Santa Catarina, SC</a></li>
-                    <li><a href="">Sao Paulo, SP</a></li>
-                    <li><a href="">Rio de Janeiro, RJ</a></li>
-                    <li><a href="">Bahia, BA</a></li>
-                    <li><a href="">Parana, PR</a></li>
-                    <li><a href="">Rio Grande do Sul, RS</a></li>
-                    <li><a href="">Pernambuco, PE</a></li>
-                    <li><a href="">Ceara, CE</a></li>
+                    <li><a id="cta-city" href=""></a></li>
+                    <li><a id="cta-city-2" href=""></a></li>
+                    <li><a id="cta-city-3" href=""></a></li>
+                    <li><a id="cta-city-4" href=""></a></li>
+                    <li><a id="cta-city-5" href=""></a></li>
+                    <li><a id="cta-city-6" href=""></a></li>
+                    <li><a id="cta-city-7" href=""></a></li>
+                    <li><a id="cta-city-8" href=""></a></li>
                 </ul>
             </div>
             <div class="cta-section">
-                <h2>Cientes internacionales</h2>
-                <p>Y tambien clientes de todo el mundo por ejemplo:</p>
+                <h2 id="cta-cities-title-2"></h2>
+                <p id="cta-cities-p-2"></p>
                 <ul>
-                    <li><a href="">Argentina</a></li>
-                    <li><a href="">Chile</a></li>
-                    <li><a href="">Colombia</a></li>
-                    <li><a href="">Mexico</a></li>
-                    <li><a href="">Peru</a></li>
-                    <li><a href="">Uruguay</a></li>
-                    <li><a href="">United States</a></li>
-                    <li><a href="">Portugal</a></li>
+                    <li><a id="cta-city-1-1" href=""></a></li>
+                    <li><a id="cta-city-1-2" href=""></a></li>
+                    <li><a id="cta-city-1-3" href=""></a></li>
+                    <li><a id="cta-city-1-4" href=""></a></li>
+                    <li><a id="cta-city-1-5" href=""></a></li>
+                    <li><a id="cta-city-1-6" href=""></a></li>
+                    <li><a id="cta-city-1-7" href=""></a></li>
+                    <li><a id="cta-city-1-8" href=""></a></li>
                 </ul>
             </div>
         </section>
@@ -1165,13 +1109,13 @@
             <div class="md:flex md:justify-evenly">
                 <div class="mb-6 md:mb-0">
                     <a href="confiweb.html" class="logo-title flex items-center">
-                        <img src="files/logo-no-back.png" class="h-7 me-3" alt="FlowBite Logo"/>
+                        <img src="files/logo-no-back.png" class="h-7 me-3" alt="FlowBite Logo" />
                         <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">Confiweb</span>
                     </a>
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Resources</h2>
+                        <h2 id="footer-title-1" class="mb-6 text-sm font-semibold text-heading uppercase"></h2>
                         <ul class="text-body font-medium">
                             <!-- <li>
                                 <a target="_blank" href="profile.html" class="hover:underline">Profile</a>
@@ -1185,7 +1129,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Follow us</h2>
+                        <h2 id="footer-title-2" class="mb-6 text-sm font-semibold text-heading uppercase"></h2>
                         <ul class="text-body font-medium">
                             <li>
                                 <a target="_blank" href="https://discord.gg/fvWZa2me"
@@ -1204,13 +1148,13 @@
                         </ul>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Legal</h2>
+                        <h2 id="footer-title-3" class="mb-6 text-sm font-semibold text-heading uppercase"></h2>
                         <ul class="text-body font-medium">
                             <li class="mb-4">
-                                <a target="_blank" href="policy.html" class="hover:underline">Policy</a>
+                                <a id="footer-cont-1" target="_blank" href="policy.html" class="hover:underline"></a>
                             </li>
                             <li>
-                                <a target="_blank" href="terms.html" class="hover:underline">Terms</a>
+                                <a id="footer-cont-2" target="_blank" href="terms.html" class="hover:underline"></a>
                             </li>
                         </ul>
                     </div>
