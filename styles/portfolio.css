@@ -14,10 +14,13 @@
 #profile #profile-name-portfolio {
     font-size: 1.8rem;
     color: antiquewhite;
+    text-align: center;
+
 }
 
 #profile h1 {
     font-size: 2rem;
+    text-align: center;
     color: antiquewhite;
 }
 

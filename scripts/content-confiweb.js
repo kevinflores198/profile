@@ -51,6 +51,10 @@ const translations = {
     "benefit-card-title-3": "Claridad y confianza",
     "benefit-card-parr-3": "Mensaje claro, diseño profesional y menos dudas para el cliente.",
 
+    "benefit-cta-title": "¿Querés una landing así para tu negocio?",
+    "benefit-cta-btn": "Hablar por Whatsapp",
+
+
     //cases1
     "cases1-title": "Casos de éxito",
     "cases1-parr": "Algunos clientes de Confiweb que hemos tenido este año",
@@ -80,7 +84,7 @@ const translations = {
 
     // project 4
     "project4-title": "Lazo",
-    "project4-exp": "Landing page para un emprendedor con una forma de venta más personalizada, cada botón dirige al cliente a chatear por WhatsApp con el vendedor. Primero diseñado en Figma, definí la paleta de colores y la tipografía, y luego con HTML, CSS, JavaScript y Tailwind, replicando fielmente el diseño.",
+    "project4-exp": "Landing page para un emprendedor con venta personalizada, diseñada primero en Figma (paleta y tipografía) y luego implementada con HTML, CSS, JavaScript y Tailwind.",
     "project4-btn": "Ver proyecto",
 
     // project modal
@@ -134,8 +138,8 @@ const translations = {
     "modal-btn4-3": "Planes",
 
     //cases2
-    "cases2-title": "Planes",
-    "cases2-p": "Elige un plan y hablamos para poder saber que podemos hacer por tu negocio!",
+    "cases-2-title": "Planes",
+    "cases-2-p": "Elige un plan y hablamos para poder saber que podemos hacer por tu negocio!",
     // price cards
     "prices-title": "Plan Essencial",
     "prices-parr": "Ideal para emprendedores y pequeñas empresas que buscan una presencia en línea profesional y efectiva.",
@@ -207,9 +211,9 @@ const translations = {
     "cta-btn": "Ver planes",
 
     //cta cities
-    "cities-title": "Cientes nacionales",
-    "cities-parr": "Atendemos clientes de todo el mundo, comenzando con clientes locales de Brazil como en:",
-    "cta-city-1": "Santa Catarina, Brasil",
+    "cta-cities-title": "Clientes nacionales",
+    "cta-cities-p": "Atendemos clientes de todo el mundo, comenzando con clientes locales de Brazil como en:",
+    "cta-city": "Santa Catarina, Brasil",
     "cta-city-2": "São Paulo, Brasil",
     "cta-city-3": "Rio de Janeiro, Brasil",
     "cta-city-4": "Bahia, Brasil",
@@ -218,16 +222,16 @@ const translations = {
     "cta-city-7": "Pernambuco, PE",
     "cta-city-8": "Ceara, CE",
 
-    "cta-cities-title-2": "Cientes internacionales",
-    "cta-cities-parr-2": "Y tambien clientes de todo el mundo por ejemplo:",
+    "cta-cities-title-2": "Clientes internacionales",
+    "cta-cities-p-2": "Y tambien clientes de todo el mundo por ejemplo:",
     "cta-city-1-1": "Estados Unidos",
-    "cta-city-1-1": "Argentina",
-    "cta-city-1-1": "Chile",
-    "cta-city-1-1": "Colombia",
-    "cta-city-1-1": "Mexico",
-    "cta-city-1-1": "Peru",
-    "cta-city-1-1": "Uruguay",
-    "cta-city-1-1": "Portugal",
+    "cta-city-1-2": "Argentina",
+    "cta-city-1-3": "Chile",
+    "cta-city-1-4": "Colombia",
+    "cta-city-1-5": "Mexico",
+    "cta-city-1-6": "Peru",
+    "cta-city-1-7": "Uruguay",
+    "cta-city-1-8": "Portugal",
 
     //terms
     "quote-title": "Conocimiento tecnico",
@@ -363,6 +367,10 @@ const translations = {
     "benefit-card-parr-3": "Mensagem clara, design profissional e menos dúvidas para o cliente.",
     "benefit-cta-title": "¿Quieres una landing así para tu negocio?",
     "benefit-cta-btn": "Hablar por Whatsapp",
+
+    "benefit-cta-title-2": "Quer uma landing page assim para o seu negócio?",
+    "benefit-cta-btn-2": "Falar pelo WhatsApp",
+
     //cases1
     "cases1-title": "Casos de sucesso",
     "cases1-parr": "Alguns clientes da Confiweb que tivemos este ano",
@@ -394,7 +402,7 @@ const translations = {
 
     // project 4
     "project4-title": "Lazo",
-    "project4-exp": "Landing page para um empreendedor com uma forma de venda mais personalizada, onde cada botão direciona o cliente para conversar via WhatsApp com o vendedor. Primeiro desenhado no Figma, onde defini a paleta de cores e a tipografia, e depois implementado com HTML, CSS, JavaScript e Tailwind, reproduzindo fielmente o design.",
+    "project4-exp": "Landing page para um empreendedor com venda personalizada, primeiro desenhada no Figma (paleta e tipografia) e depois implementada com HTML, CSS, JavaScript e Tailwind.",
     "project4-btn": "Ver projeto",
 
     // project modal
@@ -451,8 +459,8 @@ const translations = {
     "modal-btn4-2": "Figma",
     "modal-btn4-3": "Planos",
     //cases2
-    "cases2-title": "Planos",
-    "cases2-p": "Escolha um plano e vamos conversar para saber o que podemos fazer pelo seu negócio!",
+    "cases-2-title": "Planos",
+    "cases-2-p": "Escolha um plano e vamos conversar para saber o que podemos fazer pelo seu negócio!",
     // price cards
     "prices-title": "Plano Essencial",
     "prices-parr": "Ideal para empreendedores e pequenas empresas que buscam uma presença online profissional e eficaz.",
@@ -518,9 +526,10 @@ const translations = {
     "cta-title": "Impulsione sua marca hoje",
     "cta-p": "Se você quer que sua empresa cresça com uma aparência mais profissional, vamos conversar sobre isso!",
     "cta-btn": "Ver planos",
+
     //cta cities
-    "cities-title": "Clientes nacionais",
-    "cities-parr": "Atendemos clientes de todo o mundo, começando com clientes locais do Brasil, como em:",
+    "cta-cities-title": "Clientes nacionais",
+    "cta-cities-p": "Atendemos clientes de todo o mundo, começando com clientes locais do Brasil, como em:",
     "cta-city-1": "Santa Catarina, Brasil",
     "cta-city-2": "São Paulo, Brasil",
     "cta-city-3": "Rio de Janeiro, Brasil",
@@ -530,7 +539,7 @@ const translations = {
     "cta-city-7": "Pernambuco, PE",
     "cta-city-8": "Ceará, CE",
     "cta-cities-title-2": "Clientes internacionais",
-    "cta-cities-parr-2": "E também clientes de todo o mundo, por exemplo:",
+    "cta-cities-p-2": "E também clientes de todo o mundo, por exemplo:",
     "cta-city-1-1": "Estados Unidos",
     "cta-city-1-2": "Argentina",
     "cta-city-1-3": "Chile",
@@ -681,6 +690,10 @@ const translations = {
     "benefit-card-parr-3": "Clear messaging, professional design, and fewer doubts for the customer.",
     "benefit-cta-title": "Do you want a landing like that for your business?",
     "benefit-cta-btn": "Chat on whatsapp",
+
+    "benefit-cta-title-2": "Do you want a landing page like that for your business?",
+    "benefit-cta-btn-2": "Chat on WhatsApp",
+
     //cases1
     "cases1-title": "Success Stories",
     "cases1-parr": "Some Confiweb clients we've had this year",
@@ -712,7 +725,7 @@ const translations = {
     "project3-btn": "View project",
     // project 4
     "project4-title": "Lazo",
-    "project4-exp": "Landing page for an entrepreneur with a more personalized sales approach, where each button directs the client to chat via WhatsApp with the seller. First designed in Figma, where I defined the color palette and typography, and then implemented with HTML, CSS, JavaScript, and Tailwind, faithfully replicating the design.",
+    "project4-exp": "Landing page para um empreendedor com venda personalizada, primeiro desenhada no Figma (paleta e tipografia) e depois implementada com HTML, CSS, JavaScript e Tailwind.",
     "project4-btn": "View project",
 
 
@@ -778,8 +791,8 @@ const translations = {
     "quote-li5": "After the final delivery, one free revision will be included. Any further adjustments or changes requested after that will require an additional quote significantly lower than the original price since it will only be an adjustment).",
 
     //cases2
-    "cases2-title": "Plans",
-    "cases2-p": "Choose a plan and let’s talk to see what we can do for your business!",
+    "cases-2-title": "Plans",
+    "cases-2-p": "Choose a plan and let’s talk to see what we can do for your business!",
 
     // price cards
     "prices-title": "Essential Plan",
