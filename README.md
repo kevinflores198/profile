@@ -41,9 +41,9 @@ Looking to collaborate on projects that allow me to grow my skills and deliver v
 
 ## 💼 Work Experience (Summary)
 
-- **Teem – Chat support Specialist - Remote (2026–Actual)**  
-  *Team Lead / Customer Service & Tech Support*  
-  Team supervision, technical support, issue resolution.
+- **Teem –  Remote (2026–Actual)**  
+  *Chat support specialist*  
+  Handle chat questions, help to understand the product.
 
 - **Life Wireless – Remote (2022–2025)**  
   *Team Manager*
