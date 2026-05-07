@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Scroll Sequence</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0c0c0e;
+    color: #f0f0f0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─────────────────────────────────── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 20px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(255,255,255,0.06);
+    background: rgba(12,12,14,0.85);
+    backdrop-filter: blur(12px);
+  }
+  .logo { font-size: 15px; font-weight: 600; letter-spacing: 0.02em; }
+  nav a { font-size: 13px; color: rgba(255,255,255,0.5); text-decoration: none; margin-left: 32px; }
+  nav a:hover { color: #fff; }
+
+  /* ─── INTRO ───────────────────────────────── */
+  .intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 24px;
+  }
+  .intro h1 {
+    font-size: clamp(48px, 7vw, 96px);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    margin-bottom: 24px;
+  }
+  .intro p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.4);
+    max-width: 400px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  .scroll-hint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.3);
+    text-transform: uppercase;
+    animation: hint-fade 2s ease-in-out infinite;
+  }
+  .scroll-hint svg { width: 16px; opacity: 0.4; }
+  @keyframes hint-fade { 0%,100%{opacity:0.4} 50%{opacity:1} }
+
+  /* ─── SCROLL SEQUENCE SECTION ─────────────── */
+  .sequence-outer {
+    /* Height = viewport × scroll_multiplier. More = slower scrub */
+    height: 400vh;
+    position: relative;
+  }
+
+  .sequence-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+
+  /* Left panel: text chapters */
+  .seq-left {
+    width: 340px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 56px;
+    border-right: 0.5px solid rgba(255,255,255,0.06);
+    position: relative;
+  }
+
+  .chapter {
+    position: absolute;
+    left: 56px; right: 0;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+  }
+  .chapter.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .chapter-num {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.3);
+    font-family: monospace;
+    margin-bottom: 16px;
+  }
+  .chapter h2 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .chapter p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.7;
+    max-width: 260px;
+  }
+
+  /* Right panel: image / canvas */
+  .seq-right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* ── USE EITHER canvas OR img ── */
+  /* Canvas mode (procedural / JS-drawn): */
+  #seq-canvas {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* Image mode: uncomment and populate #seq-img instead */
+  /*
+  #seq-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  */
+
+  /* Progress bar (right edge) */
+  .progress-rail {
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 2px;
+    background: rgba(255,255,255,0.05);
+  }
+  .progress-fill {
+    width: 100%;
+    background: rgba(255,255,255,0.3);
+    transition: height 0.05s linear;
+  }
+
+  /* Frame counter */
+  .frame-counter {
+    position: absolute;
+    bottom: 24px; right: 24px;
+    font-family: monospace;
+    font-size: 11px;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 0.06em;
+  }
+
+  /* Chapter dots */
+  .chapter-dots {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cdot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+  .cdot.active { background: rgba(255,255,255,0.7); transform: scale(1.5); }
+
+  /* ─── AFTER SECTION ───────────────────────── */
+  .after {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    border-top: 0.5px solid rgba(255,255,255,0.06);
+  }
+  .after-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.06);
+    max-width: 900px;
+    width: 100%;
+    border: 0.5px solid rgba(255,255,255,0.06);
+  }
+  .after-cell {
+    background: #0c0c0e;
+    padding: 48px 40px;
+  }
+  .after-cell h3 { font-size: 28px; font-weight: 300; margin-bottom: 10px; }
+  .after-cell p { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">portfolio.</div>
+  <div>
+    <a href="#">trabajo</a>
+    <a href="#">proceso</a>
+    <a href="#">contacto</a>
+  </div>
+</nav>
+
+<!-- INTRO -->
+<section class="intro">
+  <div>
+    <h1>diseño que<br>se mueve</h1>
+    <p>Cada proyecto es una animación. Scrolleá para verlo desplegarse.</p>
+    <div class="scroll-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+      scroll
+    </div>
+  </div>
+</section>
+
+<!-- SCROLL SEQUENCE -->
+<section class="sequence-outer" id="seq-outer">
+  <div class="sequence-sticky">
+
+    <!-- Chapter dots -->
+    <div class="chapter-dots" id="chapter-dots">
+      <!-- populated by JS -->
+    </div>
+
+    <!-- Left: text -->
+    <div class="seq-left" id="seq-left">
+      <!-- chapters populated by JS -->
+    </div>
+
+    <!-- Right: visual -->
+    <div class="seq-right">
+      <canvas id="seq-canvas" width="800" height="700"></canvas>
+      <!-- 
+        ── IMAGE SEQUENCE MODE ──
+        Replace <canvas> with:
+        <img id="seq-img" src="frames/frame_0001.jpg" alt="">
+        And use JS below to swap src on scroll.
+      -->
+      <div class="progress-rail">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="frame-counter" id="frame-counter">F001</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AFTER -->
+<section class="after">
+  <div class="after-grid">
+    <div class="after-cell">
+      <h3>32</h3>
+      <p>proyectos entregados en producción.</p>
+    </div>
+    <div class="after-cell">
+      <h3>5 años</h3>
+      <p>de experiencia en producto y diseño.</p>
+    </div>
+    <div class="after-cell">
+      <h3>∞</h3>
+      <p>iteraciones hasta que queda bien.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+/* ══════════════════════════════════════════════
+   CONFIGURATION
+   ══════════════════════════════════════════════ */
+
+const CHAPTERS = [
+  {
+    num: "01 — concepto",
+    title: "La idea inicial",
+    body: "Todo empieza con una pregunta. ¿Qué problema real resuelve esto? El caos de referencias, bocetos y conversaciones empieza a tomar forma."
+  },
+  {
+    num: "02 — estructura",
+    title: "El sistema emerge",
+    body: "Las piezas se conectan. Una arquitectura de información, un sistema de diseño, patrones que se repiten con intención."
+  },
+  {
+    num: "03 — resultado",
+    title: "Precisión final",
+    body: "El producto terminado: limpio, funcional, memorable. Cada pixel en su lugar. Listo para el mundo."
+  }
+];
+
+/*
+  ── IMAGE SEQUENCE MODE ──
+  
+  Para usar imágenes reales en lugar del canvas procedural:
+  
+  1. Nombrá tus frames: frame_0001.jpg, frame_0002.jpg, ...
+  2. Reemplazá <canvas> por <img id="seq-img" src="" alt="">
+  3. Cambiá IMAGE_MODE a true
+  4. Definí tus paths en FRAME_PATHS
+
+  const FRAME_PATHS = Array.from({ length: 120 }, (_, i) =>
+    `frames/frame_${String(i + 1).padStart(4, '0')}.jpg`
+  );
+
+  O una lista manual:
+  const FRAME_PATHS = [
+    'frames/frame_0001.jpg',
+    'frames/frame_0002.jpg',
+    ...
+  ];
+*/
+const IMAGE_MODE = false;
+const FRAME_PATHS = []; // llenalo con tus rutas
+
+/* ══════════════════════════════════════════════
+   SETUP
+   ══════════════════════════════════════════════ */
+
+const TOTAL_FRAMES = IMAGE_MODE ? FRAME_PATHS.length : 120;
+
+// Build chapter DOM
+const leftPanel = document.getElementById('seq-left');
+const dotsContainer = document.getElementById('chapter-dots');
+
+CHAPTERS.forEach((ch, i) => {
+  const div = document.createElement('div');
+  div.className = 'chapter' + (i === 0 ? ' visible' : '');
+  div.id = 'ch' + i;
+  div.innerHTML = `
+    <div class="chapter-num">${ch.num}</div>
+    <h2>${ch.title}</h2>
+    <p>${ch.body}</p>
+  `;
+  leftPanel.appendChild(div);
+
+  const dot = document.createElement('div');
+  dot.className = 'cdot' + (i === 0 ? ' active' : '');
+  dot.id = 'dot' + i;
+  dot.title = ch.title;
+  dot.addEventListener('click', () => scrollToProgress((i / CHAPTERS.length) + 0.01));
+  dotsContainer.appendChild(dot);
+});
+
+function scrollToProgress(p) {
+  const outer = document.getElementById('seq-outer');
+  const rect = outer.getBoundingClientRect();
+  const scrollable = outer.offsetHeight - window.innerHeight;
+  window.scrollTo({ top: outer.offsetTop + scrollable * p, behavior: 'smooth' });
+}
+
+/* ══════════════════════════════════════════════
+   IMAGE PRELOADING (image mode only)
+   ══════════════════════════════════════════════ */
+
+let loadedImages = [];
+if (IMAGE_MODE && FRAME_PATHS.length) {
+  loadedImages = FRAME_PATHS.map(src => {
+    const img = new Image();
+    img.src = src;
+    return img;
+  });
+}
+
+/* ══════════════════════════════════════════════
+   CANVAS PROCEDURAL RENDER (canvas mode only)
+   ══════════════════════════════════════════════ */
+
+const canvas = document.getElementById('seq-canvas');
+const ctx = canvas ? canvas.getContext('2d') : null;
+
+function easeInOut(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
+function lerp(a, b, t) { return a + (b - a) * t; }
+
+function drawProceduralFrame(p) {
+  if (!ctx) return;
+  const W = canvas.width, H = canvas.height;
+  ctx.clearRect(0, 0, W, H);
+  const N = 100;
+  const cx = W / 2, cy = H / 2;
+
+  for (let i = 0; i < N; i++) {
+    const t = i / (N - 1);
+
+    // Fibonacci scatter
+    const ang = t * Math.PI * 2 * 2.618;
+    const rad = Math.sqrt(t) * Math.min(W, H) * 0.42;
+    const ax = cx + Math.cos(ang) * rad;
+    const ay = cy + Math.sin(ang) * rad;
+
+    // Ring
+    const ra = t * Math.PI * 2;
+    const bx = cx + Math.cos(ra) * Math.min(W,H) * 0.32;
+    const by = cy + Math.sin(ra) * Math.min(W,H) * 0.32;
+
+    // Grid
+    const cols = 10;
+    const col = i % cols;
+    const row = Math.floor(i / cols);
+    const rows_total = Math.ceil(N / cols);
+    const gx = cx - (cols - 1) * 26 / 2 + col * 26;
+    const gy = cy - (rows_total - 1) * 26 / 2 + row * 26;
+
+    let px, py;
+    if (p < 0.5) {
+      const pp = easeInOut(p * 2);
+      px = lerp(ax, bx, pp); py = lerp(ay, by, pp);
+    } else {
+      const pp = easeInOut((p - 0.5) * 2);
+      px = lerp(bx, gx, pp); py = lerp(by, gy, pp);
+    }
+
+    let r, g, b;
+    if (p < 0.5) {
+      r = Math.round(lerp(220, 80, p*2));
+      g = Math.round(lerp(120, 160, p*2));
+      b = Math.round(lerp(60, 255, p*2));
+    } else {
+      r = Math.round(lerp(80, 240, (p-0.5)*2));
+      g = Math.round(lerp(160, 240, (p-0.5)*2));
+      b = 255;
+    }
+
+    const alpha = 0.2 + p * 0.6;
+    const size = 2.5 + p * 1.5;
+
+    ctx.beginPath();
+    ctx.arc(px, py, size, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(${r},${g},${b},${alpha})`;
+    ctx.fill();
+
+    // Grid lines
+    if (p > 0.65 && col < cols - 1 && i + 1 < N) {
+      const ni = i + 1, nt = ni / (N-1);
+      const nc = ni % cols, nr = Math.floor(ni / cols);
+      if (nc === col + 1 && nr === row) {
+        const ngx = cx - (cols-1)*26/2 + nc*26;
+        const ngy = cy - (rows_total-1)*26/2 + nr*26;
+        const pp2 = easeInOut((p-0.5)*2);
+        const nbx = cx + Math.cos(nt*Math.PI*2)*Math.min(W,H)*0.32;
+        const nby = cy + Math.sin(nt*Math.PI*2)*Math.min(W,H)*0.32;
+        const npx = lerp(nbx, ngx, pp2);
+        const npy = lerp(nby, ngy, pp2);
+        ctx.beginPath();
+        ctx.moveTo(px, py);
+        ctx.lineTo(npx, npy);
+        ctx.strokeStyle = `rgba(200,220,255,${(p-0.65)*2*0.35})`;
+        ctx.lineWidth = 0.6;
+        ctx.stroke();
+      }
+    }
+  }
+}
+
+/* ══════════════════════════════════════════════
+   SCROLL HANDLER
+   ══════════════════════════════════════════════ */
+
+const outer = document.getElementById('seq-outer');
+const progressFill = document.getElementById('progress-fill');
+const frameCounter = document.getElementById('frame-counter');
+const seqImg = document.getElementById('seq-img');
+
+let lastFrame = -1;
+let rafPending = false;
+
+function onScroll() {
+  if (rafPending) return;
+  rafPending = true;
+  requestAnimationFrame(updateSequence);
+}
+
+function updateSequence() {
+  rafPending = false;
+  const rect = outer.getBoundingClientRect();
+  const scrollable = outer.offsetHeight - window.innerHeight;
+  const scrolled = -rect.top;
+  const progress = Math.max(0, Math.min(1, scrolled / scrollable));
+
+  const frameIdx = Math.round(progress * (TOTAL_FRAMES - 1));
+
+  // Update frame counter
+  frameCounter.textContent = `F${String(frameIdx + 1).padStart(3, '0')} / ${TOTAL_FRAMES}`;
+
+  // Update progress bar
+  progressFill.style.height = (progress * 100) + '%';
+
+  // Render frame
+  if (frameIdx !== lastFrame) {
+    lastFrame = frameIdx;
+
+    if (IMAGE_MODE && loadedImages.length) {
+      if (seqImg && loadedImages[frameIdx]?.complete) {
+        seqImg.src = loadedImages[frameIdx].src;
+      }
+    } else {
+      drawProceduralFrame(progress);
+    }
+  }
+
+  // Update chapters
+  const chIdx = Math.floor(progress * CHAPTERS.length);
+  const activeChapter = Math.min(chIdx, CHAPTERS.length - 1);
+  CHAPTERS.forEach((_, i) => {
+    document.getElementById('ch' + i).className = 'chapter' + (i === activeChapter ? ' visible' : '');
+    document.getElementById('dot' + i).className = 'cdot' + (i === activeChapter ? ' active' : '');
+  });
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
+updateSequence(); // initial render
+</script>
+</body>
+</html>
