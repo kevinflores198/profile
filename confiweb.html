@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confiweb | Páginas web para tu negocio</title>
+  <meta name="description" content="Landing pages & ecommerce con WhatsApp para emprendedores. Modernos, rápidos y enfocados en conseguirte más clientes.">
+  <link rel="icon" href="files/logo-dark.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+  <link rel="stylesheet" href="confiweb.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav" id="nav">
+    <a class="logo" href="#top">
+      <img src="files/logo-no-back.png" alt="Confiweb" onerror="this.style.display='none'">
+    </a>
+    <ul class="links" id="links">
+      <button class="nav-close" id="nav-close" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#casos">Proyectos</a></li>
+      <li><a href="#precios">Precios</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="index.html">Mi perfil</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-wrap">
+        <button class="lang-btn" id="lang-btn">
+          <i class="fa-solid fa-earth-americas"></i>
+          <span id="lang-label">ES</span>
+        </button>
+        <div class="lang-drop" id="lang-drop">
+          <button onclick="cwLang('es')"><span class="fi fi-ar"></span> Español</button>
+          <button onclick="cwLang('en')"><span class="fi fi-us"></span> English</button>
+          <button onclick="cwLang('pt')"><span class="fi fi-br"></span> Português</button>
+        </div>
+      </div>
+      <a href="https://wa.me/54112394362?text=Hola%20Kevin!%20Quiero%20saber%20más." target="_blank" class="btn-nav">
+        <i class="fa-brands fa-whatsapp"></i> Hablar ahora
+      </a>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="backdrop" id="backdrop"></div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="available"><span class="dot"></span> Disponible para nuevos proyectos</div>
+      <h1 class="hero-title">
+        Tu negocio merece<br>
+        <span class="highlight">una página que vende</span>
+      </h1>
+      <p class="hero-sub">
+        Creamos landing pages y tiendas online con venta por WhatsApp para emprendedores y empresas pequeñas.<br>
+        Modernas, rápidas y listas en días...no meses.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/54112394362?text=Hola%20Kevin!%20Quiero%20una%20página%20web." target="_blank" class="btn-primary">
+          <i class="fa-brands fa-whatsapp"></i> Quiero mi página web
+        </a>
+        <a href="#casos" class="btn-ghost">Ver proyectos →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>3+</strong><span>Proyectos reales en produccion</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><strong>3</strong><span>Idiomas: ES · PT · EN</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><strong>3+</strong><span>Años programando</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><strong>100%</strong><span>Atención directa</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problema - solucion -->
+  <section class="problem">
+    <div class="container">
+      <p class="problem-label">¿Te suena alguna de estas?</p>
+      <div class="problem-grid">
+        <div class="prob-item"><i class="fa-solid fa-ban"></i><p>Tenés un negocio real pero tus clientes no te encuentran en Google.</p></div>
+        <div class="prob-item"><i class="fa-brands fa-instagram"></i><p>Solo vendés por Instagram o WhatsApp. Funciona, pero no genera confianza.</p></div>
+        <div class="prob-item"><i class="fa-solid fa-dollar-sign"></i><p>Te dijeron que una web era carísima o tardaba meses. Acá no.</p></div>
+        <div class="prob-item"><i class="fa-solid fa-store"></i><p>Querés vender online sin pagar comisiones de Shopify o MercadoLibre.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Lo que hacemos</span>
+        <h2>Tres modelos. Un solo objetivo:<br>más clientes para tu negocio.</h2>
+      </div>
+      <div class="services">
+
+        <div class="service">
+          <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Landing Page</h3>
+          <p>Página clara, rápida y profesional para que el visitante te llame, te escriba o pida info. Sin distracciones.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Diseño responsivo (celular + desktop)</li>
+            <li><i class="fa-solid fa-check"></i> Secciones: quiénes son, servicios, contacto</li>
+            <li><i class="fa-solid fa-check"></i> Botón WhatsApp / Email directo</li>
+            <li><i class="fa-solid fa-check"></i> SEO básico para Google</li>
+            <li><i class="fa-solid fa-check"></i> Lista en 7–10 días hábiles</li>
+          </ul>
+          <!-- <div class="service-price">$180 USD</div> -->
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20una%20Landing%20Page." target="_blank" class="btn-outline">Consultar →</a>
+        </div>
+
+        <div class="service service-featured">
+          <div class="featured-badge">Más elegido</div>
+          <div class="service-icon icon-accent"><i class="fa-solid fa-list"></i></div>
+          <h3>Landing + Lista de Productos</h3>
+          <p>Igual que la landing, pero con catálogo visual. Cada producto tiene un botón que lleva directo a WhatsApp para cerrar la venta.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Todo lo del plan Landing</li>
+            <li><i class="fa-solid fa-check"></i> Grilla de productos con foto y precio</li>
+            <li><i class="fa-solid fa-check"></i> Botón "Consultar" → WhatsApp por producto</li>
+            <li><i class="fa-solid fa-check"></i> Diseño Figma personalizado incluido</li>
+            <li><i class="fa-solid fa-check"></i> Lista en 10–12 días hábiles</li>
+          </ul>
+          <!-- <div class="service-price">$230 USD</div> -->
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20Landing%20con%20lista%20de%20productos." target="_blank" class="btn-primary">Consultar →</a>
+        </div>
+
+        <div class="service">
+          <div class="service-icon icon-green"><i class="fa-brands fa-whatsapp"></i></div>
+          <h3>Ecommerce + WhatsApp</h3>
+          <p>Tienda online completa. El cliente ve los productos y hace el pedido directo por WhatsApp. Sin comisiones ni plataformas caras.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Catálogo con filtros por categoría</li>
+            <li><i class="fa-solid fa-check"></i> Pedido armado → WhatsApp automático</li>
+            <li><i class="fa-solid fa-check"></i> Sin comisión por venta</li>
+            <li><i class="fa-solid fa-check"></i> Opción: productos desde Google Sheets</li>
+            <li><i class="fa-solid fa-check"></i> Lista en 12–15 días hábiles</li>
+          </ul>
+          <!-- <div class="service-price">$290 USD</div> -->
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20el%20Ecommerce%20con%20WhatsApp." target="_blank" class="btn-outline">Consultar →</a>
+        </div>
+
+      </div>
+
+      <div class="included">
+        <p class="included-label">Incluido en todos los planes</p>
+        <div class="included-grid">
+          <div class="inc-item"><i class="fa-solid fa-mobile-screen"></i><span>Mobile-first</span></div>
+          <div class="inc-item"><i class="fa-solid fa-gauge-high"></i><span>Carga rápida</span></div>
+          <div class="inc-item"><i class="fa-solid fa-magnifying-glass"></i><span>SEO básico</span></div>
+          <div class="inc-item"><i class="fa-solid fa-pen-ruler"></i><span>Diseño Figma</span></div>
+          <div class="inc-item"><i class="fa-solid fa-language"></i><span>ES · PT · EN</span></div>
+          <div class="inc-item"><i class="fa-solid fa-headset"></i><span>Soporte post-entrega</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="casos" class="section dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Proyectos reales</span>
+        <h2>Lo que ya construimos</h2>
+        <p class="section-sub">Cada uno fue hecho para un cliente real, con una necesidad real.</p>
+      </div>
+      <div class="cases">
+
+        <article class="case">
+          <div class="case-img">
+            <img src="files/project-brutton.jpg" alt="Brutton Construtec" loading="lazy">
+            <span class="case-badge badge-landing">Landing Page</span>
+          </div>
+          <div class="case-body">
+            <h3>Brutton Construtec</h3>
+            <p>Empresa constructora de Brasil que necesitaba presencia digital profesional. Landing con 3 vistas distintas mostrando sus proyectos y dirigiendo al contacto directo.</p>
+            <div class="case-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://bruttonconstrutec.com.br" target="_blank" class="case-link">Ver sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-img">
+            <img src="files/project-lazo.jpg" alt="Lazo Carteras" loading="lazy">
+            <span class="case-badge badge-lista">Landing + Productos</span>
+          </div>
+          <div class="case-body">
+            <h3>Lazo Carteras & Accesorios</h3>
+            <p>Emprendedora que vendía solo por Instagram. Ahora tiene catálogo visual de productos y sus clientes le escriben directo por WhatsApp con el artículo que quieren.</p>
+            <div class="case-tech"><span>HTML</span><span>CSS</span><span>Tailwind</span></div>
+            <a href="https://kevinflores198.github.io/lazo/" target="_blank" class="case-link">Ver sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-img">
+            <img src="files/project-emme.jpg" alt="Emme ind" loading="lazy">
+            <span class="case-badge badge-ecomm">Ecommerce + WhatsApp</span>
+          </div>
+          <div class="case-body">
+            <h3>Emme ind.</h3>
+            <p>Tienda donde los productos se cargan desde Google Sheets y se muestran automáticamente. El cliente hace clic en "Comprar" y llega un WhatsApp con el pedido ya armado.</p>
+            <div class="case-tech"><span>JavaScript</span><span>Google Sheets</span><span>Tailwind</span></div>
+            <a href="https://kevinflores198.github.io/Emme-ind/" target="_blank" class="case-link">Ver sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+      </div>
+      <div class="cases-cta">
+        <p>¿Querés algo así para tu negocio?</p>
+        <a href="https://wa.me/54112394362?text=Vi%20los%20proyectos%20y%20me%20interesa%20uno." target="_blank" class="btn-primary">
+          <i class="fa-brands fa-whatsapp"></i> Hablemos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trayecto -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Cómo trabajamos</span>
+        <h2>De cero a online en 4 pasos</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-n">01</div>
+          <h3>Nos contactás</h3>
+          <p>Me escribís por WhatsApp. Te respondo el mismo día y hablamos de tu negocio.</p>
+        </div>
+        <div class="step-arr"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-n">02</div>
+          <h3>Diseño en Figma</h3>
+          <p>Armo el diseño visual primero. Lo ves antes de que empiece el código.</p>
+        </div>
+        <div class="step-arr"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-n">03</div>
+          <h3>Desarrollo</h3>
+          <p>Programo la página con los materiales que me pasás. Preview en 7–15 días.</p>
+        </div>
+        <div class="step-arr"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-n">04</div>
+          <h3>Entrega y soporte</h3>
+          <p>Subo el sitio, te enseño a manejarlo y quedo disponible para ajustes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Precios -->
+  <section id="precios" class="section dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Planes</span>
+        <h2>Precios claros. Sin sorpresas.</h2>
+        <p class="section-sub">Adelanto del 30% para arrancar. El resto a la entrega. Acepto USD, ARS o BRL.</p>
+      </div>
+
+      <h3 class="prices-subtitle"><i class="fa-solid fa-globe"></i> Páginas web — Pago único</h3>
+      <div class="prices">
+
+        <div class="price-card">
+          <div class="price-top">
+            <h4>Landing Page</h4>
+            <p>Presencia profesional para tu negocio.</p>
+            <div class="price-num"><strong>$180</strong><span>USD</span></div>
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> 1 página completa</li>
+            <li><i class="fa-solid fa-check"></i> Diseño responsivo</li>
+            <li><i class="fa-solid fa-check"></i> SEO básico</li>
+            <li><i class="fa-solid fa-check"></i> Botón WhatsApp / Email</li>
+            <li><i class="fa-solid fa-check"></i> 1 revisión incluida</li>
+            <li><i class="fa-solid fa-check"></i> Entrega: 7–10 días</li>
+          </ul>
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20la%20Landing%20Page%20a%20200usd." target="_blank" class="btn-outline">Consultar →</a>
+        </div>
+
+        <div class="price-card price-featured">
+          <div class="price-badge">Más elegido</div>
+          <div class="price-top">
+            <h4>Landing + Productos</h4>
+            <p>Catálogo visual con compra por WhatsApp.</p>
+            <div class="price-num"><strong>$230</strong><span>USD</span></div>
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Todo lo del plan Landing</li>
+            <li><i class="fa-solid fa-check"></i> Lista de productos con fotos</li>
+            <li><i class="fa-solid fa-check"></i> Botón → WhatsApp por producto</li>
+            <li><i class="fa-solid fa-check"></i> Diseño Figma personalizado</li>
+            <li><i class="fa-solid fa-check"></i> 2 revisiones incluidas</li>
+            <li><i class="fa-solid fa-check"></i> Entrega: 10–12 días</li>
+          </ul>
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20Landing%20con%20productos%20a%20250usd." target="_blank" class="btn-primary">Consultar →</a>
+        </div>
+
+        <div class="price-card">
+          <div class="price-top">
+            <h4>Ecommerce + WhatsApp</h4>
+            <p>Tienda completa sin comisiones por venta.</p>
+            <div class="price-num"><strong>$290</strong><span>USD</span></div>
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Catálogo con categorías</li>
+            <li><i class="fa-solid fa-check"></i> Pedido armado → WhatsApp</li>
+            <li><i class="fa-solid fa-check"></i> Sin comisiones por venta</li>
+            <li><i class="fa-solid fa-check"></i> Opción Google Sheets</li>
+            <li><i class="fa-solid fa-check"></i> Diseño Figma personalizado</li>
+            <li><i class="fa-solid fa-check"></i> Entrega: 12–15 días</li>
+          </ul>
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20Ecommerce%20WhatsApp%20a%20300usd." target="_blank" class="btn-outline">Consultar →</a>
+        </div>
+
+      </div>
+
+      <h3 class="prices-subtitle"><i class="fa-solid fa-wrench"></i> Mantenimiento mensual</h3>
+      <div class="maintenance">
+
+        <div class="maint-card">
+          <h4>Básico</h4>
+          <div class="maint-price"><strong>$20</strong><span>/ mes</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Hasta 3 cambios de texto o imagen</li>
+            <li><i class="fa-solid fa-check"></i> Revisión de funcionamiento</li>
+            <li><i class="fa-solid fa-check"></i> Respuesta en 48 hs</li>
+          </ul>
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20el%20mantenimiento%20básico." target="_blank" class="btn-outline">Consultar →</a>
+        </div>
+
+        <div class="maint-card maint-featured">
+          <h4>Avanzado</h4>
+          <div class="maint-price"><strong>$40</strong><span>/ mes</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Cambios ilimitados de contenido</li>
+            <li><i class="fa-solid fa-check"></i> Actualizaciones de diseño</li>
+            <li><i class="fa-solid fa-check"></i> Nuevas secciones o funciones</li>
+            <li><i class="fa-solid fa-check"></i> Prioridad de respuesta: 24 hs</li>
+            <li><i class="fa-solid fa-check"></i> Reporte mensual del sitio</li>
+          </ul>
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20el%20mantenimiento%20avanzado." target="_blank" class="btn-primary">Consultar →</a>
+        </div>
+
+      </div>
+
+      <p class="price-note">
+        <i class="fa-solid fa-circle-info"></i>
+        Adelanto del 30% para comenzar. El precio final se define según el proyecto. Hablamos y lo cerramos juntos. El dominio (ej: tunegocio.com) se compra a tu nombre y yo me encargo de configurarlo. 
+  Hosting y publicación incluidos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Lo que dicen</span>
+        <h2>Clientes reales, palabras reales</h2>
+      </div>
+      <div class="testimonials">
+        <blockquote class="testi">
+          <p>"El resultado final superó nuestras expectativas, reflejando profesionalismo, dedicación y calidad en cada detalle. Estamos muy satisfechos y seguros de que tendremos muchos proyectos por delante."</p>
+          <footer><strong>Everton Silva</strong><span>Socio administrador — Brutton Construtec, Florianopolis, Brasil</span></footer>
+        </blockquote>
+        <blockquote class="testi">
+          <p>"Excelente comunicación y sitio de alta calidad. Volví a trabajar con él para otros proyectos juntos."</p>
+          <footer><strong>Lourdes Machuca</strong><span>Socia en proyectos freelance, Florianopolis, Brasil</span></footer>
+        </blockquote>
+                  <blockquote class="testi">
+            <p>"Gracias a el trabajo realizado por Kevin, logramos tener un sitio web que refleja nuestra marca y nos permite conectar mejor con nuestros clientes, la carga de productos es muy facil y rapida de manejar."</p>
+            <footer>
+              <strong>Melisa Cortez</strong>
+              <span>Emprendedora de Emme indumentaria, Buenos aires, Argentina</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testi">
+            <p>"Pude tener mi primer website gracias a Kevin, ahora puedo mostrar mis productos de una manera mas profesional y no solamente por instagram."</p>
+            <footer>
+              <strong>Daniela Anahi</strong>
+              <span>Emprendedora de Lazo Carteras, Buenos Aires, Argentina</span>
+            </footer>
+          </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section dark">
+    <div class="container faq-wrap">
+      <div class="section-header">
+        <span class="tag">Preguntas frecuentes</span>
+        <h2>Lo que siempre me preguntan</h2>
+      </div>
+      <div class="faq">
+        <details class="faq-item">
+          <summary>¿Cuánto tarda en estar lista mi página?</summary>
+          <p>Entre 7 y 15 días hábiles desde que me enviás los materiales (textos, fotos, logo). Primero te muestro el diseño en Figma para que lo apruebes antes de programar.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Por qué venta por WhatsApp y no carrito con pago online?</summary>
+          <p>Porque el carrito tradicional requiere pasarelas de pago, comisiones y complejidad técnica. La venta por WhatsApp es más directa, más personal y sin costos extra. Funciona perfecto para emprendedores donde el cliente prefiere atención personalizada.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Puedo pedir cambios después de la entrega?</summary>
+          <p>Sí. Cada plan incluye revisiones. Cambios adicionales se cotizan por separado, siempre mucho menos que el proyecto original. Por eso recomiendo el mantenimiento mensual si actualizás seguido.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Trabajás con clientes de cualquier país?</summary>
+          <p>Sí. Trabajo en español, portugués e inglés. Clientes en Argentina, Brasil y Estados Unidos. Todo el proceso es 100% remoto por WhatsApp, email o videollamada.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué necesito para empezar?</summary>
+          <p>Tu logo (si no tenés, lo vemos juntos), fotos de tus productos o servicio, y un texto básico de qué hacés. Con eso armo el diseño. Si no tenés todo, lo construimos juntos paso a paso.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Mantenimiento mensual o bimestral?</summary>
+          <p>Mensual si vendés productos que cambian seguido o hacés promociones frecuentes. Si tu sitio es estable (empresa de servicios, landing informativa) podés arrancar con básico y actualizar cuando lo necesitás.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="final">
+    <div class="container">
+      <h2>¿Listo para tener tu página?</h2>
+      <p>Escribime hoy. Te respondo el mismo día y armamos algo a medida de tu negocio.</p>
+      <div class="final-btns">
+        <a href="https://wa.me/54112394362?text=Hola%20Kevin!%20Quiero%20una%20página%20web." target="_blank" class="btn-primary btn-lg">
+          <i class="fa-brands fa-whatsapp"></i> Empezar ahora
+        </a>
+        <a href="mailto:kevinfloresg1998@gmail.com" class="btn-ghost">
+          <i class="fa-solid fa-envelope"></i> Mandar un email
+        </a>
+      </div>
+      <p class="final-note">Sin compromiso. Primera consulta gratis.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">Confiweb</span>
+      <p>Páginas web para emprendedores y empresas pequeñas.</p>
+      <p class="footer-copy">© <span id="year"></span> Kevin Flores — SC, Brasil</p>
+    </div>
+    <nav class="footer-nav">
+      <strong>Servicios</strong>
+      <a href="#servicios">Landing Page</a>
+      <a href="#servicios">Landing + Productos</a>
+      <a href="#servicios">Ecommerce WhatsApp</a>
+      <a href="#precios">Mantenimiento</a>
+    </nav>
+    <nav class="footer-nav">
+      <strong>Info</strong>
+      <a href="#casos">Proyectos</a>
+      <a href="#faq">FAQ</a>
+      <a href="portfolio.html">Portfolio del dev</a>
+    </nav>
+    <div class="footer-contact">
+      <strong>Contacto</strong>
+      <a href="https://wa.me/54112394362" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="mailto:kevinfloresg1998@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="https://www.linkedin.com/in/kevinfloresg/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+      <a href="https://github.com/kevinflores198" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/54112394362?text=Hola%20Kevin!" target="_blank" class="fab" id="fab"><i class="fa-brands fa-whatsapp"></i><span>¿Hablamos?</span></a>
+<a href="#top" class="top" id="top"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script src="confiweb.js"></script>
+</body>
+</html>

@@ -92,6 +92,7 @@ ul { list-style: none; }
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.05;
+  
 }
 
 .section-subtitle {
@@ -1176,6 +1177,9 @@ footer {
   border-color: var(--accent);
 }
 
+.footer-logo-img { width: 22px; height: 22px; object-fit: contain; border-radius: 100%;}
+
+
 /* -═
    fabs
 -═ */
@@ -1359,6 +1363,7 @@ footer {
   .seq-sticky { flex-direction: column; }
 
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
+
 
   .modal-box { padding: 24px; }
   .modal-actions { flex-direction: column; }

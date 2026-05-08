@@ -1,494 +1,670 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Confiweb | Páginas web para tu negocio</title>
-  <meta name="description" content="Landing pages & ecommerce con WhatsApp para emprendedores. Modernos, rápidos y enfocados en conseguirte más clientes.">
+  <title>Kevin Flores | Developer</title>
+  <meta name="description" content="Portfolio de Kevin Flores, desarrollador web full stack.">
+  <meta name="author" content="Kevin Nicolas Flores Gonzalez">
   <link rel="icon" href="files/logo-dark.png" type="image/x-icon">
+
+  <!-- OG -->
+  <meta property="og:title" content="Kevin Flores | Developer">
+  <meta property="og:description" content="Portfolio de Kevin Flores: desarrollador web full stack.">
+  <meta property="og:image" content="files/avatar-og-content.png">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
-  <link rel="stylesheet" href="confiweb.css">
+
+  <link rel="stylesheet" href="portfolio.css">
 </head>
+
 <body>
 
-<header>
-  <nav class="nav" id="nav">
-    <a class="logo" href="#top">
-      <img src="files/logo-no-back.png" alt="Confiweb" onerror="this.style.display='none'">
-    </a>
-    <ul class="links" id="links">
-      <button class="nav-close" id="nav-close" aria-label="Cerrar menú">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#casos">Proyectos</a></li>
-      <li><a href="#precios">Precios</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="portfolio.html">Mi perfil</a></li>
-    </ul>
-    <div class="nav-right">
-      <div class="lang-wrap">
-        <button class="lang-btn" id="lang-btn">
+  <!--  NAVBAR -═ -->
+  <header id="top">
+    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+      <a class="nav-logo" href="#top"><img src="files/logo-light.png" alt="logo" class="footer-logo-img"></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><button class="nav-close" id="nav-close" aria-label="Cerrar menú">
+            <i class="fa-solid fa-xmark"></i>
+          </button></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-theme" id="btn-theme" aria-label="Cambiar tema">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="btn-lang" id="btn-lang" aria-label="Idioma">
           <i class="fa-solid fa-earth-americas"></i>
           <span id="lang-label">ES</span>
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
         </button>
-        <div class="lang-drop" id="lang-drop">
-          <button onclick="cwLang('es')"><span class="fi fi-ar"></span> Español</button>
-          <button onclick="cwLang('en')"><span class="fi fi-us"></span> English</button>
-          <button onclick="cwLang('pt')"><span class="fi fi-br"></span> Português</button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button onclick="setLang('es')"><span class="fi fi-ar"></span> Español</button>
+          <button onclick="setLang('en')"><span class="fi fi-us"></span> English</button>
+          <button onclick="setLang('pt')"><span class="fi fi-br"></span> Português</button>
+        </div>
+        <button class="btn-burger" id="btn-burger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Backdrop para menú mobile -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <main>
+
+    <!--  HERO - -->
+    <section id="hero">
+      <video autoplay muted loop playsinline class="hero-video" id="video-dark">
+        <source src="files/hero-background-dark-portfolio.mp4" type="video/mp4">
+      </video>
+      <video autoplay muted loop playsinline class="hero-video hidden" id="video-light">
+        <source src="files/hero-background-light-portfolio.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-content">
+        <div class="hero-avatar">
+          <img src="files/avatar-kev.png" alt="Kevin Flores">
+        </div>
+        <div class="hero-text">
+          <p class="hero-tag">Hola, soy</p>
+          <h1 class="hero-name">Kevin Flores</h1>
+          <h2 class="hero-role"><span id="typewriter"></span><span class="cursor">|</span></h2>
+          <p class="hero-desc">Desarrollador web enfocado en crear sitios modernos y responsivos para empresas.
+            Aplicando mis habilidades en proyectos reales mientras estudio desarrollo de software.</p>
+          <a href="#contacto" class="btn-primary">Contacto</a>
         </div>
       </div>
-      <a href="https://wa.me/54112394362?text=Hola%20Kevin!%20Quiero%20saber%20más." target="_blank" class="btn-nav">
-        <i class="fa-brands fa-whatsapp"></i> Hablar ahora
-      </a>
-      <button class="burger" id="burger"><span></span><span></span><span></span></button>
+
+      <div class="hero-scroll-hint">
+        <span>scroll</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <!--  SOBRE MÍ - -->
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <div class="section-header about-header">
+          <span class="section-tag">01</span>
+          <h2 class="section-title">Sobre mí</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Comencé a estudiar programación en 2022 y descubrí una pasión por crear sitios modernos y funcionales.
+              Hoy combino mis habilidades técnicas con mi experiencia en servicio al cliente para entregar soluciones
+              claras, limpias y profesionales.</p>
+            <p>Me enfoco en aprender continuamente y en ofrecer una excelente comunicación en cada proyecto.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">años programando</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">idiomas</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">ganas de aprender</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  PROCESO (SCROLL SEQUENCE)  -->
+    <section id="proceso">
+      <div class="section-header container">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">Así trabajo</h2>
+      </div>
+
+      <div class="seq-outer" id="seq-outer">
+        <div class="seq-sticky">
+
+          <!-- Chapter dots -->
+          <div class="seq-dots" id="seq-dots">
+            <div class="seq-dot active" data-ch="0"></div>
+            <div class="seq-dot" data-ch="1"></div>
+            <div class="seq-dot" data-ch="2"></div>
+          </div>
+
+          <!-- Left: chapters -->
+          <div class="seq-left">
+            <div class="seq-chapter visible" id="seq-ch0">
+              <span class="chapter-num">01 — concepto</span>
+              <h3>La idea inicial</h3>
+              <p>Todo empieza con una pregunta: ¿qué necesita el cliente? Escucho, analizo y entiendo el problema antes
+                de escribir una sola línea de código.</p>
+            </div>
+            <div class="seq-chapter" id="seq-ch1">
+              <span class="chapter-num">02 — estructura</span>
+              <h3>Diseño y arquitectura</h3>
+              <p>Defino la estructura, el sistema de diseño y la arquitectura del proyecto. Cada decisión tiene una
+                razón.</p>
+            </div>
+            <div class="seq-chapter" id="seq-ch2">
+              <span class="chapter-num">03 — entrega</span>
+              <h3>Resultado final</h3>
+              <p>El producto terminado: limpio, responsivo y a tiempo. Con comunicación directa en cada etapa del
+                camino.</p>
+            </div>
+          </div>
+
+          <!-- Right: canvas -->
+          <div class="seq-right">
+            <canvas id="seq-canvas" width="700" height="560"></canvas>
+            <div class="seq-progress-rail">
+              <div class="seq-progress-fill" id="seq-progress-fill"></div>
+            </div>
+            <div class="seq-frame-counter" id="seq-frame-counter">F001 / 090</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--  PROYECTOS - -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03</span>
+          <h2 class="section-title">Proyectos</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Card 1 -->
+          <article class="project-card" id="open-modal1">
+            <div class="project-img">
+              <img src="files/project-brutton.jpg" alt="Brutton Construtec" loading="lazy">
+              <div class="project-overlay">
+                <span>Ver detalle <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <h3>Brutton Construtec</h3>
+              <p>Landing page de empresa constructora. Responsiva, moderna y optimizada para SEO.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card" id="open-modal2">
+            <div class="project-img">
+              <img src="files/project-lazo.jpg" alt="Social Fashion" loading="lazy">
+              <div class="project-overlay">
+                <span>Ver detalle <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind</span>
+              </div>
+              <h3>Lazo carteras</h3>
+              <p>Landing page + tienda online con venta por WhatsApp.</p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card" id="open-modal3">
+            <div class="project-img">
+              <img src="files/project-emme.jpg" alt="Biblioteca App" loading="lazy">
+              <div class="project-overlay">
+                <span>Ver detalle <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind</span>
+              </div>
+              <h3>Emme indumentaria</h3>
+              <p>Mini e-commerce con venta por WhatsApp conectado a Google Sheets.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Tech strip -->
+        <div class="tech-strip">
+          <p class="tech-strip-label">Tecnologías que uso</p>
+          <div class="tech-track-wrap">
+            <!-- 4 sets para garantizar que llene cualquier viewport -->
+            <div class="tech-track">
+              <i class="fa-brands fa-java" title="Java"></i>
+              <i class="fa-brands fa-square-js" title="JavaScript"></i>
+              <i class="fa-brands fa-html5" title="HTML5"></i>
+              <i class="fa-brands fa-css" title="CSS3"></i>
+              <i class="fa-solid fa-database" title="SQL"></i>
+              <i class="fa-brands fa-react" title="React"></i>
+              <i class="fa-brands fa-git-alt" title="Git"></i>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-git-alt"></i>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-git-alt"></i>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-git-alt"></i>
+              <i class="fa-brands fa-java" title="Java"></i>
+              <i class="fa-brands fa-square-js" title="JavaScript"></i>
+              <i class="fa-brands fa-html5" title="HTML5"></i>
+              <i class="fa-brands fa-css" title="CSS3"></i>
+              <i class="fa-solid fa-database" title="SQL"></i>
+              <i class="fa-brands fa-react" title="React"></i>
+              <i class="fa-brands fa-git-alt" title="Git"></i>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-git-alt"></i>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-git-alt"></i>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--  MODALES - -->
+    <div class="modal-overlay" id="modal1">
+      <div class="modal-box">
+        <button class="modal-close" data-close="modal1"><i class="fa-solid fa-xmark"></i></button>
+        <h2>Brutton Construtec</h2>
+        <div class="modal-tech-carousel">
+          <div class="modal-tech-track">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span><span>VS Code</span>
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span><span>VS Code</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-circle-info"></i> Descripción</h4>
+          <p>Landing page para empresa de construcción. Responsiva, moderna y optimizada para SEO.</p>
+        </div>
+        <div class="modal-icons">
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css"></i>
+          <i class="fa-brands fa-square-js"></i>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-hammer"></i> Lo que hice</h4>
+          <p>Estructura, diseño UI, desarrollo front-end, optimización SEO y despliegue en Netlify.</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-graduation-cap"></i> Qué aprendí</h4>
+          <p>Mejores prácticas de desarrollo web, diseño responsivo, SEO y comunicación con clientes reales.</p>
+        </div>
+        <div class="modal-actions">
+          <a href="https://bruttonconstrutec.com.br" target="_blank" class="btn-primary">Visitar proyecto</a>
+          <a href="https://wa.me/54112394362" target="_blank" class="btn-secondary">Pedir presupuesto</a>
+        </div>
+      </div>
     </div>
-  </nav>
-</header>
 
-<div class="backdrop" id="backdrop"></div>
-
-<main>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="container">
-      <div class="available"><span class="dot"></span> Disponible para nuevos proyectos</div>
-      <h1 class="hero-title">
-        Tu negocio merece<br>
-        <span class="highlight">una página que vende</span>
-      </h1>
-      <p class="hero-sub">
-        Creamos landing pages y tiendas online con venta por WhatsApp para emprendedores y empresas pequeñas.<br>
-        Modernas, rápidas y listas en días...no meses.
-      </p>
-      <div class="hero-btns">
-        <a href="https://wa.me/54112394362?text=Hola%20Kevin!%20Quiero%20una%20página%20web." target="_blank" class="btn-primary">
-          <i class="fa-brands fa-whatsapp"></i> Quiero mi página web
-        </a>
-        <a href="#casos" class="btn-ghost">Ver proyectos →</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><strong>3+</strong><span>Proyectos reales en produccion</span></div>
-        <div class="stat-sep"></div>
-        <div class="stat"><strong>3</strong><span>Idiomas: ES · PT · EN</span></div>
-        <div class="stat-sep"></div>
-        <div class="stat"><strong>3+</strong><span>Años programando</span></div>
-        <div class="stat-sep"></div>
-        <div class="stat"><strong>100%</strong><span>Atención directa</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Problema - solucion -->
-  <section class="problem">
-    <div class="container">
-      <p class="problem-label">¿Te suena alguna de estas?</p>
-      <div class="problem-grid">
-        <div class="prob-item"><i class="fa-solid fa-ban"></i><p>Tenés un negocio real pero tus clientes no te encuentran en Google.</p></div>
-        <div class="prob-item"><i class="fa-brands fa-instagram"></i><p>Solo vendés por Instagram o WhatsApp. Funciona, pero no genera confianza.</p></div>
-        <div class="prob-item"><i class="fa-solid fa-dollar-sign"></i><p>Te dijeron que una web era carísima o tardaba meses. Acá no.</p></div>
-        <div class="prob-item"><i class="fa-solid fa-store"></i><p>Querés vender online sin pagar comisiones de Shopify o MercadoLibre.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Servicios -->
-  <section id="servicios" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Lo que hacemos</span>
-        <h2>Tres modelos. Un solo objetivo:<br>más clientes para tu negocio.</h2>
-      </div>
-      <div class="services">
-
-        <div class="service">
-          <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
-          <h3>Landing Page</h3>
-          <p>Página clara, rápida y profesional para que el visitante te llame, te escriba o pida info. Sin distracciones.</p>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Diseño responsivo (celular + desktop)</li>
-            <li><i class="fa-solid fa-check"></i> Secciones: quiénes son, servicios, contacto</li>
-            <li><i class="fa-solid fa-check"></i> Botón WhatsApp / Email directo</li>
-            <li><i class="fa-solid fa-check"></i> SEO básico para Google</li>
-            <li><i class="fa-solid fa-check"></i> Lista en 7–10 días hábiles</li>
-          </ul>
-          <!-- <div class="service-price">$180 USD</div> -->
-          <a href="https://wa.me/54112394362?text=Me%20interesa%20una%20Landing%20Page." target="_blank" class="btn-outline">Consultar →</a>
+    <div class="modal-overlay" id="modal2">
+      <div class="modal-box">
+        <button class="modal-close" data-close="modal2"><i class="fa-solid fa-xmark"></i></button>
+        <h2>Lazo</h2>
+        <div class="modal-tech-carousel">
+          <div class="modal-tech-track">
+            <span>Tailwind</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Tailwind</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
         </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-circle-info"></i> Descripción</h4>
+          <p>Landing page, con lista de productos y formulario de contacto, enfocado en la venta personalizada por
+            whatsapp para una mejor atencion, evitando carrito de compras.</p>
 
-        <div class="service service-featured">
-          <div class="featured-badge">Más elegido</div>
-          <div class="service-icon icon-accent"><i class="fa-solid fa-list"></i></div>
-          <h3>Landing + Lista de Productos</h3>
-          <p>Igual que la landing, pero con catálogo visual. Cada producto tiene un botón que lleva directo a WhatsApp para cerrar la venta.</p>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Todo lo del plan Landing</li>
-            <li><i class="fa-solid fa-check"></i> Grilla de productos con foto y precio</li>
-            <li><i class="fa-solid fa-check"></i> Botón "Consultar" → WhatsApp por producto</li>
-            <li><i class="fa-solid fa-check"></i> Diseño Figma personalizado incluido</li>
-            <li><i class="fa-solid fa-check"></i> Lista en 10–12 días hábiles</li>
-          </ul>
-          <!-- <div class="service-price">$230 USD</div> -->
-          <a href="https://wa.me/54112394362?text=Me%20interesa%20Landing%20con%20lista%20de%20productos." target="_blank" class="btn-primary">Consultar →</a>
         </div>
-
-        <div class="service">
-          <div class="service-icon icon-green"><i class="fa-brands fa-whatsapp"></i></div>
-          <h3>Ecommerce + WhatsApp</h3>
-          <p>Tienda online completa. El cliente ve los productos y hace el pedido directo por WhatsApp. Sin comisiones ni plataformas caras.</p>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Catálogo con filtros por categoría</li>
-            <li><i class="fa-solid fa-check"></i> Pedido armado → WhatsApp automático</li>
-            <li><i class="fa-solid fa-check"></i> Sin comisión por venta</li>
-            <li><i class="fa-solid fa-check"></i> Opción: productos desde Google Sheets</li>
-            <li><i class="fa-solid fa-check"></i> Lista en 12–15 días hábiles</li>
-          </ul>
-          <!-- <div class="service-price">$290 USD</div> -->
-          <a href="https://wa.me/54112394362?text=Me%20interesa%20el%20Ecommerce%20con%20WhatsApp." target="_blank" class="btn-outline">Consultar →</a>
+        <div class="modal-icons">
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css"></i>
+          <i class="fa-brands fa-square-js"></i>
         </div>
-
-      </div>
-
-      <div class="included">
-        <p class="included-label">Incluido en todos los planes</p>
-        <div class="included-grid">
-          <div class="inc-item"><i class="fa-solid fa-mobile-screen"></i><span>Mobile-first</span></div>
-          <div class="inc-item"><i class="fa-solid fa-gauge-high"></i><span>Carga rápida</span></div>
-          <div class="inc-item"><i class="fa-solid fa-magnifying-glass"></i><span>SEO básico</span></div>
-          <div class="inc-item"><i class="fa-solid fa-pen-ruler"></i><span>Diseño Figma</span></div>
-          <div class="inc-item"><i class="fa-solid fa-language"></i><span>ES · PT · EN</span></div>
-          <div class="inc-item"><i class="fa-solid fa-headset"></i><span>Soporte post-entrega</span></div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-hammer"></i> Lo que hice</h4>
+          <p>Presentacion de la empresa y desarrollo del sitio web junto a una lista de productos conectada con
+            Whatsapp, pensada para que el emprendedor pueda vender mejor por whatsapp y evitar un carrito de compras,
+            buscando la seguridad de una venta mas segura y oportunida de ofrecer otros productos</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-graduation-cap"></i> Qué aprendí</h4>
+          <p>Un mejor manejo de Tailwind, optimización de performance y mejores prácticas para SEO. Además de la
+            experiencia de trabajar con un cliente real y sus necesidades específicas.
+          </p>
+        </div>
+        <div class="modal-section modal-warning">
+          <h4><i class="fa-solid fa-triangle-exclamation"></i> Estado: Terminado</h4>
+          <p>El cliente paga mensualmente para actualizar lista de productos, y personalizar estilos.</p>
+        </div>
+        <div class="modal-actions">
+          <a href="https://github.com/kevinflores198/lazo" target="_blank" class="btn-primary">Ver en
+            GitHub</a>
+          <a href="https://wa.me/54112394362" target="_blank" class="btn-secondary">Pedir presupuesto</a>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Proyectos -->
-  <section id="casos" class="section dark">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Proyectos reales</span>
-        <h2>Lo que ya construimos</h2>
-        <p class="section-sub">Cada uno fue hecho para un cliente real, con una necesidad real.</p>
-      </div>
-      <div class="cases">
+    <div class="modal-overlay" id="modal3">
+      <div class="modal-box">
+        <button class="modal-close" data-close="modal3"><i class="fa-solid fa-xmark"></i></button>
+        <h2>Emme indumentaria</h2>
+        <div class="modal-tech-carousel">
+          <div class="modal-tech-track">
 
-        <article class="case">
-          <div class="case-img">
-            <img src="files/project-brutton.jpg" alt="Brutton Construtec" loading="lazy">
-            <span class="case-badge badge-landing">Landing Page</span>
           </div>
-          <div class="case-body">
-            <h3>Brutton Construtec</h3>
-            <p>Empresa constructora de Brasil que necesitaba presencia digital profesional. Landing con 3 vistas distintas mostrando sus proyectos y dirigiendo al contacto directo.</p>
-            <div class="case-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <a href="https://bruttonconstrutec.com.br" target="_blank" class="case-link">Ver sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </article>
-
-        <article class="case">
-          <div class="case-img">
-            <img src="files/project-lazo.jpg" alt="Lazo Carteras" loading="lazy">
-            <span class="case-badge badge-lista">Landing + Productos</span>
-          </div>
-          <div class="case-body">
-            <h3>Lazo Carteras & Accesorios</h3>
-            <p>Emprendedora que vendía solo por Instagram. Ahora tiene catálogo visual de productos y sus clientes le escriben directo por WhatsApp con el artículo que quieren.</p>
-            <div class="case-tech"><span>HTML</span><span>CSS</span><span>Tailwind</span></div>
-            <a href="https://kevinflores198.github.io/lazo/" target="_blank" class="case-link">Ver sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </article>
-
-        <article class="case">
-          <div class="case-img">
-            <img src="files/project-emme.jpg" alt="Emme ind" loading="lazy">
-            <span class="case-badge badge-ecomm">Ecommerce + WhatsApp</span>
-          </div>
-          <div class="case-body">
-            <h3>Emme ind.</h3>
-            <p>Tienda donde los productos se cargan desde Google Sheets y se muestran automáticamente. El cliente hace clic en "Comprar" y llega un WhatsApp con el pedido ya armado.</p>
-            <div class="case-tech"><span>JavaScript</span><span>Google Sheets</span><span>Tailwind</span></div>
-            <a href="https://kevinflores198.github.io/Emme-ind/" target="_blank" class="case-link">Ver sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </article>
-
-      </div>
-      <div class="cases-cta">
-        <p>¿Querés algo así para tu negocio?</p>
-        <a href="https://wa.me/54112394362?text=Vi%20los%20proyectos%20y%20me%20interesa%20uno." target="_blank" class="btn-primary">
-          <i class="fa-brands fa-whatsapp"></i> Hablemos
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trayecto -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Cómo trabajamos</span>
-        <h2>De cero a online en 4 pasos</h2>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-n">01</div>
-          <h3>Nos contactás</h3>
-          <p>Me escribís por WhatsApp. Te respondo el mismo día y hablamos de tu negocio.</p>
         </div>
-        <div class="step-arr"><i class="fa-solid fa-chevron-right"></i></div>
-        <div class="step">
-          <div class="step-n">02</div>
-          <h3>Diseño en Figma</h3>
-          <p>Armo el diseño visual primero. Lo ves antes de que empiece el código.</p>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-circle-info"></i> Descripción</h4>
+          <p>Aplicación de biblioteca con gestión de libros y usuarios en MySQL. Login integrado para múltiples
+            usuarios.</p>
         </div>
-        <div class="step-arr"><i class="fa-solid fa-chevron-right"></i></div>
-        <div class="step">
-          <div class="step-n">03</div>
-          <h3>Desarrollo</h3>
-          <p>Programo la página con los materiales que me pasás. Preview en 7–15 días.</p>
+        <div class="modal-icons">
+          <i class="fa-brands fa-java"></i>
+          <i class="fa-solid fa-database"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-square-js"></i>
         </div>
-        <div class="step-arr"><i class="fa-solid fa-chevron-right"></i></div>
-        <div class="step">
-          <div class="step-n">04</div>
-          <h3>Entrega y soporte</h3>
-          <p>Subo el sitio, te enseño a manejarlo y quedo disponible para ajustes.</p>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-hammer"></i> Lo que hice</h4>
+          <p>Landing page conectada con Google Sheets para una mejor carga de productos.</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-graduation-cap"></i> Qué aprendí</h4>
+          <p>Mejoras en el uso de tailwind. Tambien a conectar Google Sheets a la pagina, para una mejor carga de
+            productos evitando usar una base de datos.</p>
+        </div>
+        <div class="modal-section modal-warning">
+          <h4><i class="fa-solid fa-triangle-exclamation"></i> Estado: Terminado</h4>
+          <p>El cliente paga bimestralmente para mantener estilos y funcionalidades.</p>
+        </div>
+        <div class="modal-actions">
+          <a href="https://github.com/kevinflores198/Emme-ind" target="_blank" class="btn-primary">Ver en GitHub</a>
+          <a href="https://wa.me/54112394362" target="_blank" class="btn-secondary">Pedir presupuesto</a>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Precios -->
-  <section id="precios" class="section dark">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Planes</span>
-        <h2>Precios claros. Sin sorpresas.</h2>
-        <p class="section-sub">Adelanto del 30% para arrancar. El resto a la entrega. Acepto USD, ARS o BRL.</p>
+    <!--  EDUCACIÓN - -->
+    <section id="educacion" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04</span>
+          <h2 class="section-title">Educación</h2>
+        </div>
+
+        <div class="edu-grid">
+
+          <article class="edu-card">
+            <div class="edu-logo">
+              <a href="https://www.byupathway.edu/bachelors-degree/software-development" target="_blank">
+                <img src="files/logo-byu.png" alt="BYU Pathway">
+              </a>
+            </div>
+            <div class="edu-content">
+              <h3>Brigham Young University</h3>
+              <p class="edu-desc">Programa universitario online en inglés, trabajando con grupos diversos de estudiantes
+                y mentores de EE.UU.</p>
+              <div class="edu-degree">
+                <h4>Desarrollo de Software</h4>
+                <p>Programación, bases de datos, ingeniería de software y diseño de sistemas.</p>
+              </div>
+              <div class="edu-degree">
+                <h4>Pathway Worldwide</h4>
+                <p>Programa preparatorio universitario en inglés, matemáticas y habilidades profesionales.</p>
+                <details class="diploma-details">
+                  <summary>Ver diploma</summary>
+                  <img src="files/cert-pathway.png" alt="Diploma Pathway" loading="lazy">
+                </details>
+              </div>
+            </div>
+          </article>
+
+          <article class="edu-card">
+            <div class="edu-logo">
+              <a href="https://egg.live/es/home" target="_blank">
+                <img src="files/logo-egg.png" alt="Egg Academy">
+              </a>
+            </div>
+            <div class="edu-content">
+              <h3>Academia Egg</h3>
+              <p class="edu-desc">Academia de programación enfocada en aprendizaje colaborativo y trabajo en equipo.</p>
+              <div class="edu-degree">
+                <h4>Desarrollador Full Stack</h4>
+                <p>Formación en desarrollo front-end y back-end con prácticas ágiles.</p>
+                <details class="diploma-details">
+                  <summary>Ver diploma</summary>
+                  <img src="files/cert-fullstack-egg.jpeg" alt="Diploma Full Stack" loading="lazy">
+                </details>
+              </div>
+              <div class="edu-degree">
+                <h4>Pseudocódigo</h4>
+                <p>Fundamentos de lógica de programación y diseño de algoritmos.</p>
+                <details class="diploma-details">
+                  <summary>Ver diploma</summary>
+                  <img src="files/cert-pseudo-egg.png" alt="Diploma Pseudocódigo" loading="lazy">
+                </details>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
+    </section>
 
-      <h3 class="prices-subtitle"><i class="fa-solid fa-globe"></i> Páginas web — Pago único</h3>
-      <div class="prices">
-
-        <div class="price-card">
-          <div class="price-top">
-            <h4>Landing Page</h4>
-            <p>Presencia profesional para tu negocio.</p>
-            <div class="price-num"><strong>$180</strong><span>USD</span></div>
+    <!--  ¿POR QUÉ YO? -═ -->
+    <section id="por-que" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05</span>
+          <h2 class="section-title">¿Por qué trabajar conmigo?</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-item">
+            <i class="fa-solid fa-brain"></i>
+            <p>3+ años aprendiendo y construyendo proyectos de desarrollo web reales.</p>
           </div>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> 1 página completa</li>
-            <li><i class="fa-solid fa-check"></i> Diseño responsivo</li>
-            <li><i class="fa-solid fa-check"></i> SEO básico</li>
-            <li><i class="fa-solid fa-check"></i> Botón WhatsApp / Email</li>
-            <li><i class="fa-solid fa-check"></i> 1 revisión incluida</li>
-            <li><i class="fa-solid fa-check"></i> Entrega: 7–10 días</li>
-          </ul>
-          <a href="https://wa.me/54112394362?text=Me%20interesa%20la%20Landing%20Page%20a%20200usd." target="_blank" class="btn-outline">Consultar →</a>
-        </div>
-
-        <div class="price-card price-featured">
-          <div class="price-badge">Más elegido</div>
-          <div class="price-top">
-            <h4>Landing + Productos</h4>
-            <p>Catálogo visual con compra por WhatsApp.</p>
-            <div class="price-num"><strong>$230</strong><span>USD</span></div>
+          <div class="why-item">
+            <i class="fa-solid fa-language"></i>
+            <p>Fluido en español, portugués e inglés — comunicación sin barreras.</p>
           </div>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Todo lo del plan Landing</li>
-            <li><i class="fa-solid fa-check"></i> Lista de productos con fotos</li>
-            <li><i class="fa-solid fa-check"></i> Botón → WhatsApp por producto</li>
-            <li><i class="fa-solid fa-check"></i> Diseño Figma personalizado</li>
-            <li><i class="fa-solid fa-check"></i> 2 revisiones incluidas</li>
-            <li><i class="fa-solid fa-check"></i> Entrega: 10–12 días</li>
-          </ul>
-          <a href="https://wa.me/54112394362?text=Me%20interesa%20Landing%20con%20productos%20a%20250usd." target="_blank" class="btn-primary">Consultar →</a>
-        </div>
-
-        <div class="price-card">
-          <div class="price-top">
-            <h4>Ecommerce + WhatsApp</h4>
-            <p>Tienda completa sin comisiones por venta.</p>
-            <div class="price-num"><strong>$290</strong><span>USD</span></div>
+          <div class="why-item">
+            <i class="fa-solid fa-plane"></i>
+            <p>Experiencia internacional con clientes de EE.UU., Brasil y otros países.</p>
           </div>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Catálogo con categorías</li>
-            <li><i class="fa-solid fa-check"></i> Pedido armado → WhatsApp</li>
-            <li><i class="fa-solid fa-check"></i> Sin comisiones por venta</li>
-            <li><i class="fa-solid fa-check"></i> Opción Google Sheets</li>
-            <li><i class="fa-solid fa-check"></i> Diseño Figma personalizado</li>
-            <li><i class="fa-solid fa-check"></i> Entrega: 12–15 días</li>
-          </ul>
-          <a href="https://wa.me/54112394362?text=Me%20interesa%20Ecommerce%20WhatsApp%20a%20300usd." target="_blank" class="btn-outline">Consultar →</a>
+          <div class="why-item">
+            <i class="fa-solid fa-user-tie"></i>
+            <p>Comunicación profesional y confiable en cada etapa del proyecto.</p>
+          </div>
+        </div>
+        <p class="why-cta-text">Durante 3 años he estado practicando y aplicando estas habilidades en proyectos reales.
+          ¡No dudes en contactarme!</p>
+        <a href="#contacto" class="btn-primary">Contacto</a>
+      </div>
+    </section>
+
+    <!--  TESTIMONIOS - -->
+    <section id="testimonios" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">06</span>
+          <h2 class="section-title">Testimonios</h2>
+          <p class="section-subtitle">Lo que dicen quienes trabajaron conmigo.</p>
         </div>
 
-      </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card">
+            <p>"...El resultado final superó nuestras expectativas, reflejando profesionalismo, dedicación y calidad en
+              cada detalle. Estamos muy satisfechos de contar con tu colaboración."</p>
+            <footer>
+              <strong>Everton Silva</strong>
+              <span>Socio administrador — Brutton Construtec</span>
+            </footer>
+          </blockquote>
 
-      <h3 class="prices-subtitle"><i class="fa-solid fa-wrench"></i> Mantenimiento mensual</h3>
-      <div class="maintenance">
-
-        <div class="maint-card">
-          <h4>Básico</h4>
-          <div class="maint-price"><strong>$20</strong><span>/ mes</span></div>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Hasta 3 cambios de texto o imagen</li>
-            <li><i class="fa-solid fa-check"></i> Revisión de funcionamiento</li>
-            <li><i class="fa-solid fa-check"></i> Respuesta en 48 hs</li>
-          </ul>
-          <a href="https://wa.me/54112394362?text=Me%20interesa%20el%20mantenimiento%20básico." target="_blank" class="btn-outline">Consultar →</a>
-        </div>
-
-        <div class="maint-card maint-featured">
-          <h4>Avanzado</h4>
-          <div class="maint-price"><strong>$40</strong><span>/ mes</span></div>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> Cambios ilimitados de contenido</li>
-            <li><i class="fa-solid fa-check"></i> Actualizaciones de diseño</li>
-            <li><i class="fa-solid fa-check"></i> Nuevas secciones o funciones</li>
-            <li><i class="fa-solid fa-check"></i> Prioridad de respuesta: 24 hs</li>
-            <li><i class="fa-solid fa-check"></i> Reporte mensual del sitio</li>
-          </ul>
-          <a href="https://wa.me/54112394362?text=Me%20interesa%20el%20mantenimiento%20avanzado." target="_blank" class="btn-primary">Consultar →</a>
-        </div>
-
-      </div>
-
-      <p class="price-note">
-        <i class="fa-solid fa-circle-info"></i>
-        Adelanto del 30% para comenzar. El precio final se define según el proyecto. Hablamos y lo cerramos juntos. El dominio (ej: tunegocio.com) se compra a tu nombre y yo me encargo de configurarlo. 
-  Hosting y publicación incluidos.
-      </p>
-    </div>
-  </section>
-
-  <!-- Testimonios -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">Lo que dicen</span>
-        <h2>Clientes reales, palabras reales</h2>
-      </div>
-      <div class="testimonials">
-        <blockquote class="testi">
-          <p>"El resultado final superó nuestras expectativas, reflejando profesionalismo, dedicación y calidad en cada detalle. Estamos muy satisfechos y seguros de que tendremos muchos proyectos por delante."</p>
-          <footer><strong>Everton Silva</strong><span>Socio administrador — Brutton Construtec, Florianopolis, Brasil</span></footer>
-        </blockquote>
-        <blockquote class="testi">
-          <p>"Excelente comunicación y sitio de alta calidad. Volví a trabajar con él para otros proyectos juntos."</p>
-          <footer><strong>Lourdes Machuca</strong><span>Socia en proyectos freelance, Florianopolis, Brasil</span></footer>
-        </blockquote>
-                  <blockquote class="testi">
-            <p>"Gracias a el trabajo realizado por Kevin, logramos tener un sitio web que refleja nuestra marca y nos permite conectar mejor con nuestros clientes, la carga de productos es muy facil y rapida de manejar."</p>
+          <blockquote class="testimonial-card">
+            <p>"Excelente comunicación y sitio de alta calidad. Volví a trabajar con él para otros proyectos juntos."
+            </p>
+            <footer>
+              <strong>Lourdes Machuca</strong>
+              <span>Compañera BYU & socia en proyectos freelance</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>"Gracias a el trabajo realizado por Kevin, logramos tener un sitio web que refleja nuestra marca y nos
+              permite conectar mejor con nuestros clientes, la carga de productos es muy facil y rapida de manejar."</p>
             <footer>
               <strong>Melisa Cortez</strong>
-              <span>Emprendedora de Emme indumentaria, Buenos aires, Argentina</span>
+              <span>Emprendedora de Emme indumentaria</span>
             </footer>
           </blockquote>
-          <blockquote class="testi">
-            <p>"Pude tener mi primer website gracias a Kevin, ahora puedo mostrar mis productos de una manera mas profesional y no solamente por instagram."</p>
+          <blockquote class="testimonial-card">
+            <p>"Pude tener mi primer website gracias a Kevin, ahora puedo mostrar mis productos de una manera mas
+              profesional y no solamente por instagram."</p>
             <footer>
               <strong>Daniela Anahi</strong>
-              <span>Emprendedora de Lazo Carteras, Buenos Aires, Argentina</span>
+              <span>Emprendedora de Lazo Carteras.</span>
             </footer>
           </blockquote>
+        </div>
+
+      </div>
+    </section>
+
+    <!--  CONTACTO -═ -->
+    <section id="contacto" class="section section-contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">07</span>
+          <h2 class="section-title">¡Espero tu mensaje!</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <img src="files/avatar-lu.jpg" alt="Lourdes Machuca">
+            <h3>Lourdes Machuca</h3>
+            <p class="contact-role">Project Assistant</p>
+            <p>Apoyo en organización y coordinación de proyectos, comunicación con clientes y gestión de tareas.</p>
+            <div class="contact-btns">
+              <a href="https://wa.me/54112394362" target="_blank" class="btn-icon" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="mailto:Lourdesmarianamachuca@gmail.com" target="_blank" class="btn-icon" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <img src="files/avatar-kev.png" alt="Kevin Flores">
+            <h3>Kevin Flores</h3>
+            <p class="contact-role">Desarrollador Full Stack</p>
+            <p>Desarrollo front-end y back-end, sitios modernos, responsivos y bien estructurados.</p>
+            <div class="contact-btns">
+              <a href="https://wa.me/54112394362" target="_blank" class="btn-icon" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="mailto:kevinfloresg1998@gmail.com" target="_blank" class="btn-icon" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--  FOOTER -═ -->
+  <footer>
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <span class="footer-logo">Kevin Flores</span>
+        <p>&copy; <span id="footer-year"></span> Kevin Flores — BS AS, Argentina</p>
+        <p>Confiweb</p><img src="files/logo-light.png" alt="logo" class="footer-logo-img">
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#educacion">Educación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/kevinfloresg/" target="_blank" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/kevinflores198" target="_blank" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/kevo198_/" target="_blank" aria-label="Instagram"><i
+            class="fa-brands fa-instagram"></i></a>
+            <a href="https://kevinflores.me/confiweb.html" target="_blank" aria-label="Business"><img src="files/logo-light.png" alt="Confiweb" class="footer-logo-img"></a>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- FAQ -->
-  <section id="faq" class="section dark">
-    <div class="container faq-wrap">
-      <div class="section-header">
-        <span class="tag">Preguntas frecuentes</span>
-        <h2>Lo que siempre me preguntan</h2>
-      </div>
-      <div class="faq">
-        <details class="faq-item">
-          <summary>¿Cuánto tarda en estar lista mi página?</summary>
-          <p>Entre 7 y 15 días hábiles desde que me enviás los materiales (textos, fotos, logo). Primero te muestro el diseño en Figma para que lo apruebes antes de programar.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Por qué venta por WhatsApp y no carrito con pago online?</summary>
-          <p>Porque el carrito tradicional requiere pasarelas de pago, comisiones y complejidad técnica. La venta por WhatsApp es más directa, más personal y sin costos extra. Funciona perfecto para emprendedores donde el cliente prefiere atención personalizada.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Puedo pedir cambios después de la entrega?</summary>
-          <p>Sí. Cada plan incluye revisiones. Cambios adicionales se cotizan por separado, siempre mucho menos que el proyecto original. Por eso recomiendo el mantenimiento mensual si actualizás seguido.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Trabajás con clientes de cualquier país?</summary>
-          <p>Sí. Trabajo en español, portugués e inglés. Clientes en Argentina, Brasil y Estados Unidos. Todo el proceso es 100% remoto por WhatsApp, email o videollamada.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Qué necesito para empezar?</summary>
-          <p>Tu logo (si no tenés, lo vemos juntos), fotos de tus productos o servicio, y un texto básico de qué hacés. Con eso armo el diseño. Si no tenés todo, lo construimos juntos paso a paso.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Mantenimiento mensual o bimestral?</summary>
-          <p>Mensual si vendés productos que cambian seguido o hacés promociones frecuentes. Si tu sitio es estable (empresa de servicios, landing informativa) podés arrancar con básico y actualizar cuando lo necesitás.</p>
-        </details>
-      </div>
-    </div>
-  </section>
+  <!-- Botón WhatsApp flotante -->
+  <a href="https://wa.me/54112394362" target="_blank" class="fab-whatsapp" id="fab-whatsapp" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-  <!-- CTA Final -->
-  <section class="final">
-    <div class="container">
-      <h2>¿Listo para tener tu página?</h2>
-      <p>Escribime hoy. Te respondo el mismo día y armamos algo a medida de tu negocio.</p>
-      <div class="final-btns">
-        <a href="https://wa.me/54112394362?text=Hola%20Kevin!%20Quiero%20una%20página%20web." target="_blank" class="btn-primary btn-lg">
-          <i class="fa-brands fa-whatsapp"></i> Empezar ahora
-        </a>
-        <a href="mailto:kevinfloresg1998@gmail.com" class="btn-ghost">
-          <i class="fa-solid fa-envelope"></i> Mandar un email
-        </a>
-      </div>
-      <p class="final-note">Sin compromiso. Primera consulta gratis.</p>
-    </div>
-  </section>
+  <!-- Botón subir -->
+  <a href="#top" class="fab-top" id="fab-top" aria-label="Volver arriba">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
 
-</main>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <span class="footer-logo">Confiweb</span>
-      <p>Páginas web para emprendedores y empresas pequeñas.</p>
-      <p class="footer-copy">© <span id="year"></span> Kevin Flores — SC, Brasil</p>
-    </div>
-    <nav class="footer-nav">
-      <strong>Servicios</strong>
-      <a href="#servicios">Landing Page</a>
-      <a href="#servicios">Landing + Productos</a>
-      <a href="#servicios">Ecommerce WhatsApp</a>
-      <a href="#precios">Mantenimiento</a>
-    </nav>
-    <nav class="footer-nav">
-      <strong>Info</strong>
-      <a href="#casos">Proyectos</a>
-      <a href="#faq">FAQ</a>
-      <a href="portfolio.html">Portfolio del dev</a>
-    </nav>
-    <div class="footer-contact">
-      <strong>Contacto</strong>
-      <a href="https://wa.me/54112394362" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-      <a href="mailto:kevinfloresg1998@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
-      <a href="https://www.linkedin.com/in/kevinfloresg/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-      <a href="https://github.com/kevinflores198" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-    </div>
-  </div>
-</footer>
-
-<a href="https://wa.me/54112394362?text=Hola%20Kevin!" target="_blank" class="fab" id="fab"><i class="fa-brands fa-whatsapp"></i><span>¿Hablamos?</span></a>
-<a href="#top" class="top" id="top"><i class="fa-solid fa-arrow-up"></i></a>
-
-<script src="confiweb.js"></script>
+  <script src="portfolio.js"></script>
 </body>
+
 </html>
