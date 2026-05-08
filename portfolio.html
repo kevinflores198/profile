@@ -1,531 +1,614 @@
 
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-
+<html lang="es" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Kevin Flores</title>
-    <link rel="stylesheet" href="/styles/portfolio.css">
-    <link rel="stylesheet" href="/styles/style.css">
-    <meta name="theme-color" content="#000000">
-    <meta name="author" content="Kevin Nicolas Flores Gonzalez">
-    <meta name="description" content="Portfolio de Kevin Flores, 
-    desarrollador web full stack. Proyectos reales, experiencia, 
-    estudios y tecnologías utilizadas.">
-    <link rel="icon" href="files/logo-no-back.png" type="image/x-icon">
-    <meta property="og:title" content="Kevin Flores | Developer">
-    <meta property="og:description"
-        content="Portfolio de Kevin Flores: desarrollador web full stack. HTML, CSS, JavaScript, Java y más.">
-    <meta property="og:image" content="https://kevinflores198.github.io/profile//files/avatar-og-content.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kevinflores198.github.io/profile/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:ital,wght@0,300;1,300&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
-    <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Flores | Developer</title>
+  <meta name="description" content="Portfolio de Kevin Flores, desarrollador web full stack.">
+  <meta name="author" content="Kevin Nicolas Flores Gonzalez">
+  <link rel="icon" href="files/logo-dark.png" type="image/x-icon">
+
+  <!-- OG -->
+  <meta property="og:title" content="Kevin Flores | Developer">
+  <meta property="og:description" content="Portfolio de Kevin Flores: desarrollador web full stack.">
+  <meta property="og:image" content="files/avatar-og-content.png">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+
+  <link rel="stylesheet" href="portfolio.css">
 </head>
-
 <body>
-    <header id="top">
-        <nav class="nav2">
-            <ul class="nav-links">
-                <li><a id="nav-link-1" href="portfolio.html"></a></li>
-                <li><a id="nav-link-3" href="index.html"></a></li>
-            </ul>
-        </nav>
-        <nav class="glass-navbar" aria-label="Main Navigation">
-            <div class="content" id="contentnav">
-                <div class="language-switch">
-                    <button class="lang-btn" onclick="toggleLanguageMenu()">
-                        <i class="fa-solid fa-earth-americas"></i><span id="current-lang">EN</span>
-                    </button>
-                    <ul id="lang-menu" class="lang-menu hidden">
-                        <li onclick="setLanguage('en'); updateLangButton('EN')"><span class="fi fi-us"></span> English
-                        </li>
-                        <li onclick="setLanguage('es'); updateLangButton('ES')"><span class="fi fi-ar"></span> Español
-                        </li>
-                        <li onclick="setLanguage('pt'); updateLangButton('PT')"><span class="fi fi-br"></span> Português
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-content">
-                    <ul class="nav-links">
-                        <li><a id="nav-about" href="#top"></a></li>
-                        <li><a id="nav-projects" href="#projects"></a></li>
-                        <li><a id="nav-studies" href="#studies"></a></li>
-                        <li><a id="nav-resume" href="#resume"></a></li>
-                        <li><a id="nav-references" href="#references"></a></li>
-                    </ul>
-                </div>
-                <button id="theme-toggle" class="theme-toggle" title="Switch theme" aria-label="Change theme"
-                    aria-pressed="false">
-                    🌙
-                </button>
+
+  <!--  NAVBAR -═ -->
+  <header id="top">
+    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+      <a class="nav-logo" href="#top">Kevin Flores</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><button class="nav-close" id="nav-close" aria-label="Cerrar menú">
+          <i class="fa-solid fa-xmark"></i>
+        </button></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-theme" id="btn-theme" aria-label="Cambiar tema">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="btn-lang" id="btn-lang" aria-label="Idioma">
+          <i class="fa-solid fa-earth-americas"></i>
+          <span id="lang-label">ES</span>
+          <i class="fa-solid fa-chevron-down fa-xs"></i>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button onclick="setLang('es')"><span class="fi fi-ar"></span> Español</button>
+          <button onclick="setLang('en')"><span class="fi fi-us"></span> English</button>
+          <button onclick="setLang('pt')"><span class="fi fi-br"></span> Português</button>
+        </div>
+        <button class="btn-burger" id="btn-burger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Backdrop para menú mobile -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <main>
+
+    <!--  HERO - -->
+    <section id="hero">
+      <video autoplay muted loop playsinline class="hero-video" id="video-dark">
+        <source src="files/hero-background-dark-portfolio.mp4" type="video/mp4">
+      </video>
+      <video autoplay muted loop playsinline class="hero-video hidden" id="video-light">
+        <source src="files/hero-background-light-portfolio.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-content">
+        <div class="hero-avatar">
+          <img src="files/avatar-kev.png" alt="Kevin Flores">
+        </div>
+        <div class="hero-text">
+          <p class="hero-tag">Hola, soy</p>
+          <h1 class="hero-name">Kevin Flores</h1>
+          <h2 class="hero-role"><span id="typewriter"></span><span class="cursor">|</span></h2>
+          <p class="hero-desc">Desarrollador web enfocado en crear sitios modernos y responsivos para empresas. Aplicando mis habilidades en proyectos reales mientras estudio desarrollo de software.</p>
+          <a href="#contacto" class="btn-primary">Contacto</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>scroll</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <!--  SOBRE MÍ - -->
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01</span>
+          <h2 class="section-title">Sobre mí</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Comencé a estudiar programación en 2022 y descubrí una pasión por crear sitios modernos y funcionales. Hoy combino mis habilidades técnicas con mi experiencia en servicio al cliente para entregar soluciones claras, limpias y profesionales.</p>
+            <p>Me enfoco en aprender continuamente y en ofrecer una excelente comunicación en cada proyecto.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">años programando</span>
             </div>
-            <div class="burger" id="button-burger"><i class="fa-solid fa-bars"></i></div>
-        </nav>
-    </header>
-    <main>
-        <section id="profile">
-            <video autoplay muted loop playsinline id="video-dark" class="bg-video" aria-hidden="true" alt="video hero">
-                <source src="/files/hero-background-dark-portfolio.mp4" type="video/mp4">
-            </video>
-
-            <video autoplay muted loop playsinline id="video-light" class="bg-video hidden" aria-hidden="true"
-                alt="video hero">
-                <source src="/files/hero-background-light-portfolio.mp4" type="video/mp4">
-            </video>
-
-            <div class="content">
-                <div class="photo">
-                    <img src="/files/avatar-kev.png" alt="profile picture">
-                </div>
-                <div class="text-content">
-                    <div class="name">
-                        <h1 id="profile-name-portfolio"></h1>
-                        <h1 id="typewriter"></h1>
-                    </div>
-                    <div class="about">
-                        <p id="profile-about-portfolio"></p>
-                    </div>
-                    <div class="glass-btn">
-                        <a href="" id="profile-contact"></a>
-                    </div>
-
-                </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">idiomas</span>
             </div>
-        </section>
-        <section id="about-me">
-            <div class="content">
-                <i class="fa-solid fa-circle-user"></i>
-                <h1 id="about-me-title"></h1>
-                <p id="about-me-desc"></p>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">ganas de aprender</span>
             </div>
-        </section>
-        <section id="projects" class="">
-            <div class="content">
-                <h2 id="projects-title"></h2>
-                <div class="cards fade-in">
-                    <figure class="card-project" id="card-cont1">
-                        <img src="/files/project-brutton.jpg" class="card-video" loading="lazy">
-                        <div class="card-content">
-                            <figcaption>
-                                <h3 id="project1-title"></h3>
-                                <p id="project1-exp">
-                                </p>
-                            </figcaption>
-                            <div class="button">
-                                <a class="glass-btn" id="project1-btn"></a>
-                            </div>
-                        </div>
-                    </figure>
-                    <figure class="card-project" id="card-cont2">
-                        <img src="/files/project-socialfashion.jpg" class="card-video" loading="lazy">
-                        <div class="card-content">
-                            <figcaption>
-                                <h3 id="project2-title"></h3>
-                                <p id="project2-exp"></p>
-                            </figcaption>
-                            <div class="button">
-                                <a class="glass-btn" id="project2-btn"></a>
-                            </div>
-                        </div>
-                    </figure>
-                    <figure class="card-project" id="card-cont3">
-                        <img src="/files/project-library.jpg" class="card-video" loading="lazy">
-                        <div class="card-content">
-                            <figcaption>
-                                <h3 id="project3-title"></h3>
-                                <p id="project3-exp"></p>
-                            </figcaption>
-                            <div class="button">
-                                <a class="glass-btn" id="project3-btn"></a>
-                            </div>
-                        </div>
-                    </figure>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                </div>
-                <div id="cardModal1" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <div class="description">
-                            <h2>Brutton Construtec</h2>
-                            <div class="tech-carousel">
-                                <div class="tech-track">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Netlify</span>
-                                    <span>Visual Studio</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Netlify</span>
-                                    <span>Visual Studio</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Netlify</span>
-                                    <span>Visual Studio</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Netlify</span>
-                                    <span>Visual Studio</span>
-                                </div>
-                            </div>
-                            <h3 id="modal-title"></h3>
-                            <h3 id="modal-title-1"></h3>
-                            <span class="fa-brands fa-square-js"></span>
-                            <span class="fa-brands fa-html5"></span>
-                            <span class="fa-brands fa-css"></span>
-                            <h3 id="modal-title-2"></h3>
-                            <p id="modal-p3"></p>
-                            <h3 id="modal-title-3"></h3>
-                            <p id="modal-p4"></p>
-                        </div>
-                        <div class="ver-mais">
-                            <a href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
-                                Visitar Projecto
-                            </a>
-                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
-                                Pedir presupuesto
-                            </a>
-                        </div>
-                    </div>
+    <!--  PROCESO (SCROLL SEQUENCE)  -->
+    <section id="proceso">
+      <div class="section-header container">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">Así trabajo</h2>
+      </div>
 
-                </div>
-                <div id="cardModal2" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <div class="description">
-                            <h2>Social Fashion</h2>
-                            <div class="tech-carousel">
-                                <div class="tech-track">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Spring Boot</span>
-                                    <span>MySQL</span>
-                                    <span>NetBeans</span>
-                                    <span>Visual Studio</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Spring Boot</span>
-                                    <span>MySQL</span>
-                                    <span>NetBeans</span>
-                                    <span>Visual Studio</span>
-                                </div>
-                            </div>
-                            <h3 id="modal2-title"></h3>
-                            <h3 id="modal2-title-1"></h3>
-                            <span class="fa-brands fa-square-js"></span>
-                            <span class="fa-solid fa-database"></span>
-                            <span class="fa-brands fa-java"></span>
-                            <span class="fa-brands fa-html5"></span>
-                            <span class="fa-brands fa-css"></span>
-                            <h3 id="modal2-title-2"></h3>
-                            <p id="modal2-p3"></p>
-                            <h3 id="modal2-title-3"></h3>
-                            <p id="modal2-p4"></p>
-                            <h3 id="modal2-title-4"></h3>
-                            <p id="modal2-p5"></p>
-                        </div>
-                        <div class="ver-mais">
-                            <a href="https://github.com/kevinflores198/proyectoFinalr" target="_blank"
-                                class="glass-btn">
-                                Visitar Projecto
-                            </a>
-                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
-                                Pedir presupuesto
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div id="cardModal3" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <div class="description">
-                            <h2>Biblioteca App</h2>
-                            <div class="tech-carousel">
-                                <div class="tech-track">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Spring Boot</span>
-                                    <span>MySQL</span>
-                                    <span>NetBeans</span>
-                                    <span>Visual Studio</span>
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                    <span>Spring Boot</span>
-                                    <span>MySQL</span>
-                                    <span>NetBeans</span>
-                                    <span>Visual Studio</span>
-                                </div>
-                            </div>
-                            <h3 id="modal3-title"></h3>
-                            <h3 id="modal3-title-1"></h3>
-                            <span class="fa-brands fa-square-js"></span>
-                            <span class="fa-solid fa-database"></span>
-                            <span class="fa-brands fa-java"></span>
-                            <span class="fa-brands fa-html5"></span>
-                            <span class="fa-brands fa-css"></span>
-                            <h3 id="modal3-title-2"></h3>
-                            <p id="modal3-p3"></p>
-                            <h3 id="modal3-title-3"></h3>
-                            <p id="modal3-p4"></p>
-                            <h3 id="modal3-title-4"></h3>
-                            <p id="modal3-p4"></p>
-                            <p id="modal3-p5"></p>
-                        </div>
-                        <div class="ver-mais">
-                            <a href="https://github.com/kevinflores198/Biblioteca" target="_blank" class="glass-btn">
-                                Visitar Projecto
-                            </a>
-                            <a href="https://wa.me/554888648031" target="_blank" class="glass-btn">
-                                Pedir presupuesto
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div id="portfolio-languages" class="service-budget">
-                    <h2 id="quote-title"></h2>
-                    <div class="content">
-                        <h3 id="quote-known"></h3>
-                        <div class="languages-track">
-                            <div class="languages-icons">
-                                <span class="fa-brands fa-java"></span>
-                                <span class="fa-brands fa-square-js"></span>
-                                <span class="fa-brands fa-html5"></span>
-                                <span class="fa-brands fa-css"></span>
-                                <span class="fa-solid fa-database"></span>
-                                <span class="fa-brands fa-react"></span>
-                                <span class="fa-brands fa-java"></span>
-                                <span class="fa-brands fa-square-js"></span>
-                                <span class="fa-brands fa-html5"></span>
-                                <span class="fa-brands fa-css"></span>
-                                <span class="fa-solid fa-database"></span>
-                                <span class="fa-brands fa-react"></span>
-                                <span class="fa-brands fa-java"></span>
-                                <span class="fa-brands fa-square-js"></span>
-                                <span class="fa-brands fa-html5"></span>
-                                <span class="fa-brands fa-css"></span>
-                                <span class="fa-solid fa-database"></span>
-                                <span class="fa-brands fa-react"></span>
-                                <span class="fa-brands fa-java"></span>
-                                <span class="fa-brands fa-square-js"></span>
-                                <span class="fa-brands fa-html5"></span>
-                                <span class="fa-brands fa-css"></span>
-                                <span class="fa-solid fa-database"></span>
-                                <span class="fa-brands fa-react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 id="resume-cta"></h3>
+      <div class="seq-outer" id="seq-outer">
+        <div class="seq-sticky">
 
-                    <div class="button">
-                        <button target="_blank" class="glass-btn" id="quote-btn">
-                            <a href="https://wa.me/554888648031"></a>
-                        </button>
-                    </div>
-                </div>
-        </section>
-        <section id="studies">
-            <div class="content">
-                <h2 id="studies-title"></h2>
+          <!-- Chapter dots -->
+          <div class="seq-dots" id="seq-dots">
+            <div class="seq-dot active" data-ch="0"></div>
+            <div class="seq-dot" data-ch="1"></div>
+            <div class="seq-dot" data-ch="2"></div>
+          </div>
 
-                <div class="cards">
-                    <article class="card-study">
-                        <div class="l">
-                            <a class="logo" target="_blank"
-                                href="https://www.byupathway.edu/bachelors-degree/software-development">
-                                <img class="logo-img" src="/files/logo-byu.png" alt="byu logo">
-                            </a>
-                        </div>
-                        <h3 id="study1-title"></h3>
-                        <p id="study1-desc"></p>
-                        <div class="degrees">
-                            <h2 id="study1-degree1"></h2>
-                            <p id="study1-degree1-desc"></p>
-                            <details>
-                                <summary>
-                                    Diploma
-                                </summary>
-                            </details>
-                        </div>
-                        <div class="degrees">
-                            <h2 id="study1-degree2"></h2>
-                            <p id="study1-degree2-desc"></p>
-                        </div>
-                        <details>
-                            <summary>
-
-                                Diploma
-                            </summary>
-                            <img class="img-pathway" src="/files/cert-pathway.png" alt="pathway">
-                        </details>
-                    </article>
-                    <article class="card-study">
-                        <div class="l">
-                            <a class="logo" target="_blank" href="https://egg.live/es/home">
-                                <img class="logo-img" src="files/logo-egg.png" alt="egg logo">
-                            </a>
-                        </div>
-                        <h3 id="study2-title"></h3>
-                        <p id="study2-desc"></p>
-                        <div class="degrees">
-                            <h2 id="study2-degree1"></h2>
-                            <p id="study2-degree1-desc"></p>
-                            <details>
-                                <summary>
-                                    Diploma
-                                </summary>
-                                <img class="img-egg" src="/files/cert-fullstack-egg.jpeg" alt="pathway">
-                            </details>
-                        </div>
-                        <div class="degrees">
-                            <h2 id="study2-degree2"></h2>
-                            <p id="study2-degree2-desc"></p>
-                            <details>
-                                <summary>
-                                    Diploma
-                                </summary>
-                                <img class="img" src="files/cert-pseudo-egg.png" alt="pathway">
-                            </details>
-                        </div>
-                    </article>
-                </div>
+          <!-- Left: chapters -->
+          <div class="seq-left">
+            <div class="seq-chapter visible" id="seq-ch0">
+              <span class="chapter-num">01 — concepto</span>
+              <h3>La idea inicial</h3>
+              <p>Todo empieza con una pregunta: ¿qué necesita el cliente? Escucho, analizo y entiendo el problema antes de escribir una sola línea de código.</p>
             </div>
-        </section>
-        <section id="resume">
-            <div class="content">
-                <h2 id="resume-title"></h2>
-                <ul>
-                    <div><i class="fa-solid fa-brain"></i>
-                        <li id="resume-li1"></li>
-                    </div>
-                    <div><i class="fa-solid fa-language"></i>
-                        <li id="resume-li2"></li>
-                    </div>
-                    <div><i class="fa-solid fa-plane"></i>
-                        <li id="resume-li3"></li>
-                    </div>
-                    <div><i class="fa-solid fa-user-tie"></i>
-                        <li id="resume-li4"></li>
-                    </div>
-                </ul>
-                <h3 id="resume-cta"></h3>
+            <div class="seq-chapter" id="seq-ch1">
+              <span class="chapter-num">02 — estructura</span>
+              <h3>Diseño y arquitectura</h3>
+              <p>Defino la estructura, el sistema de diseño y la arquitectura del proyecto. Cada decisión tiene una razón.</p>
             </div>
-            <div class="glass-btn">
-                <a href="" id="resume-contact"></a>
+            <div class="seq-chapter" id="seq-ch2">
+              <span class="chapter-num">03 — entrega</span>
+              <h3>Resultado final</h3>
+              <p>El producto terminado: limpio, responsivo y a tiempo. Con comunicación directa en cada etapa del camino.</p>
             </div>
-        </section>
-        <section id="references">
-            <div class="content">
-                <h2 id="references-title"></h2>
-                <p id="references-desc"></p>
-                <div class="comments">
-                    <article class="comment-card">
-                        <h4 id="comment1-name"></h4>
-                        <h5 id="comment1-biz"></h5>
-                        <p id="comment1-text"></p>
-                    </article>
-                    <article class="comment-card">
-                        <h4 id="comment2-name"></h4>
-                        <h5 id="comment2-biz"></h5>
-                        <p id="comment2-text"></p>
-                    </article>
-                    <!-- <article class="comment-card">
-                        <h4 id="comment3-name"></h4>
-                        <h5 id="comment3-biz"></h5>
-                        <p id="comment3-text"></p>
-                    </article>
-                    <article class="comment-card">
-                        <h4 id="comment4-name"></h4>
-                        <h5 id="comment4-biz"></h5>
-                        <p id="comment4-text"></p>
-                    </article> -->
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h1 id="contact-title"></h1>
-            <div class="content-contact-it">
-                <div class="contact-it">
-                    <div class="content">
-                        <img src="/files/avatar-lu.jpg" alt="manager photo">
-                        <a id="contact-manager-whatsapp" href="https://wa.me/554888645497" target="_blank"
-                            class="whatsapp-button">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a id="contact-manager-email" href="mailto:Lourdesmarianamachuca@gmail.com" target="_blank"
-                            class="whatsapp-button">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </div>
-                    <h2 id="contact-manager"></h2>
-                    <p id="contact-description"></p>
+          </div>
 
-
-                </div>
-                <div class="contact-it">
-                    <div class="content">
-                        <img src="/files/avatar-kev.png" alt="programmer photo">
-                        <a id="contact-programmer-whatsapp" href="https://wa.me/554888648031" target="_blank"
-                            class="whatsapp-button">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a id="contact-programming-email" href="mailto:kevinfloresg1998@gmail.com" target="_blank"
-                            class="whatsapp-button">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </div>
-                    <h2 id="contact-dev"></h2>
-                    <p id="contact-description-2"></p>
-                </div>
+          <!-- Right: canvas -->
+          <div class="seq-right">
+            <canvas id="seq-canvas" width="700" height="560"></canvas>
+            <div class="seq-progress-rail">
+              <div class="seq-progress-fill" id="seq-progress-fill"></div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <nav aria-label="Footer navigation">
-            <ul>
-                <li><a target="_blank" id="footer-linkedin" href="https://www.linkedin.com/in/kevinfloresg/"></a></li>
-                <li><a target="_blank" id="footer-github" href="https://github.com/kevinflores198"></a></li>
-                <li><a target="_blank" id="footer-instagram" href="https://www.instagram.com/kevo198_/"></a></li>
-                <li><a target="_blank" id="footer-facebook" href="https://www.facebook.com/kevinflores198"></a></li>
-            </ul>
-            <nav class="nav2">
-                <ul class="nav-links">
-                    <li><a href="portfolio.html">Perfil</a></li>
-                    <li><a href="index.html">Confiweb</a></li>
-                </ul>
-            </nav>
-            <ul>
-                <li><a id="footer-terms" href="#projects"></a></li>
-                <li><a id="footer-contact" target="_blank" href="https://wa.me/554888648031"></a></li>
-                <li><a id="footer-studies" href="#studies"></a></li>
-                <li><a id="footer-projects" href="#projects"></a></li>
-            </ul>
-        </nav>
-        <p>&copy; <span id="currentyear"></span> <span id="footer-copy"></span></p>
-    </footer>
+            <div class="seq-frame-counter" id="seq-frame-counter">F001 / 090</div>
+          </div>
 
-    <div class="arrowUp" id="arrowUp">
-        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--  PROYECTOS - -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03</span>
+          <h2 class="section-title">Proyectos</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Card 1 -->
+          <article class="project-card" id="open-modal1">
+            <div class="project-img">
+              <img src="files/project-brutton.jpg" alt="Brutton Construtec" loading="lazy">
+              <div class="project-overlay">
+                <span>Ver detalle <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <h3>Brutton Construtec</h3>
+              <p>Landing page de empresa constructora. Responsiva, moderna y optimizada para SEO.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card" id="open-modal2">
+            <div class="project-img">
+              <img src="files/project-socialfashion.jpg" alt="Social Fashion" loading="lazy">
+              <div class="project-overlay">
+                <span>Ver detalle <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>Java</span><span>Spring Boot</span><span>MySQL</span>
+              </div>
+              <h3>Social Fashion</h3>
+              <p>Red social para diseñadores de moda con login seguro y múltiples perfiles.</p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card" id="open-modal3">
+            <div class="project-img">
+              <img src="files/project-library.jpg" alt="Biblioteca App" loading="lazy">
+              <div class="project-overlay">
+                <span>Ver detalle <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>Java</span><span>Spring Boot</span><span>MySQL</span>
+              </div>
+              <h3>Biblioteca App</h3>
+              <p>Aplicación para gestión de libros y usuarios con login integrado.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Tech strip -->
+        <div class="tech-strip">
+          <p class="tech-strip-label">Tecnologías que uso</p>
+          <div class="tech-track-wrap">
+        <!-- 4 sets para garantizar que llene cualquier viewport -->
+            <div class="tech-track">
+              <i class="fa-brands fa-java" title="Java"></i>
+              <i class="fa-brands fa-square-js" title="JavaScript"></i>
+              <i class="fa-brands fa-html5" title="HTML5"></i>
+              <i class="fa-brands fa-css" title="CSS3"></i>
+              <i class="fa-solid fa-database" title="SQL"></i>
+              <i class="fa-brands fa-react" title="React"></i>
+              <i class="fa-brands fa-git-alt" title="Git"></i>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-git-alt"></i>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-git-alt"></i>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--  MODALES - -->
+    <div class="modal-overlay" id="modal1">
+      <div class="modal-box">
+        <button class="modal-close" data-close="modal1"><i class="fa-solid fa-xmark"></i></button>
+        <h2>Brutton Construtec</h2>
+        <div class="modal-tech-carousel">
+          <div class="modal-tech-track">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span><span>VS Code</span>
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span><span>VS Code</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-circle-info"></i> Descripción</h4>
+          <p>Landing page para empresa de construcción. Responsiva, moderna y optimizada para SEO.</p>
+        </div>
+        <div class="modal-icons">
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css"></i>
+          <i class="fa-brands fa-square-js"></i>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-hammer"></i> Lo que hice</h4>
+          <p>Estructura, diseño UI, desarrollo front-end, optimización SEO y despliegue en Netlify.</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-graduation-cap"></i> Qué aprendí</h4>
+          <p>Mejores prácticas de desarrollo web, diseño responsivo, SEO y comunicación con clientes reales.</p>
+        </div>
+        <div class="modal-actions">
+          <a href="https://bruttonconstrutec.com.br" target="_blank" class="btn-primary">Visitar proyecto</a>
+          <a href="https://wa.me/54112394362" target="_blank" class="btn-secondary">Pedir presupuesto</a>
+        </div>
+      </div>
     </div>
 
-    <div class="contactMe" id="contactMe">
-        <a target="_blank" href="https://wa.me/554888648031"><i class="fa-brands fa-whatsapp"></i></a>
+    <div class="modal-overlay" id="modal2">
+      <div class="modal-box">
+        <button class="modal-close" data-close="modal2"><i class="fa-solid fa-xmark"></i></button>
+        <h2>Social Fashion</h2>
+        <div class="modal-tech-carousel">
+          <div class="modal-tech-track">
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-circle-info"></i> Descripción</h4>
+          <p>Red social para diseñadores de moda con sistema de autenticación seguro y perfiles personalizados.</p>
+        </div>
+        <div class="modal-icons">
+          <i class="fa-brands fa-java"></i>
+          <i class="fa-solid fa-database"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-square-js"></i>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-hammer"></i> Lo que hice</h4>
+          <p>Arquitectura del proyecto, UI, desarrollo front-end y back-end, conexión con base de datos MySQL y despliegue.</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-graduation-cap"></i> Qué aprendí</h4>
+          <p>Desarrollo full stack con Java y Spring Boot, autenticación, CRUD completo y lógica de perfiles múltiples.</p>
+        </div>
+        <div class="modal-section modal-warning">
+          <h4><i class="fa-solid fa-triangle-exclamation"></i> Estado: En actualización</h4>
+          <p>Proyecto desarrollado en una versión anterior de Spring Boot. Actualmente lo estoy actualizando. El código completo está en GitHub.</p>
+        </div>
+        <div class="modal-actions">
+          <a href="https://github.com/kevinflores198/proyectoFinalr" target="_blank" class="btn-primary">Ver en GitHub</a>
+          <a href="https://wa.me/54112394362" target="_blank" class="btn-secondary">Pedir presupuesto</a>
+        </div>
+      </div>
     </div>
-    <script src="/scripts/script.js"></script>
-    <script src="/scripts/content-portfolio.js"></script>
+
+    <div class="modal-overlay" id="modal3">
+      <div class="modal-box">
+        <button class="modal-close" data-close="modal3"><i class="fa-solid fa-xmark"></i></button>
+        <h2>Biblioteca App</h2>
+        <div class="modal-tech-carousel">
+          <div class="modal-tech-track">
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-circle-info"></i> Descripción</h4>
+          <p>Aplicación de biblioteca con gestión de libros y usuarios en MySQL. Login integrado para múltiples usuarios.</p>
+        </div>
+        <div class="modal-icons">
+          <i class="fa-brands fa-java"></i>
+          <i class="fa-solid fa-database"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-square-js"></i>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-hammer"></i> Lo que hice</h4>
+          <p>Arquitectura del proyecto, UI, desarrollo full stack, integración con MySQL y despliegue.</p>
+        </div>
+        <div class="modal-section">
+          <h4><i class="fa-solid fa-graduation-cap"></i> Qué aprendí</h4>
+          <p>Consultas SQL avanzadas, gestión de múltiples usuarios y autenticación con control de acceso.</p>
+        </div>
+        <div class="modal-section modal-warning">
+          <h4><i class="fa-solid fa-triangle-exclamation"></i> Estado: En actualización</h4>
+          <p>Necesita ajustes de dependencias para versiones modernas de Spring Boot. Código disponible en GitHub.</p>
+        </div>
+        <div class="modal-actions">
+          <a href="https://github.com/kevinflores198/Biblioteca" target="_blank" class="btn-primary">Ver en GitHub</a>
+          <a href="https://wa.me/54112394362" target="_blank" class="btn-secondary">Pedir presupuesto</a>
+        </div>
+      </div>
+    </div>
+
+    <!--  EDUCACIÓN - -->
+    <section id="educacion" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04</span>
+          <h2 class="section-title">Educación</h2>
+        </div>
+
+        <div class="edu-grid">
+
+          <article class="edu-card">
+            <div class="edu-logo">
+              <a href="https://www.byupathway.edu/bachelors-degree/software-development" target="_blank">
+                <img src="files/logo-byu.png" alt="BYU Pathway">
+              </a>
+            </div>
+            <div class="edu-content">
+              <h3>Brigham Young University</h3>
+              <p class="edu-desc">Programa universitario online en inglés, trabajando con grupos diversos de estudiantes y mentores de EE.UU.</p>
+              <div class="edu-degree">
+                <h4>Desarrollo de Software</h4>
+                <p>Programación, bases de datos, ingeniería de software y diseño de sistemas.</p>
+              </div>
+              <div class="edu-degree">
+                <h4>Pathway Worldwide</h4>
+                <p>Programa preparatorio universitario en inglés, matemáticas y habilidades profesionales.</p>
+                <details class="diploma-details">
+                  <summary>Ver diploma</summary>
+                  <img src="files/cert-pathway.png" alt="Diploma Pathway" loading="lazy">
+                </details>
+              </div>
+            </div>
+          </article>
+
+          <article class="edu-card">
+            <div class="edu-logo">
+              <a href="https://egg.live/es/home" target="_blank">
+                <img src="files/logo-egg.png" alt="Egg Academy">
+              </a>
+            </div>
+            <div class="edu-content">
+              <h3>Academia Egg</h3>
+              <p class="edu-desc">Academia de programación enfocada en aprendizaje colaborativo y trabajo en equipo.</p>
+              <div class="edu-degree">
+                <h4>Desarrollador Full Stack</h4>
+                <p>Formación en desarrollo front-end y back-end con prácticas ágiles.</p>
+                <details class="diploma-details">
+                  <summary>Ver diploma</summary>
+                  <img src="files/cert-fullstack-egg.jpeg" alt="Diploma Full Stack" loading="lazy">
+                </details>
+              </div>
+              <div class="edu-degree">
+                <h4>Pseudocódigo</h4>
+                <p>Fundamentos de lógica de programación y diseño de algoritmos.</p>
+                <details class="diploma-details">
+                  <summary>Ver diploma</summary>
+                  <img src="files/cert-pseudo-egg.png" alt="Diploma Pseudocódigo" loading="lazy">
+                </details>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!--  ¿POR QUÉ YO? -═ -->
+    <section id="por-que" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05</span>
+          <h2 class="section-title">¿Por qué trabajar conmigo?</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-item">
+            <i class="fa-solid fa-brain"></i>
+            <p>3+ años aprendiendo y construyendo proyectos de desarrollo web reales.</p>
+          </div>
+          <div class="why-item">
+            <i class="fa-solid fa-language"></i>
+            <p>Fluido en español, portugués e inglés — comunicación sin barreras.</p>
+          </div>
+          <div class="why-item">
+            <i class="fa-solid fa-plane"></i>
+            <p>Experiencia internacional con clientes de EE.UU., Brasil y otros países.</p>
+          </div>
+          <div class="why-item">
+            <i class="fa-solid fa-user-tie"></i>
+            <p>Comunicación profesional y confiable en cada etapa del proyecto.</p>
+          </div>
+        </div>
+        <p class="why-cta-text">Durante 3 años he estado practicando y aplicando estas habilidades en proyectos reales. ¡No dudes en contactarme!</p>
+        <a href="#contacto" class="btn-primary">Contacto</a>
+      </div>
+    </section>
+
+    <!--  TESTIMONIOS - -->
+    <section id="testimonios" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">06</span>
+          <h2 class="section-title">Testimonios</h2>
+          <p class="section-subtitle">Lo que dicen quienes trabajaron conmigo.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card">
+            <p>"...El resultado final superó nuestras expectativas, reflejando profesionalismo, dedicación y calidad en cada detalle. Estamos muy satisfechos de contar con tu colaboración."</p>
+            <footer>
+              <strong>Everton Silva</strong>
+              <span>Socio administrador — Brutton Construtec</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p>"Excelente comunicación y sitio de alta calidad. Volví a trabajar con él para otros proyectos juntos."</p>
+            <footer>
+              <strong>Lourdes Machuca</strong>
+              <span>Compañera BYU & socia en proyectos freelance</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>"Gracias a el trabajo realizado por Kevin, logramos tener un sitio web que refleja nuestra marca y nos permite conectar mejor con nuestros clientes, la carga de productos es muy facil y rapida de manejar."</p>
+            <footer>
+              <strong>Melisa Cortez</strong>
+              <span>Emprendedora de Emme indumentaria</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <p>"Pude tener mi primer website gracias a Kevin, ahora puedo mostrar mis productos de una manera mas profesional y no solamente por instagram."</p>
+            <footer>
+              <strong>Daniela Anahi</strong>
+              <span>Emprendedora de Lazo Carteras.</span>
+            </footer>
+          </blockquote>
+        </div>
+
+      </div>
+    </section>
+
+    <!--  CONTACTO -═ -->
+    <section id="contacto" class="section section-contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">07</span>
+          <h2 class="section-title">¡Espero tu mensaje!</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <img src="files/avatar-lu.jpg" alt="Lourdes Machuca">
+            <h3>Lourdes Machuca</h3>
+            <p class="contact-role">Project Assistant</p>
+            <p>Apoyo en organización y coordinación de proyectos, comunicación con clientes y gestión de tareas.</p>
+            <div class="contact-btns">
+              <a href="https://wa.me/54112394362" target="_blank" class="btn-icon" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="mailto:Lourdesmarianamachuca@gmail.com" target="_blank" class="btn-icon" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <img src="files/avatar-kev.png" alt="Kevin Flores">
+            <h3>Kevin Flores</h3>
+            <p class="contact-role">Desarrollador Full Stack</p>
+            <p>Desarrollo front-end y back-end, sitios modernos, responsivos y bien estructurados.</p>
+            <div class="contact-btns">
+              <a href="https://wa.me/54112394362" target="_blank" class="btn-icon" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="mailto:kevinfloresg1998@gmail.com" target="_blank" class="btn-icon" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--  FOOTER -═ -->
+  <footer>
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <span class="footer-logo">Kevin Flores</span>
+        <p>&copy; <span id="footer-year"></span> Kevin Flores — BS AS, Argentina</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#educacion">Educación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/kevinfloresg/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/kevinflores198" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/kevo198_/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp flotante -->
+  <a href="https://wa.me/54112394362" target="_blank" class="fab-whatsapp" id="fab-whatsapp" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Botón subir -->
+  <a href="#top" class="fab-top" id="fab-top" aria-label="Volver arriba">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <script src="portfolio.js"></script>
 </body>
-
 </html>

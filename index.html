@@ -1,1236 +1,494 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-
+<html lang="es" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confiweb</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/confiweb.css">
-    <link rel="icon" href="files/logo-no-back.png" type="image/x-icon">
-    <meta name="theme-color" content="#000000">
-    <meta name="author" content="Kevin Nicolas Flores Gonzalez">
-    <meta name="description" content="Confiweb es un estudio de diseño y desarrollo 
-        web especializado en crear páginas modernas, rápidas y 
-        responsivas para empresas. Ofrecemos landing pages, 
-        sitios profesionales, mantenimiento y optimización 
-        SEO para aumentar la presencia digital de tu negocio.">
-    <meta property="og:title" content="Confiweb design & development">
-    <meta property="og:description"
-        content="Confiweb es un estudio de diseño y desarrollo 
-        web especializado en crear páginas modernas, rápidas y 
-        responsivas para empresas. Ofrecemos landing pages, 
-        sitios profesionales, mantenimiento y optimización 
-        SEO para aumentar la presencia digital de tu negocio.">
-    <meta property="og:image" content="https://kevinflores198.github.io/profile//files/logo-og-confiweb.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kevinflores198.github.io/profile/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:ital,wght@0,300;1,300&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
-    <script src="https://kit.fontawesome.com/92dadc1c6f.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confiweb | Páginas web para tu negocio</title>
+  <meta name="description" content="Landing pages & ecommerce con WhatsApp para emprendedores. Modernos, rápidos y enfocados en conseguirte más clientes.">
+  <link rel="icon" href="files/logo-dark.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+  <link rel="stylesheet" href="confiweb.css">
 </head>
-
 <body>
-    <header id="top">
-        <nav class="glass-navbar navbar-confiweb" aria-label="Main Navigation">
-            <div class="content" id="contentnav">
-                <div class="language-switch">
-                    <button class="lang-btn" onclick="toggleLanguageMenu()">
-                        <i class="fa-solid fa-earth-americas"></i><span id="current-lang">EN</span>
-                    </button>
-                    <ul id="lang-menu" class="lang-menu hidden">
-                        <li onclick="setLanguage('en'); updateLangButton('EN')"><span class="fi fi-us"></span> English
-                        </li>
-                        <li onclick="setLanguage('es'); updateLangButton('ES')"><span class="fi fi-ar"></span> Español
-                        </li>
-                        <li onclick="setLanguage('pt'); updateLangButton('PT')"><span class="fi fi-br"></span> Português
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-content">
-                    <ul class="nav-links">
-                        <li><a id="nav-about-bs" href="#top"></a></li>
-                        <li><a id="nav-about-bs" href="index.html">Portfolio</a></li>
-                        <li><a id="nav-projects-bs" href="#services"></a></li>
-                        <li><a id="nav-cases-bs" href="#cases1"></a></li>
-                        <li><a id="nav-cta-bs" href="#cta"></a></li>
-                    </ul>
-                </div>
-                <button id="theme-toggle" class="theme-toggle" title="Switch theme" aria-label="Change theme"
-                    aria-pressed="false">
-                    🌙
-                </button>
-            </div>
-            <div class="burger" id="button-burger"><i class="fa-solid fa-bars"></i></div>
-        </nav>
-    </header>
-    <main>
-        <video autoplay muted loop playsinline id="video-dark" class="bg-video" aria-hidden="true" alt="video hero">
-            <source src="files/hero-background-confiweb.mp4" type="video/mp4">
-        </video>
-        <video autoplay muted loop playsinline id="video-light" class="bg-video hidden" aria-hidden="true"
-            alt="video hero">
-            <source src="files/hero-background-light-confiweb.mp4" type="video/mp4">
-        </video>
-        <section id="profile" class="empresa-hero">
-            <div class="hero-content">
-                <h1 id="hero-title" data-aos="zoom-in"></h1>
-                <p id="hero-parr" data-aos="zoom-in"></p>
-                <button data-aos="zoom-in" class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb]
-                                hover:text-white group">
-                    <span class="relative z-10">
-                        <a id="hero-btn"
-                            href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
-                            target="_blank">
-                        </a>
-                    </span>
 
-                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
-                </button>
-            </div>
-        </section>
-        <section id="about">
-            <div class="block"></div>
-            <h2 class="title mb-4 text-3xl font-bold md:text-5xl lg:text-6xl">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#eca76b] to-[#5aade8]">
-                    Confiweb Studio
-                </span>
-                <a id="about-title" href=""></a>
-            </h2>
-            <p id="about-parr" class="parr text-lg font-normal text-body lg:text-xl"></p>
-
-            <div class="button-class">
-                <button class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb]
-                                hover:text-white group">
-                    <span class="relative z-10">
-                        <a id="about-btn"
-                            href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
-                            target="_blank">
-                        </a>
-                    </span>
-                    <span
-                        class="absolute inset-0 rounded-lg bg-neutral-900 group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
-                </button>
-            </div>
-
-            <div data-aos="zoom-in" class="me bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb] relative w-5/6 p-6 border border-default rounded-base shadow-xs
-                md:max-w-800 lg:w-4/6 mx-auto mt-12 mb-16">
-                <button id="dropdownButton" data-dropdown-toggle="dropdown"
-                    class="absolute top-2 end-2 text-body hover:text-heading bg-neutral-primary-soft box-border border border-transparent hover:bg-neutral-tertiary focus:ring-4 focus:ring-neutral-tertiary rounded-base p-1.5 focus:outline-none"
-                    type="button">
-                    <span class="sr-only">Open dropdown</span>
-                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-width="3"
-                            d="M6 12h.01m6 0h.01m5.99 0h.01" />
-                    </svg>
-                </button>
-                <!-- Dropdown menu -->
-                <div id="dropdown" class="z-10 border border-default-medium rounded-base shadow-lg w-36 hidden">
-                    <ul class="hover:[--primary-confiweb] bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb] rounded-lg  p-2 text-sm text-body font-medium"
-                        aria-labelledby="dropdownButton">
-                        <li>
-                            <a id="drop-1" href="#cases1"
-                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded-md"></a>
-                        </li>
-                        <li>
-                            <a id="drop-2" href="#cases2"
-                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded-md">
-                            </a>
-                        </li>
-                        <li>
-                            <a id="drop-3" target="_blank" href="index.html"
-                                class="inline-flex items-center w-full p-2 text-fg-danger hover:bg-neutral-tertiary-medium rounded-md"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex flex-col md:flex-row items-center">
-                    <img class="mb-6 rounded-full" src="files/avatar-kev.png" alt="Kevin image" />
-                    <div>
-                        <h3 id="card-name" class="mb-0.5 text-xl font-semibold tracking-tight text-heading"></h3>
-                        <p id="card-parr" class="text-sm text-body">
-                        </p>
-                        <a id="carr-desc-1" class="textt"><i class="fa-regular fa-calendar"></i></a>
-                        <br>
-                        <a id="carr-desc-2" class="textt"><i class="fa-solid fa-address-book"></i></a>
-                        <div class="flex mt-4 md:mt-6 gap-4">
-                            <button class="but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[--primary-confiweb] to-[--secondary-confiweb]
-                                hover:text-white group">
-                                <span class="relative z-10">
-                                    <a id="card-btn"
-                                        href="https://wa.me/554888648031?text=Olá%20Kevin!%20Estou%20pensando%20em%20fazer%20um%20site%20web.%20Você%20poderia%20me%20ajudar?"
-                                        target="_blank">
-                                    </a>
-                                </span>
-                                <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            </div>
-        </section>
-        <section id="services">
-            <div class="block"></div>
-            <h2 id="service-title"></h2>
-            <p id="service-parr"></p>
-            <div class="cards">
-                <article data-aos="fade-up" class="service-card card1"><i class="fa-solid fa-code"></i>
-                    <h2 id="service-card-title"></h2>
-                    <p id="service-card-parr"></p>
-                </article>
-                <article data-aos="fade-up" class="service-card card2"><i class="fa-solid fa-mobile"></i>
-                    <h2 id="service-card-title-2"></h2>
-                    <p id="service-card-parr-2"></p>
-                </article>
-                <article data-aos="fade-up" class="service-card card3"><i class="fa-solid fa-palette"></i>
-                    <h2 id="service-card-title-3"></h2>
-                    <p id="service-card-parr-3"></p>
-                </article>
-                <article data-aos="fade-up" class="service-card card4"><i class="fa-solid fa-database"></i>
-                    <h2 id="service-card-title-4"></h2>
-                    <p id="service-card-parr-4"></p>
-                </article>
-            </div>
-        </section>
-        <section id="benefits" class="benefits">
-            <div class="benefits-overlay"></div>
-            <div class="block"></div>
-            <div class="benefits-content">
-                <h2 id="benefits-title"></h2>
-                <p id="benefits-parr" class="benefits-lead"></p>
-                <div class="benefits-grid">
-                    <div class="benefit" data-aos="fade-up">
-                        <img src="/files/solution.webp" alt="Solución">
-                        <div class="benefit-container">
-                            <i class="fa-solid fa-bullseye left"></i>
-                            <h3 id="benefit-card-title" class="left"></h3>
-                            <p id="benefit-card-parr" class="left"></p>
-                        </div>
-                    </div>
-
-                    <div class="benefit benefit-medium" data-aos="fade-up">
-                        <div class="benefit-container">
-                            <i class="fa-solid fa-mobile-screen medium"></i>
-                            <h3 id="benefit-card-title-2" class="medium"></h3>
-                            <p id="benefit-card-parr-2" class="medium"></p>
-                        </div>
-                        <img src="/files/solution-2.webp" alt="Mobile">
-                    </div>
-
-                    <div class="benefit" data-aos="fade-up">
-                        <img src="/files/solution-3.webp" alt="Solución">
-                        <div class="benefit-container">
-                            <i class="fa-solid fa-check left"></i>
-                            <h3 id="benefit-card-title-3" class="left"></h3>
-                            <p id="benefit-card-parr-3" class="left"></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="button-class cta-button">
-                <h3 id="benefit-cta-title"></h3>
-                <button data-aos="zoom-in" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                            border border-transparent transition-all duration-300 
-                            bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                            hover:text-white group">
-                    <a id="benefit-cta-btn" target="_blank"
-                        href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
-                        class="bottons relative z-10 w-full text-center">
-                    </a>
-                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300">
-                    </span>
-                </button>
-            </div>
-        </section>
-        <section id="cases1">
-            <div class="block"></div>
-            <h2 id="cases1-title">Casos de éxito</h2>
-            <p id="cases1-parr">Algunos clientes de Confiweb que hemos tenido este año</p>
-        </section>
-        <section id="projects" class="">
-            <div class="content">
-                <div class="cards-menu fade-in">
-                    <figure class="card-project" id="card-cont1" data-aos="flip-right" data-aos-duration="1200"
-                        data-aos-easing="ease-in-out">
-                        <img src="/files/project-brutton.webp" class="card-video" loading="lazy" alt="brutton">
-                        <div class="card-content">
-                            <figcaption>
-                                <h3 id="project1-title"></h3>
-                                <p id="project1-exp">
-                                </p>
-                            </figcaption>
-                            <button data-modal-target="static-modal" data-modal-toggle="static-modal" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                                hover:text-white group"><span id="project1-btn" class="relative z-10"></span>
-                                <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
-                            </button>
-                        </div>
-                    </figure>
-                    <figure class="card-project" id="card-cont4" data-aos="flip-right" data-aos-duration="1200"
-                        data-aos-easing="ease-in-out">
-                        <img src="/files/project-lazo.webp" class="card-video" loading="lazy" alt="lazo">
-                        <div class="card-content">
-                            <figcaption>
-                                <h3 id="project4-title"></h3>
-                                <p id="project4-exp"></p>
-                            </figcaption>
-                            <button data-modal-target="static-modal4" data-modal-toggle="static-modal4" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                                hover:text-white group"><span id="project4-btn" class="relative z-10"></span>
-                                <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
-                            </button>
-                        </div>
-                    </figure>
-                    <figure class="card-project" id="card-cont2" data-aos="flip-right" data-aos-duration="1200"
-                        data-aos-easing="ease-in-out">
-                        <img src="/files/project-socialfashion.webp" class="card-video" loading="lazy">
-                        <div class="card-content">
-                            <figcaption>
-                                <h3 id="project2-title"></h3>
-                                <p id="project2-exp"></p>
-                            </figcaption>
-                            <button data-modal-target="static-modal2" data-modal-toggle="static-modal2" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                                hover:text-white group"><span id="project2-btn" class="relative z-10"></span>
-                                <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
-                            </button>
-                        </div>
-                    </figure>
-                    <!-- <figure class="card-project" id="card-cont3" data-aos="flip-right">
-                        <img src="/files/project-library.jpg" class="card-video" loading="lazy" alt="library">
-                        <div class="card-content">
-                            <figcaption>
-                                <h3 id="project3-title"></h3>
-                                <p id="project3-exp"></p>
-                            </figcaption>
-                            <button data-modal-target="static-modal3" data-modal-toggle="static-modal3" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                                hover:text-white group"><span id="project3-btn" class="relative z-10"></span>
-                                <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300"></span>
-                            </button>
-                        </div>
-                    </figure> -->
-
-                </div>
-                <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
-                    class="hidden fixed  inset-0 z-50 flex justify-center items-center w-full h-full overflow-y-auto">
-                    <div class="modal-back relative p-4 w-full max-w-2xl">
-                        <div class=" relative border-default rounded-base shadow-sm p-4 md:p-6">
-                            <!-- Header -->
-                            <div class="flex items-center justify-between  border-default pb-4 md:pb-5">
-                                <h3 class="text-lg font-medium text-heading">
-                                    Brutton Construtec
-                                </h3>
-                                <button data-modal-hide="static-modal" type="button"
-                                    class="text-body hover:bg-neutral-tertiary rounded-base text-sm w-9 h-9 inline-flex justify-center items-center">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18 18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <!-- Body -->
-                            <div class="py-4 md:py-6 space-y-4 text-body">
-                                <div class="description">
-                                    <div class="tech-carousel">
-                                        <div class="tech-track">
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4 id="modal-title"></h4>
-                                <h5 id="modal-title-1"></h5>
-                                <span class="fa-brands fa-square-js"></span>
-                                <span class="fa-brands fa-html5"></span>
-                                <span class="fa-brands fa-css"></span>
-                                <h3 id="modal-title-2"></h3>
-                                <p id="modal-p3"></p>
-                                <h3 id="modal-title-3"></h3>
-                                <p id="modal-p4"></p>
-                            </div>
-
-                            <!-- Footer -->
-                            <div class="flex justify-between space-x-4 border-t border-default pt-4">
-                                <button data-modal-hide="static-modal"
-                                    class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a id="modal-btn1" href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
-                                        
-                                    </a>
-                                </button>
-                                <button data-modal-hide="static-modal"
-                                    class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a id="modal-btn1-2" href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
-                                        target="_blank" class="glass-btn">
-                                    </a>
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div id="static-modal2" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
-                    class="hidden fixed  inset-0 z-50 flex justify-center items-center w-full h-full overflow-y-auto">
-                    <div class="modal-back relative p-4 w-full max-w-2xl">
-                        <div class=" relative border-default rounded-base shadow-sm p-4 md:p-6">
-                            <!-- Header -->
-                            <div class="flex items-center justify-between  border-default pb-4 md:pb-5">
-                                <h3 class="text-lg font-medium text-heading">
-                                    Social Fashion
-                                </h3>
-                                <button data-modal-hide="static-modal2" type="button"
-                                    class="text-body hover:bg-neutral-tertiary rounded-base text-sm w-9 h-9 inline-flex justify-center items-center">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18 18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <!-- Body -->
-                            <div class="py-4 md:py-6 space-y-4 text-body">
-                                <div class="description">
-                                    <div class="tech-carousel">
-                                        <div class="tech-track">
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4 id="modal2-title"></h4>
-                                <h5 id="modal2-title-1"></h5>
-                                <span class="fa-brands fa-square-js"></span>
-                                <span class="fa-solid fa-database"></span>
-                                <span class="fa-brands fa-java"></span>
-                                <span class="fa-brands fa-html5"></span>
-                                <span class="fa-brands fa-css"></span>
-                                <h3 id="modal2-title-2"></h3>
-                                <p id="modal2-p3"></p>
-                                <h3 id="modal2-title-3"></h3>
-                                <p id="modal2-p4"></p>
-                            </div>
-                            <!-- Footer -->
-                            <div class="flex justify-between space-x-4 border-t border-default pt-4">
-                                <button data-modal-hide="static-modal"
-                                    class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a id="modal-btn2" href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
-                                    </a>
-                                </button>
-                                <button data-modal-hide="static-modal"
-                                    class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a id="modal-btn2-2" href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
-                                        target="_blank" class="glass-btn">
-                                    </a>
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div id="static-modal3" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
-                    class="hidden fixed  inset-0 z-50 flex justify-center items-center w-full h-full overflow-y-auto">
-                    <div class="modal-back relative p-4 w-full max-w-2xl">
-                        <div class=" relative border-default rounded-base shadow-sm p-4 md:p-6">
-                            <!-- Header -->
-                            <div class="flex items-center justify-between  border-default pb-4 md:pb-5">
-                                <h3 class="text-lg font-medium text-heading">
-                                    Library
-                                </h3>
-                                <button data-modal-hide="static-modal3" type="button"
-                                    class="text-body hover:bg-neutral-tertiary rounded-base text-sm w-9 h-9 inline-flex justify-center items-center">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18 18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <!-- Body -->
-                            <div class="py-4 md:py-6 space-y-4 text-body">
-                                <div class="description">
-                                    <div class="tech-carousel">
-                                        <div class="tech-track">
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Netlify</span>
-                                            <span>Visual Studio</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4 id="modal3-title"></h4>
-                                <h5 id="modal3-title-1"></h5>
-                                <span class="fa-brands fa-square-js"></span>
-                                <span class="fa-solid fa-database"></span>
-                                <span class="fa-brands fa-java"></span>
-                                <span class="fa-brands fa-html5"></span>
-                                <span class="fa-brands fa-css"></span>
-                                <h3 id="modal3-title-2"></h3>
-                                <p id="modal3-p3"></p>
-                                <h3 id="modal3-title-3"></h3>
-                                <p id="modal3-p4"></p>
-                            </div>
-
-                            <!-- Footer -->
-                            <div class="flex justify-between space-x-4 border-t border-default pt-4">
-                                <button data-modal-hide="static-modal"
-                                    class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a id="modal-btn3" href="https://bruttonconstrutec.com.br" target="_blank" class="glass-btn">
-                                        
-                                    </a>
-                                </button>
-
-                                <button data-modal-hide="static-modal"
-                                    class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a id="modal-btn3-2" href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
-                                        target="_blank" class="glass-btn">
-                                        
-                                    </a>
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div id="static-modal4" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
-                    class="hidden fixed  inset-0 z-50 flex justify-center items-center w-full h-full overflow-y-auto">
-                    <div class="modal-back relative p-4 w-full max-w-2xl">
-                        <div class=" relative border-default rounded-base shadow-sm p-4 md:p-6">
-                            <!-- Header -->
-                            <div class="flex items-center justify-between  border-default pb-4 md:pb-5">
-                                <h3 class="text-lg font-medium text-heading">
-                                    Lazo
-                                </h3>
-                                <button data-modal-hide="static-modal4" type="button"
-                                    class="text-body hover:bg-neutral-tertiary rounded-base text-sm w-9 h-9 inline-flex justify-center items-center">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18 18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <!-- Body -->
-                            <div class="py-4 md:py-6 space-y-4 text-body">
-                                <div class="description">
-                                    <div class="tech-carousel">
-                                        <div class="tech-track">
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Visual Studio</span>
-                                            <span>Figma</span>
-                                            <span>Tailwind</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Visual Studio</span>
-                                            <span>Figma</span>
-                                            <span>Tailwind</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Visual Studio</span>
-                                            <span>Figma</span>
-                                            <span>Tailwind</span>
-                                            <span>HTML</span>
-                                            <span>CSS</span>
-                                            <span>JavaScript</span>
-                                            <span>Visual Studio</span>
-                                            <span>Figma</span>
-                                            <span>Tailwind</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4 id="modal4-title"></h4>
-                                <h5 id="modal4-title-1"></h5>
-                                <i class="fa-brands fa-figma"></i>
-                                <span class="fa-brands fa-html5"></span>
-                                <span class="fa-brands fa-css"></span>
-                                <span class="fa-brands fa-square-js"></span>
-                                <h3 id="modal4-title-2"></h3>
-                                <p id="modal4-p3"></p>
-                                <h3 id="modal4-title-3"></h3>
-                                <p id="modal4-p4"></p>
-                            </div>
-
-                            <!-- Footer -->
-                            <div class="flex justify-center space-x-4 border-t border-default pt-4">
-                                <button data-modal-hide="static-modal"
-                                    class=" text-white bg-brand hover:bg-brand-strong rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a id="modal-btn4" href="https://kevinflores198.github.io/lazo/" target="_blank" class="glass-btn">
-                                    </a>
-                                </button>
-
-                                <button data-modal-hide="static-modal"
-                                    class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a id="modal-btn4-2" href="https://www.figma.com/proto/Z1SXYdKY0vu3IaAizFbbxT/Lazo?node-id=2721-33&p=f&t=5AtRMkM9lnjwvDoH-0&scaling=min-zoom&content-scaling=fixed&page-id=2704%3A9"
-                                        target="_blank" class="glass-btn">
-                                    </a>
-                                </button>
-
-                                <button data-modal-hide="static-modal"
-                                    class=" text-body bg-neutral-secondary-medium hover:bg-neutral-tertiary-medium rounded-base px-4 py-2.5 text-sm font-medium">
-                                    <a id="modal-btn4-3" href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
-                                        target="_blank" class="glass-btn">
-                                    </a>
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="reasons"></section>
-        <section id="cases2" class="prices-cases">
-            <div class="block"></div>
-            <h2 id="cases-2-title"></h2>
-            <p id="cases-2-p"></p>
-        </section>
-        <section id="prices"
-            class="prices 
-                     flex items-baseline justify-center p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
-            <div data-aos="flip-right"
-                class="cursor-pointer prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
-                <h5 id="prices-title" class="mb-4 text-xl font-medium text-body"></h5>
-                <div class="flex items-baseline text-heading">
-                    <span class="text-5xl font-extrabold tracking-tight">$---</span>
-                    <span class="ms-2 font-medium text-body"></span>
-                </div>
-                <ul role="list" class="space-y-4 my-6">
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-1" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-2" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-3" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-4" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-5" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center line-through decoration-body">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-6" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center line-through decoration-body">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-7" class="text-body"></span>
-                    </li>
-                </ul>
-
-                <p id="prices-delivery"></p>
-
-                <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                    border border-transparent transition-all duration-300 
-                    bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                    hover:text-white group">
-                    <a id="prices-btn" target="_blank"
-                        href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Me%20interessei%20no%20plano%20de%20R%24700.%20Poderia%20me%20passar%20um%20or%C3%A7amento%3F"
-                        class="relative z-10  w-full text-center">
-                    </a>
-                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                                group-hover:opacity-0 opacity-100 transition-opacity duration-300">
-                    </span>
-                </button>
-
-
-            </div>
-            <div data-aos="flip-right"
-                class="cursor-pointer prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
-                <h5 id="prices-title-2" class="mb-4 text-xl font-medium text-body"></h5>
-                <div class="flex items-baseline text-heading">
-                    <span class="text-5xl font-extrabold tracking-tight">$---</span>
-                    <span class="ms-2 font-medium text-body"></span>
-                </div>
-                <ul role="list" class="space-y-4 my-6">
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-2-1" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-2-2" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-2-3" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-2-4" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-2-5" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-2-6" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center line-through decoration-body">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-2-7" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center line-through decoration-body">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-2-8" class="text-body"></span>
-                    </li>
-                    <p id="prices-description-2"></p>
-                    <p id="prices-delivery-2"></p>
-                </ul>
-                <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                                hover:text-white group">
-
-                    <a id="prices-btn-2" target="_blank"
-                        href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostei%20do%20plano%20de%20R%24%201200.%20Pode%20me%20enviar%20um%20or%C3%A7amento%3F"
-                        class="relative z-10 w-full text-center">
-                        
-                    </a>
-
-                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                                group-hover:opacity-0 opacity-100 transition-opacity duration-300">
-                    </span>
-                </button>
-            </div>
-            <div data-aos="flip-right"
-                class="cursor-pointer prices-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
-                <h5 id="prices-title-3" class="mb-4 text-xl font-medium text-body"></h5>
-                <div class="flex items-baseline text-heading">
-                    <span class="text-5xl font-extrabold tracking-tight">$---</span>
-                    <span class="ms-2 font-medium text-body"></span>
-                </div>
-                <ul role="list" class="space-y-4 my-6">
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-3-1" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-3-2" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-3-3" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-3-4" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-3-5" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-3-6" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="prices-tip-3-7"  class="text-body"></span>
-                    </li>
-                    <p id="prices-description-3"></p>
-                    <p id="prices-delivery-3"></p>
-
-                </ul>
-                <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                 border border-transparent transition-all duration-300 
-                                 bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                                 hover:text-white group">
-
-                    <a id="prices-btn-3" target="_blank"
-                        href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Quero%20saber%20mais%20sobre%20o%20plano%20de%20R%24%201800.%20Pode%20me%20ajudar%3F"
-                        class="relative z-10 w-full text-center">
-                        
-                    </a>
-
-                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                                    group-hover:opacity-0 opacity-100 transition-opacity duration-300">
-                    </span>
-                </button>
-            </div>
-            <p id="prices-clear" class="w-full mt-4 text-sm text-gray-500 text-center"></p>
-        </section>
-        <section id="cases3" class="mantenance-content">
-            <div class="block"></div>
-            <h2 id="cases-3-title"></h2>
-            <p id="cases-3-parr" class=""></p>
-        </section>
-        <section id="maintenance-plans"
-            class="flex cursor-pointer items-center justify-center p-6 bg-neutral-primary-soft border border-default rounded-base shadow-xs">
-            <div data-aos="flip-right"
-                class="maintenance-plans-card w-full max-w-sm p-6 bg-neutral-primary-soft border-default rounded-base shadow-xs">
-                <h5 id="maintenance-title-2" class="mb-4 text-xl font-medium text-body"></h5>
-                <div class="flex items-baseline text-heading">
-                    <span class="text-4xl font-extrabold tracking-tight">$---</span>
-                    <span id="month" class="ms-2 font-medium text-body"></span>
-                </div>
-                <ul role="list" class="space-y-4 my-6">
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="maintenance-tip-1" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="maintenance-tip-2" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="maintenance-tip-3" class="text-body"></span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="maintenance-tip-4" class="text-body"></span>
-                    </li>
-                </ul>
-                <p id="maintenance-text"></p>
-                <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                                hover:text-white group">
-                    <a id="maintenance-btn" target="_blank"
-                        href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostaria%20de%20fazer%20um%20site%20e%20tamb%C3%A9m%20contratar%20a%20manuten%C3%A7%C3%A3o%20mensal.%20Como%20funciona%3F"
-                        class="relative z-10 w-full text-center">
-                    </a>
-                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                                group-hover:opacity-0 opacity-100 transition-opacity duration-300">
-                    </span>
-                </button>
-            </div>
-
-            <div data-aos="flip-right"
-                class="cursor-pointer maintenance-plans-card max-w-sm p-6 bg-neutral-primary-soft/70 backdrop-blur-md border-default rounded-base shadow-xs">
-                <h5 id="maintenance-title" class="mb-4 text-xl font-medium text-body"></h5>
-                <div class="flex items-baseline text-heading">
-                    <span class="text-4xl font-extrabold tracking-tight">$---</span>
-                    <span class="ms-2 font-medium text-body"></span>
-                </div>
-
-                <ul role="list" class="space-y-4 my-6">
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="maintenance-tip-2-1" class="text-body">.</span>
-                    </li>
-
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="maintenance-tip-2-2" class="text-body"></span>
-                    </li>
-
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="maintenance-tip-2-3" class="text-body"></span>
-                    </li>
-
-                    <li class="flex items-center">
-                        <svg class="w-5 h-5 shrink-0 text-fg-brand me-1.5" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <span id="maintenance-tip-2-4" class="text-body"></span>
-                    </li>
-                </ul>
-                <p id="maintenance-text-2"></p>
-                <button class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                                border border-transparent transition-all duration-300 
-                                bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                                hover:text-white group">
-                    <a id="maintenance-btn-2" target="_blank"
-                        href="https://wa.me/554888648031?text=Ol%C3%A1%20Kevin!%20Gostaria%20de%20fazer%20um%20site%20e%20contratar%20a%20manuten%C3%A7%C3%A3o%20a%20cada%20dois%20meses.%20Como%20funciona%3F"
-                        class="relative z-10 w-full text-center">
-                    </a>
-                    <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                                group-hover:opacity-0 opacity-100 transition-opacity duration-300">
-                    </span>
-                </button>
-            </div>
-            <p class="w-full mt-4 text-sm text-gray-500 text-center"></p>
-        </section>
-        <section id="cta" class="parallax">
-            <div class="block"></div>
-            <h2 id="cta-title"></h2>
-            <p id="cta-p"></p>
-            <button data-aos="zoom-in" class="mt-4 but relative inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-white 
-                            border border-transparent transition-all duration-300 
-                            bg-gradient-to-r from-[#eca76b] to-[#5aade8]
-                            hover:text-white group">
-                <a id="cta-btn" target="_blank"
-                    href="https://wa.me/554888648031?text=Ol%C3%A1%2C%20Kevin!%20Vi%20seus%20projetos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20site."
-                    class="bottons relative z-10 w-full text-center">
-                </a>
-                <span class="absolute inset-0 rounded-lg bg-neutral-900 
-                            group-hover:opacity-0 opacity-100 transition-opacity duration-300">
-                </span>
-            </button>
-
-        </section>
-        <section id="cta-cities">
-            <div class="cta-section">
-
-                <h2 id="cta-cities-title"></h2>
-                <p id="cta-cities-p"></p>
-                <ul>
-                    <li><a id="cta-city" href=""></a></li>
-                    <li><a id="cta-city-2" href=""></a></li>
-                    <li><a id="cta-city-3" href=""></a></li>
-                    <li><a id="cta-city-4" href=""></a></li>
-                    <li><a id="cta-city-5" href=""></a></li>
-                    <li><a id="cta-city-6" href=""></a></li>
-                    <li><a id="cta-city-7" href=""></a></li>
-                    <li><a id="cta-city-8" href=""></a></li>
-                </ul>
-            </div>
-            <div class="cta-section">
-                <h2 id="cta-cities-title-2"></h2>
-                <p id="cta-cities-p-2"></p>
-                <ul>
-                    <li><a id="cta-city-1-1" href=""></a></li>
-                    <li><a id="cta-city-1-2" href=""></a></li>
-                    <li><a id="cta-city-1-3" href=""></a></li>
-                    <li><a id="cta-city-1-4" href=""></a></li>
-                    <li><a id="cta-city-1-5" href=""></a></li>
-                    <li><a id="cta-city-1-6" href=""></a></li>
-                    <li><a id="cta-city-1-7" href=""></a></li>
-                    <li><a id="cta-city-1-8" href=""></a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-neutral-primary-soft">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <div class="md:flex md:justify-evenly">
-                <div class="mb-6 md:mb-0">
-                    <a href="portfolio.html" class="logo-title flex items-center">
-                        <img src="files/logo-no-back.png" class="h-7 me-3" alt="FlowBite Logo" />
-                        <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">Confiweb</span>
-                    </a>
-                </div>
-                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                    <div>
-                        <h2 id="footer-title-1" class="mb-6 text-sm font-semibold text-heading uppercase"></h2>
-                        <ul class="text-body font-medium">
-                            <!-- <li>
-                                <a target="_blank" href="profile.html" class="hover:underline">Profile</a>
-                            </li> -->
-                            <li>
-                                <a target="_blank" href="portfolio.html" class="hover:underline">Portfolio</a>
-                            </li>
-                            <li>
-                                <a target="_blank" href="index.html" class="hover:underline">Confiweb</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 id="footer-title-2" class="mb-6 text-sm font-semibold text-heading uppercase"></h2>
-                        <ul class="text-body font-medium">
-                            <li>
-                                <a target="_blank" href="https://discord.gg/fvWZa2me"
-                                    class="hover:underline">Discord</a>
-                            </li>
-                            <li>
-                                <a target="_blank" id="footer-linkedin"
-                                    href="https://www.linkedin.com/in/kevinfloresg/"></a>
-                            </li>
-                            <li>
-                                <a target="_blank" id="footer-github" href="https://github.com/kevinflores198"></a>
-                            </li>
-                            <li>
-                                <a target="_blank" id="footer-instagram" href="https://www.instagram.com/kevo198_/"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 id="footer-title-3" class="mb-6 text-sm font-semibold text-heading uppercase"></h2>
-                        <ul class="text-body font-medium">
-                            <li class="mb-4">
-                                <a id="footer-cont-1" target="_blank" href="policy.html" class="hover:underline"></a>
-                            </li>
-                            <li>
-                                <a id="footer-cont-2" target="_blank" href="terms.html" class="hover:underline"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-6 border-default sm:mx-auto lg:my-8" />
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-body sm:text-center">© 2026 <a target="_blank" href="index.html"
-                        class="hover:underline">Confiweb™</a>. All Rights Reserved.
-                </span>
-                <div class="icons flex mt-4 sm:justify-center sm:mt-0">
-                    <a target="_blank" href="https://www.facebook.com/kevinflores198"
-                        class="text-body hover:text-heading">
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd"
-                                d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">Facebook page</span>
-                    </a>
-                    <a target="_blank" href="https://discord.gg/fvWZa2me" class="text-body hover:text-heading ms-5">
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="hhttps://discord.gg/fvWZa2me" width="24"
-                            height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
-                        </svg>
-                        <span class="sr-only">Discord community</span>
-                    </a>
-                    <a target="_blank" href="#" class="text-body hover:text-heading ms-5">
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" fill="currentColor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd"
-                                d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">GitHub account</span>
-                    </a>
-                </div>
-            </div>
+<header>
+  <nav class="nav" id="nav">
+    <a class="logo" href="#top">
+      <img src="files/logo-no-back.png" alt="Confiweb" onerror="this.style.display='none'">
+    </a>
+    <ul class="links" id="links">
+      <button class="nav-close" id="nav-close" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#casos">Proyectos</a></li>
+      <li><a href="#precios">Precios</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="portfolio.html">Mi perfil</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-wrap">
+        <button class="lang-btn" id="lang-btn">
+          <i class="fa-solid fa-earth-americas"></i>
+          <span id="lang-label">ES</span>
+        </button>
+        <div class="lang-drop" id="lang-drop">
+          <button onclick="cwLang('es')"><span class="fi fi-ar"></span> Español</button>
+          <button onclick="cwLang('en')"><span class="fi fi-us"></span> English</button>
+          <button onclick="cwLang('pt')"><span class="fi fi-br"></span> Português</button>
         </div>
-    </footer>
-
-    <div class="arrowUp " id="arrowUp">
-        <a href="#top"><i class="fa-solid fa-arrow-up arrow-confiweb"></i></a>
+      </div>
+      <a href="https://wa.me/54112394362?text=Hola%20Kevin!%20Quiero%20saber%20más." target="_blank" class="btn-nav">
+        <i class="fa-brands fa-whatsapp"></i> Hablar ahora
+      </a>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
     </div>
-    <div class="contactMe" id="contactMe">
-        <a target="_blank" href="https://wa.me/554888648031"><i class="fa-brands fa-whatsapp"></i></a>
+  </nav>
+</header>
+
+<div class="backdrop" id="backdrop"></div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="available"><span class="dot"></span> Disponible para nuevos proyectos</div>
+      <h1 class="hero-title">
+        Tu negocio merece<br>
+        <span class="highlight">una página que vende</span>
+      </h1>
+      <p class="hero-sub">
+        Creamos landing pages y tiendas online con venta por WhatsApp para emprendedores y empresas pequeñas.<br>
+        Modernas, rápidas y listas en días...no meses.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/54112394362?text=Hola%20Kevin!%20Quiero%20una%20página%20web." target="_blank" class="btn-primary">
+          <i class="fa-brands fa-whatsapp"></i> Quiero mi página web
+        </a>
+        <a href="#casos" class="btn-ghost">Ver proyectos →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>3+</strong><span>Proyectos reales en produccion</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><strong>3</strong><span>Idiomas: ES · PT · EN</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><strong>3+</strong><span>Años programando</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><strong>100%</strong><span>Atención directa</span></div>
+      </div>
     </div>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/content-confiweb.js"></script>
+  </section>
 
-    <script>
-        tailwind.config = {
-            plugins: [daisyui],
-        }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200,
-            easing: 'ease-out-cubic',
-            offset: 120
-        });
+  <!-- Problema - solucion -->
+  <section class="problem">
+    <div class="container">
+      <p class="problem-label">¿Te suena alguna de estas?</p>
+      <div class="problem-grid">
+        <div class="prob-item"><i class="fa-solid fa-ban"></i><p>Tenés un negocio real pero tus clientes no te encuentran en Google.</p></div>
+        <div class="prob-item"><i class="fa-brands fa-instagram"></i><p>Solo vendés por Instagram o WhatsApp. Funciona, pero no genera confianza.</p></div>
+        <div class="prob-item"><i class="fa-solid fa-dollar-sign"></i><p>Te dijeron que una web era carísima o tardaba meses. Acá no.</p></div>
+        <div class="prob-item"><i class="fa-solid fa-store"></i><p>Querés vender online sin pagar comisiones de Shopify o MercadoLibre.</p></div>
+      </div>
+    </div>
+  </section>
 
-        new simpleParallax(document.querySelectorAll('.parallax'), {
-            scale: 1.2,
-            delay: 0.4
-        });
+  <!-- Servicios -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Lo que hacemos</span>
+        <h2>Tres modelos. Un solo objetivo:<br>más clientes para tu negocio.</h2>
+      </div>
+      <div class="services">
 
+        <div class="service">
+          <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Landing Page</h3>
+          <p>Página clara, rápida y profesional para que el visitante te llame, te escriba o pida info. Sin distracciones.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Diseño responsivo (celular + desktop)</li>
+            <li><i class="fa-solid fa-check"></i> Secciones: quiénes son, servicios, contacto</li>
+            <li><i class="fa-solid fa-check"></i> Botón WhatsApp / Email directo</li>
+            <li><i class="fa-solid fa-check"></i> SEO básico para Google</li>
+            <li><i class="fa-solid fa-check"></i> Lista en 7–10 días hábiles</li>
+          </ul>
+          <!-- <div class="service-price">$180 USD</div> -->
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20una%20Landing%20Page." target="_blank" class="btn-outline">Consultar →</a>
+        </div>
 
-    </script>
+        <div class="service service-featured">
+          <div class="featured-badge">Más elegido</div>
+          <div class="service-icon icon-accent"><i class="fa-solid fa-list"></i></div>
+          <h3>Landing + Lista de Productos</h3>
+          <p>Igual que la landing, pero con catálogo visual. Cada producto tiene un botón que lleva directo a WhatsApp para cerrar la venta.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Todo lo del plan Landing</li>
+            <li><i class="fa-solid fa-check"></i> Grilla de productos con foto y precio</li>
+            <li><i class="fa-solid fa-check"></i> Botón "Consultar" → WhatsApp por producto</li>
+            <li><i class="fa-solid fa-check"></i> Diseño Figma personalizado incluido</li>
+            <li><i class="fa-solid fa-check"></i> Lista en 10–12 días hábiles</li>
+          </ul>
+          <!-- <div class="service-price">$230 USD</div> -->
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20Landing%20con%20lista%20de%20productos." target="_blank" class="btn-primary">Consultar →</a>
+        </div>
 
+        <div class="service">
+          <div class="service-icon icon-green"><i class="fa-brands fa-whatsapp"></i></div>
+          <h3>Ecommerce + WhatsApp</h3>
+          <p>Tienda online completa. El cliente ve los productos y hace el pedido directo por WhatsApp. Sin comisiones ni plataformas caras.</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Catálogo con filtros por categoría</li>
+            <li><i class="fa-solid fa-check"></i> Pedido armado → WhatsApp automático</li>
+            <li><i class="fa-solid fa-check"></i> Sin comisión por venta</li>
+            <li><i class="fa-solid fa-check"></i> Opción: productos desde Google Sheets</li>
+            <li><i class="fa-solid fa-check"></i> Lista en 12–15 días hábiles</li>
+          </ul>
+          <!-- <div class="service-price">$290 USD</div> -->
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20el%20Ecommerce%20con%20WhatsApp." target="_blank" class="btn-outline">Consultar →</a>
+        </div>
 
+      </div>
+
+      <div class="included">
+        <p class="included-label">Incluido en todos los planes</p>
+        <div class="included-grid">
+          <div class="inc-item"><i class="fa-solid fa-mobile-screen"></i><span>Mobile-first</span></div>
+          <div class="inc-item"><i class="fa-solid fa-gauge-high"></i><span>Carga rápida</span></div>
+          <div class="inc-item"><i class="fa-solid fa-magnifying-glass"></i><span>SEO básico</span></div>
+          <div class="inc-item"><i class="fa-solid fa-pen-ruler"></i><span>Diseño Figma</span></div>
+          <div class="inc-item"><i class="fa-solid fa-language"></i><span>ES · PT · EN</span></div>
+          <div class="inc-item"><i class="fa-solid fa-headset"></i><span>Soporte post-entrega</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="casos" class="section dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Proyectos reales</span>
+        <h2>Lo que ya construimos</h2>
+        <p class="section-sub">Cada uno fue hecho para un cliente real, con una necesidad real.</p>
+      </div>
+      <div class="cases">
+
+        <article class="case">
+          <div class="case-img">
+            <img src="files/project-brutton.jpg" alt="Brutton Construtec" loading="lazy">
+            <span class="case-badge badge-landing">Landing Page</span>
+          </div>
+          <div class="case-body">
+            <h3>Brutton Construtec</h3>
+            <p>Empresa constructora de Brasil que necesitaba presencia digital profesional. Landing con 3 vistas distintas mostrando sus proyectos y dirigiendo al contacto directo.</p>
+            <div class="case-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://bruttonconstrutec.com.br" target="_blank" class="case-link">Ver sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-img">
+            <img src="files/project-lazo.jpg" alt="Lazo Carteras" loading="lazy">
+            <span class="case-badge badge-lista">Landing + Productos</span>
+          </div>
+          <div class="case-body">
+            <h3>Lazo Carteras & Accesorios</h3>
+            <p>Emprendedora que vendía solo por Instagram. Ahora tiene catálogo visual de productos y sus clientes le escriben directo por WhatsApp con el artículo que quieren.</p>
+            <div class="case-tech"><span>HTML</span><span>CSS</span><span>Tailwind</span></div>
+            <a href="https://kevinflores198.github.io/lazo/" target="_blank" class="case-link">Ver sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-img">
+            <img src="files/project-emme.jpg" alt="Emme ind" loading="lazy">
+            <span class="case-badge badge-ecomm">Ecommerce + WhatsApp</span>
+          </div>
+          <div class="case-body">
+            <h3>Emme ind.</h3>
+            <p>Tienda donde los productos se cargan desde Google Sheets y se muestran automáticamente. El cliente hace clic en "Comprar" y llega un WhatsApp con el pedido ya armado.</p>
+            <div class="case-tech"><span>JavaScript</span><span>Google Sheets</span><span>Tailwind</span></div>
+            <a href="https://kevinflores198.github.io/Emme-ind/" target="_blank" class="case-link">Ver sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+      </div>
+      <div class="cases-cta">
+        <p>¿Querés algo así para tu negocio?</p>
+        <a href="https://wa.me/54112394362?text=Vi%20los%20proyectos%20y%20me%20interesa%20uno." target="_blank" class="btn-primary">
+          <i class="fa-brands fa-whatsapp"></i> Hablemos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trayecto -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Cómo trabajamos</span>
+        <h2>De cero a online en 4 pasos</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-n">01</div>
+          <h3>Nos contactás</h3>
+          <p>Me escribís por WhatsApp. Te respondo el mismo día y hablamos de tu negocio.</p>
+        </div>
+        <div class="step-arr"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-n">02</div>
+          <h3>Diseño en Figma</h3>
+          <p>Armo el diseño visual primero. Lo ves antes de que empiece el código.</p>
+        </div>
+        <div class="step-arr"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-n">03</div>
+          <h3>Desarrollo</h3>
+          <p>Programo la página con los materiales que me pasás. Preview en 7–15 días.</p>
+        </div>
+        <div class="step-arr"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="step">
+          <div class="step-n">04</div>
+          <h3>Entrega y soporte</h3>
+          <p>Subo el sitio, te enseño a manejarlo y quedo disponible para ajustes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Precios -->
+  <section id="precios" class="section dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Planes</span>
+        <h2>Precios claros. Sin sorpresas.</h2>
+        <p class="section-sub">Adelanto del 30% para arrancar. El resto a la entrega. Acepto USD, ARS o BRL.</p>
+      </div>
+
+      <h3 class="prices-subtitle"><i class="fa-solid fa-globe"></i> Páginas web — Pago único</h3>
+      <div class="prices">
+
+        <div class="price-card">
+          <div class="price-top">
+            <h4>Landing Page</h4>
+            <p>Presencia profesional para tu negocio.</p>
+            <div class="price-num"><strong>$180</strong><span>USD</span></div>
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> 1 página completa</li>
+            <li><i class="fa-solid fa-check"></i> Diseño responsivo</li>
+            <li><i class="fa-solid fa-check"></i> SEO básico</li>
+            <li><i class="fa-solid fa-check"></i> Botón WhatsApp / Email</li>
+            <li><i class="fa-solid fa-check"></i> 1 revisión incluida</li>
+            <li><i class="fa-solid fa-check"></i> Entrega: 7–10 días</li>
+          </ul>
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20la%20Landing%20Page%20a%20200usd." target="_blank" class="btn-outline">Consultar →</a>
+        </div>
+
+        <div class="price-card price-featured">
+          <div class="price-badge">Más elegido</div>
+          <div class="price-top">
+            <h4>Landing + Productos</h4>
+            <p>Catálogo visual con compra por WhatsApp.</p>
+            <div class="price-num"><strong>$230</strong><span>USD</span></div>
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Todo lo del plan Landing</li>
+            <li><i class="fa-solid fa-check"></i> Lista de productos con fotos</li>
+            <li><i class="fa-solid fa-check"></i> Botón → WhatsApp por producto</li>
+            <li><i class="fa-solid fa-check"></i> Diseño Figma personalizado</li>
+            <li><i class="fa-solid fa-check"></i> 2 revisiones incluidas</li>
+            <li><i class="fa-solid fa-check"></i> Entrega: 10–12 días</li>
+          </ul>
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20Landing%20con%20productos%20a%20250usd." target="_blank" class="btn-primary">Consultar →</a>
+        </div>
+
+        <div class="price-card">
+          <div class="price-top">
+            <h4>Ecommerce + WhatsApp</h4>
+            <p>Tienda completa sin comisiones por venta.</p>
+            <div class="price-num"><strong>$290</strong><span>USD</span></div>
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Catálogo con categorías</li>
+            <li><i class="fa-solid fa-check"></i> Pedido armado → WhatsApp</li>
+            <li><i class="fa-solid fa-check"></i> Sin comisiones por venta</li>
+            <li><i class="fa-solid fa-check"></i> Opción Google Sheets</li>
+            <li><i class="fa-solid fa-check"></i> Diseño Figma personalizado</li>
+            <li><i class="fa-solid fa-check"></i> Entrega: 12–15 días</li>
+          </ul>
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20Ecommerce%20WhatsApp%20a%20300usd." target="_blank" class="btn-outline">Consultar →</a>
+        </div>
+
+      </div>
+
+      <h3 class="prices-subtitle"><i class="fa-solid fa-wrench"></i> Mantenimiento mensual</h3>
+      <div class="maintenance">
+
+        <div class="maint-card">
+          <h4>Básico</h4>
+          <div class="maint-price"><strong>$20</strong><span>/ mes</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Hasta 3 cambios de texto o imagen</li>
+            <li><i class="fa-solid fa-check"></i> Revisión de funcionamiento</li>
+            <li><i class="fa-solid fa-check"></i> Respuesta en 48 hs</li>
+          </ul>
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20el%20mantenimiento%20básico." target="_blank" class="btn-outline">Consultar →</a>
+        </div>
+
+        <div class="maint-card maint-featured">
+          <h4>Avanzado</h4>
+          <div class="maint-price"><strong>$40</strong><span>/ mes</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Cambios ilimitados de contenido</li>
+            <li><i class="fa-solid fa-check"></i> Actualizaciones de diseño</li>
+            <li><i class="fa-solid fa-check"></i> Nuevas secciones o funciones</li>
+            <li><i class="fa-solid fa-check"></i> Prioridad de respuesta: 24 hs</li>
+            <li><i class="fa-solid fa-check"></i> Reporte mensual del sitio</li>
+          </ul>
+          <a href="https://wa.me/54112394362?text=Me%20interesa%20el%20mantenimiento%20avanzado." target="_blank" class="btn-primary">Consultar →</a>
+        </div>
+
+      </div>
+
+      <p class="price-note">
+        <i class="fa-solid fa-circle-info"></i>
+        Adelanto del 30% para comenzar. El precio final se define según el proyecto. Hablamos y lo cerramos juntos. El dominio (ej: tunegocio.com) se compra a tu nombre y yo me encargo de configurarlo. 
+  Hosting y publicación incluidos.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Lo que dicen</span>
+        <h2>Clientes reales, palabras reales</h2>
+      </div>
+      <div class="testimonials">
+        <blockquote class="testi">
+          <p>"El resultado final superó nuestras expectativas, reflejando profesionalismo, dedicación y calidad en cada detalle. Estamos muy satisfechos y seguros de que tendremos muchos proyectos por delante."</p>
+          <footer><strong>Everton Silva</strong><span>Socio administrador — Brutton Construtec, Florianopolis, Brasil</span></footer>
+        </blockquote>
+        <blockquote class="testi">
+          <p>"Excelente comunicación y sitio de alta calidad. Volví a trabajar con él para otros proyectos juntos."</p>
+          <footer><strong>Lourdes Machuca</strong><span>Socia en proyectos freelance, Florianopolis, Brasil</span></footer>
+        </blockquote>
+                  <blockquote class="testi">
+            <p>"Gracias a el trabajo realizado por Kevin, logramos tener un sitio web que refleja nuestra marca y nos permite conectar mejor con nuestros clientes, la carga de productos es muy facil y rapida de manejar."</p>
+            <footer>
+              <strong>Melisa Cortez</strong>
+              <span>Emprendedora de Emme indumentaria, Buenos aires, Argentina</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testi">
+            <p>"Pude tener mi primer website gracias a Kevin, ahora puedo mostrar mis productos de una manera mas profesional y no solamente por instagram."</p>
+            <footer>
+              <strong>Daniela Anahi</strong>
+              <span>Emprendedora de Lazo Carteras, Buenos Aires, Argentina</span>
+            </footer>
+          </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section dark">
+    <div class="container faq-wrap">
+      <div class="section-header">
+        <span class="tag">Preguntas frecuentes</span>
+        <h2>Lo que siempre me preguntan</h2>
+      </div>
+      <div class="faq">
+        <details class="faq-item">
+          <summary>¿Cuánto tarda en estar lista mi página?</summary>
+          <p>Entre 7 y 15 días hábiles desde que me enviás los materiales (textos, fotos, logo). Primero te muestro el diseño en Figma para que lo apruebes antes de programar.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Por qué venta por WhatsApp y no carrito con pago online?</summary>
+          <p>Porque el carrito tradicional requiere pasarelas de pago, comisiones y complejidad técnica. La venta por WhatsApp es más directa, más personal y sin costos extra. Funciona perfecto para emprendedores donde el cliente prefiere atención personalizada.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Puedo pedir cambios después de la entrega?</summary>
+          <p>Sí. Cada plan incluye revisiones. Cambios adicionales se cotizan por separado, siempre mucho menos que el proyecto original. Por eso recomiendo el mantenimiento mensual si actualizás seguido.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Trabajás con clientes de cualquier país?</summary>
+          <p>Sí. Trabajo en español, portugués e inglés. Clientes en Argentina, Brasil y Estados Unidos. Todo el proceso es 100% remoto por WhatsApp, email o videollamada.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué necesito para empezar?</summary>
+          <p>Tu logo (si no tenés, lo vemos juntos), fotos de tus productos o servicio, y un texto básico de qué hacés. Con eso armo el diseño. Si no tenés todo, lo construimos juntos paso a paso.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Mantenimiento mensual o bimestral?</summary>
+          <p>Mensual si vendés productos que cambian seguido o hacés promociones frecuentes. Si tu sitio es estable (empresa de servicios, landing informativa) podés arrancar con básico y actualizar cuando lo necesitás.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="final">
+    <div class="container">
+      <h2>¿Listo para tener tu página?</h2>
+      <p>Escribime hoy. Te respondo el mismo día y armamos algo a medida de tu negocio.</p>
+      <div class="final-btns">
+        <a href="https://wa.me/54112394362?text=Hola%20Kevin!%20Quiero%20una%20página%20web." target="_blank" class="btn-primary btn-lg">
+          <i class="fa-brands fa-whatsapp"></i> Empezar ahora
+        </a>
+        <a href="mailto:kevinfloresg1998@gmail.com" class="btn-ghost">
+          <i class="fa-solid fa-envelope"></i> Mandar un email
+        </a>
+      </div>
+      <p class="final-note">Sin compromiso. Primera consulta gratis.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">Confiweb</span>
+      <p>Páginas web para emprendedores y empresas pequeñas.</p>
+      <p class="footer-copy">© <span id="year"></span> Kevin Flores — SC, Brasil</p>
+    </div>
+    <nav class="footer-nav">
+      <strong>Servicios</strong>
+      <a href="#servicios">Landing Page</a>
+      <a href="#servicios">Landing + Productos</a>
+      <a href="#servicios">Ecommerce WhatsApp</a>
+      <a href="#precios">Mantenimiento</a>
+    </nav>
+    <nav class="footer-nav">
+      <strong>Info</strong>
+      <a href="#casos">Proyectos</a>
+      <a href="#faq">FAQ</a>
+      <a href="portfolio.html">Portfolio del dev</a>
+    </nav>
+    <div class="footer-contact">
+      <strong>Contacto</strong>
+      <a href="https://wa.me/54112394362" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="mailto:kevinfloresg1998@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="https://www.linkedin.com/in/kevinfloresg/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+      <a href="https://github.com/kevinflores198" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/54112394362?text=Hola%20Kevin!" target="_blank" class="fab" id="fab"><i class="fa-brands fa-whatsapp"></i><span>¿Hablamos?</span></a>
+<a href="#top" class="top" id="top"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script src="confiweb.js"></script>
 </body>
+</html>
